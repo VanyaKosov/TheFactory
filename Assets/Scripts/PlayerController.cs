@@ -7,10 +7,15 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
+    {
+
+    }
+
+    void FixedUpdate()
     {
         Move();
     }
@@ -21,7 +26,6 @@ public class PlayerController : MonoBehaviour
         float yVel = Input.GetAxis("Vertical");
 
         Vector2 moveVector = new Vector2(xVel, yVel).normalized;
-        rigidBody.linearVelocity = moveVector * moveSpeed * Time.deltaTime;
-        //gameObject.transform.position += moveVector * moveSpeed * Time.deltaTime;
+        rigidBody.MovePosition(rigidBody.position + moveVector * moveSpeed * Time.deltaTime);
     }
 }
