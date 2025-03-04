@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5834f142943c8b14dba50250368d656a
+guid: 6573d94929bc83a4bafc08bc86edab42
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -90,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -459,21 +459,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      grass-1_0: -563942098218692382
-      grass-1_1: 1350023490887503155
-      grass-1_10: -2054998101765356936
-      grass-1_11: -3818456099047578839
-      grass-1_12: -7175725267833523434
-      grass-1_13: 3074780132946820370
-      grass-1_2: 5651591766475421120
-      grass-1_3: -1690078130204093926
-      grass-1_4: 4119066522709368269
-      grass-1_5: 4295784523687242574
-      grass-1_6: 3125575580687440997
-      grass-1_7: 1668505894818377921
-      grass-1_8: 441501784725579521
-      grass-1_9: 6962058900262681712
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

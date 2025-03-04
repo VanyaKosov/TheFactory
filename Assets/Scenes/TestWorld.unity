@@ -225,7 +225,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 40
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -567,8 +567,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1762007037}
   - component: {fileID: 1762007038}
+  - component: {fileID: 1762007039}
   m_Layer: 0
-  m_Name: WorldController
+  m_Name: WorldScripts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,7 +611,18 @@ MonoBehaviour:
   - {fileID: 6743217744599363267, guid: 8c239dcf3954ba4488a080f35fba78fc, type: 3}
   - {fileID: 3229823045459006064, guid: 171a740edfb56b64496d11e32ac4ee9d, type: 3}
   tileParent: {fileID: 1711876123}
-  debugTile: {fileID: 7535297869846236216, guid: d64b74301850828469ec5c989ee8a7ca, type: 3}
+--- !u!114 &1762007039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762007036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b629f278131a0f4daf168051f0e9af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
