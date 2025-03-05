@@ -10,12 +10,16 @@ public class WorldController : MonoBehaviour
 
     public GameObject player;
     public GameObject[] Grass1;
+    public Texture2DArray coal;
     public GameObject tileParent;
 
     void Start()
     {
         player.transform.position = new(world.PlayerPos.x, world.PlayerPos.y, playerLayer);
+
         world.TileGenerated += SpawnTile;
+        world.OreSpawned += SpawnOre;
+
         world.Run();
     }
 
@@ -36,5 +40,10 @@ public class WorldController : MonoBehaviour
             int idx = UnityEngine.Random.Range(0, Grass1.Length);
             Instantiate(Grass1[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, tileParent.transform);
         }
+    }
+
+    private void SpawnOre(object sender, World.OreSpawnedEventArgs args)
+    {
+
     }
 }

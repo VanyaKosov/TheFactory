@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Assets.Scripts.Core
@@ -7,10 +8,15 @@ namespace Assets.Scripts.Core
     class World
     {
         private const int worldGenRadius = 100;
+        private const float coalSpawnChance = 0.001f; // 0.1% per tile
+        private const int coalMaxRichness = 10_000;
+        private readonly Vector2 coalRadiusVariation = new(5f, 8f);
+
         private readonly Dictionary<Vector2Int, Tile> map = new();
         public Vector2Int PlayerPos { get; private set; }
 
         public event EventHandler<TileGeneratedEventArgs> TileGenerated;
+        public event EventHandler<OreSpawnedEventArgs> OreSpawned;
 
         public World()
         {
@@ -77,8 +83,34 @@ namespace Assets.Scripts.Core
 
             Tile tile = new(Back.Grass1, Ore.Empty, 0);
             map.Add(pos, tile);
-
             TileGenerated?.Invoke(this, new(pos, tile.BackType));
+
+            if (CheckSpawnChance(coalSpawnChance))
+            {
+                SpawnOre(Ore.Coal, coalRadiusVariation, pos);
+            }
+        }
+
+        private void SpawnOre(Ore type, Vector2 radiusVariation, Vector2Int center)
+        {
+            float radiusSquared = UnityEngine.Random.Range(radiusVariation.x, radiusVariation.y);
+            int intRadius = (int)(radiusSquared + 0.5f);
+            radiusSquared *= radiusSquared;
+
+            for (int x = center.x - intRadius; x <= center.x + intRadius; x++)
+            {
+                for (int y = center.y - intRadius; y <= center.y + intRadius; y++)
+                {
+                    Vector2Int pos = new(x, y);
+                    GenTile(pos);
+
+                    float distSquared = x * x + y * y;
+                    if (distSquared <= radiusSquared)
+                    {
+                        map[pos] = new(map[pos].BackType, type, (int)((distSquared / radiusSquared) * coalMaxRichness));
+                    }
+                }
+            }
         }
 
         private void GenInitialWorld(int radius)
@@ -92,6 +124,11 @@ namespace Assets.Scripts.Core
             }
         }
 
+        private bool CheckSpawnChance(float chance)
+        {
+            return UnityEngine.Random.Range(0, 1) >= chance;
+        }
+
         public class TileGeneratedEventArgs : EventArgs
         {
             public readonly Vector2Int Pos;
@@ -101,6 +138,18 @@ namespace Assets.Scripts.Core
             {
                 Pos = pos;
                 Background = background;
+            }
+        }
+
+        public class OreSpawnedEventArgs : EventArgs
+        {
+            public readonly Vector2Int Pos;
+            public readonly Ore Type;
+
+            public OreSpawnedEventArgs(Vector2Int pos, Ore type)
+            {
+                Pos = pos;
+                Type = type;
             }
         }
     }
