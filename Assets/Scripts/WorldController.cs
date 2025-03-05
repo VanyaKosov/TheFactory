@@ -1,11 +1,12 @@
+using Assets.Scripts.Core;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WorldController : MonoBehaviour
 {
-    private const int worldGenRadius = 100;
-    private readonly Dictionary<Vector2Int, Tile> map = new();
-    private Vector2Int prevPLayerPos;
+    private const float playerLayer = -10;
+    private readonly World world = new();
 
     public GameObject player;
     public GameObject[] Grass1;
@@ -13,89 +14,27 @@ public class WorldController : MonoBehaviour
 
     void Start()
     {
-        prevPLayerPos = new(Mathf.RoundToInt(player.transform.position.x), Mathf.RoundToInt(player.transform.position.y));
-        GenInitialWorld();
+        player.transform.position = new(world.PlayerPos.x, world.PlayerPos.y, playerLayer);
+        world.TileGenerated += SpawnTile;
+        world.Run();
     }
 
     void Update()
     {
-        ExpandMap();
+        world.UpdatePLayerPos(player.transform.position);
     }
 
-    private void ExpandMap()
+    void OnDestroy()
     {
-        Vector2Int newPlayerPos = new(Mathf.RoundToInt(player.transform.position.x), Mathf.RoundToInt(player.transform.position.y));
-        Vector2Int offset = newPlayerPos - prevPLayerPos;
-        if (offset.x == 0 && offset.y == 0)
-        {
-            return;
-        }
-
-        if (offset.x != 0 && offset.y != 0)
-        {
-            Vector2Int tempOffset = new(offset.x, 0);
-            MakeLine(newPlayerPos, tempOffset);
-            tempOffset = new(0, offset.y);
-            MakeLine(newPlayerPos, tempOffset);
-        }
-        else
-        {
-            MakeLine(newPlayerPos, offset);
-        }
-
-        prevPLayerPos = newPlayerPos;
+        world.TileGenerated -= SpawnTile;
     }
 
-    private void MakeLine(Vector2Int newPlayerPos, Vector2Int offset)
+    private void SpawnTile(object sender, World.TileGeneratedEventArgs args)
     {
-        Vector2Int pos = newPlayerPos + offset * worldGenRadius;
-        offset = new(offset.y, offset.x);
-        pos -= offset * worldGenRadius;
-        for (int i = 0; i < worldGenRadius * 2 + 1; i++)
+        if (args.Background == Back.Grass1)
         {
-            GenTile(pos);
-            pos += offset;
-        }
-    }
-
-    private void GenTile(Vector2Int pos)
-    {
-        if (map.ContainsKey(pos))
-        {
-            return;
-        }
-
-        int idx = Random.Range(0, Grass1.Length);
-        Tile tile = new(pos, Grass1[idx], true, tileParent);
-        map.Add(pos, tile);
-    }
-
-    private void GenInitialWorld()
-    {
-        for (int x = -worldGenRadius; x <= worldGenRadius; x++)
-        {
-            for (int y = -worldGenRadius; y <= worldGenRadius; y++)
-            {
-                GenTile(new(x, y));
-            }
-        }
-    }
-
-    public class Tile
-    {
-        public readonly GameObject Instance;
-        public readonly bool Passable;
-        public int BuildingID { get; set; }
-
-        public Tile(Vector2Int pos, GameObject prefab, bool passable, GameObject tileParent)
-        {
-            Instance = Instantiate(prefab, new(pos.x, pos.y), Quaternion.identity, tileParent.transform);
-            Passable = passable;
-        }
-
-        public void Remove()
-        {
-            Destroy(Instance);
+            int idx = UnityEngine.Random.Range(0, Grass1.Length);
+            Instantiate(Grass1[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, tileParent.transform);
         }
     }
 }

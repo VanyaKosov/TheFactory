@@ -26,6 +26,6 @@ public class PlayerController : MonoBehaviour
         float yVel = Input.GetAxis("Vertical");
 
         Vector2 moveVector = new Vector2(xVel, yVel).normalized;
-        rigidBody.MovePosition(rigidBody.position + moveVector * moveSpeed * Time.deltaTime);
+        rigidBody.MovePosition(rigidBody.position + Time.deltaTime * moveSpeed * moveVector);
     }
 }
