@@ -9,7 +9,7 @@ namespace Assets.Scripts.Core
     {
         private const int worldGenRadius = 100;
         private const float coalSpawnChance = 0.001f; // 0.1% per tile
-        private const int coalMaxRichness = 10_000;
+        private const int maxRichness = 10_000;
         private readonly Vector2 coalRadiusVariation = new(5f, 8f);
 
         private readonly Dictionary<Vector2Int, Tile> map = new();
@@ -76,6 +76,17 @@ namespace Assets.Scripts.Core
 
         private void GenTile(Vector2Int pos)
         {
+            if (CheckSpawnChance(coalSpawnChance))
+            {
+                SpawnOre(Ore.Coal, coalRadiusVariation, pos);
+                return;
+            }
+
+            GenBackTile(pos);
+        }
+
+        private void GenBackTile(Vector2Int pos)
+        {
             if (map.ContainsKey(pos))
             {
                 return;
@@ -84,11 +95,6 @@ namespace Assets.Scripts.Core
             Tile tile = new(Back.Grass1, Ore.Empty, 0);
             map.Add(pos, tile);
             TileGenerated?.Invoke(this, new(pos, tile.BackType));
-
-            if (CheckSpawnChance(coalSpawnChance))
-            {
-                SpawnOre(Ore.Coal, coalRadiusVariation, pos);
-            }
         }
 
         private void SpawnOre(Ore type, Vector2 radiusVariation, Vector2Int center)
@@ -102,12 +108,14 @@ namespace Assets.Scripts.Core
                 for (int y = center.y - intRadius; y <= center.y + intRadius; y++)
                 {
                     Vector2Int pos = new(x, y);
-                    GenTile(pos);
+                    GenBackTile(pos);
 
                     float distSquared = x * x + y * y;
                     if (distSquared <= radiusSquared)
                     {
-                        map[pos] = new(map[pos].BackType, type, (int)((distSquared / radiusSquared) * coalMaxRichness));
+                        float richnessPercent = (distSquared / radiusSquared);
+                        map[pos] = new(map[pos].BackType, type, (int)(richnessPercent * maxRichness));
+                        OreSpawned?.Invoke(this, new(pos, type, richnessPercent));
                     }
                 }
             }
@@ -126,7 +134,8 @@ namespace Assets.Scripts.Core
 
         private bool CheckSpawnChance(float chance)
         {
-            return UnityEngine.Random.Range(0, 1) >= chance;
+            float random = UnityEngine.Random.Range(0f, 1f);
+            return random < chance;
         }
 
         public class TileGeneratedEventArgs : EventArgs
@@ -145,11 +154,13 @@ namespace Assets.Scripts.Core
         {
             public readonly Vector2Int Pos;
             public readonly Ore Type;
+            public readonly float Richness;
 
-            public OreSpawnedEventArgs(Vector2Int pos, Ore type)
+            public OreSpawnedEventArgs(Vector2Int pos, Ore type, float richness)
             {
                 Pos = pos;
                 Type = type;
+                Richness = richness;
             }
         }
     }

@@ -225,7 +225,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -603,13 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 615863789}
-  Grass1:
-  - {fileID: 4839906597885068354, guid: 6c5d0756009df3143bde132fca42339e, type: 3}
-  - {fileID: 1058853013391489939, guid: 3ddd632c373ca6d4f8f385a6a27ec9ab, type: 3}
-  - {fileID: 742974163477964535, guid: 9f4955c795557c548a41ccfcaa61fe3b, type: 3}
-  - {fileID: 7578959822861989287, guid: 5ae673f30ba05a642a2d5572d5ebe51d, type: 3}
-  - {fileID: 6743217744599363267, guid: 8c239dcf3954ba4488a080f35fba78fc, type: 3}
-  - {fileID: 3229823045459006064, guid: 171a740edfb56b64496d11e32ac4ee9d, type: 3}
+  tilePrefab: {fileID: 7644303107444990741, guid: 80205f331d15d7740a48430aa8d99ef1, type: 3}
   tileParent: {fileID: 1711876123}
 --- !u!114 &1762007039
 MonoBehaviour:
@@ -623,7 +617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b629f278131a0f4daf168051f0e9af5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coal: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
