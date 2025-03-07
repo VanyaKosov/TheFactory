@@ -8,9 +8,9 @@ namespace Assets.Scripts.Core
     class World
     {
         private const int worldGenRadius = 100;
-        private const float coalSpawnChance = 0.001f; // 0.1% per tile
+        private const float coalSpawnChance = 0.0001f; // 0.01% per tile
         private const int maxRichness = 10_000;
-        private readonly Vector2 coalRadiusVariation = new(5f, 8f);
+        private readonly Vector2 coalRadiusVariation = new(8f, 12f);
 
         private readonly Dictionary<Vector2Int, Tile> map = new();
         public Vector2Int PlayerPos { get; private set; }
@@ -26,6 +26,8 @@ namespace Assets.Scripts.Core
         public void Run()
         {
             GenInitialWorld(worldGenRadius * 2);
+
+            //SpawnOre(Ore.Coal, coalRadiusVariation, new(0, 0));
         }
 
         public void UpdatePLayerPos(Vector3 newPos)
@@ -113,7 +115,7 @@ namespace Assets.Scripts.Core
                     float distSquared = x * x + y * y;
                     if (distSquared <= radiusSquared)
                     {
-                        float richnessPercent = (distSquared / radiusSquared);
+                        float richnessPercent = 99f - (distSquared / radiusSquared);
                         map[pos] = new(map[pos].BackType, type, (int)(richnessPercent * maxRichness));
                         OreSpawned?.Invoke(this, new(pos, type, richnessPercent));
                     }

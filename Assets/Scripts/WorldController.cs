@@ -6,6 +6,8 @@ using UnityEngine;
 public class WorldController : MonoBehaviour
 {
     private const float playerLayer = -10;
+    private const float backGroundLayer = 0;
+    private const float oreLayer = -1;
     private readonly World world = new();
 
     private static readonly Dictionary<Back, Sprite[]> backToSprite = new();
@@ -13,6 +15,7 @@ public class WorldController : MonoBehaviour
 
     public GameObject player;
     public GameObject tilePrefab;
+    public GameObject oreParent;
     public GameObject tileParent;
 
     void Start()
@@ -55,18 +58,19 @@ public class WorldController : MonoBehaviour
         Sprite[] sprites = backToSprite[args.Background];
 
         int idx = UnityEngine.Random.Range(0, sprites.Length);
-        var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, tileParent.transform);
+        var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, backGroundLayer), Quaternion.identity, tileParent.transform);
         created.GetComponent<SpriteRenderer>().sprite = sprites[idx];
     }
 
     private void SpawnOre(object sender, World.OreSpawnedEventArgs args)
     {
-        print(args.Pos);
-
         Sprite[] sprites = oreToSprite[args.Type];
 
-        int idx = 0;
-        var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, tileParent.transform);
+        int idx = sprites.Length - 1 - (int)((args.Richness) / (100f / sprites.Length));
+        idx += UnityEngine.Random.Range(-4, 5);
+        idx = Math.Max(0, idx);
+        idx = Math.Min(sprites.Length - 1, idx); // Maybe change to 8 levels of 8 sprites.
+        var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, oreParent.transform);
         created.GetComponent<SpriteRenderer>().sprite = sprites[idx];
     }
 }
