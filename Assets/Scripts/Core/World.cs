@@ -8,7 +8,7 @@ namespace Assets.Scripts.Core
     class World
     {
         private const int worldGenRadius = 100;
-        private const float coalSpawnChance = 0.0001f; // 0.01% per tile
+        private const float coalSpawnChance = 0.00005f; // 0.005% per tile
         private const int maxRichness = 10_000;
         private readonly Vector2 coalRadiusVariation = new(8f, 12f);
 
@@ -112,10 +112,10 @@ namespace Assets.Scripts.Core
                     Vector2Int pos = new(x, y);
                     GenBackTile(pos);
 
-                    float distSquared = x * x + y * y;
+                    float distSquared = Math.Abs(Mathf.Pow(x - center.x, 2)) + Math.Abs(Mathf.Pow(y - center.y, 2));
                     if (distSquared <= radiusSquared)
                     {
-                        float richnessPercent = 99f - (distSquared / radiusSquared);
+                        float richnessPercent = 99f - (distSquared / radiusSquared) * 100;
                         map[pos] = new(map[pos].BackType, type, (int)(richnessPercent * maxRichness));
                         OreSpawned?.Invoke(this, new(pos, type, richnessPercent));
                     }
@@ -156,13 +156,13 @@ namespace Assets.Scripts.Core
         {
             public readonly Vector2Int Pos;
             public readonly Ore Type;
-            public readonly float Richness;
+            public readonly float RichnessPercent;
 
-            public OreSpawnedEventArgs(Vector2Int pos, Ore type, float richness)
+            public OreSpawnedEventArgs(Vector2Int pos, Ore type, float richnessPercent)
             {
                 Pos = pos;
                 Type = type;
-                Richness = richness;
+                RichnessPercent = richnessPercent;
             }
         }
     }

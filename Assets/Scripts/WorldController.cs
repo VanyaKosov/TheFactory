@@ -66,10 +66,9 @@ public class WorldController : MonoBehaviour
     {
         Sprite[] sprites = oreToSprite[args.Type];
 
-        int idx = sprites.Length - 1 - (int)((args.Richness) / (100f / sprites.Length));
-        idx += UnityEngine.Random.Range(-4, 5);
-        idx = Math.Max(0, idx);
-        idx = Math.Min(sprites.Length - 1, idx); // Maybe change to 8 levels of 8 sprites.
+        int idx = sprites.Length - 1 - (int)(sprites.Length / 100f * args.RichnessPercent);
+        idx -= idx % 8;
+        idx += UnityEngine.Random.Range(0, 8);
         var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, oreParent.transform);
         created.GetComponent<SpriteRenderer>().sprite = sprites[idx];
     }
