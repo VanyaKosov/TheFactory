@@ -11,6 +11,6 @@ namespace Assets.Scripts.Core
         Empty,
         Coal,
         Copper,
-        iron,
+        Iron,
     }
 }

@@ -51,6 +51,8 @@ public class WorldController : MonoBehaviour
     {
         oreToSprite.Add(Ore.Empty, null);
         oreToSprite.Add(Ore.Coal, Resources.LoadAll<Sprite>("Coal"));
+        oreToSprite.Add(Ore.Copper, Resources.LoadAll<Sprite>("Copper"));
+        oreToSprite.Add(Ore.Iron, Resources.LoadAll<Sprite>("Iron"));
     }
 
     private void SpawnTile(object sender, World.TileGeneratedEventArgs args)

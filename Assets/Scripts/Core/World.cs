@@ -8,9 +8,12 @@ namespace Assets.Scripts.Core
     class World
     {
         private const int worldGenRadius = 100;
-        private const float coalSpawnChance = 0.00005f; // 0.005% per tile
-        private const int maxRichness = 10_000;
-        private readonly Vector2 coalRadiusVariation = new(8f, 12f);
+        private readonly OreInfo[] oreInfos =
+        {
+            new(Ore.Coal, new(8f, 12f), 10_000, 0.00001f),
+            new(Ore.Copper, new(8f, 12f), 10_000, 0.00001f),
+            new(Ore.Iron, new(8f, 12f), 10_000, 0.00001f)
+        };
 
         private readonly Dictionary<Vector2Int, Tile> map = new();
         public Vector2Int PlayerPos { get; private set; }
@@ -78,10 +81,14 @@ namespace Assets.Scripts.Core
 
         private void GenTile(Vector2Int pos)
         {
-            if (CheckSpawnChance(coalSpawnChance))
+            foreach (OreInfo oreInfo in oreInfos)
             {
-                SpawnOre(Ore.Coal, coalRadiusVariation, pos);
-                return;
+                if (CheckSpawnChance(oreInfo.spawnChance))
+                {
+                    SpawnOre(oreInfo, pos);
+                    return;
+
+                }
             }
 
             GenBackTile(pos);
@@ -99,25 +106,38 @@ namespace Assets.Scripts.Core
             TileGenerated?.Invoke(this, new(pos, tile.BackType));
         }
 
-        private void SpawnOre(Ore type, Vector2 radiusVariation, Vector2Int center)
+        private void SpawnOre(OreInfo oreInfo, Vector2Int center)
         {
-            float radiusSquared = UnityEngine.Random.Range(radiusVariation.x, radiusVariation.y);
+            float radiusSquared = UnityEngine.Random.Range(oreInfo.radiusVariation.x, oreInfo.radiusVariation.y);
             int intRadius = (int)(radiusSquared + 0.5f);
             radiusSquared *= radiusSquared;
 
-            for (int x = center.x - intRadius; x <= center.x + intRadius; x++)
+            for (int i = 0; i <= 1; i++)
             {
-                for (int y = center.y - intRadius; y <= center.y + intRadius; y++)
+                for (int x = center.x - intRadius; x <= center.x + intRadius; x++)
                 {
-                    Vector2Int pos = new(x, y);
-                    GenBackTile(pos);
-
-                    float distSquared = Math.Abs(Mathf.Pow(x - center.x, 2)) + Math.Abs(Mathf.Pow(y - center.y, 2));
-                    if (distSquared <= radiusSquared)
+                    for (int y = center.y - intRadius; y <= center.y + intRadius; y++)
                     {
-                        float richnessPercent = 99f - (distSquared / radiusSquared) * 100;
-                        map[pos] = new(map[pos].BackType, type, (int)(richnessPercent * maxRichness));
-                        OreSpawned?.Invoke(this, new(pos, type, richnessPercent));
+                        Vector2Int pos = new(x, y);
+                        GenBackTile(pos);
+
+                        float distSquared = Math.Abs(Mathf.Pow(x - center.x, 2)) + Math.Abs(Mathf.Pow(y - center.y, 2));
+                        if (distSquared <= radiusSquared)
+                        {
+                            if (i == 0)
+                            {
+                                if (map[pos]?.OreType != Ore.Empty)
+                                {
+                                    return;
+                                }
+
+                                continue;
+                            }
+
+                            float richnessPercent = 100f - (distSquared / radiusSquared) * 100;
+                            map[pos] = new(map[pos].BackType, oreInfo.type, (int)(richnessPercent * oreInfo.maxRichness));
+                            OreSpawned?.Invoke(this, new(pos, oreInfo.type, richnessPercent));
+                        }
                     }
                 }
             }
@@ -163,6 +183,22 @@ namespace Assets.Scripts.Core
                 Pos = pos;
                 Type = type;
                 RichnessPercent = richnessPercent;
+            }
+        }
+
+        private class OreInfo
+        {
+            public readonly Ore type;
+            public readonly Vector2 radiusVariation;
+            public readonly int maxRichness;
+            public readonly float spawnChance;
+
+            public OreInfo(Ore type, Vector2 radiusVariation, int maxRichness, float spawnChance)
+            {
+                this.type = type;
+                this.radiusVariation = radiusVariation;
+                this.maxRichness = maxRichness;
+                this.spawnChance = spawnChance;
             }
         }
     }
