@@ -341,7 +341,7 @@ Transform:
   m_GameObject: {fileID: 615863789}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.11, y: 4.74, z: -9}
+  m_LocalPosition: {x: 0, y: 0, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -360,8 +360,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ffd086e66fe1d74eadba07f1071b42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 615863793}
+  Camera: {fileID: 519420031}
+  RigidBody: {fileID: 615863793}
   moveSpeed: 10
+  minZoom: 10
+  maxZoom: 40
+  zoomSpeed: 10
 --- !u!50 &615863793
 Rigidbody2D:
   serializedVersion: 5
@@ -598,7 +602,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1762007037}
   - component: {fileID: 1762007038}
-  - component: {fileID: 1762007039}
   m_Layer: 0
   m_Name: WorldScripts
   m_TagString: Untagged
@@ -637,18 +640,6 @@ MonoBehaviour:
   tilePrefab: {fileID: 7644303107444990741, guid: 80205f331d15d7740a48430aa8d99ef1, type: 3}
   oreParent: {fileID: 1579748198}
   tileParent: {fileID: 1711876123}
---- !u!114 &1762007039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762007036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b629f278131a0f4daf168051f0e9af5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

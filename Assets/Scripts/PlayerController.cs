@@ -1,9 +1,14 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D rigidBody;
+    public Camera Camera;
+    public Rigidbody2D RigidBody;
     public float moveSpeed;
+    public float minZoom;
+    public float maxZoom;
+    public float zoomSpeed;
 
     void Start()
     {
@@ -18,6 +23,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        Zoom();
     }
 
     private void Move()
@@ -26,6 +32,16 @@ public class PlayerController : MonoBehaviour
         float yVel = Input.GetAxis("Vertical");
 
         Vector2 moveVector = new Vector2(xVel, yVel).normalized;
-        rigidBody.MovePosition(rigidBody.position + Time.deltaTime * moveSpeed * moveVector);
+        RigidBody.MovePosition(RigidBody.position + Time.deltaTime * moveSpeed * moveVector);
+    }
+
+    private void Zoom()
+    {
+        Camera.orthographicSize =
+            Math.Min(
+                Math.Max(
+                    Camera.orthographicSize + Input.mouseScrollDelta.y * zoomSpeed * -1,
+                minZoom),
+            maxZoom);
     }
 }
