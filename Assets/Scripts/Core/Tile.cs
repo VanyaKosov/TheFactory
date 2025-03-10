@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-
-namespace Assets.Scripts.Core
+﻿namespace Assets.Scripts.Core
 {
     class Tile
     {
+        private static int nextID = 0;
+
         public Back BackType { get; set; }
         public int FeatureID { get; set; }
         public Ore OreType { get; }
@@ -19,6 +14,13 @@ namespace Assets.Scripts.Core
             BackType = backType;
             OreType = oreType;
             OreAmount = oreAmount;
+            FeatureID = -1;
+        }
+
+        public static int genEntityID()
+        {
+            nextID++;
+            return nextID - 1;
         }
     }
 }

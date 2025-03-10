@@ -638,6 +638,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 615863789}
   tilePrefab: {fileID: 7644303107444990741, guid: 80205f331d15d7740a48430aa8d99ef1, type: 3}
+  treePrefabs:
+  - {fileID: 5358693995335720704, guid: 513f030923e1f08418d660ebbf613872, type: 3}
+  - {fileID: 37130282111523190, guid: c3e0c890bd1272144a8615ade07d2044, type: 3}
+  - {fileID: 1063607388584054663, guid: 1182462d8715bb141aa031bc8603b20d, type: 3}
+  - {fileID: 27922003113380516, guid: db8fbb7898302614bba8f09b6bb14710, type: 3}
+  - {fileID: 123624169810926833, guid: f7ae2c2e9b0d54142998224601d5a65f, type: 3}
+  - {fileID: 6786252035740237551, guid: c03c5796ff0bab8458537fa876ae4110, type: 3}
+  - {fileID: 611126736439878980, guid: c4fa8ca3395b591458c74314ba606459, type: 3}
+  - {fileID: 5102033128874756400, guid: da969fcf3379c484b8832fd5cccaafa3, type: 3}
   oreParent: {fileID: 1579748198}
   tileParent: {fileID: 1711876123}
 --- !u!1660057539 &9223372036854775807

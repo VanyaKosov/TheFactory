@@ -6,8 +6,8 @@ using UnityEngine;
 public class WorldController : MonoBehaviour
 {
     private const float playerLayer = -10;
-    private const float backGroundLayer = 0;
-    private const float oreLayer = -1;
+    private const float backGroundLayer = 10;
+    private const float oreLayer = 9;
     private readonly World world = new();
 
     private static readonly Dictionary<Back, Sprite[]> backToSprite = new();
@@ -15,6 +15,7 @@ public class WorldController : MonoBehaviour
 
     public GameObject player;
     public GameObject tilePrefab;
+    public GameObject[] treePrefabs;
     public GameObject oreParent;
     public GameObject tileParent;
 
@@ -27,6 +28,7 @@ public class WorldController : MonoBehaviour
 
         world.TileGenerated += SpawnTile;
         world.OreSpawned += SpawnOre;
+        world.EntityCreated += SpawnEntity;
 
         world.Run();
     }
@@ -73,5 +75,14 @@ public class WorldController : MonoBehaviour
         idx += UnityEngine.Random.Range(0, 8);
         var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, oreParent.transform);
         created.GetComponent<SpriteRenderer>().sprite = sprites[idx];
+    }
+
+    private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
+    {
+        if (args.Type == EntityType.Tree)
+        {
+            int idx = UnityEngine.Random.Range(0, treePrefabs.Length);
+            Instantiate(treePrefabs[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity);
+        }
     }
 }

@@ -1,10 +1,8 @@
 ﻿namespace Assets.Scripts.Core
 {
-    enum Ore
+    enum EntityType
     {
         Empty,
-        Coal,
-        Copper,
-        Iron,
+        Tree
     }
 }

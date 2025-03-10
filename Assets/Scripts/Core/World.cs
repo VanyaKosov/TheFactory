@@ -8,18 +8,22 @@ namespace Assets.Scripts.Core
     class World
     {
         private const int worldGenRadius = 100;
+        private const float treeGenThreshold = 0.25f;
+        private const float treeNoiseScale = 0.005f;
+        private float2 treeNoiseOffset;
         private readonly OreInfo[] oreInfos =
         {
             new(Ore.Coal, new(8f, 12f), 10_000, 0.00001f),
             new(Ore.Copper, new(8f, 12f), 10_000, 0.00001f),
             new(Ore.Iron, new(8f, 12f), 10_000, 0.00001f)
         };
-
         private readonly Dictionary<Vector2Int, Tile> map = new();
-        public Vector2Int PlayerPos { get; private set; }
+        private readonly Dictionary<int, Entity> entities = new();
 
+        public Vector2Int PlayerPos { get; private set; }
         public event EventHandler<TileGeneratedEventArgs> TileGenerated;
         public event EventHandler<OreSpawnedEventArgs> OreSpawned;
+        public event EventHandler<EntityCreatedEventArgs> EntityCreated;
 
         public World()
         {
@@ -28,6 +32,7 @@ namespace Assets.Scripts.Core
 
         public void Run()
         {
+            treeNoiseOffset = new(UnityEngine.Random.Range(-100_000, 100_000), UnityEngine.Random.Range(-100_000, 100_000));
             GenInitialWorld(worldGenRadius * 2);
 
             //SpawnOre(Ore.Coal, coalRadiusVariation, new(0, 0));
@@ -87,11 +92,11 @@ namespace Assets.Scripts.Core
                 {
                     SpawnOre(oreInfo, pos);
                     return;
-
                 }
             }
 
             GenBackTile(pos);
+            GenTree(pos);
         }
 
         private void GenBackTile(Vector2Int pos)
@@ -143,6 +148,31 @@ namespace Assets.Scripts.Core
             }
         }
 
+        private void GenTree(Vector2Int pos)
+        {
+            Vector2Int treeSize = new(2, 3);
+            float2 noisePos = new float2(pos.x * treeNoiseScale, pos.y * treeNoiseScale) + treeNoiseOffset;
+            float noiseVal = noise.snoise(new float2(noisePos.x, noisePos.y));
+            if (noiseVal < treeGenThreshold) return;
+            if (!CheckAvailability(pos, treeSize)) return;
+
+            int id = Tile.genEntityID();
+            for (int x = pos.x; x < pos.x + treeSize.x; x++)
+            {
+                for (int y = pos.y; y < pos.y + treeSize.y; y++)
+                {
+                    Vector2Int newPos = new(x, y);
+                    GenBackTile(newPos);
+                    map[newPos].FeatureID = id;
+
+                }
+            }
+
+            Entity tree = new(Rotation.Up, pos, treeSize, new() { ItemType.Wood }, new() { 10 });
+            entities.Add(id, tree);
+            EntityCreated?.Invoke(this, new(pos, EntityType.Tree));
+        }
+
         private void GenInitialWorld(int radius)
         {
             for (int x = -radius; x <= radius; x++)
@@ -152,6 +182,23 @@ namespace Assets.Scripts.Core
                     GenTile(new(x, y));
                 }
             }
+        }
+
+        private bool CheckAvailability(Vector2Int pos, Vector2Int size)
+        {
+            for (int x = pos.x; x < pos.x + size.x; x++)
+            {
+                for (int y = pos.y; y < pos.y + size.y; y++)
+                {
+                    Vector2Int newPos = new(x, y);
+                    if (map.ContainsKey(newPos) && map[newPos].FeatureID != -1)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
 
         private bool CheckSpawnChance(float chance)
@@ -183,6 +230,18 @@ namespace Assets.Scripts.Core
                 Pos = pos;
                 Type = type;
                 RichnessPercent = richnessPercent;
+            }
+        }
+
+        public class EntityCreatedEventArgs : EventArgs
+        {
+            public readonly Vector2Int Pos;
+            public readonly EntityType Type;
+
+            public EntityCreatedEventArgs(Vector2Int pos, EntityType type)
+            {
+                Pos = pos;
+                Type = type;
             }
         }
 
