@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tree-04-j-shadow_0: 8967065694245677745
+      tree-04-j-shadow_1: -3037483246991070411
+      tree-04-j-shadow_2: -5841667325770264788
+      tree-04-j-shadow_3: 8516264658136697265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

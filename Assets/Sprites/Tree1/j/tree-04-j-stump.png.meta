@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tree-04-j-stump_0: 7251645536425307256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

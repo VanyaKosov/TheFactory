@@ -151,8 +151,12 @@ namespace Assets.Scripts.Core
         private void GenTree(Vector2Int pos)
         {
             Vector2Int treeSize = new(2, 3);
-            float2 noisePos = new float2(pos.x * treeNoiseScale, pos.y * treeNoiseScale) + treeNoiseOffset;
-            float noiseVal = noise.snoise(new float2(noisePos.x, noisePos.y));
+            float2 noisePos = new(pos.x * treeNoiseScale, pos.y * treeNoiseScale);
+            float noiseVal = noise.snoise(noisePos + treeNoiseOffset);
+            noiseVal += noise.snoise(noisePos * 2) / 2;
+            noiseVal += noise.snoise(noisePos * 4) / 4;
+            noiseVal += noise.snoise(noisePos * 8) / 8;
+            noiseVal += noise.snoise(noisePos * 16) / 16;
             if (noiseVal < treeGenThreshold) return;
             if (!CheckAvailability(pos, treeSize)) return;
 
