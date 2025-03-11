@@ -49,6 +49,11 @@ namespace Assets.Scripts.Core
             ExpandMap(roundedPos);
         }
 
+        public void PlaceEntity(EntityType type, Vector2Int pos)
+        {
+
+        }
+
         private void ExpandMap(Vector2Int newPlayerPos)
         {
             Vector2Int offset = newPlayerPos - PlayerPos;
