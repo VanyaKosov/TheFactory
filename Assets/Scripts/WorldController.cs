@@ -7,7 +7,7 @@ public class WorldController : MonoBehaviour
 {
     private const float playerLayer = -10;
     private const float backGroundLayer = 10;
-    private const float oreLayer = 9;
+    private const float oreLayer = 1;
     private readonly World world = new();
 
     private static readonly Dictionary<Back, Sprite[]> backToSprite = new();
@@ -63,7 +63,9 @@ public class WorldController : MonoBehaviour
 
         int idx = UnityEngine.Random.Range(0, sprites.Length);
         var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, backGroundLayer), Quaternion.identity, tileParent.transform);
-        created.GetComponent<SpriteRenderer>().sprite = sprites[idx];
+        var renderer = created.GetComponent<SpriteRenderer>();
+        renderer.sprite = sprites[idx];
+        renderer.sortingOrder = -10;
     }
 
     private void SpawnOre(object sender, World.OreSpawnedEventArgs args)
@@ -74,7 +76,9 @@ public class WorldController : MonoBehaviour
         idx -= idx % 8;
         idx += UnityEngine.Random.Range(0, 8);
         var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, oreParent.transform);
-        created.GetComponent<SpriteRenderer>().sprite = sprites[idx];
+        var renderer = created.GetComponent<SpriteRenderer>();
+        renderer.sprite = sprites[idx];
+        //renderer.sortingOrder = 1;
     }
 
     private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
