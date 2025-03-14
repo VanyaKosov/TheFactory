@@ -38,34 +38,28 @@ public class UIController : MonoBehaviour
             slotSize * inventory.Width + spaceBetweenSlots * (inventory.Width + 1),
             slotSize * inventory.Height + spaceBetweenSlots * (inventory.Height + 1));
 
-        float xOffest = 0;
-        if (inventory.Width % 2 == 0)
-        {
-            xOffest += slotSize * (inventory.Width / 2) + spaceBetweenSlots * ((inventory.Width - 1) / 2f) + spaceBetweenSlots;
-        }
-        else
-        {
-            xOffest += slotSize * ((inventory.Width - 1) / 2) + slotSize / 2 + spaceBetweenSlots * ((inventory.Width + 1) / 2);
-        }
-        xOffest -= slotSize / 2 + spaceBetweenSlots;
+        float xOffest = (inventory.Width * slotSize + (inventory.Width - 1) * spaceBetweenSlots) / 2;
+        xOffest -= slotSize / 2;
 
-        float yOffest = 0;
-        if (inventory.Height % 2 == 0)
-        {
-            yOffest += slotSize * (inventory.Height / 2) + spaceBetweenSlots * ((inventory.Height - 1) / 2f) + spaceBetweenSlots;
-        }
-        else
-        {
-            yOffest += slotSize * ((inventory.Height - 1) / 2) + slotSize / 2 + spaceBetweenSlots * ((inventory.Height + 1) / 2);
-        }
-        yOffest -= slotSize / 2 + spaceBetweenSlots;
+        float yOffest = (inventory.Height * slotSize + (inventory.Height - 1) * spaceBetweenSlots) / 2;
+        yOffest -= slotSize / 2;
 
-        for (float xPos = rectTransform.position.x - xOffest; xPos < rectTransform.position.x + xOffest + slotSize; xPos += slotSize + spaceBetweenSlots)
+        for (int x = 0; x < inventory.Width; x++)
         {
-            for (float yPos = rectTransform.position.y - yOffest; yPos < rectTransform.position.y + yOffest + slotSize; yPos += slotSize + spaceBetweenSlots)
+            for (int y = 0; y < inventory.Height; y++)
             {
-                Instantiate(SlotPrefab, new Vector3(xPos, yPos), Quaternion.identity, back.transform);
+                Vector3 worldPos = new(back.transform.position.x + x * (slotSize + spaceBetweenSlots) - xOffest,
+                    back.transform.position.y + y * (slotSize + spaceBetweenSlots) - yOffest);
+                GameObject slot = Instantiate(SlotPrefab, worldPos, Quaternion.identity, back.transform);
+                InvSlotInfo slotInfo = slot.GetComponent<InvSlotInfo>();
+                slotInfo.SlotPos = new(x, y);
+                slotInfo.SlotClicked += OnSlotClick;
             }
         }
+    }
+
+    private void OnSlotClick(object sender, InvSlotInfo.SlotClickedEventArgs args)
+    {
+        print(args.SlotPos);
     }
 }

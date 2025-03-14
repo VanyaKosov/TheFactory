@@ -578,7 +578,7 @@ MonoBehaviour:
   InventoryParent: {fileID: 1229636091}
   Canvas: {fileID: 2042186225}
   InventoryBackPrefab: {fileID: 3648267955918465723, guid: 548cca2a4e9b21940a65403bb5251d43, type: 3}
-  SlotPrefab: {fileID: 2452075102062963849, guid: 1af7c231beb2d5d42a5d9559a054ddec, type: 3}
+  SlotPrefab: {fileID: 5853213013112112345, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
 --- !u!4 &1437781439
 Transform:
   m_ObjectHideFlags: 0
@@ -811,7 +811,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
