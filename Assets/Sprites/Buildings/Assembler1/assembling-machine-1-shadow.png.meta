@@ -1,0 +1,856 @@
+fileFormatVersion: 2
+guid: abfd476974737be47b5cc989f9bfc2e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4961262169644375257
+    second: assembling-machine-1-shadow_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72363c4b75e062bb0800000000000000
+      internalID: -4961262169644375257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d18ed2b8ead74b4a8f72d5ffb662b4e
+      internalID: -824227584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6c440c5dfe4814096d08c4b676e87f
+      internalID: -259303068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcd95a42bed6064e9938be0e5c3c4b8
+      internalID: -331091258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_4
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a2584c2a201974c9a39fe4afa76071
+      internalID: -469761938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_5
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283e9d9373cd0b64e85310df92de5d95
+      internalID: 62931122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_6
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c73584ab4a680048a61bdfbfffe1392
+      internalID: 262161642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 495
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d294dac4190023a429561c1a9a1bf4ef
+      internalID: -1507816373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eeee8d44c053446967ef2d5079e1ce
+      internalID: 1208152867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d16b1bb317c3c5429abd413a5efc7e4
+      internalID: -1071926642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_10
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2288b2273a80da942b563d9e84123939
+      internalID: 453712579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_11
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bc87657e70f634a8e359d5081e187a
+      internalID: -1190593141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_12
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2136decd7c8c034aaed1b977dbf48c2
+      internalID: 1267755233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_13
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97decbb8d3d434e4e93321d99ab7cf6f
+      internalID: 453118535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_14
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6af69a219b7254b95ff6457b0197f2
+      internalID: -1887817701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_15
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 330
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9142c697771e1d848a40a26f0167d33a
+      internalID: -1442090966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66810ea18badacc4897ae20f6f660dee
+      internalID: -1503775048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_17
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebbcfbbbe473e24fb4285759332ee9e
+      internalID: -893239401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_18
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf1f1a1f30f674db381aec6f11a3fa
+      internalID: -1985293761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_19
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021fcf9f6842c9e499d026fb42417031
+      internalID: -537337425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_20
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9aa562611dbbb418dd595cd8dc95ed
+      internalID: 1334552621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_21
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2d8c6792e9452458427ceb7738667f
+      internalID: 1591539408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_22
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f605cc731d2a34f88c825f82469948
+      internalID: 1719585285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_23
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 165
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181f798bec13dee459c3f2bb61f34c44
+      internalID: 1821323868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d743ce47a9240e45b486b4dfd6f7876
+      internalID: 151042417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_25
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d444912063d60424e812ea5e86ca3f56
+      internalID: 1686059729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_26
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554e3086d241fec4b9bbb23aaa338922
+      internalID: -1830545599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_27
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a43428e20fafba4093042f3e4e13f4e
+      internalID: -1471379407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_28
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36082f9975e482a438519233a5480f0d
+      internalID: -1866829523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_29
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d59a74f8b38134982e0c3767e4157e
+      internalID: 401089765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_30
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc2ee82ce91834c88208371408ee23
+      internalID: 551190674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assembling-machine-1-shadow_31
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 0
+        width: 190
+        height: 165
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54204fa626927947815de8461dd324e
+      internalID: -1647038419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 201e1504f25b3dc4fb428f95c41a065b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      assembling-machine-1-shadow_0: -4961262169644375257
+      assembling-machine-1-shadow_1: -824227584
+      assembling-machine-1-shadow_10: 453712579
+      assembling-machine-1-shadow_11: -1190593141
+      assembling-machine-1-shadow_12: 1267755233
+      assembling-machine-1-shadow_13: 453118535
+      assembling-machine-1-shadow_14: -1887817701
+      assembling-machine-1-shadow_15: -1442090966
+      assembling-machine-1-shadow_16: -1503775048
+      assembling-machine-1-shadow_17: -893239401
+      assembling-machine-1-shadow_18: -1985293761
+      assembling-machine-1-shadow_19: -537337425
+      assembling-machine-1-shadow_2: -259303068
+      assembling-machine-1-shadow_20: 1334552621
+      assembling-machine-1-shadow_21: 1591539408
+      assembling-machine-1-shadow_22: 1719585285
+      assembling-machine-1-shadow_23: 1821323868
+      assembling-machine-1-shadow_24: 151042417
+      assembling-machine-1-shadow_25: 1686059729
+      assembling-machine-1-shadow_26: -1830545599
+      assembling-machine-1-shadow_27: -1471379407
+      assembling-machine-1-shadow_28: -1866829523
+      assembling-machine-1-shadow_29: 401089765
+      assembling-machine-1-shadow_3: -331091258
+      assembling-machine-1-shadow_30: 551190674
+      assembling-machine-1-shadow_31: -1647038419
+      assembling-machine-1-shadow_4: -469761938
+      assembling-machine-1-shadow_5: 62931122
+      assembling-machine-1-shadow_6: 262161642
+      assembling-machine-1-shadow_7: -1507816373
+      assembling-machine-1-shadow_8: 1208152867
+      assembling-machine-1-shadow_9: -1071926642
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

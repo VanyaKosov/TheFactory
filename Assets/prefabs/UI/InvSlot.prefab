@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 764657357306236246}
   - component: {fileID: 852825237651552509}
   - component: {fileID: 8005466097702292360}
-  - component: {fileID: -450548424201144379}
   m_Layer: 5
   m_Name: InvSlot
   m_TagString: Untagged
@@ -121,15 +120,3 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-450548424201144379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5853213013112112345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d7d644ac26d4d4eab2877743b3dbf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

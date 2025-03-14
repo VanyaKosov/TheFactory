@@ -1,5 +1,6 @@
 using Assets.Scripts.Core;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
@@ -51,15 +52,15 @@ public class UIController : MonoBehaviour
                 Vector3 worldPos = new(back.transform.position.x + x * (slotSize + spaceBetweenSlots) - xOffest,
                     back.transform.position.y + y * (slotSize + spaceBetweenSlots) - yOffest);
                 GameObject slot = Instantiate(SlotPrefab, worldPos, Quaternion.identity, back.transform);
-                InvSlotInfo slotInfo = slot.GetComponent<InvSlotInfo>();
-                slotInfo.SlotPos = new(x, y);
-                slotInfo.SlotClicked += OnSlotClick;
+                Button button = slot.GetComponent<Button>();
+                Vector2Int pos = new(x, y);
+                button.onClick.AddListener(() => TestClick(pos));
             }
         }
     }
 
-    private void OnSlotClick(object sender, InvSlotInfo.SlotClickedEventArgs args)
+    public void TestClick(Vector2Int pos)
     {
-        print(args.SlotPos);
+        print(pos);
     }
 }
