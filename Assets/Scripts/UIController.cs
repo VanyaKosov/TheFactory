@@ -35,32 +35,34 @@ public class UIController : MonoBehaviour
         GameObject back = Instantiate(InventoryBackPrefab, InventoryParent.transform);
         RectTransform rectTransform = back.GetComponent<RectTransform>();
         rectTransform.sizeDelta = new(
-            slotSize * Inventory.Width + spaceBetweenSlots * (Inventory.Width + 1),
-            slotSize * Inventory.Height + spaceBetweenSlots * (Inventory.Height + 1));
+            slotSize * inventory.Width + spaceBetweenSlots * (inventory.Width + 1),
+            slotSize * inventory.Height + spaceBetweenSlots * (inventory.Height + 1));
 
-        float x = 0;
-        if (Inventory.Width % 2 == 0)
+        float xOffest = 0;
+        if (inventory.Width % 2 == 0)
         {
-            x -= slotSize * (Inventory.Width / 2) + spaceBetweenSlots * (Inventory.Width / 2 + 1);
+            xOffest += slotSize * (inventory.Width / 2) + spaceBetweenSlots * ((inventory.Width - 1) / 2f) + spaceBetweenSlots;
         }
         else
         {
-            x -= slotSize * (Inventory.Width / 2) + slotSize / 2 + spaceBetweenSlots * (Inventory.Width / 2 + 1);
+            xOffest += slotSize * ((inventory.Width - 1) / 2) + slotSize / 2 + spaceBetweenSlots * ((inventory.Width + 1) / 2);
         }
+        xOffest -= slotSize / 2 + spaceBetweenSlots;
 
-        float y = 0;
-        if (Inventory.Height % 2 == 0)
+        float yOffest = 0;
+        if (inventory.Height % 2 == 0)
         {
-            y -= slotSize * (Inventory.Height / 2) + spaceBetweenSlots * (Inventory.Height / 2 + 1);
+            yOffest += slotSize * (inventory.Height / 2) + spaceBetweenSlots * ((inventory.Height - 1) / 2f) + spaceBetweenSlots;
         }
         else
         {
-            y -= slotSize * (Inventory.Height / 2) + slotSize / 2 + spaceBetweenSlots * (Inventory.Height / 2 + 1);
+            yOffest += slotSize * ((inventory.Height - 1) / 2) + slotSize / 2 + spaceBetweenSlots * ((inventory.Height + 1) / 2);
         }
+        yOffest -= slotSize / 2 + spaceBetweenSlots;
 
-        for (float xPos = x; xPos < Inventory.Width; xPos += slotSize + spaceBetweenSlots)
+        for (float xPos = rectTransform.position.x - xOffest; xPos < rectTransform.position.x + xOffest + slotSize; xPos += slotSize + spaceBetweenSlots)
         {
-            for (float yPos = y; yPos < Inventory.Height; yPos += slotSize + spaceBetweenSlots)
+            for (float yPos = rectTransform.position.y - yOffest; yPos < rectTransform.position.y + yOffest + slotSize; yPos += slotSize + spaceBetweenSlots)
             {
                 Instantiate(SlotPrefab, new Vector3(xPos, yPos), Quaternion.identity, back.transform);
             }
