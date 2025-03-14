@@ -18,6 +18,7 @@ public class WorldController : MonoBehaviour
     public GameObject[] treePrefabs;
     public GameObject oreParent;
     public GameObject tileParent;
+    public GameObject treeParent;
 
     void Start()
     {
@@ -78,7 +79,6 @@ public class WorldController : MonoBehaviour
         var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, oreParent.transform);
         var renderer = created.GetComponent<SpriteRenderer>();
         renderer.sprite = sprites[idx];
-        //renderer.sortingOrder = 1;
     }
 
     private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
@@ -86,7 +86,7 @@ public class WorldController : MonoBehaviour
         if (args.Type == EntityType.Tree)
         {
             int idx = UnityEngine.Random.Range(0, treePrefabs.Length);
-            Instantiate(treePrefabs[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity);
+            Instantiate(treePrefabs[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, treeParent.transform);
         }
     }
 }

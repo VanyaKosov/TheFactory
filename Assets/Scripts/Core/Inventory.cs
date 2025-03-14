@@ -6,8 +6,8 @@ namespace Assets.Scripts.Core
 {
     class Inventory
     {
-        public const int invWidth = 10;
-        public const int invHeight = 16;
+        public const int Width = 10;
+        public const int Height = 16;
         private readonly static Dictionary<ItemType, int> stackSizes = new()
         {
             { ItemType.Empty, 0 },
@@ -16,7 +16,7 @@ namespace Assets.Scripts.Core
             { ItemType.Iron_ore, 100 },
             { ItemType.Copper_ore, 100 }
         };
-        private readonly Slot[,] inventory = new Slot[invWidth, invHeight];
+        private readonly Slot[,] inventory = new Slot[Width, Height];
 
         public Inventory()
         {
