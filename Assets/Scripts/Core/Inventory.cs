@@ -8,6 +8,7 @@ namespace Assets.Scripts.Core
     {
         public int Width { get; private set; } = 10;
         public int Height { get; private set; } = 16;
+        public int HotbarWidth { get; private set; } = 10;
         private readonly static Dictionary<ItemType, int> stackSizes = new()
         {
             { ItemType.Empty, 0 },
@@ -17,6 +18,7 @@ namespace Assets.Scripts.Core
             { ItemType.Copper_ore, 100 }
         };
         private readonly Slot[,] inventory;
+        private readonly Slot[,] hotbar;
 
         public Inventory()
         {
