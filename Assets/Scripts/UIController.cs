@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    private const float spaceBetweenSlots = 8f;
+    private const float slotSize = 40f;
     private readonly Inventory inventory = new();
-    private const float spaceBetweenSlots = 10f;
-    private float slotSize;
-    private bool invState = false;
+    private bool invOpen = false;
 
     public GameObject InventoryParent;
     public Canvas Canvas;
@@ -16,18 +16,16 @@ public class UIController : MonoBehaviour
 
     void Start()
     {
-        slotSize = SlotPrefab.GetComponent<RectTransform>().rect.width;
-
         GenerateInventory();
-        InventoryParent.SetActive(invState);
+        InventoryParent.SetActive(invOpen);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            invState = !invState;
-            InventoryParent.SetActive(invState);
+            invOpen = !invOpen;
+            InventoryParent.SetActive(invOpen);
         }
     }
 
@@ -52,14 +50,15 @@ public class UIController : MonoBehaviour
                 Vector3 worldPos = new(back.transform.position.x + x * (slotSize + spaceBetweenSlots) - xOffest,
                     back.transform.position.y + y * (slotSize + spaceBetweenSlots) - yOffest);
                 GameObject slot = Instantiate(SlotPrefab, worldPos, Quaternion.identity, back.transform);
+                slot.GetComponent<RectTransform>().sizeDelta = new(slotSize, slotSize);
                 Button button = slot.GetComponent<Button>();
                 Vector2Int pos = new(x, y);
-                button.onClick.AddListener(() => TestClick(pos));
+                button.onClick.AddListener(() => OnSlotClick(pos));
             }
         }
     }
 
-    public void TestClick(Vector2Int pos)
+    private void OnSlotClick(Vector2Int pos)
     {
         print(pos);
     }
