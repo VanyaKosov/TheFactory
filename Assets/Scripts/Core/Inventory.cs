@@ -81,6 +81,7 @@ namespace Assets.Scripts.Core
             }
 
             inventory[0, 0] = new(ItemType.Assembler1, 100);
+            SetInvItem?.Invoke(this, new(new(0, 0), ItemType.Assembler1, 100));
         }
 
         private class Slot

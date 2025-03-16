@@ -18,6 +18,7 @@ public class UIController : MonoBehaviour
     public ItemSpriteCatalog ItemSpriteCatalog;
     public GameObject InventoryParent;
     public GameObject HotbarParent;
+    public GameObject CursorParent;
     public Camera Camera;
     public Canvas Canvas;
     public GameObject InventoryBackPrefab;
@@ -90,15 +91,22 @@ public class UIController : MonoBehaviour
     }
     private void UpdateCursorSlotPos()
     {
-        cursorSlotRenderer.gameObject.transform.position = Camera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 canvasSize = Canvas.GetComponent<RectTransform>().rect.size;
+        Vector3 mousePos = Camera.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mouseScale = mousePos / new Vector2(Camera.orthographicSize * 2 * Camera.aspect, Camera.orthographicSize * 2);
+        Vector3 canvasPos = Canvas.gameObject.transform.position + new Vector3(mouseScale.x * canvasSize.x, mouseScale.y * canvasSize.y);
+
+        cursorSlotRenderer.gameObject.transform.position = canvasPos;
     }
 
     private SlotRenderer GenerateCursorSlot()
     {
-        GameObject slot = Instantiate(CursorSlotPrefab, new(), Quaternion.identity, InventoryParent.transform);
+        GameObject slot = Instantiate(CursorSlotPrefab, new(), Quaternion.identity, CursorParent.transform);
         slot.GetComponent<RectTransform>().sizeDelta = new(slotSize, slotSize);
+        SlotRenderer slotRenderer = slot.GetComponent<SlotRenderer>();
+        slotRenderer.ItemSpriteCatalog = ItemSpriteCatalog;
 
-        return slot.GetComponent<SlotRenderer>();
+        return slotRenderer;
     }
 
     private void OnInvSlotClick(Vector2Int pos)

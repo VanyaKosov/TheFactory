@@ -1,5 +1,6 @@
 using Assets.Scripts.Core;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,7 +25,11 @@ public class WorldController : MonoBehaviour
     void OnEnable()
     {
         UIController.inventory = world.Inventory;
+    }
 
+
+    void Start()
+    {
         InitializeBackToSprite();
         InitializeOreToSprite();
 
@@ -34,12 +39,7 @@ public class WorldController : MonoBehaviour
         world.OreSpawned += SpawnOre;
         world.EntityCreated += SpawnEntity;
 
-        world.Run();
-    }
-
-    void Start()
-    {
-
+        StartCoroutine(StartWorld());
     }
 
     void Update()
@@ -98,5 +98,11 @@ public class WorldController : MonoBehaviour
             int idx = UnityEngine.Random.Range(0, treePrefabs.Length);
             Instantiate(treePrefabs[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, treeParent.transform);
         }
+    }
+
+    private IEnumerator StartWorld()
+    {
+        world.Run();
+        yield return null;
     }
 }

@@ -169,6 +169,41 @@ MonoBehaviour:
   Iron_Ore: {fileID: -5473642129915720609, guid: 2650fab284d1bb049b10d8f80c8be7ea, type: 3}
   Copper_Ore: {fileID: 3789500478940260231, guid: 63997aa537bab404bbd94f64bf608901, type: 3}
   Assembler1: {fileID: -3960403711501517520, guid: e1ab9f470705df741b81ba3c53129903, type: 3}
+--- !u!1 &31069430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31069431}
+  m_Layer: 5
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &31069431
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31069430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2042186222}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &499921460
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,9 +695,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5fca89e863178049b993e8edec101e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemSpriteCatalog: {fileID: 0}
+  ItemSpriteCatalog: {fileID: 334682}
   InventoryParent: {fileID: 1229636091}
   HotbarParent: {fileID: 499921460}
+  CursorParent: {fileID: 31069430}
   Camera: {fileID: 519420033}
   Canvas: {fileID: 2042186225}
   InventoryBackPrefab: {fileID: 3648267955918465723, guid: 548cca2a4e9b21940a65403bb5251d43, type: 3}
@@ -837,6 +873,7 @@ RectTransform:
   m_Children:
   - {fileID: 1229636092}
   - {fileID: 499921461}
+  - {fileID: 31069431}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
