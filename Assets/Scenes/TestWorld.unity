@@ -119,6 +119,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &334680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 334681}
+  - component: {fileID: 334682}
+  m_Layer: 0
+  m_Name: ItemSpriteCatalog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &334681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83141089b2e6ace48af0eaa01057334c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Empty: {fileID: 0}
+  Wood: {fileID: 7440981132975211316, guid: e8161e8efe1144e45a1a8c45726d649c, type: 3}
+  Coal: {fileID: 6482737013037613852, guid: 3abf49434e380e24696fcb7efcadf048, type: 3}
+  Iron_Ore: {fileID: -5473642129915720609, guid: 2650fab284d1bb049b10d8f80c8be7ea, type: 3}
+  Copper_Ore: {fileID: 3789500478940260231, guid: 63997aa537bab404bbd94f64bf608901, type: 3}
+  Assembler1: {fileID: -3960403711501517520, guid: e1ab9f470705df741b81ba3c53129903, type: 3}
 --- !u!1 &499921460
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,11 +660,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5fca89e863178049b993e8edec101e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemSpriteCatalog: {fileID: 0}
   InventoryParent: {fileID: 1229636091}
   HotbarParent: {fileID: 499921460}
+  Camera: {fileID: 519420033}
   Canvas: {fileID: 2042186225}
   InventoryBackPrefab: {fileID: 3648267955918465723, guid: 548cca2a4e9b21940a65403bb5251d43, type: 3}
   SlotPrefab: {fileID: 5853213013112112345, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+  CursorSlotPrefab: {fileID: 5853213013112112345, guid: 8b6f0f3ba9830b44b99b371746fbacde, type: 3}
 --- !u!4 &1437781439
 Transform:
   m_ObjectHideFlags: 0
@@ -703,7 +756,7 @@ GameObject:
   - component: {fileID: 1762007037}
   - component: {fileID: 1762007038}
   m_Layer: 0
-  m_Name: WorldScripts
+  m_Name: WorldController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -736,6 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250e3ff6e03e308488b565316dd15534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIController: {fileID: 1437781438}
   player: {fileID: 615863789}
   tilePrefab: {fileID: 7644303107444990741, guid: 80205f331d15d7740a48430aa8d99ef1, type: 3}
   treePrefabs:
@@ -858,10 +912,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1308711516}
-  - {fileID: 2042186222}
-  - {fileID: 615863791}
-  - {fileID: 1762007037}
-  - {fileID: 1437781439}
+  - {fileID: 334681}
   - {fileID: 1711876124}
   - {fileID: 1579748199}
   - {fileID: 1242269258}
+  - {fileID: 1762007037}
+  - {fileID: 1437781439}
+  - {fileID: 2042186222}
+  - {fileID: 615863791}

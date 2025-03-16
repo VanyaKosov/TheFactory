@@ -13,6 +13,7 @@ public class WorldController : MonoBehaviour
     private static readonly Dictionary<Back, Sprite[]> backToSprite = new();
     private static readonly Dictionary<Ore, Sprite[]> oreToSprite = new();
 
+    public UIController UIController;
     public GameObject player;
     public GameObject tilePrefab;
     public GameObject[] treePrefabs;
@@ -20,8 +21,10 @@ public class WorldController : MonoBehaviour
     public GameObject tileParent;
     public GameObject treeParent;
 
-    void Start()
+    void OnEnable()
     {
+        UIController.inventory = world.Inventory;
+
         InitializeBackToSprite();
         InitializeOreToSprite();
 
@@ -34,6 +37,11 @@ public class WorldController : MonoBehaviour
         world.Run();
     }
 
+    void Start()
+    {
+
+    }
+
     void Update()
     {
         world.UpdatePLayerPos(player.transform.position);
@@ -42,6 +50,8 @@ public class WorldController : MonoBehaviour
     void OnDestroy()
     {
         world.TileGenerated -= SpawnTile;
+        world.OreSpawned -= SpawnOre;
+        world.EntityCreated -= SpawnEntity;
     }
 
     private void InitializeBackToSprite()

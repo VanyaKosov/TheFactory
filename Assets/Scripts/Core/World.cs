@@ -20,6 +20,7 @@ namespace Assets.Scripts.Core
         private readonly Dictionary<Vector2Int, Tile> map = new();
         private readonly Dictionary<int, Entity> entities = new();
 
+        public Inventory Inventory { get; private set; }
         public Vector2Int PlayerPos { get; private set; }
         public event EventHandler<TileGeneratedEventArgs> TileGenerated;
         public event EventHandler<OreSpawnedEventArgs> OreSpawned;
@@ -27,6 +28,7 @@ namespace Assets.Scripts.Core
 
         public World()
         {
+            Inventory = new();
             PlayerPos = new(0, 0);
         }
 
@@ -34,6 +36,8 @@ namespace Assets.Scripts.Core
         {
             treeNoiseOffset = new(UnityEngine.Random.Range(-100_000, 100_000), UnityEngine.Random.Range(-100_000, 100_000));
             GenInitialWorld(worldGenRadius * 2);
+
+            Inventory.Run();
 
             //SpawnOre(Ore.Coal, coalRadiusVariation, new(0, 0));
         }
