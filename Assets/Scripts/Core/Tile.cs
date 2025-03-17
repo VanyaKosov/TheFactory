@@ -1,15 +1,15 @@
-﻿namespace Assets.Scripts.Core
+﻿namespace Dev.Kosov.Factory.Core
 {
-    class Tile
+    internal class Tile
     {
         private static int nextID = 0;
 
-        public Back BackType { get; set; }
-        public int FeatureID { get; set; }
-        public Ore OreType { get; }
-        public int OreAmount { get; }
+        internal Back BackType { get; set; }
+        internal int FeatureID { get; set; }
+        internal Ore OreType { get; }
+        internal int OreAmount { get; }
 
-        public Tile(Back backType, Ore oreType, int oreAmount)
+        internal Tile(Back backType, Ore oreType, int oreAmount)
         {
             BackType = backType;
             OreType = oreType;
@@ -17,7 +17,7 @@
             FeatureID = -1;
         }
 
-        public static int genEntityID()
+        internal static int GenEntityID()
         {
             nextID++;
             return nextID - 1;

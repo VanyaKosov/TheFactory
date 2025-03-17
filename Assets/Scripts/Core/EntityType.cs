@@ -1,6 +1,6 @@
-﻿namespace Assets.Scripts.Core
+﻿namespace Dev.Kosov.Factory.Core
 {
-    enum EntityType
+    public enum EntityType
     {
         Empty,
         Tree

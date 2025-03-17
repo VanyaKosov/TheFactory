@@ -1,6 +1,6 @@
-﻿namespace Assets.Scripts.Core
+﻿namespace Dev.Kosov.Factory.Core
 {
-    enum Rotation
+    internal enum Rotation
     {
         Up,
         down,

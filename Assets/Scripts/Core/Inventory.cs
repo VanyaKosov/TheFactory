@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.Core
+namespace Dev.Kosov.Factory.Core
 {
     public class Inventory
     {
@@ -52,15 +52,15 @@ namespace Assets.Scripts.Core
             SetCursorItem?.Invoke(this, new(cursorSlot.Type, cursorSlot.Amount));
         }
 
-        //public void PutToInventory(Vector2Int pos)
-        //{
-        //    (cursorSlot, inventory[pos.x, pos.y]) = (inventory[pos.x, pos.y], cursorSlot);
-        //}
+        internal void AddItemToCursor()
+        {
 
-        //public void PutToHotbar(Vector2Int pos)
-        //{
-        //    (cursorSlot, hotbar[pos.x, pos.y]) = (hotbar[pos.x, pos.y], cursorSlot);
-        //}
+        }
+
+        internal void TakeItemFromCursor()
+        {
+
+        }
 
         private void DefaultInvInitialize()
         {
@@ -89,7 +89,7 @@ namespace Assets.Scripts.Core
             public ItemType Type { get; set; }
             public int Amount { get; set; }
 
-            public Slot(ItemType type, int amount)
+            internal Slot(ItemType type, int amount)
             {
                 Type = type;
                 Amount = amount;
@@ -101,7 +101,7 @@ namespace Assets.Scripts.Core
             public readonly ItemType Type;
             public readonly int Amount;
 
-            public SetCursorEventArgs(ItemType type, int amount)
+            internal SetCursorEventArgs(ItemType type, int amount)
             {
                 Type = type;
                 Amount = amount;
@@ -114,7 +114,7 @@ namespace Assets.Scripts.Core
             public readonly ItemType Type;
             public readonly int Amount;
 
-            public SetItemEventArgs(Vector2Int pos, ItemType type, int amount)
+            internal SetItemEventArgs(Vector2Int pos, ItemType type, int amount)
             {
                 Pos = pos;
                 Type = type;

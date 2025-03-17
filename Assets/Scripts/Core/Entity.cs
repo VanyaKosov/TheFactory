@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.Core
+namespace Dev.Kosov.Factory.Core
 {
-    class Entity
+    internal class Entity
     {
-        public readonly Rotation rotation;
-        public readonly Vector2Int topLeftPos;
-        public readonly Vector2Int size;
-        public readonly List<ItemType> items;
-        public readonly List<int> itemCounts;
+        internal readonly Rotation rotation;
+        internal readonly Vector2Int topLeftPos;
+        internal readonly Vector2Int size;
+        internal readonly List<ItemType> items;
+        internal readonly List<int> itemCounts;
 
-        public Entity(Rotation rotation, Vector2Int topLeftPos, Vector2Int size, List<ItemType> items, List<int> itemCounts)
+        internal Entity(Rotation rotation, Vector2Int topLeftPos, Vector2Int size, List<ItemType> items, List<int> itemCounts)
         {
             this.rotation = rotation;
             this.topLeftPos = topLeftPos;

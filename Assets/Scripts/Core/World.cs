@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-namespace Assets.Scripts.Core
+namespace Dev.Kosov.Factory.Core
 {
-    class World
+    public class World
     {
         private const int worldGenRadius = 100;
         private const float treeGenThreshold = 0.25f;
@@ -42,7 +42,7 @@ namespace Assets.Scripts.Core
             //SpawnOre(Ore.Coal, coalRadiusVariation, new(0, 0));
         }
 
-        public void UpdatePLayerPos(Vector3 newPos)
+        public void UpdatePlayerPos(Vector3 newPos)
         {
             Vector2Int roundedPos = new(Mathf.RoundToInt(newPos.x), Mathf.RoundToInt(newPos.y));
             if (roundedPos.Equals(PlayerPos))
@@ -169,7 +169,7 @@ namespace Assets.Scripts.Core
             if (noiseVal < treeGenThreshold) return;
             if (!CheckAvailability(pos, treeSize)) return;
 
-            int id = Tile.genEntityID();
+            int id = Tile.GenEntityID();
             for (int x = pos.x; x < pos.x + treeSize.x; x++)
             {
                 for (int y = pos.y; y < pos.y + treeSize.y; y++)
@@ -225,7 +225,7 @@ namespace Assets.Scripts.Core
             public readonly Vector2Int Pos;
             public readonly Back Background;
 
-            public TileGeneratedEventArgs(Vector2Int pos, Back background)
+            internal TileGeneratedEventArgs(Vector2Int pos, Back background)
             {
                 Pos = pos;
                 Background = background;
@@ -238,7 +238,7 @@ namespace Assets.Scripts.Core
             public readonly Ore Type;
             public readonly float RichnessPercent;
 
-            public OreSpawnedEventArgs(Vector2Int pos, Ore type, float richnessPercent)
+            internal OreSpawnedEventArgs(Vector2Int pos, Ore type, float richnessPercent)
             {
                 Pos = pos;
                 Type = type;
@@ -251,7 +251,7 @@ namespace Assets.Scripts.Core
             public readonly Vector2Int Pos;
             public readonly EntityType Type;
 
-            public EntityCreatedEventArgs(Vector2Int pos, EntityType type)
+            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type)
             {
                 Pos = pos;
                 Type = type;

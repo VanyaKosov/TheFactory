@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Core
+﻿namespace Dev.Kosov.Factory.Core
 {
     public enum ItemType
     {

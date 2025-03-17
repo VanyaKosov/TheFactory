@@ -1,6 +1,6 @@
-﻿namespace Assets.Scripts.Core
+﻿namespace Dev.Kosov.Factory.Core
 {
-    enum Ore
+    public enum Ore
     {
         Empty,
         Coal,
