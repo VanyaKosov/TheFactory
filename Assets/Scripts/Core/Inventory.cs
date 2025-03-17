@@ -16,11 +16,21 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Wood, 100 },
             { ItemType.Coal, 100 },
             { ItemType.Iron_ore, 100 },
-            { ItemType.Copper_ore, 100 }
+            { ItemType.Copper_ore, 100 },
+            {ItemType.Assembler1, 100 }
         };
-        private readonly Slot[,] inventory;
-        private readonly Slot[,] hotbar;
-        private Slot cursorSlot;
+        private readonly InvSlot[,] inventory;
+        private readonly InvSlot[,] hotbar;
+        internal readonly static Dictionary<ItemType, bool> isPlacable = new()
+        {
+            { ItemType.Empty, false },
+            { ItemType.Wood, false },
+            { ItemType.Coal, false },
+            { ItemType.Iron_ore, false },
+            { ItemType.Copper_ore, false },
+            {ItemType.Assembler1, true }
+        };
+        internal InvSlot cursorSlot;
 
         public event EventHandler<SetItemEventArgs> SetInvItem;
         public event EventHandler<SetItemEventArgs> SetHotbarItem;
@@ -28,8 +38,8 @@ namespace Dev.Kosov.Factory.Core
 
         public Inventory()
         {
-            inventory = new Slot[Width, Height];
-            hotbar = new Slot[HotbarWidth, HotbarHeight];
+            inventory = new InvSlot[Width, Height];
+            hotbar = new InvSlot[HotbarWidth, HotbarHeight];
             cursorSlot = new(ItemType.Empty, 0);
         }
 
@@ -52,14 +62,35 @@ namespace Dev.Kosov.Factory.Core
             SetCursorItem?.Invoke(this, new(cursorSlot.Type, cursorSlot.Amount));
         }
 
-        internal void AddItemToCursor()
+        internal int AddItemToCursor(ItemType type, int amount) // Returns remainder
         {
+            if (cursorSlot.Type != type) return amount;
 
+            int overflow = cursorSlot.Amount + amount - stackSizes[type];
+            if (overflow <= 0)
+            {
+                cursorSlot.Amount += amount;
+                return 0;
+            }
+
+            cursorSlot.Amount = stackSizes[type];
+            return amount;
         }
 
-        internal void TakeItemFromCursor()
+        internal int TakeItemFromCursor(ItemType type, int amount) // Returns remainder
         {
+            if (cursorSlot.Type != type) return amount;
 
+            if (amount <= cursorSlot.Amount)
+            {
+                int removedAmount = cursorSlot.Amount;
+                cursorSlot.Amount = 0;
+                cursorSlot.Type = ItemType.Empty;
+                return removedAmount;
+            }
+
+            cursorSlot.Amount -= amount;
+            return 0;
         }
 
         private void DefaultInvInitialize()
@@ -84,17 +115,7 @@ namespace Dev.Kosov.Factory.Core
             SetInvItem?.Invoke(this, new(new(0, 0), ItemType.Assembler1, 100));
         }
 
-        private class Slot
-        {
-            public ItemType Type { get; set; }
-            public int Amount { get; set; }
-
-            internal Slot(ItemType type, int amount)
-            {
-                Type = type;
-                Amount = amount;
-            }
-        }
+        
 
         public class SetCursorEventArgs : EventArgs
         {

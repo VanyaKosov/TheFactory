@@ -7,6 +7,7 @@
         Coal,
         Iron_ore,
         Copper_ore,
-        Assembler1
+        Assembler1,
+        WoodChest
     }
 }

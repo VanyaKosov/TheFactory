@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dev.Kosov.Factory.Core.Entities;
+using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
@@ -53,9 +54,38 @@ namespace Dev.Kosov.Factory.Core
             ExpandMap(roundedPos);
         }
 
-        public void PlaceEntity(EntityType type, Vector2Int pos)
+        public void PlaceEntity(Vector2Int pos)
         {
+            if (Inventory.cursorSlot.Amount <= 0) return;
+            if (!Inventory.isPlacable[Inventory.cursorSlot.Type]) return;
 
+            Entity entity = null;
+            EntityType type = EntityType.Empty;
+            switch (Inventory.cursorSlot.Type)
+            {
+                case ItemType.Assembler1:
+                    // TODO
+                    break;
+                case ItemType.WoodChest:
+                    entity = new WoodChest(Rotation.Up, pos);
+                    type = EntityType.WoodChest;
+                    break;
+                default:
+                    break;
+            }
+
+            if (!CheckAvailability(entity.topLeftPos, entity.size)) return;
+            int entityID = Tile.GenEntityID();
+            for (int x = entity.topLeftPos.x; x < entity.topLeftPos.x + entity.size.x; x++)
+            {
+                for (int y = entity.topLeftPos.y; y < entity.topLeftPos.y + entity.size.y; y++)
+                {
+                    Vector2Int newPos = new(x, y);
+                    map[newPos].FeatureID = entityID;
+                }
+            }
+
+            EntityCreated?.Invoke(this, new(pos, type, entity.size));
         }
 
         private void ExpandMap(Vector2Int newPlayerPos)
@@ -183,7 +213,7 @@ namespace Dev.Kosov.Factory.Core
 
             Entity tree = new(Rotation.Up, pos, treeSize, new() { ItemType.Wood }, new() { 10 });
             entities.Add(id, tree);
-            EntityCreated?.Invoke(this, new(pos, EntityType.Tree));
+            EntityCreated?.Invoke(this, new(pos, EntityType.Tree, treeSize));
         }
 
         private void GenInitialWorld(int radius)
@@ -250,11 +280,13 @@ namespace Dev.Kosov.Factory.Core
         {
             public readonly Vector2Int Pos;
             public readonly EntityType Type;
+            public readonly Vector2Int Size;
 
-            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type)
+            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type, Vector2Int size)
             {
                 Pos = pos;
                 Type = type;
+                Size = size;
             }
         }
 

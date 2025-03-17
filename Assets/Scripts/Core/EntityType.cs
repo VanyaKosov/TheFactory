@@ -3,6 +3,8 @@
     public enum EntityType
     {
         Empty,
-        Tree
+        Tree,
+        Assembler1,
+        WoodChest
     }
 }
