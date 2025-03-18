@@ -16,6 +16,8 @@ namespace Dev.Kosov.Factory.Graphics
         private SlotRenderer cursorSlotRenderer;
         private bool invOpen = false;
         private Inventory inventory;
+        private RectTransform canvasRectTransform;
+        private RectTransform cursorRectTransform;
 
         public ItemSpriteCatalog ItemSpriteCatalog;
         public GameObject InventoryParent;
@@ -34,7 +36,10 @@ namespace Dev.Kosov.Factory.Graphics
 
         void Start()
         {
+            canvasRectTransform = Canvas.GetComponent<RectTransform>();
             cursorSlotRenderer = GenerateCursorSlot();
+            cursorRectTransform = cursorSlotRenderer.GetComponent<RectTransform>();
+
             invSlotRenderers = GenerateSlotPanel(InventoryParent, 
                 new(Canvas.transform.position.x, Canvas.transform.position.y + invVertOffset),
                 inventory.Width, inventory.Height, OnInvSlotClick);
@@ -51,9 +56,6 @@ namespace Dev.Kosov.Factory.Graphics
 
         void Update()
         {
-            //var rectTr = Canvas.GetComponent<RectTransform>();
-            //print(rectTr.rect.width + " " + rectTr.rect.height);
-
             UpdateCursorSlotPos();
 
             if (Input.GetKeyDown(KeyCode.Tab))
@@ -83,8 +85,6 @@ namespace Dev.Kosov.Factory.Graphics
             {
                 for (int y = 0; y < height; y++)
                 {
-                    //Vector3 worldPos = new(back.transform.position.x + x * (slotSize + spaceBetweenSlots) - xOffest,
-                    //    back.transform.position.y + y * (slotSize + spaceBetweenSlots) - yOffest);
                     Vector3 worldPos = new( x * (slotSize + spaceBetweenSlots) - xOffest,
                         y * (slotSize + spaceBetweenSlots) - yOffest);
                     GameObject slot = Instantiate(SlotPrefab, worldPos, Quaternion.identity, back.transform);
@@ -108,15 +108,13 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void UpdateCursorSlotPos()
         {
-            Vector2 canvasSize = Canvas.GetComponent<RectTransform>().rect.size; //TODO: get component once
+            Vector2 canvasSize = canvasRectTransform.rect.size;
             Vector3 mousePos = Camera.ScreenToWorldPoint(Input.mousePosition);
             Vector3 mouseOffset = mousePos - Camera.gameObject.transform.position;
             Vector2 scale = canvasSize / new Vector2(Camera.orthographicSize * 2 * Camera.aspect, Camera.orthographicSize * 2);
             Vector3 scaledMouseOffset = mouseOffset * scale;
-            //Vector3 canvasPos = Canvas.gameObject.transform.position + scaledMouseOffset;
 
-            //cursorSlotRenderer.gameObject.transform.position = canvasPos;
-            cursorSlotRenderer.GetComponent<RectTransform>().anchoredPosition = scaledMouseOffset;
+            cursorRectTransform.anchoredPosition = scaledMouseOffset;
         }
 
         private SlotRenderer GenerateCursorSlot()
