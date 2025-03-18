@@ -15,8 +15,8 @@ namespace Dev.Kosov.Factory.Graphics
         private SlotRenderer[,] hotbarSlotRenderers;
         private SlotRenderer cursorSlotRenderer;
         private bool invOpen = false;
+        private Inventory inventory;
 
-        public Inventory inventory;
         public ItemSpriteCatalog ItemSpriteCatalog;
         public GameObject InventoryParent;
         public GameObject HotbarParent;
@@ -26,6 +26,11 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject InventoryBackPrefab;
         public GameObject SlotPrefab;
         public GameObject CursorSlotPrefab;
+
+        void OnEnable()
+        {
+            inventory = GameObject.Find("WorldController").GetComponent<WorldController>().World.Inventory;
+        }
 
         void Start()
         {
@@ -91,12 +96,15 @@ namespace Dev.Kosov.Factory.Graphics
 
             return slotRenderers;
         }
+
         private void UpdateCursorSlotPos()
         {
-            Vector2 canvasSize = Canvas.GetComponent<RectTransform>().rect.size;
+            Vector2 canvasSize = Canvas.GetComponent<RectTransform>().rect.size; //TODO: get component once
             Vector3 mousePos = Camera.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 mouseScale = mousePos / new Vector2(Camera.orthographicSize * 2 * Camera.aspect, Camera.orthographicSize * 2);
-            Vector3 canvasPos = Canvas.gameObject.transform.position + new Vector3(mouseScale.x * canvasSize.x, mouseScale.y * canvasSize.y);
+            Vector3 mouseOffset = mousePos - Camera.gameObject.transform.position;
+            Vector2 scale = canvasSize / new Vector2(Camera.orthographicSize * 2 * Camera.aspect, Camera.orthographicSize * 2);
+            Vector3 scaledMouseOffset = mouseOffset * scale;
+            Vector3 canvasPos = Canvas.gameObject.transform.position + scaledMouseOffset;
 
             cursorSlotRenderer.gameObject.transform.position = canvasPos;
         }

@@ -11,23 +11,21 @@ namespace Dev.Kosov.Factory.Graphics
         private const float playerLayer = -10;
         private const float backGroundLayer = 10;
         private const float oreLayer = 1;
-        private readonly World world = new();
 
         private static readonly Dictionary<Back, Sprite[]> backToSprite = new();
         private static readonly Dictionary<Ore, Sprite[]> oreToSprite = new();
 
+        public readonly World World = new();
+        public EntityPlacer EntityPlacer;
         public UIController UIController;
-        public GameObject player;
-        public GameObject tilePrefab;
-        public GameObject[] treePrefabs;
-        public GameObject oreParent;
-        public GameObject tileParent;
-        public GameObject treeParent;
+        public GameObject Player;
+        public GameObject TilePrefab;
+        public GameObject OreParent;
+        public GameObject TileParent;
 
-        void OnEnable()
-        {
-            UIController.inventory = world.Inventory;
-        }
+        //void OnEnable()
+        //{
+        //}
 
 
         void Start()
@@ -35,25 +33,25 @@ namespace Dev.Kosov.Factory.Graphics
             InitializeBackToSprite();
             InitializeOreToSprite();
 
-            player.transform.position = new(world.PlayerPos.x, world.PlayerPos.y, playerLayer);
+            Player.transform.position = new(World.PlayerPos.x, World.PlayerPos.y, playerLayer);
 
-            world.TileGenerated += SpawnTile;
-            world.OreSpawned += SpawnOre;
-            world.EntityCreated += SpawnEntity;
+            World.TileGenerated += SpawnTile;
+            World.OreSpawned += SpawnOre;
+            //world.EntityCreated += SpawnEntity;
 
             StartCoroutine(StartWorld());
         }
 
         void Update()
         {
-            world.UpdatePlayerPos(player.transform.position);
+            World.UpdatePlayerPos(Player.transform.position);
         }
 
         void OnDestroy()
         {
-            world.TileGenerated -= SpawnTile;
-            world.OreSpawned -= SpawnOre;
-            world.EntityCreated -= SpawnEntity;
+            World.TileGenerated -= SpawnTile;
+            World.OreSpawned -= SpawnOre;
+            //world.EntityCreated -= SpawnEntity;
         }
 
         private void InitializeBackToSprite()
@@ -75,7 +73,7 @@ namespace Dev.Kosov.Factory.Graphics
             Sprite[] sprites = backToSprite[args.Background];
 
             int idx = UnityEngine.Random.Range(0, sprites.Length);
-            var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, backGroundLayer), Quaternion.identity, tileParent.transform);
+            var created = Instantiate(TilePrefab, new Vector3(args.Pos.x, args.Pos.y, backGroundLayer), Quaternion.identity, TileParent.transform);
             var renderer = created.GetComponent<SpriteRenderer>();
             renderer.sprite = sprites[idx];
             renderer.sortingOrder = -10;
@@ -88,23 +86,16 @@ namespace Dev.Kosov.Factory.Graphics
             int idx = sprites.Length - 1 - (int)(sprites.Length / 100f * args.RichnessPercent);
             idx -= idx % 8;
             idx += UnityEngine.Random.Range(0, 8);
-            var created = Instantiate(tilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, oreParent.transform);
+            var created = Instantiate(TilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, OreParent.transform);
             var renderer = created.GetComponent<SpriteRenderer>();
             renderer.sprite = sprites[idx];
         }
 
-        private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
-        {
-            if (args.Type == EntityType.Tree)
-            {
-                int idx = UnityEngine.Random.Range(0, treePrefabs.Length);
-                Instantiate(treePrefabs[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, treeParent.transform);
-            }
-        }
+
 
         private IEnumerator StartWorld()
         {
-            world.Run();
+            World.Run();
             yield return null;
         }
     }

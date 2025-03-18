@@ -7,10 +7,10 @@ namespace Dev.Kosov.Factory.Graphics
     {
         public Camera Camera;
         public Rigidbody2D RigidBody;
-        public float moveSpeed;
-        public float minZoom;
-        public float maxZoom;
-        public float zoomSpeed;
+        public float MoveSpeed;
+        public float MinZoom;
+        public float MaxZoom;
+        public float ZoomSpeed;
 
         void Start()
         {
@@ -34,7 +34,7 @@ namespace Dev.Kosov.Factory.Graphics
             float yVel = Input.GetAxis("Vertical");
 
             Vector2 moveVector = new Vector2(xVel, yVel).normalized;
-            RigidBody.MovePosition(RigidBody.position + Time.deltaTime * moveSpeed * moveVector);
+            RigidBody.MovePosition(RigidBody.position + Time.deltaTime * MoveSpeed * moveVector);
         }
 
         private void Zoom()
@@ -42,9 +42,9 @@ namespace Dev.Kosov.Factory.Graphics
             Camera.orthographicSize =
                 Math.Min(
                     Math.Max(
-                        Camera.orthographicSize + Input.mouseScrollDelta.y * zoomSpeed * -1,
-                    minZoom),
-                maxZoom);
+                        Camera.orthographicSize + Input.mouseScrollDelta.y * ZoomSpeed * -1,
+                    MinZoom),
+                MaxZoom);
         }
     }
 }
