@@ -37,7 +37,9 @@ namespace Dev.Kosov.Factory.Graphics
             }
 
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
-            Vector2Int pos = new((int)(mouseWorldPos.x), (int)(mouseWorldPos.y));
+            int x = (int)(mouseWorldPos.x + (mouseWorldPos.x < 0 ? -0.5f : 0.5f));
+            int y = (int)(mouseWorldPos.y + (mouseWorldPos.y < 0 ? -0.5f : 0.5f));
+            Vector2Int pos = new(x, y);
             world.PlaceEntity(pos);
         }
 
