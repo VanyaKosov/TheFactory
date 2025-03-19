@@ -12,6 +12,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite Iron_Ore;
         public Sprite Copper_Ore;
         public Sprite Assembler1;
+        public Sprite WoodChest;
 
         private Dictionary<ItemType, Sprite> typeToSprite = new();
 
@@ -23,6 +24,7 @@ namespace Dev.Kosov.Factory.Graphics
             typeToSprite.Add(ItemType.Iron_ore, Iron_Ore);
             typeToSprite.Add(ItemType.Copper_ore, Copper_Ore);
             typeToSprite.Add(ItemType.Assembler1, Assembler1);
+            typeToSprite.Add(ItemType.WoodChest, WoodChest);
         }
 
         public Sprite GetSprite(ItemType type)

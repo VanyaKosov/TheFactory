@@ -28,7 +28,8 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Coal, false },
             { ItemType.Iron_ore, false },
             { ItemType.Copper_ore, false },
-            {ItemType.Assembler1, true }
+            { ItemType.Assembler1, true },
+            { ItemType.WoodChest, true }
         };
         internal InvSlot cursorSlot;
 
@@ -113,6 +114,8 @@ namespace Dev.Kosov.Factory.Core
 
             inventory[0, 0] = new(ItemType.Assembler1, 100);
             SetInvItem?.Invoke(this, new(new(0, 0), ItemType.Assembler1, 100));
+            inventory[1, 0] = new(ItemType.WoodChest, 50);
+            SetInvItem?.Invoke(this, new(new(1, 0), ItemType.WoodChest, 50));
         }
 
         

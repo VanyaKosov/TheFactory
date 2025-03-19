@@ -169,6 +169,7 @@ MonoBehaviour:
   Iron_Ore: {fileID: -5473642129915720609, guid: 2650fab284d1bb049b10d8f80c8be7ea, type: 3}
   Copper_Ore: {fileID: 3789500478940260231, guid: 63997aa537bab404bbd94f64bf608901, type: 3}
   Assembler1: {fileID: -3960403711501517520, guid: e1ab9f470705df741b81ba3c53129903, type: 3}
+  WoodChest: {fileID: -7832606381233642770, guid: 48e45ede799697e4e9660e99609b29ce, type: 3}
 --- !u!1 &31069430
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242269258}
   m_Layer: 0
-  m_Name: Trees
+  m_Name: Entities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,7 +947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a913a3696204f4282c7c0c05dc36ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TreeParent: {fileID: 1242269257}
+  Camera: {fileID: 1371078440}
+  EntityParent: {fileID: 1242269257}
   TreePrefabs:
   - {fileID: 5358693995335720704, guid: 513f030923e1f08418d660ebbf613872, type: 3}
   - {fileID: 37130282111523190, guid: c3e0c890bd1272144a8615ade07d2044, type: 3}
