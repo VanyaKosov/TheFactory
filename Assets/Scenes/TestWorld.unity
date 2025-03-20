@@ -826,7 +826,6 @@ GameObject:
   - component: {fileID: 2042186225}
   - component: {fileID: 2042186224}
   - component: {fileID: 2042186223}
-  - component: {fileID: 2042186227}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -919,19 +918,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &2042186227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042186221}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 291c5dac368180d45b3116dc15233834, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Raycaster: {fileID: 2042186223}
 --- !u!1 &2082821264
 GameObject:
   m_ObjectHideFlags: 0
