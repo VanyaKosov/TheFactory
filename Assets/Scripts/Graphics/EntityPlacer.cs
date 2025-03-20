@@ -1,5 +1,8 @@
 using Dev.Kosov.Factory.Core;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Dev.Kosov.Factory.Graphics
 {
@@ -9,6 +12,10 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject EntityParent;
         public GameObject[] TreePrefabs;
         public GameObject WoodChestPrefab;
+        public GraphicRaycaster Raycaster;
+
+        private List<RaycastResult> results;
+        private PointerEventData clickData;
 
         private World world;
 
@@ -21,7 +28,8 @@ namespace Dev.Kosov.Factory.Graphics
 
         void Start()
         {
-
+            results = new();
+            clickData = new(EventSystem.current);
         }
 
         void Update()
@@ -31,10 +39,10 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void TryPlaceBuilding()
         {
-            if (!Input.GetMouseButtonDown(0))
-            {
-                return;
-            }
+
+            if (!Input.GetMouseButtonDown(0)) return;
+            UpdateRaycaster();
+            if (results.Count != 0) return;
 
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
             int x = (int)(mouseWorldPos.x + (mouseWorldPos.x < 0 ? -0.5f : 0.5f));
@@ -62,11 +70,15 @@ namespace Dev.Kosov.Factory.Graphics
             }
 
             Instantiate(prefab, new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, EntityParent.transform);
-            //if (args.Type == EntityType.Tree)
-            //{
-            //    int idx = Random.Range(0, TreePrefabs.Length);
-            //    Instantiate(TreePrefabs[idx], new Vector3(args.Pos.x, args.Pos.y), Quaternion.identity, EntityParent.transform);
-            //}
+        }
+
+        private void UpdateRaycaster()
+        {
+            clickData.position = Input.mousePosition;
+            results.Clear();
+            Raycaster.Raycast(clickData, results);
+
+            
         }
     }
 }

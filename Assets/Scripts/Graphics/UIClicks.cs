@@ -8,7 +8,6 @@ namespace Dev.Kosov.Factory.Graphics
     public class UIClicks : MonoBehaviour
     {
         public GraphicRaycaster Raycaster;
-        public Camera Camera;
 
         private List<RaycastResult> results;
         private PointerEventData clickData;
