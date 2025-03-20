@@ -40,10 +40,10 @@ namespace Dev.Kosov.Factory.Graphics
             cursorSlotRenderer = GenerateCursorSlot();
             cursorRectTransform = cursorSlotRenderer.GetComponent<RectTransform>();
 
-            invSlotRenderers = GenerateSlotPanel(InventoryParent, 
+            invSlotRenderers = GenerateSlotPanel(InventoryParent,
                 new(Canvas.transform.position.x, Canvas.transform.position.y + invVertOffset),
                 inventory.Width, inventory.Height, OnInvSlotClick);
-            hotbarSlotRenderers = GenerateSlotPanel(HotbarParent, 
+            hotbarSlotRenderers = GenerateSlotPanel(HotbarParent,
                 new(Canvas.transform.position.x, Canvas.transform.position.y * hotbarBottomHalfOffsetPercent),
                 inventory.HotbarWidth, 1, OnHotarSlotClick);
 
@@ -85,7 +85,7 @@ namespace Dev.Kosov.Factory.Graphics
             {
                 for (int y = 0; y < height; y++)
                 {
-                    Vector3 worldPos = new( x * (slotSize + spaceBetweenSlots) - xOffest,
+                    Vector3 worldPos = new(x * (slotSize + spaceBetweenSlots) - xOffest,
                         y * (slotSize + spaceBetweenSlots) - yOffest);
                     GameObject slot = Instantiate(SlotPrefab, worldPos, Quaternion.identity, back.transform);
 
