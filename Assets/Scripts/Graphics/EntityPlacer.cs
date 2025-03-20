@@ -18,10 +18,12 @@ namespace Dev.Kosov.Factory.Graphics
         private PointerEventData clickData;
 
         private World world;
+        private Inventory inventory;
 
         void OnEnable()
         {
             world = GameObject.Find("WorldController").GetComponent<WorldController>().World;
+            inventory = world.Inventory;
 
             world.EntityCreated += SpawnEntity;
         }
@@ -35,6 +37,11 @@ namespace Dev.Kosov.Factory.Graphics
         void Update()
         {
             TryPlaceBuilding();
+        }
+
+        private void DisplayBuildingHologram()
+        {
+
         }
 
         private void TryPlaceBuilding()
