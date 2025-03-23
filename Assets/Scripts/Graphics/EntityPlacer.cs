@@ -23,11 +23,12 @@ namespace Dev.Kosov.Factory.Graphics
 
         public SpriteCatalogs SpriteCatalogs;
         public Camera Camera;
+        public GraphicRaycaster Raycaster;
         public GameObject BuildingHologram;
         public GameObject EntityParent;
         public GameObject[] TreePrefabs;
+        public GameObject Assembler1Prefab;
         public GameObject WoodChestPrefab;
-        public GraphicRaycaster Raycaster;
 
         void OnEnable()
         {
@@ -60,7 +61,7 @@ namespace Dev.Kosov.Factory.Graphics
             BuildingHologram.transform.position = worldController.MapToWorldPos(pos);
             //Vector2 worldPos = CenterEntityPos(pos)
 
-            if (!Inventory.Placable.Contains(hologramItemType))
+            if (!ItemInfo.Get(hologramItemType).Placable)
             {
                 BuildingHologram.SetActive(false);
                 return;
@@ -97,6 +98,7 @@ namespace Dev.Kosov.Factory.Graphics
                     prefab = TreePrefabs[idx];
                     break;
                 case EntityType.Assembler1:
+                    prefab = Assembler1Prefab;
                     break;
                 case EntityType.WoodChest:
                     prefab = WoodChestPrefab;

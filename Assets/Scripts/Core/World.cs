@@ -57,14 +57,16 @@ namespace Dev.Kosov.Factory.Core
         public void PlaceEntity(Vector2Int pos)
         {
             if (Inventory.CursorSlot.Amount <= 0) return;
-            if (!Inventory.Placable.Contains(Inventory.CursorSlot.Type)) return;
+            //if (!Inventory.Placable.Contains(Inventory.CursorSlot.Type)) return;
+            if (!ItemInfo.Get(Inventory.CursorSlot.Type).Placable) return;
 
             Entity entity = null;
             EntityType type = EntityType.Empty;
             switch (Inventory.CursorSlot.Type)
             {
                 case ItemType.Assembler1:
-                    // TODO
+                    entity = new Assembler1(Rotation.Up, pos);
+                    type = EntityType.Assembler1;
                     break;
                 case ItemType.WoodChest:
                     entity = new WoodChest(Rotation.Up, pos);
@@ -74,18 +76,19 @@ namespace Dev.Kosov.Factory.Core
                     break;
             }
 
-            if (!CheckAvailability(entity.topLeftPos, entity.size)) return;
+            Vector2Int size = EntityInfo.Get(type).Size;
+            if (!CheckAvailability(entity.topLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
-            for (int x = entity.topLeftPos.x; x < entity.topLeftPos.x + entity.size.x; x++)
+            for (int x = entity.topLeftPos.x; x < entity.topLeftPos.x + size.x; x++)
             {
-                for (int y = entity.topLeftPos.y; y < entity.topLeftPos.y + entity.size.y; y++)
+                for (int y = entity.topLeftPos.y; y < entity.topLeftPos.y + size.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
                     map[newPos].FeatureID = entityID;
                 }
             }
 
-            EntityCreated?.Invoke(this, new(pos, type, entity.size));
+            EntityCreated?.Invoke(this, new(pos, type, size));
         }
 
         private void ExpandMap(Vector2Int newPlayerPos)
@@ -211,7 +214,7 @@ namespace Dev.Kosov.Factory.Core
                 }
             }
 
-            Entity tree = new(Rotation.Up, pos, treeSize, new() { ItemType.Wood }, new() { 10 });
+            Entity tree = new(Rotation.Up, pos, new() { ItemType.Wood }, new() { 10 });
             entities.Add(id, tree);
             EntityCreated?.Invoke(this, new(pos, EntityType.Tree, treeSize));
         }
