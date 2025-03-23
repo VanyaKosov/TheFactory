@@ -19,7 +19,7 @@ namespace Dev.Kosov.Factory.Graphics
         private RectTransform canvasRectTransform;
         private RectTransform cursorRectTransform;
 
-        public ItemSpriteCatalog ItemSpriteCatalog;
+        public SpriteCatalogs SpriteCatalogs;
         public GameObject InventoryParent;
         public GameObject HotbarParent;
         public GameObject CursorParent;
@@ -94,7 +94,7 @@ namespace Dev.Kosov.Factory.Graphics
                     slotRectTrans.anchoredPosition = worldPos;
 
                     SlotRenderer slotRenderer = slot.GetComponent<SlotRenderer>();
-                    slotRenderer.ItemSpriteCatalog = ItemSpriteCatalog;
+                    slotRenderer.ItemSpriteCatalog = SpriteCatalogs;
                     slotRenderers[x, y] = slotRenderer;
 
                     Button button = slot.GetComponent<Button>();
@@ -122,7 +122,7 @@ namespace Dev.Kosov.Factory.Graphics
             GameObject slot = Instantiate(CursorSlotPrefab, new(), Quaternion.identity, CursorParent.transform);
             slot.GetComponent<RectTransform>().sizeDelta = new(slotSize, slotSize);
             SlotRenderer slotRenderer = slot.GetComponent<SlotRenderer>();
-            slotRenderer.ItemSpriteCatalog = ItemSpriteCatalog;
+            slotRenderer.ItemSpriteCatalog = SpriteCatalogs;
 
             return slotRenderer;
         }

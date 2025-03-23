@@ -9,7 +9,7 @@ namespace Dev.Kosov.Factory.Graphics
     {
         public Image ItemRenderer;
         public TMP_Text TextRenderer;
-        public ItemSpriteCatalog ItemSpriteCatalog;
+        public SpriteCatalogs ItemSpriteCatalog;
 
         public void SetItem(ItemType type, int amount)
         {
@@ -20,7 +20,7 @@ namespace Dev.Kosov.Factory.Graphics
                 return;
             }
 
-            ItemRenderer.sprite = ItemSpriteCatalog.GetSprite(type);
+            ItemRenderer.sprite = ItemSpriteCatalog.GetIconSprite(type);
             TextRenderer.text = amount.ToString();
             ItemRenderer.gameObject.SetActive(true);
             TextRenderer.gameObject.SetActive(true);

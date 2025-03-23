@@ -56,12 +56,12 @@ namespace Dev.Kosov.Factory.Core
 
         public void PlaceEntity(Vector2Int pos)
         {
-            if (Inventory.cursorSlot.Amount <= 0) return;
-            if (!Inventory.isPlacable[Inventory.cursorSlot.Type]) return;
+            if (Inventory.CursorSlot.Amount <= 0) return;
+            if (!Inventory.Placable.Contains(Inventory.CursorSlot.Type)) return;
 
             Entity entity = null;
             EntityType type = EntityType.Empty;
-            switch (Inventory.cursorSlot.Type)
+            switch (Inventory.CursorSlot.Type)
             {
                 case ItemType.Assembler1:
                     // TODO

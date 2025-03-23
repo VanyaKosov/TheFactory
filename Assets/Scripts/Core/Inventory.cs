@@ -6,10 +6,6 @@ namespace Dev.Kosov.Factory.Core
 {
     public class Inventory
     {
-        public int Width { get; private set; } = 10;
-        public int Height { get; private set; } = 16;
-        public int HotbarWidth { get; private set; } = 10;
-        public int HotbarHeight { get; private set; } = 1;
         private readonly static Dictionary<ItemType, int> stackSizes = new()
         {
             { ItemType.Empty, 0 },
@@ -21,17 +17,18 @@ namespace Dev.Kosov.Factory.Core
         };
         private readonly InvSlot[,] inventory;
         private readonly InvSlot[,] hotbar;
-        internal readonly static Dictionary<ItemType, bool> isPlacable = new()
+
+        internal InvSlot CursorSlot { get; private set; }
+
+        public int Width { get; private set; } = 10;
+        public int Height { get; private set; } = 16;
+        public int HotbarWidth { get; private set; } = 10;
+        public int HotbarHeight { get; private set; } = 1;
+        public readonly static HashSet<ItemType> Placable = new()
         {
-            { ItemType.Empty, false },
-            { ItemType.Wood, false },
-            { ItemType.Coal, false },
-            { ItemType.Iron_ore, false },
-            { ItemType.Copper_ore, false },
-            { ItemType.Assembler1, true },
-            { ItemType.WoodChest, true }
+            ItemType.Assembler1,
+            ItemType.WoodChest
         };
-        internal InvSlot cursorSlot;
 
         public event EventHandler<SetItemEventArgs> SetInvItem;
         public event EventHandler<SetItemEventArgs> SetHotbarItem;
@@ -41,7 +38,7 @@ namespace Dev.Kosov.Factory.Core
         {
             inventory = new InvSlot[Width, Height];
             hotbar = new InvSlot[HotbarWidth, HotbarHeight];
-            cursorSlot = new(ItemType.Empty, 0);
+            CursorSlot = new(ItemType.Empty, 0);
         }
 
         public void Run()
@@ -51,46 +48,46 @@ namespace Dev.Kosov.Factory.Core
 
         public void SwitchItemWithInventory(Vector2Int pos)
         {
-            (cursorSlot, inventory[pos.x, pos.y]) = (inventory[pos.x, pos.y], cursorSlot);
+            (CursorSlot, inventory[pos.x, pos.y]) = (inventory[pos.x, pos.y], CursorSlot);
             SetInvItem?.Invoke(this, new(pos, inventory[pos.x, pos.y].Type, inventory[pos.x, pos.y].Amount));
-            SetCursorItem?.Invoke(this, new(cursorSlot.Type, cursorSlot.Amount));
+            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
         }
 
         public void SwitchItemWithHotbar(Vector2Int pos)
         {
-            (cursorSlot, hotbar[pos.x, pos.y]) = (hotbar[pos.x, pos.y], cursorSlot);
+            (CursorSlot, hotbar[pos.x, pos.y]) = (hotbar[pos.x, pos.y], CursorSlot);
             SetHotbarItem?.Invoke(this, new(pos, hotbar[pos.x, pos.y].Type, hotbar[pos.x, pos.y].Amount));
-            SetCursorItem?.Invoke(this, new(cursorSlot.Type, cursorSlot.Amount));
+            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
         }
 
         internal int AddItemToCursor(ItemType type, int amount) // Returns remainder
         {
-            if (cursorSlot.Type != type) return amount;
+            if (CursorSlot.Type != type) return amount;
 
-            int overflow = cursorSlot.Amount + amount - stackSizes[type];
+            int overflow = CursorSlot.Amount + amount - stackSizes[type];
             if (overflow <= 0)
             {
-                cursorSlot.Amount += amount;
+                CursorSlot.Amount += amount;
                 return 0;
             }
 
-            cursorSlot.Amount = stackSizes[type];
+            CursorSlot.Amount = stackSizes[type];
             return amount;
         }
 
         internal int TakeItemFromCursor(ItemType type, int amount) // Returns remainder
         {
-            if (cursorSlot.Type != type) return amount;
+            if (CursorSlot.Type != type) return amount;
 
-            if (amount <= cursorSlot.Amount)
+            if (amount <= CursorSlot.Amount)
             {
-                int removedAmount = cursorSlot.Amount;
-                cursorSlot.Amount = 0;
-                cursorSlot.Type = ItemType.Empty;
+                int removedAmount = CursorSlot.Amount;
+                CursorSlot.Amount = 0;
+                CursorSlot.Type = ItemType.Empty;
                 return removedAmount;
             }
 
-            cursorSlot.Amount -= amount;
+            CursorSlot.Amount -= amount;
             return 0;
         }
 
@@ -118,7 +115,7 @@ namespace Dev.Kosov.Factory.Core
             SetInvItem?.Invoke(this, new(new(1, 0), ItemType.WoodChest, 50));
         }
 
-        
+
 
         public class SetCursorEventArgs : EventArgs
         {

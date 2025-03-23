@@ -23,11 +23,6 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject OreParent;
         public GameObject TileParent;
 
-        //void OnEnable()
-        //{
-        //}
-
-
         void Start()
         {
             InitializeBackToSprite();
@@ -37,7 +32,6 @@ namespace Dev.Kosov.Factory.Graphics
 
             World.TileGenerated += SpawnTile;
             World.OreSpawned += SpawnOre;
-            //world.EntityCreated += SpawnEntity;
 
             StartCoroutine(StartWorld());
         }
@@ -51,7 +45,18 @@ namespace Dev.Kosov.Factory.Graphics
         {
             World.TileGenerated -= SpawnTile;
             World.OreSpawned -= SpawnOre;
-            //world.EntityCreated -= SpawnEntity;
+        }
+
+        public Vector2Int WorldToMapPos(Vector2 worldPos)
+        {
+            int x = (int)(worldPos.x + (worldPos.x < 0 ? -0.5f : 0.5f));
+            int y = (int)(worldPos.y + (worldPos.y < 0 ? -0.5f : 0.5f));
+            return new(x, y);
+        }
+
+        public Vector2 MapToWorldPos(Vector2Int mapPos)
+        {
+            return new(mapPos.x, mapPos.y);
         }
 
         private void InitializeBackToSprite()
@@ -90,8 +95,6 @@ namespace Dev.Kosov.Factory.Graphics
             var renderer = created.GetComponent<SpriteRenderer>();
             renderer.sprite = sprites[idx];
         }
-
-
 
         private IEnumerator StartWorld()
         {
