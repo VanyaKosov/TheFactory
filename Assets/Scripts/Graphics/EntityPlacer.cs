@@ -58,14 +58,16 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void DisplayBuildingHologram(Vector2Int pos)
         {
-            BuildingHologram.transform.position = worldController.MapToWorldPos(pos);
-            //Vector2 worldPos = CenterEntityPos(pos)
+            //BuildingHologram.transform.position = worldController.MapToWorldPos(pos);
 
             if (!ItemInfo.Get(hologramItemType).Placable)
             {
                 BuildingHologram.SetActive(false);
                 return;
             }
+
+            Vector2 worldPos = CenterEntityPos(pos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size);
+            BuildingHologram.transform.position = worldPos;
 
             hologramRenderer.sprite = SpriteCatalogs.GetEntitySprite(itemToEntityType[hologramItemType]);
             BuildingHologram.SetActive(true);
@@ -77,13 +79,14 @@ namespace Dev.Kosov.Factory.Graphics
             UpdateRaycaster();
             if (results.Count != 0) return;
 
-            world.PlaceEntity(pos);
+            world.PlaceEntity(pos); // Make it bottom-left? Then also change Center method
+
         }
 
         private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
         {
             GameObject prefab = EntityTypeToPrefab(args.Type);
-            Vector2 pos = worldController.MapToWorldPos(worldController.WorldToMapPos(CenterEntityPos(args.Pos, args.Size)));
+            Vector2 pos = CenterEntityPos(args.Pos, args.Size);
             Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
         }
 
@@ -112,14 +115,21 @@ namespace Dev.Kosov.Factory.Graphics
 
         private Vector2 CenterEntityPos(Vector2Int pos, Vector2Int size)
         {
-            if (size.x == 1 && size.y == 1) return pos;
+            /*if (size.x == 1 && size.y == 1) return pos;
 
             float xDiff = size.x / 2.0f;
             float yDiff = size.y / 2.0f;
-            float x = pos.x + (pos.x < 0 ? xDiff : -xDiff);
-            float y = pos.y + (pos.y < 0 ? yDiff : -yDiff);
+            //float x = pos.x + (pos.x < 0 ? xDiff : -xDiff);
+            //float y = pos.y + (pos.y < 0 ? yDiff : -yDiff);
+            float x = pos.x + xDiff;
+            float y = pos.y + yDiff;
 
-            return new(x, y);
+            return new(x, y);*/
+
+            if (size.x % 2 != 0) size.x--;
+            if (size.y % 2 != 0) size.y--;
+
+            return new(pos.x + size.x / 2, pos.y - size.y / 2);
         }
 
         private void UpdateRaycaster()

@@ -348,7 +348,7 @@ MonoBehaviour:
   Camera: {fileID: 1371078440}
   RigidBody: {fileID: 615863793}
   MoveSpeed: 10
-  MinZoom: 10
+  MinZoom: 5
   MaxZoom: 40
   ZoomSpeed: 5
 --- !u!50 &615863793

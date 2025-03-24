@@ -57,7 +57,6 @@ namespace Dev.Kosov.Factory.Core
         public void PlaceEntity(Vector2Int pos)
         {
             if (Inventory.CursorSlot.Amount <= 0) return;
-            //if (!Inventory.Placable.Contains(Inventory.CursorSlot.Type)) return;
             if (!ItemInfo.Get(Inventory.CursorSlot.Type).Placable) return;
 
             Entity entity = null;
