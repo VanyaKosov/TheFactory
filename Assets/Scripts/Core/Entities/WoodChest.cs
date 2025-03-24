@@ -8,8 +8,8 @@ namespace Dev.Kosov.Factory.Core.Entities
         internal const int InvHeight = 2;
         internal readonly InvSlot[,] inventory;
 
-        public WoodChest(Rotation rotation, Vector2Int topLeftPos)
-            : base(rotation, topLeftPos, new() { ItemType.WoodChest }, new() { 1 })
+        public WoodChest(Rotation rotation, Vector2Int bottomLeftPos)
+            : base(rotation, bottomLeftPos, new() { ItemType.WoodChest }, new() { 1 })
         {
             inventory = new InvSlot[InvWidth, InvHeight];
         }

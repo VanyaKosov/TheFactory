@@ -49,9 +49,11 @@ namespace Dev.Kosov.Factory.Graphics
 
         public Vector2Int WorldToMapPos(Vector2 worldPos)
         {
-            int x = (int)(worldPos.x + (worldPos.x < 0 ? -0.5f : 0.5f));
-            int y = (int)(worldPos.y + (worldPos.y < 0 ? -0.5f : 0.5f));
-            return new(x, y);
+            return new(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));
+
+            //int x = (int)(worldPos.x + (worldPos.x < 0 ? -0.5f : 0.5f));
+            //int y = (int)(worldPos.y + (worldPos.y < 0 ? -0.5f : 0.5f));
+            //return new(x, y);
         }
 
         public Vector2 MapToWorldPos(Vector2Int mapPos)

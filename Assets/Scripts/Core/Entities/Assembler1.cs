@@ -4,8 +4,8 @@ namespace Dev.Kosov.Factory.Core.Entities
 {
     internal class Assembler1 : Entity
     {
-        public Assembler1(Rotation rotation, Vector2Int topLeftPos)
-            : base(rotation, topLeftPos, new() { ItemType.Assembler1 }, new() { 1 })
+        public Assembler1(Rotation rotation, Vector2Int bottomLeftPos)
+            : base(rotation, bottomLeftPos, new() { ItemType.Assembler1 }, new() { 1 })
         {
 
         }

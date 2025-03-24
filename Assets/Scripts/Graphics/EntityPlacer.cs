@@ -19,9 +19,10 @@ namespace Dev.Kosov.Factory.Graphics
         private World world;
         private Inventory inventory;
         private ItemType hologramItemType;
-        private SpriteRenderer hologramRenderer;
 
         public SpriteCatalogs SpriteCatalogs;
+        public SpriteRenderer hologramRenderer;
+        //public GameObject Player;
         public Camera Camera;
         public GraphicRaycaster Raycaster;
         public GameObject BuildingHologram;
@@ -32,7 +33,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         void OnEnable()
         {
-            hologramRenderer = BuildingHologram.GetComponent<SpriteRenderer>();
+            //hologramRenderer = BuildingHologram.GetComponent<SpriteRenderer>();
 
             worldController = GameObject.Find("WorldController").GetComponent<WorldController>();
             world = worldController.World;
@@ -56,38 +57,28 @@ namespace Dev.Kosov.Factory.Graphics
             DisplayBuildingHologram(pos);
         }
 
-        private void DisplayBuildingHologram(Vector2Int pos)
+        private void DisplayBuildingHologram(Vector2Int centerPos)
         {
-            //BuildingHologram.transform.position = worldController.MapToWorldPos(pos);
-
             if (!ItemInfo.Get(hologramItemType).Placable)
             {
                 BuildingHologram.SetActive(false);
                 return;
             }
 
-            Vector2 worldPos = CenterEntityPos(pos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size);
-            BuildingHologram.transform.position = worldPos;
+            BuildingHologram.transform.position = new(centerPos.x, centerPos.y);
 
             hologramRenderer.sprite = SpriteCatalogs.GetEntitySprite(itemToEntityType[hologramItemType]);
             BuildingHologram.SetActive(true);
         }
 
-        private void TryPlaceBuilding(Vector2Int pos)
+        private void TryPlaceBuilding(Vector2Int centerPos)
         {
             if (!Input.GetMouseButtonDown(0)) return;
             UpdateRaycaster();
             if (results.Count != 0) return;
 
-            world.PlaceEntity(pos); // Make it bottom-left? Then also change Center method
-
-        }
-
-        private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
-        {
-            GameObject prefab = EntityTypeToPrefab(args.Type);
-            Vector2 pos = CenterEntityPos(args.Pos, args.Size);
-            Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
+            //world.PlaceEntity(pos); // Make it bottom-left? Then also change Center method
+            world.PlaceEntity(DecenterEntityPos(centerPos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size));
         }
 
         private GameObject EntityTypeToPrefab(EntityType type)
@@ -113,23 +104,20 @@ namespace Dev.Kosov.Factory.Graphics
             return prefab;
         }
 
-        private Vector2 CenterEntityPos(Vector2Int pos, Vector2Int size)
+        private Vector2Int CenterEntityPos(Vector2Int bottomLeftPos, Vector2Int size)
         {
-            /*if (size.x == 1 && size.y == 1) return pos;
-
-            float xDiff = size.x / 2.0f;
-            float yDiff = size.y / 2.0f;
-            //float x = pos.x + (pos.x < 0 ? xDiff : -xDiff);
-            //float y = pos.y + (pos.y < 0 ? yDiff : -yDiff);
-            float x = pos.x + xDiff;
-            float y = pos.y + yDiff;
-
-            return new(x, y);*/
-
             if (size.x % 2 != 0) size.x--;
             if (size.y % 2 != 0) size.y--;
 
-            return new(pos.x + size.x / 2, pos.y - size.y / 2);
+            return new(bottomLeftPos.x + size.x / 2, bottomLeftPos.y + size.y / 2);
+        }
+
+        private Vector2Int DecenterEntityPos(Vector2Int centerPos, Vector2Int size)
+        {
+            if (size.x % 2 != 0) size.x--;
+            if (size.y % 2 != 0) size.y--;
+
+            return new(centerPos.x - size.x / 2, centerPos.y - size.y / 2);
         }
 
         private void UpdateRaycaster()
@@ -137,6 +125,13 @@ namespace Dev.Kosov.Factory.Graphics
             clickData.position = Input.mousePosition;
             results.Clear();
             Raycaster.Raycast(clickData, results);
+        }
+
+        private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
+        {
+            GameObject prefab = EntityTypeToPrefab(args.Type);
+            Vector2 pos = CenterEntityPos(args.Pos, args.Size);
+            Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
         }
 
         private void SetHologramItem(object sender, Inventory.SetCursorEventArgs args)

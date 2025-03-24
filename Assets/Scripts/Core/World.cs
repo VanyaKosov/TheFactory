@@ -35,7 +35,7 @@ namespace Dev.Kosov.Factory.Core
 
         public void Run()
         {
-            treeNoiseOffset = new(UnityEngine.Random.Range(-100_000, 100_000), UnityEngine.Random.Range(-100_000, 100_000));
+            treeNoiseOffset = new(UnityEngine.Random.Range(-1_000_000, 1_000_000), UnityEngine.Random.Range(-1_000_000, 1_000_000));
             GenInitialWorld(worldGenRadius * 2);
 
             Inventory.Run();
@@ -76,11 +76,11 @@ namespace Dev.Kosov.Factory.Core
             }
 
             Vector2Int size = EntityInfo.Get(type).Size;
-            if (!CheckAvailability(entity.topLeftPos, size)) return;
+            if (!CheckAvailability(entity.BottomLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
-            for (int x = entity.topLeftPos.x; x < entity.topLeftPos.x + size.x; x++)
+            for (int x = entity.BottomLeftPos.x; x < entity.BottomLeftPos.x + size.x; x++)
             {
-                for (int y = entity.topLeftPos.y; y < entity.topLeftPos.y + size.y; y++)
+                for (int y = entity.BottomLeftPos.y; y < entity.BottomLeftPos.y + size.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
                     map[newPos].FeatureID = entityID;
