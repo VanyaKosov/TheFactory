@@ -76,6 +76,7 @@ namespace Dev.Kosov.Factory.Graphics
             if (!Input.GetMouseButtonDown(0)) return;
             UpdateRaycaster();
             if (UIObjectsUnderMouse.Count != 0) return;
+            if (!ItemInfo.Get(hologramItemType).Placable) return;
 
             world.PlaceEntity(DecenterEntityPos(centerPos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size));
         }
