@@ -8,6 +8,7 @@
         Iron_ore,
         Copper_ore,
         Assembler1,
-        WoodChest
+        WoodChest,
+        StoneFurnace
     }
 }

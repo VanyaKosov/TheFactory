@@ -1,0 +1,1452 @@
+fileFormatVersion: 2
+guid: b94967d128bfff249aecd70553f8fb2c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3107133042027660292
+    second: stone-furnace-fire_0
+  - first:
+      213: 138795350448680149
+    second: stone-furnace-fire_1
+  - first:
+      213: -8248036917531054777
+    second: stone-furnace-fire_2
+  - first:
+      213: -9193000252196044014
+    second: stone-furnace-fire_3
+  - first:
+      213: 255623987697105579
+    second: stone-furnace-fire_4
+  - first:
+      213: -1142911075329793624
+    second: stone-furnace-fire_5
+  - first:
+      213: 1474533827697080400
+    second: stone-furnace-fire_6
+  - first:
+      213: -382885337634317748
+    second: stone-furnace-fire_7
+  - first:
+      213: -313489895537796882
+    second: stone-furnace-fire_8
+  - first:
+      213: -6759709367764279615
+    second: stone-furnace-fire_9
+  - first:
+      213: 1004399859115484015
+    second: stone-furnace-fire_10
+  - first:
+      213: -3043484873713486441
+    second: stone-furnace-fire_11
+  - first:
+      213: 5416205742267727107
+    second: stone-furnace-fire_12
+  - first:
+      213: -3330908229930174086
+    second: stone-furnace-fire_13
+  - first:
+      213: -4296575372852572975
+    second: stone-furnace-fire_14
+  - first:
+      213: 3474739740830777042
+    second: stone-furnace-fire_15
+  - first:
+      213: -551565130355838261
+    second: stone-furnace-fire_16
+  - first:
+      213: 8184315590473198433
+    second: stone-furnace-fire_17
+  - first:
+      213: -7589144829164911466
+    second: stone-furnace-fire_18
+  - first:
+      213: -6454484648360620036
+    second: stone-furnace-fire_19
+  - first:
+      213: 8179452338058436405
+    second: stone-furnace-fire_20
+  - first:
+      213: -1269722820694781006
+    second: stone-furnace-fire_21
+  - first:
+      213: 4215250991157076473
+    second: stone-furnace-fire_22
+  - first:
+      213: -4948318752849828274
+    second: stone-furnace-fire_23
+  - first:
+      213: 3914589923934960075
+    second: stone-furnace-fire_24
+  - first:
+      213: -832787165964256732
+    second: stone-furnace-fire_25
+  - first:
+      213: -3450553848917132324
+    second: stone-furnace-fire_26
+  - first:
+      213: -7336864533774937491
+    second: stone-furnace-fire_27
+  - first:
+      213: -8527212659230619451
+    second: stone-furnace-fire_28
+  - first:
+      213: 532597182317449900
+    second: stone-furnace-fire_29
+  - first:
+      213: -5166648047348085080
+    second: stone-furnace-fire_30
+  - first:
+      213: 2360900615834571784
+    second: stone-furnace-fire_31
+  - first:
+      213: 5585486421439488341
+    second: stone-furnace-fire_32
+  - first:
+      213: -4907398468568912709
+    second: stone-furnace-fire_33
+  - first:
+      213: 8331062070395381924
+    second: stone-furnace-fire_34
+  - first:
+      213: -9080450798321265384
+    second: stone-furnace-fire_35
+  - first:
+      213: 5340080544081407697
+    second: stone-furnace-fire_36
+  - first:
+      213: -4640233894602558484
+    second: stone-furnace-fire_37
+  - first:
+      213: 1570559293280080724
+    second: stone-furnace-fire_38
+  - first:
+      213: 1260013662819135227
+    second: stone-furnace-fire_39
+  - first:
+      213: 7363084720201140217
+    second: stone-furnace-fire_40
+  - first:
+      213: 8270141458932524848
+    second: stone-furnace-fire_41
+  - first:
+      213: 6431583871855186715
+    second: stone-furnace-fire_42
+  - first:
+      213: 2996205202253736092
+    second: stone-furnace-fire_43
+  - first:
+      213: -161713468671344906
+    second: stone-furnace-fire_44
+  - first:
+      213: 4345010909175267379
+    second: stone-furnace-fire_45
+  - first:
+      213: -9126059651883332542
+    second: stone-furnace-fire_46
+  - first:
+      213: -8692421608180659512
+    second: stone-furnace-fire_47
+  - first:
+      213: 3497772643695076412
+    second: stone-furnace-fire_48
+  - first:
+      213: -6729154749097328420
+    second: stone-furnace-fire_49
+  - first:
+      213: -5728783658583901017
+    second: stone-furnace-fire_50
+  - first:
+      213: 4839270491977792213
+    second: stone-furnace-fire_51
+  - first:
+      213: -5773926760582154528
+    second: stone-furnace-fire_52
+  - first:
+      213: -1732192230039644895
+    second: stone-furnace-fire_53
+  - first:
+      213: -8180353487520956223
+    second: stone-furnace-fire_54
+  - first:
+      213: 8427216663311037784
+    second: stone-furnace-fire_55
+  - first:
+      213: -4011533308563200767
+    second: stone-furnace-fire_56
+  - first:
+      213: -4672152850342390964
+    second: stone-furnace-fire_57
+  - first:
+      213: 9155966150456307535
+    second: stone-furnace-fire_58
+  - first:
+      213: -8743312603964742543
+    second: stone-furnace-fire_59
+  - first:
+      213: 4578540922562720624
+    second: stone-furnace-fire_60
+  - first:
+      213: -5571216931679313615
+    second: stone-furnace-fire_61
+  - first:
+      213: 4551736414994301821
+    second: stone-furnace-fire_62
+  - first:
+      213: -4366053887248250374
+    second: stone-furnace-fire_63
+  - first:
+      213: 6070976992278605225
+    second: stone-furnace-fire_64
+  - first:
+      213: 9222897062038732223
+    second: stone-furnace-fire_65
+  - first:
+      213: 5345230398793257216
+    second: stone-furnace-fire_66
+  - first:
+      213: 7664674717122491659
+    second: stone-furnace-fire_67
+  - first:
+      213: -3868996892530887299
+    second: stone-furnace-fire_68
+  - first:
+      213: -6192022165062464364
+    second: stone-furnace-fire_69
+  - first:
+      213: 1898433872471297319
+    second: stone-furnace-fire_70
+  - first:
+      213: 2910400692196302268
+    second: stone-furnace-fire_71
+  - first:
+      213: 5908998698425864114
+    second: stone-furnace-fire_72
+  - first:
+      213: -3180855050879059584
+    second: stone-furnace-fire_73
+  - first:
+      213: 3031619577125098002
+    second: stone-furnace-fire_74
+  - first:
+      213: -8525702515931721452
+    second: stone-furnace-fire_75
+  - first:
+      213: -8091341653628495566
+    second: stone-furnace-fire_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stone-furnace-fire_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40400f71a01ce1b20800000000000000
+      internalID: 3107133042027660292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc28f7c2a91de100800000000000000
+      internalID: 138795350448680149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74de04c9f16198d80800000000000000
+      internalID: -8248036917531054777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21347cb2af6eb6080800000000000000
+      internalID: -9193000252196044014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa31c699a82c8300800000000000000
+      internalID: 255623987697105579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1ab11be609320f0800000000000000
+      internalID: -1142911075329793624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0587e2134b8967410800000000000000
+      internalID: 1474533827697080400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 500
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ad99460d7bfaaf0800000000000000
+      internalID: -382885337634317748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee89bc7d99246abf0800000000000000
+      internalID: -313489895537796882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce978df420b032a0800000000000000
+      internalID: -6759709367764279615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63e70fa95850fd00800000000000000
+      internalID: 1004399859115484015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7957807e1ae53c5d0800000000000000
+      internalID: -3043484873713486441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d7c422d6a3a2b40800000000000000
+      internalID: 5416205742267727107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79369fdc9c36c1d0800000000000000
+      internalID: -3330908229930174086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc4e6e667f7f54c0800000000000000
+      internalID: -4296575372852572975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 400
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2deb6236261c83030800000000000000
+      internalID: 3474739740830777042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2f5aeaf627858f0800000000000000
+      internalID: -551565130355838261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ba8dbcaa7849170800000000000000
+      internalID: 8184315590473198433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69402a4acf0fda690800000000000000
+      internalID: -7589144829164911466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_19
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffc04ed8601d66a0800000000000000
+      internalID: -6454484648360620036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_20
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f163b9090438170800000000000000
+      internalID: 8179452338058436405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3d74562d9016ee0800000000000000
+      internalID: -1269722820694781006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_22
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1e70f61749f7a30800000000000000
+      internalID: 4215250991157076473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_23
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 300
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e466bf4cf4a045bb0800000000000000
+      internalID: -4948318752849828274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc97771abca635630800000000000000
+      internalID: 3914589923934960075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a323f1c785174f0800000000000000
+      internalID: -832787165964256732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbffe46e8b2d10d0800000000000000
+      internalID: -3450553848917132324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_27
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62de2334983e2a90800000000000000
+      internalID: -7336864533774937491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8485af34149a980800000000000000
+      internalID: -8527212659230619451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2d764c05a246700800000000000000
+      internalID: 532597182317449900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_30
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae0a5a99f06c48b0800000000000000
+      internalID: -5166648047348085080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_31
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 200
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80412dcf99a93c020800000000000000
+      internalID: 2360900615834571784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5512baf9e42a38d40800000000000000
+      internalID: 5585486421439488341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc67a5e71b65ebb0800000000000000
+      internalID: -4907398468568912709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_34
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8a5ab20d0ed9370800000000000000
+      internalID: 8331062070395381924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_35
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81516a5fb12cbf180800000000000000
+      internalID: -9080450798321265384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_36
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de62fd36f6cb1a40800000000000000
+      internalID: 5340080544081407697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_37
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3bc7d9bd39a9fb0800000000000000
+      internalID: -4640233894602558484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_38
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453d5a62b5fbbc510800000000000000
+      internalID: 1570559293280080724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_39
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 100
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe297020c77c7110800000000000000
+      internalID: 1260013662819135227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f702beaa8eee2660800000000000000
+      internalID: 7363084720201140217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_41
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03767edf6d175c270800000000000000
+      internalID: 8270141458932524848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_42
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b135f099473914950800000000000000
+      internalID: 6431583871855186715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_43
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98e282c1c8a49920800000000000000
+      internalID: 2996205202253736092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_44
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6feb270057a71cdf0800000000000000
+      internalID: -161713468671344906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_45
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330c69aa6649c4c30800000000000000
+      internalID: 4345010909175267379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_46
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c087a3919b95180800000000000000
+      internalID: -9126059651883332542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-furnace-fire_47
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 41
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca467e0a905e5780800000000000000
+      internalID: -8692421608180659512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2fd1cb30ee444494c85b7bace3ab4eb7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stone-furnace-fire_0: 3107133042027660292
+      stone-furnace-fire_1: 138795350448680149
+      stone-furnace-fire_10: 1004399859115484015
+      stone-furnace-fire_11: -3043484873713486441
+      stone-furnace-fire_12: 5416205742267727107
+      stone-furnace-fire_13: -3330908229930174086
+      stone-furnace-fire_14: -4296575372852572975
+      stone-furnace-fire_15: 3474739740830777042
+      stone-furnace-fire_16: -551565130355838261
+      stone-furnace-fire_17: 8184315590473198433
+      stone-furnace-fire_18: -7589144829164911466
+      stone-furnace-fire_19: -6454484648360620036
+      stone-furnace-fire_2: -8248036917531054777
+      stone-furnace-fire_20: 8179452338058436405
+      stone-furnace-fire_21: -1269722820694781006
+      stone-furnace-fire_22: 4215250991157076473
+      stone-furnace-fire_23: -4948318752849828274
+      stone-furnace-fire_24: 3914589923934960075
+      stone-furnace-fire_25: -832787165964256732
+      stone-furnace-fire_26: -3450553848917132324
+      stone-furnace-fire_27: -7336864533774937491
+      stone-furnace-fire_28: -8527212659230619451
+      stone-furnace-fire_29: 532597182317449900
+      stone-furnace-fire_3: -9193000252196044014
+      stone-furnace-fire_30: -5166648047348085080
+      stone-furnace-fire_31: 2360900615834571784
+      stone-furnace-fire_32: 5585486421439488341
+      stone-furnace-fire_33: -4907398468568912709
+      stone-furnace-fire_34: 8331062070395381924
+      stone-furnace-fire_35: -9080450798321265384
+      stone-furnace-fire_36: 5340080544081407697
+      stone-furnace-fire_37: -4640233894602558484
+      stone-furnace-fire_38: 1570559293280080724
+      stone-furnace-fire_39: 1260013662819135227
+      stone-furnace-fire_4: 255623987697105579
+      stone-furnace-fire_40: 7363084720201140217
+      stone-furnace-fire_41: 8270141458932524848
+      stone-furnace-fire_42: 6431583871855186715
+      stone-furnace-fire_43: 2996205202253736092
+      stone-furnace-fire_44: -161713468671344906
+      stone-furnace-fire_45: 4345010909175267379
+      stone-furnace-fire_46: -9126059651883332542
+      stone-furnace-fire_47: -8692421608180659512
+      stone-furnace-fire_5: -1142911075329793624
+      stone-furnace-fire_6: 1474533827697080400
+      stone-furnace-fire_7: -382885337634317748
+      stone-furnace-fire_8: -313489895537796882
+      stone-furnace-fire_9: -6759709367764279615
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

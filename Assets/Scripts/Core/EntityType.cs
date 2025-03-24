@@ -5,6 +5,7 @@
         Empty,
         Tree,
         Assembler1,
-        WoodChest
+        WoodChest,
+        StoneFurnace
     }
 }
