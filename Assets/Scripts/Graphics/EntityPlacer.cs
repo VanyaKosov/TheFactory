@@ -13,7 +13,7 @@ namespace Dev.Kosov.Factory.Graphics
             { ItemType.Assembler1, EntityType.Assembler1 },
             { ItemType.WoodChest, EntityType.WoodChest }
         };
-        private List<RaycastResult> results;
+        private List<RaycastResult> UIObjectsUnderMouse;
         private PointerEventData clickData;
         private WorldController worldController;
         private World world;
@@ -45,7 +45,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         void Start()
         {
-            results = new();
+            UIObjectsUnderMouse = new();
             clickData = new(EventSystem.current);
         }
 
@@ -75,9 +75,8 @@ namespace Dev.Kosov.Factory.Graphics
         {
             if (!Input.GetMouseButtonDown(0)) return;
             UpdateRaycaster();
-            if (results.Count != 0) return;
+            if (UIObjectsUnderMouse.Count != 0) return;
 
-            //world.PlaceEntity(pos); // Make it bottom-left? Then also change Center method
             world.PlaceEntity(DecenterEntityPos(centerPos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size));
         }
 
@@ -123,8 +122,8 @@ namespace Dev.Kosov.Factory.Graphics
         private void UpdateRaycaster()
         {
             clickData.position = Input.mousePosition;
-            results.Clear();
-            Raycaster.Raycast(clickData, results);
+            UIObjectsUnderMouse.Clear();
+            Raycaster.Raycast(clickData, UIObjectsUnderMouse);
         }
 
         private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)

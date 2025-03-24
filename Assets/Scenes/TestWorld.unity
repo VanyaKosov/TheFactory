@@ -472,7 +472,7 @@ Transform:
   m_GameObject: {fileID: 1193510975}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.671875, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   - {fileID: 6786252035740237551, guid: c03c5796ff0bab8458537fa876ae4110, type: 3}
   - {fileID: 611126736439878980, guid: c4fa8ca3395b591458c74314ba606459, type: 3}
   - {fileID: 5102033128874756400, guid: da969fcf3379c484b8832fd5cccaafa3, type: 3}
-  Assembler1Prefab: {fileID: 7485333792383192307, guid: 15d6eec1fd067d64e8c8960ebe4e133e, type: 3}
+  Assembler1Prefab: {fileID: 8044838345107808686, guid: e47bf3027286e084f9c8ac7bb69545f7, type: 3}
   WoodChestPrefab: {fileID: 7709493752874064309, guid: efab51a3e14f63e40b5d9340e283e2cd, type: 3}
 --- !u!4 &2082821266
 Transform:
