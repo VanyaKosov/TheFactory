@@ -1,4 +1,5 @@
-﻿using Dev.Kosov.Factory.Core.Entities;
+﻿using Dev.Kosov.Factory.Core.Assets.Scripts.Core.Entities;
+using Dev.Kosov.Factory.Core.Entities;
 using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -70,6 +71,10 @@ namespace Dev.Kosov.Factory.Core
                 case ItemType.WoodChest:
                     entity = new WoodChest(Rotation.Up, pos);
                     type = EntityType.WoodChest;
+                    break;
+                case ItemType.StoneFurnace:
+                    entity = new StoneFurnace(Rotation.Up, pos);
+                    type = EntityType.StoneFurnace;
                     break;
                 default:
                     break;

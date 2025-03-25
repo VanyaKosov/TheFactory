@@ -8,11 +8,11 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class EntityPlacer : MonoBehaviour
     {
-        private readonly Dictionary<ItemType, EntityType> itemToEntityType = new()
-        {
-            { ItemType.Assembler1, EntityType.Assembler1 },
-            { ItemType.WoodChest, EntityType.WoodChest }
-        };
+        //private readonly Dictionary<ItemType, EntityType> itemToEntityType = new()
+        //{
+        //    { ItemType.Assembler1, EntityType.Assembler1 },
+        //    { ItemType.WoodChest, EntityType.WoodChest }
+        //};
         private List<RaycastResult> UIObjectsUnderMouse;
         private PointerEventData clickData;
         private WorldController worldController;
@@ -30,6 +30,7 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject[] TreePrefabs;
         public GameObject Assembler1Prefab;
         public GameObject WoodChestPrefab;
+        public GameObject StoneFurnacePrefab;
 
         void OnEnable()
         {
@@ -67,7 +68,8 @@ namespace Dev.Kosov.Factory.Graphics
 
             BuildingHologram.transform.position = new(centerPos.x, centerPos.y);
 
-            hologramRenderer.sprite = SpriteCatalogs.GetEntitySprite(itemToEntityType[hologramItemType]);
+            //hologramRenderer.sprite = SpriteCatalogs.GetEntitySprite(itemToEntityType[hologramItemType]);
+            hologramRenderer.sprite = SpriteCatalogs.GetEntitySprite(ItemInfo.Get(hologramItemType).EntityType);
             BuildingHologram.SetActive(true);
         }
 
@@ -96,6 +98,9 @@ namespace Dev.Kosov.Factory.Graphics
                     break;
                 case EntityType.WoodChest:
                     prefab = WoodChestPrefab;
+                    break;
+                case EntityType.StoneFurnace:
+                    prefab = StoneFurnacePrefab;
                     break;
                 default:
                     break;

@@ -1087,6 +1087,7 @@ MonoBehaviour:
   - {fileID: 5102033128874756400, guid: da969fcf3379c484b8832fd5cccaafa3, type: 3}
   Assembler1Prefab: {fileID: 8044838345107808686, guid: e47bf3027286e084f9c8ac7bb69545f7, type: 3}
   WoodChestPrefab: {fileID: 7709493752874064309, guid: efab51a3e14f63e40b5d9340e283e2cd, type: 3}
+  StoneFurnacePrefab: {fileID: 3747669906638790718, guid: 03baf75f2146a274dbacc8398a540273, type: 3}
 --- !u!4 &2082821266
 Transform:
   m_ObjectHideFlags: 0

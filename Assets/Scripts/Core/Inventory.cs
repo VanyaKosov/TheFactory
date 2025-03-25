@@ -6,15 +6,6 @@ namespace Dev.Kosov.Factory.Core
 {
     public class Inventory
     {
-        //private readonly static Dictionary<ItemType, int> stackSizes = new()
-        //{
-        //    { ItemType.Empty, 0 },
-        //    { ItemType.Wood, 100 },
-        //    { ItemType.Coal, 100 },
-        //    { ItemType.Iron_ore, 100 },
-        //    { ItemType.Copper_ore, 100 },
-        //    { ItemType.Assembler1, 100 }
-        //};
         private readonly InvSlot[,] inventory;
         private readonly InvSlot[,] hotbar;
 
@@ -24,11 +15,6 @@ namespace Dev.Kosov.Factory.Core
         public int Height { get; private set; } = 16;
         public int HotbarWidth { get; private set; } = 10;
         public int HotbarHeight { get; private set; } = 1;
-        //public readonly static HashSet<ItemType> Placable = new()
-        //{
-        //    ItemType.Assembler1,
-        //    ItemType.WoodChest
-        //};
 
         public event EventHandler<SetItemEventArgs> SetInvItem;
         public event EventHandler<SetItemEventArgs> SetHotbarItem;
@@ -110,10 +96,12 @@ namespace Dev.Kosov.Factory.Core
                 }
             }
 
-            inventory[0, 0] = new(ItemType.Assembler1, 100);
-            SetInvItem?.Invoke(this, new(new(0, 0), ItemType.Assembler1, 100));
-            inventory[1, 0] = new(ItemType.WoodChest, 50);
-            SetInvItem?.Invoke(this, new(new(1, 0), ItemType.WoodChest, 50));
+            inventory[0, 0] = new(ItemType.Assembler1, 50);
+            SetInvItem?.Invoke(this, new(new(0, 0), ItemType.Assembler1, 50));
+            inventory[1, 0] = new(ItemType.WoodChest, 100);
+            SetInvItem?.Invoke(this, new(new(1, 0), ItemType.WoodChest, 100));
+            inventory[2, 0] = new(ItemType.StoneFurnace, 50);
+            SetInvItem?.Invoke(this, new(new(2, 0), ItemType.StoneFurnace, 50));
         }
 
 
