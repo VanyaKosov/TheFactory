@@ -19,7 +19,7 @@ namespace Dev.Kosov.Factory.Graphics
         private RectTransform canvasRectTransform;
         private RectTransform cursorRectTransform;
 
-        public SpriteCatalogs SpriteCatalogs;
+        public Catalogs SpriteCatalogs;
         public GameObject InventoryParent;
         public GameObject HotbarParent;
         public GameObject CursorParent;

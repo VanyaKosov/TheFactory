@@ -16,16 +16,12 @@ namespace Dev.Kosov.Factory.Graphics
         private Inventory inventory;
         private ItemType hologramItemType;
 
-        public SpriteCatalogs SpriteCatalogs;
+        public Catalogs Catalogs;
         public SpriteRenderer hologramRenderer;
         public Camera Camera;
         public GraphicRaycaster Raycaster;
         public GameObject BuildingHologram;
         public GameObject EntityParent;
-        public GameObject[] TreePrefabs;
-        public GameObject Assembler1Prefab;
-        public GameObject WoodChestPrefab;
-        public GameObject StoneFurnacePrefab;
 
         void OnEnable()
         {
@@ -63,7 +59,7 @@ namespace Dev.Kosov.Factory.Graphics
 
             BuildingHologram.transform.position = pos;
 
-            hologramRenderer.sprite = SpriteCatalogs.GetEntitySprite(ItemInfo.Get(hologramItemType).EntityType);
+            hologramRenderer.sprite = Catalogs.GetEntitySprite(ItemInfo.Get(hologramItemType).EntityType);
             BuildingHologram.SetActive(true);
         }
 
@@ -75,32 +71,6 @@ namespace Dev.Kosov.Factory.Graphics
             if (!ItemInfo.Get(hologramItemType).Placable) return;
 
             world.PlaceEntity(DecenterEntityPos(centerPos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size));
-        }
-
-        private GameObject EntityTypeToPrefab(EntityType type)
-        {
-            GameObject prefab = null;
-
-            switch (type)
-            {
-                case EntityType.Tree:
-                    int idx = UnityEngine.Random.Range(0, TreePrefabs.Length);
-                    prefab = TreePrefabs[idx]; // Return immediatly?
-                    break;
-                case EntityType.Assembler1:
-                    prefab = Assembler1Prefab;
-                    break;
-                case EntityType.WoodChest:
-                    prefab = WoodChestPrefab;
-                    break;
-                case EntityType.StoneFurnace:
-                    prefab = StoneFurnacePrefab;
-                    break;
-                default:
-                    break; // Throw Exception?
-            }
-
-            return prefab;
         }
 
         private Vector2 CenterEntityPos(Vector2Int bottomLeftPos, Vector2Int size)
@@ -125,7 +95,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
         {
-            GameObject prefab = EntityTypeToPrefab(args.Type);
+            GameObject prefab = Catalogs.EntityTypeToPrefab(args.Type);
             Vector2 pos = CenterEntityPos(args.Pos, args.Size);
             Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
         }

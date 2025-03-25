@@ -9,7 +9,7 @@ namespace Dev.Kosov.Factory.Graphics
     {
         public Image ItemRenderer;
         public TMP_Text TextRenderer;
-        public SpriteCatalogs ItemSpriteCatalog;
+        public Catalogs ItemSpriteCatalog;
 
         public void SetItem(ItemType type, int amount)
         {
