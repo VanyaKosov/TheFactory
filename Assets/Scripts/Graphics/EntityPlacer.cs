@@ -15,6 +15,7 @@ namespace Dev.Kosov.Factory.Graphics
         private World world;
         private Inventory inventory;
         private ItemType hologramItemType;
+        private Dictionary<int, GameObject> entities = new();
 
         public Catalogs Catalogs;
         public SpriteRenderer hologramRenderer;
@@ -97,7 +98,8 @@ namespace Dev.Kosov.Factory.Graphics
         {
             GameObject prefab = Catalogs.EntityTypeToPrefab(args.Type);
             Vector2 pos = CenterEntityPos(args.Pos, args.Size);
-            Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
+            GameObject instance = Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
+            entities.Add(args.EntityID, instance);
         }
 
         private void SetHologramItem(object sender, Inventory.SetCursorEventArgs args)

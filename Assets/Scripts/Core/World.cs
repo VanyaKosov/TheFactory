@@ -26,6 +26,7 @@ namespace Dev.Kosov.Factory.Core
         public event EventHandler<TileGeneratedEventArgs> TileGenerated;
         public event EventHandler<OreSpawnedEventArgs> OreSpawned;
         public event EventHandler<EntityCreatedEventArgs> EntityCreated;
+        public event EventHandler<EntityRemovedEventArgs> EntityRemoved;
 
         public World()
         {
@@ -62,18 +63,36 @@ namespace Dev.Kosov.Factory.Core
             EntityType type = ItemInfo.Get(Inventory.CursorSlot.Type).EntityType;
             Entity entity = EntityGenerator.GenEntityInstance(type, pos);
             Vector2Int size = EntityInfo.Get(type).Size;
-            if (!CheckAvailability(entity.BottomLeftPos, size)) return;
+            if (!CheckAvailability(entity.bottomLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
-            for (int x = entity.BottomLeftPos.x; x < entity.BottomLeftPos.x + size.x; x++)
+            for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
             {
-                for (int y = entity.BottomLeftPos.y; y < entity.BottomLeftPos.y + size.y; y++)
+                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.y + size.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
-                    map[newPos].FeatureID = entityID;
+                    map[newPos].EntityID = entityID;
                 }
             }
 
-            EntityCreated?.Invoke(this, new(pos, type, size));
+            EntityCreated?.Invoke(this, new(pos, type, size, entityID));
+        }
+
+        public void RemoveEntity(Vector2Int pos)
+        {
+            Tile tile = map[pos];
+            if (tile.EntityID == -1) return;
+
+            int id = tile.EntityID;
+            Entity entity = entities[tile.EntityID];
+            for (int x = entity.bottomLeftPos.x; x <= entity.bottomLeftPos.x + EntityInfo.Get(entity.type).Size.x; x++)
+            {
+                for (int y = entity.bottomLeftPos.y; y <= entity.bottomLeftPos.x + EntityInfo.Get(entity.type).Size.y; y++)
+                {
+                    map[new(x, y)].EntityID = -1;
+                }
+            }
+
+            EntityRemoved?.Invoke(this, new(id));
         }
 
         private void ExpandMap(Vector2Int newPlayerPos)
@@ -187,21 +206,21 @@ namespace Dev.Kosov.Factory.Core
             if (noiseVal < treeGenThreshold) return;
             if (!CheckAvailability(pos, treeSize)) return;
 
-            int id = Tile.GenEntityID();
+            int entityID = Tile.GenEntityID();
             for (int x = pos.x; x < pos.x + treeSize.x; x++)
             {
                 for (int y = pos.y; y < pos.y + treeSize.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
                     GenBackTile(newPos);
-                    map[newPos].FeatureID = id;
+                    map[newPos].EntityID = entityID;
 
                 }
             }
 
-            Entity tree = new(Rotation.Up, pos, new() { ItemType.Wood }, new() { 10 });
-            entities.Add(id, tree);
-            EntityCreated?.Invoke(this, new(pos, EntityType.Tree, treeSize));
+            Entity tree = new(Rotation.Up, pos, new() { ItemType.Wood }, new() { 10 }, EntityType.Tree);
+            entities.Add(entityID, tree);
+            EntityCreated?.Invoke(this, new(pos, EntityType.Tree, treeSize, entityID));
         }
 
         private void GenInitialWorld(int radius)
@@ -222,7 +241,7 @@ namespace Dev.Kosov.Factory.Core
                 for (int y = pos.y; y < pos.y + size.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
-                    if (map.ContainsKey(newPos) && map[newPos].FeatureID != -1)
+                    if (map.ContainsKey(newPos) && map[newPos].EntityID != -1)
                     {
                         return false;
                     }
@@ -269,12 +288,24 @@ namespace Dev.Kosov.Factory.Core
             public readonly Vector2Int Pos;
             public readonly EntityType Type;
             public readonly Vector2Int Size;
+            public readonly int EntityID;
 
-            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type, Vector2Int size)
+            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type, Vector2Int size, int entityID)
             {
                 Pos = pos;
                 Type = type;
                 Size = size;
+                EntityID = entityID;
+            }
+        }
+
+        public class EntityRemovedEventArgs : EventArgs
+        {
+            public readonly int EntityID;
+
+            public EntityRemovedEventArgs(int entityID)
+            {
+                EntityID = entityID;
             }
         }
 

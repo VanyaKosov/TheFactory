@@ -5,7 +5,7 @@
         private static int nextID = 0;
 
         internal Back BackType { get; set; }
-        internal int FeatureID { get; set; }
+        internal int EntityID { get; set; }
         internal Ore OreType { get; }
         internal int OreAmount { get; }
 
@@ -14,7 +14,7 @@
             BackType = backType;
             OreType = oreType;
             OreAmount = oreAmount;
-            FeatureID = -1;
+            EntityID = -1;
         }
 
         internal static int GenEntityID()

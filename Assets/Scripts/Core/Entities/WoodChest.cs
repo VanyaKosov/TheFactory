@@ -9,7 +9,7 @@ namespace Dev.Kosov.Factory.Core.Entities
         internal readonly InvSlot[,] inventory;
 
         public WoodChest(Rotation rotation, Vector2Int bottomLeftPos)
-            : base(rotation, bottomLeftPos, new() { ItemType.WoodChest }, new() { 1 })
+            : base(rotation, bottomLeftPos, new() { ItemType.WoodChest }, new() { 1 }, EntityType.WoodChest)
         {
             inventory = new InvSlot[InvWidth, InvHeight];
         }
