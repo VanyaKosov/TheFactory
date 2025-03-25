@@ -1,5 +1,4 @@
-﻿using Dev.Kosov.Factory.Core.Assets.Scripts.Core.Entities;
-using Dev.Kosov.Factory.Core.Entities;
+﻿using Dev.Kosov.Factory.Core.Assets.Scripts.Core;
 using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -60,26 +59,8 @@ namespace Dev.Kosov.Factory.Core
             if (Inventory.CursorSlot.Amount <= 0) return;
             if (!ItemInfo.Get(Inventory.CursorSlot.Type).Placable) return;
 
-            Entity entity = null;
-            EntityType type = EntityType.Empty;
-            switch (Inventory.CursorSlot.Type)
-            {
-                case ItemType.Assembler1:
-                    entity = new Assembler1(Rotation.Up, pos);
-                    type = EntityType.Assembler1;
-                    break;
-                case ItemType.WoodChest:
-                    entity = new WoodChest(Rotation.Up, pos);
-                    type = EntityType.WoodChest;
-                    break;
-                case ItemType.StoneFurnace:
-                    entity = new StoneFurnace(Rotation.Up, pos);
-                    type = EntityType.StoneFurnace;
-                    break;
-                default:
-                    break;
-            }
-
+            EntityType type = ItemInfo.Get(Inventory.CursorSlot.Type).EntityType;
+            Entity entity = EntityGenerator.GenEntityInstance(type, pos);
             Vector2Int size = EntityInfo.Get(type).Size;
             if (!CheckAvailability(entity.BottomLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
