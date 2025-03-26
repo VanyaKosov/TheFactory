@@ -63,21 +63,6 @@ namespace Dev.Kosov.Factory.Core
 
             EntityType type = ItemInfo.Get(Inventory.CursorSlot.Type).EntityType;
             CreateEntity(bottomLeftPos, type);
-            /*Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos);
-            Vector2Int size = EntityInfo.Get(type).Size;
-            if (!CheckAvailability(entity.bottomLeftPos, size)) return;
-            int entityID = Tile.GenEntityID();
-            entities.Add(entityID, entity);
-            for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
-            {
-                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.y + size.y; y++)
-                {
-                    Vector2Int newPos = new(x, y);
-                    map[newPos].EntityID = entityID;
-                }
-            }
-
-            EntityCreated?.Invoke(this, new(bottomLeftPos, type, size, entityID));*/
         }
 
         public void RemoveEntity(Vector2Int pos)
@@ -91,7 +76,7 @@ namespace Dev.Kosov.Factory.Core
             Vector2Int size = EntityInfo.Get(entity.type).Size;
             for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
             {
-                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.x + size.y; y++)
+                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.y + size.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
                     map[newPos].EntityID = -1;
@@ -243,23 +228,6 @@ namespace Dev.Kosov.Factory.Core
             }
 
             CreateEntity(bottomLeftPos, EntityType.Tree);
-            //if (!CheckAvailability(pos, size)) return;
-
-            /*int entityID = Tile.GenEntityID();
-            for (int x = pos.x; x < pos.x + size.x; x++)
-            {
-                for (int y = pos.y; y < pos.y + size.y; y++)
-                {
-                    Vector2Int newPos = new(x, y);
-                    GenBackTile(newPos);
-                    map[newPos].EntityID = entityID;
-
-                }
-            }*/
-
-            //Entity tree = new(Rotation.Up, pos, new() { ItemType.Wood }, new() { 10 }, EntityType.Tree);
-            //entities.Add(entityID, tree);
-            //EntityCreated?.Invoke(this, new(pos, EntityType.Tree, size, entityID));
         }
 
         private void GenInitialWorld(int radius)

@@ -9,7 +9,7 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class EntityPlacer : MonoBehaviour
     {
-        private const float entityRemovalDelay = 1.0f;
+        private const float entityRemovalDelay = 0.5f;
         private readonly Dictionary<int, GameObject> entities = new();
         private readonly List<RaycastResult> UIObjectsUnderMouse = new();
         private PointerEventData clickData;
@@ -45,7 +45,6 @@ namespace Dev.Kosov.Factory.Graphics
         {
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
             Vector2Int roundedPos = worldController.WorldToMapPos(mouseWorldPos);
-            DisplayTileInfo(roundedPos);
             TryPlaceBuilding(mouseWorldPos);
             DisplayBuildingHologram(mouseWorldPos);
 
@@ -53,14 +52,6 @@ namespace Dev.Kosov.Factory.Graphics
             {
                 StartCoroutine(TryRemoveEntity(roundedPos));
             }
-        }
-
-        private void DisplayTileInfo(Vector2Int pos)
-        {
-            //if (Input.GetMouseButtonDown(2))
-            //{
-                print("Entity ID: " + world.GetTileInfo(pos).EntityID);
-            //}
         }
 
         private void DisplayBuildingHologram(Vector2 centerPos)
@@ -115,7 +106,6 @@ namespace Dev.Kosov.Factory.Graphics
 
             int entityID = world.GetTileInfo(pos).EntityID;
             if (entityID == -1) yield break;
-            print("Corutine: " + entityID);
 
             UpdateRaycaster();
             if (UIObjectsUnderMouse.Count != 0) yield break;
@@ -133,14 +123,12 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void RemoveEntity(object sender, World.EntityRemovedEventArgs args)
         {
-            print("Remove: " + args.EntityID);
             GameObject instance = entities[args.EntityID];
             Destroy(instance);
         }
 
         private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
         {
-            print("Created: " + args.EntityID);
             GameObject prefab = Catalogs.EntityTypeToPrefab(args.Type);
             Vector2 pos = CenterEntityPos(args.Pos, args.Size);
             GameObject instance = Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
