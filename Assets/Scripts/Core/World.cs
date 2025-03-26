@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 namespace Dev.Kosov.Factory.Core
 {
@@ -55,16 +56,18 @@ namespace Dev.Kosov.Factory.Core
             ExpandMap(roundedPos);
         }
 
-        public void PlaceEntity(Vector2Int pos)
+        public void PlaceEntity(Vector2Int bottomLeftPos)
         {
             if (Inventory.CursorSlot.Amount <= 0) return;
             if (!ItemInfo.Get(Inventory.CursorSlot.Type).Placable) return;
 
             EntityType type = ItemInfo.Get(Inventory.CursorSlot.Type).EntityType;
-            Entity entity = EntityGenerator.GenEntityInstance(type, pos);
+            CreateEntity(bottomLeftPos, type);
+            /*Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos);
             Vector2Int size = EntityInfo.Get(type).Size;
             if (!CheckAvailability(entity.bottomLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
+            entities.Add(entityID, entity);
             for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
             {
                 for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.y + size.y; y++)
@@ -74,25 +77,51 @@ namespace Dev.Kosov.Factory.Core
                 }
             }
 
-            EntityCreated?.Invoke(this, new(pos, type, size, entityID));
+            EntityCreated?.Invoke(this, new(bottomLeftPos, type, size, entityID));*/
         }
 
         public void RemoveEntity(Vector2Int pos)
         {
             Tile tile = map[pos];
-            if (tile.EntityID == -1) return;
-
             int id = tile.EntityID;
-            Entity entity = entities[tile.EntityID];
-            for (int x = entity.bottomLeftPos.x; x <= entity.bottomLeftPos.x + EntityInfo.Get(entity.type).Size.x; x++)
+            if (id == -1) return;
+
+            Entity entity = entities[id];
+            entities.Remove(id);
+            Vector2Int size = EntityInfo.Get(entity.type).Size;
+            for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
             {
-                for (int y = entity.bottomLeftPos.y; y <= entity.bottomLeftPos.x + EntityInfo.Get(entity.type).Size.y; y++)
+                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.x + size.y; y++)
                 {
                     map[new(x, y)].EntityID = -1;
                 }
             }
 
             EntityRemoved?.Invoke(this, new(id));
+        }
+
+        public int GetEntityID(Vector2Int pos)
+        {
+            return map[pos].EntityID;
+        }
+
+        private void CreateEntity(Vector2Int bottomLeftPos, EntityType type)
+        {
+            Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos);
+            Vector2Int size = EntityInfo.Get(entity.type).Size;
+            if (!CheckAvailability(entity.bottomLeftPos, size)) return;
+            int entityID = Tile.GenEntityID();
+            entities.Add(entityID, entity);
+
+            for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
+            {
+                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.y + size.y; y++)
+                {
+                    map[new(x, y)].EntityID = entityID;
+                }
+            }
+
+            EntityCreated?.Invoke(this, new(bottomLeftPos, type, size, entityID));
         }
 
         private void ExpandMap(Vector2Int newPlayerPos)
@@ -194,33 +223,42 @@ namespace Dev.Kosov.Factory.Core
             }
         }
 
-        private void GenTree(Vector2Int pos)
+        private void GenTree(Vector2Int bottomLeftPos)
         {
-            Vector2Int treeSize = new(2, 3);
-            float2 noisePos = new(pos.x * treeNoiseScale, pos.y * treeNoiseScale);
+            Vector2Int size = EntityInfo.Get(EntityType.Tree).Size;
+            float2 noisePos = new(bottomLeftPos.x * treeNoiseScale, bottomLeftPos.y * treeNoiseScale);
             float noiseVal = noise.snoise(noisePos + treeNoiseOffset);
             noiseVal += noise.snoise(noisePos * 2) / 2;
             noiseVal += noise.snoise(noisePos * 4) / 4;
             noiseVal += noise.snoise(noisePos * 8) / 8;
             noiseVal += noise.snoise(noisePos * 16) / 16;
             if (noiseVal < treeGenThreshold) return;
-            if (!CheckAvailability(pos, treeSize)) return;
-
-            int entityID = Tile.GenEntityID();
-            for (int x = pos.x; x < pos.x + treeSize.x; x++)
+            for (int x = bottomLeftPos.x; x < bottomLeftPos.x + size.x; x++)
             {
-                for (int y = pos.y; y < pos.y + treeSize.y; y++)
+                for (int y = bottomLeftPos.y; y < bottomLeftPos.y + size.y; y++)
+                {
+                    GenBackTile(new(x, y));
+                }
+            }
+
+            CreateEntity(bottomLeftPos, EntityType.Tree);
+            //if (!CheckAvailability(pos, size)) return;
+
+            /*int entityID = Tile.GenEntityID();
+            for (int x = pos.x; x < pos.x + size.x; x++)
+            {
+                for (int y = pos.y; y < pos.y + size.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
                     GenBackTile(newPos);
                     map[newPos].EntityID = entityID;
 
                 }
-            }
+            }*/
 
-            Entity tree = new(Rotation.Up, pos, new() { ItemType.Wood }, new() { 10 }, EntityType.Tree);
-            entities.Add(entityID, tree);
-            EntityCreated?.Invoke(this, new(pos, EntityType.Tree, treeSize, entityID));
+            //Entity tree = new(Rotation.Up, pos, new() { ItemType.Wood }, new() { 10 }, EntityType.Tree);
+            //entities.Add(entityID, tree);
+            //EntityCreated?.Invoke(this, new(pos, EntityType.Tree, size, entityID));
         }
 
         private void GenInitialWorld(int radius)

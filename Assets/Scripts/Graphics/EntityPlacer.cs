@@ -1,5 +1,5 @@
 using Dev.Kosov.Factory.Core;
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,13 +9,14 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class EntityPlacer : MonoBehaviour
     {
-        private List<RaycastResult> UIObjectsUnderMouse;
+        private const float entityRemovalDelay = 1.0f;
+        private readonly Dictionary<int, GameObject> entities = new();
+        private readonly List<RaycastResult> UIObjectsUnderMouse = new();
         private PointerEventData clickData;
         private WorldController worldController;
         private World world;
         private Inventory inventory;
         private ItemType hologramItemType;
-        private Dictionary<int, GameObject> entities = new();
 
         public Catalogs Catalogs;
         public SpriteRenderer hologramRenderer;
@@ -31,12 +32,12 @@ namespace Dev.Kosov.Factory.Graphics
             inventory = world.Inventory;
 
             world.EntityCreated += SpawnEntity;
+            world.EntityRemoved += RemoveEntity;
             inventory.SetCursorItem += SetHologramItem;
         }
 
         void Start()
         {
-            UIObjectsUnderMouse = new();
             clickData = new(EventSystem.current);
         }
 
@@ -45,6 +46,11 @@ namespace Dev.Kosov.Factory.Graphics
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
             TryPlaceBuilding(mouseWorldPos);
             DisplayBuildingHologram(mouseWorldPos);
+
+            if (Input.GetMouseButtonDown(1))
+            {
+                StartCoroutine(TryRemoveEntity(worldController.WorldToMapPos(mouseWorldPos)));
+            }
         }
 
         private void DisplayBuildingHologram(Vector2 centerPos)
@@ -81,7 +87,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private Vector2Int DecenterEntityPos(Vector2 centerPos, Vector2Int size)
         {
-            Func<float, int, int> decenter = (pos, length) =>
+            static int decenter(float pos, int length) =>
                 Mathf.RoundToInt(length % 2 == 0 ? pos + 0.5f - length / 2 : pos - length / 2);
 
             return new(decenter(centerPos.x, size.x), decenter(centerPos.y, size.y));
@@ -94,8 +100,37 @@ namespace Dev.Kosov.Factory.Graphics
             Raycaster.Raycast(clickData, UIObjectsUnderMouse);
         }
 
+        private IEnumerator TryRemoveEntity(Vector2Int pos)
+        {
+
+            int entityID = world.GetEntityID(pos);
+            if (entityID == -1) yield break;
+            print("Corutine: " + entityID);
+
+            UpdateRaycaster();
+            if (UIObjectsUnderMouse.Count != 0) yield break;
+
+            float timeStarted = Time.time;
+            while (Time.time - timeStarted < entityRemovalDelay)
+            {
+                if (!Input.GetMouseButton(1)) yield break;
+                if (world.GetEntityID(pos) != entityID) yield break;
+                yield return null;
+            }
+
+            world.RemoveEntity(pos);
+        }
+
+        private void RemoveEntity(object sender, World.EntityRemovedEventArgs args)
+        {
+            print("Remove: " + args.EntityID);
+            GameObject instance = entities[args.EntityID];
+            Destroy(instance);
+        }
+
         private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
         {
+            print("Created: " + args.EntityID);
             GameObject prefab = Catalogs.EntityTypeToPrefab(args.Type);
             Vector2 pos = CenterEntityPos(args.Pos, args.Size);
             GameObject instance = Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);

@@ -61,20 +61,14 @@ namespace Dev.Kosov.Factory.Graphics
 
         public GameObject EntityTypeToPrefab(EntityType type)
         {
-            switch (type)
+            return type switch
             {
-                case EntityType.Tree:
-                    int idx = UnityEngine.Random.Range(0, TreePrefabs.Length);
-                    return TreePrefabs[idx];
-                case EntityType.Assembler1:
-                    return Assembler1Prefab;
-                case EntityType.WoodChest:
-                    return WoodChestPrefab;
-                case EntityType.StoneFurnace:
-                    return StoneFurnacePrefab;
-                default:
-                    throw new UnityException("Missing entity prefab");
-            }
+                EntityType.Tree => TreePrefabs[UnityEngine.Random.Range(0, TreePrefabs.Length)],
+                EntityType.Assembler1 => Assembler1Prefab,
+                EntityType.WoodChest => WoodChestPrefab,
+                EntityType.StoneFurnace => StoneFurnacePrefab,
+                _ => throw new Exception("Missing entity prefab"),
+            };
         }
     }
 }
