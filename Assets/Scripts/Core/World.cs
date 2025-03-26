@@ -93,16 +93,17 @@ namespace Dev.Kosov.Factory.Core
             {
                 for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.x + size.y; y++)
                 {
-                    map[new(x, y)].EntityID = -1;
+                    Vector2Int newPos = new(x, y);
+                    map[newPos].EntityID = -1;
                 }
             }
 
             EntityRemoved?.Invoke(this, new(id));
         }
 
-        public int GetEntityID(Vector2Int pos)
+        public Tile GetTileInfo(Vector2Int pos)
         {
-            return map[pos].EntityID;
+            return map[pos];
         }
 
         private void CreateEntity(Vector2Int bottomLeftPos, EntityType type)

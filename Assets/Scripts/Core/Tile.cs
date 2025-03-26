@@ -1,13 +1,13 @@
 ﻿namespace Dev.Kosov.Factory.Core
 {
-    internal class Tile
+    public class Tile
     {
         private static int nextID = 0;
 
-        internal Back BackType { get; set; }
-        internal int EntityID { get; set; }
-        internal Ore OreType { get; }
-        internal int OreAmount { get; }
+        public Back BackType { get; internal set; }
+        public int EntityID { get; internal set; }
+        public Ore OreType { get; }
+        public int OreAmount { get; }
 
         internal Tile(Back backType, Ore oreType, int oreAmount)
         {

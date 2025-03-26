@@ -44,13 +44,23 @@ namespace Dev.Kosov.Factory.Graphics
         void Update()
         {
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
+            Vector2Int roundedPos = worldController.WorldToMapPos(mouseWorldPos);
+            DisplayTileInfo(roundedPos);
             TryPlaceBuilding(mouseWorldPos);
             DisplayBuildingHologram(mouseWorldPos);
 
             if (Input.GetMouseButtonDown(1))
             {
-                StartCoroutine(TryRemoveEntity(worldController.WorldToMapPos(mouseWorldPos)));
+                StartCoroutine(TryRemoveEntity(roundedPos));
             }
+        }
+
+        private void DisplayTileInfo(Vector2Int pos)
+        {
+            //if (Input.GetMouseButtonDown(2))
+            //{
+                print("Entity ID: " + world.GetTileInfo(pos).EntityID);
+            //}
         }
 
         private void DisplayBuildingHologram(Vector2 centerPos)
@@ -103,7 +113,7 @@ namespace Dev.Kosov.Factory.Graphics
         private IEnumerator TryRemoveEntity(Vector2Int pos)
         {
 
-            int entityID = world.GetEntityID(pos);
+            int entityID = world.GetTileInfo(pos).EntityID;
             if (entityID == -1) yield break;
             print("Corutine: " + entityID);
 
@@ -114,7 +124,7 @@ namespace Dev.Kosov.Factory.Graphics
             while (Time.time - timeStarted < entityRemovalDelay)
             {
                 if (!Input.GetMouseButton(1)) yield break;
-                if (world.GetEntityID(pos) != entityID) yield break;
+                if (world.GetTileInfo(pos).EntityID != entityID) yield break;
                 yield return null;
             }
 
