@@ -1,0 +1,6067 @@
+fileFormatVersion: 2
+guid: 6603ad58cc17708439c771644a0e08ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3129002107948099745
+    second: level1_running_mask_0
+  - first:
+      213: 9024590800528302351
+    second: level1_running_mask_1
+  - first:
+      213: -3856175058111587815
+    second: level1_running_mask_2
+  - first:
+      213: -5663670945291370530
+    second: level1_running_mask_3
+  - first:
+      213: 7302753195980695741
+    second: level1_running_mask_4
+  - first:
+      213: 7918010512467504119
+    second: level1_running_mask_5
+  - first:
+      213: 7806166493682458872
+    second: level1_running_mask_6
+  - first:
+      213: -3030846516536978691
+    second: level1_running_mask_7
+  - first:
+      213: -2887317886490178859
+    second: level1_running_mask_8
+  - first:
+      213: 3761421622643923747
+    second: level1_running_mask_9
+  - first:
+      213: 4919380619844913537
+    second: level1_running_mask_10
+  - first:
+      213: -7363445455065651632
+    second: level1_running_mask_11
+  - first:
+      213: -542737322973003358
+    second: level1_running_mask_12
+  - first:
+      213: -1316163405766414653
+    second: level1_running_mask_13
+  - first:
+      213: 412730087595789462
+    second: level1_running_mask_14
+  - first:
+      213: -998348391684630193
+    second: level1_running_mask_15
+  - first:
+      213: -5444156220920780662
+    second: level1_running_mask_16
+  - first:
+      213: 2037422752287173199
+    second: level1_running_mask_17
+  - first:
+      213: -9061520214167377426
+    second: level1_running_mask_18
+  - first:
+      213: -4837846403870462982
+    second: level1_running_mask_19
+  - first:
+      213: 5195344708107104036
+    second: level1_running_mask_20
+  - first:
+      213: 4230102139619240436
+    second: level1_running_mask_21
+  - first:
+      213: 7838743494992451604
+    second: level1_running_mask_22
+  - first:
+      213: -77782907887562255
+    second: level1_running_mask_23
+  - first:
+      213: 4519390876568615622
+    second: level1_running_mask_24
+  - first:
+      213: -8815949596950149064
+    second: level1_running_mask_25
+  - first:
+      213: 3770149319402038428
+    second: level1_running_mask_26
+  - first:
+      213: 916512129317134416
+    second: level1_running_mask_27
+  - first:
+      213: -355321468959511150
+    second: level1_running_mask_28
+  - first:
+      213: -1776325802837508911
+    second: level1_running_mask_29
+  - first:
+      213: 8022791467345601509
+    second: level1_running_mask_30
+  - first:
+      213: 6296476311120728570
+    second: level1_running_mask_31
+  - first:
+      213: 362445598829348440
+    second: level1_running_mask_32
+  - first:
+      213: -4706639585370732586
+    second: level1_running_mask_33
+  - first:
+      213: -4525461595988594313
+    second: level1_running_mask_34
+  - first:
+      213: 3010349841727759944
+    second: level1_running_mask_35
+  - first:
+      213: 1771789592990171981
+    second: level1_running_mask_36
+  - first:
+      213: 6857771628267030960
+    second: level1_running_mask_37
+  - first:
+      213: 6829683518784530422
+    second: level1_running_mask_38
+  - first:
+      213: 7573097290669938286
+    second: level1_running_mask_39
+  - first:
+      213: -8405359474693156052
+    second: level1_running_mask_40
+  - first:
+      213: -3226911964504566753
+    second: level1_running_mask_41
+  - first:
+      213: -824557923056136089
+    second: level1_running_mask_42
+  - first:
+      213: -6911647398819105586
+    second: level1_running_mask_43
+  - first:
+      213: 5420959726516176014
+    second: level1_running_mask_44
+  - first:
+      213: 4418403554812760179
+    second: level1_running_mask_45
+  - first:
+      213: 1381456314494966749
+    second: level1_running_mask_46
+  - first:
+      213: 6820375397708639858
+    second: level1_running_mask_47
+  - first:
+      213: 63936070519325605
+    second: level1_running_mask_48
+  - first:
+      213: 7852122053372853580
+    second: level1_running_mask_49
+  - first:
+      213: -7824968134395440848
+    second: level1_running_mask_50
+  - first:
+      213: -2638977863632607247
+    second: level1_running_mask_51
+  - first:
+      213: 4541809000947627100
+    second: level1_running_mask_52
+  - first:
+      213: 5562959580568019504
+    second: level1_running_mask_53
+  - first:
+      213: -1827762648246049253
+    second: level1_running_mask_54
+  - first:
+      213: 4759441849843047338
+    second: level1_running_mask_55
+  - first:
+      213: -929228161788444426
+    second: level1_running_mask_56
+  - first:
+      213: 8791739260324364328
+    second: level1_running_mask_57
+  - first:
+      213: 7345452094777135538
+    second: level1_running_mask_58
+  - first:
+      213: 8551674429018602695
+    second: level1_running_mask_59
+  - first:
+      213: -7339318336918742938
+    second: level1_running_mask_60
+  - first:
+      213: 4674546437793839412
+    second: level1_running_mask_61
+  - first:
+      213: 3185981021720316243
+    second: level1_running_mask_62
+  - first:
+      213: -3956229363578786958
+    second: level1_running_mask_63
+  - first:
+      213: -8036900875900571364
+    second: level1_running_mask_64
+  - first:
+      213: 9097601350054083349
+    second: level1_running_mask_65
+  - first:
+      213: -7857396711568993109
+    second: level1_running_mask_66
+  - first:
+      213: 8422165391016826819
+    second: level1_running_mask_67
+  - first:
+      213: -1797180297897123155
+    second: level1_running_mask_68
+  - first:
+      213: -8133756287124112261
+    second: level1_running_mask_69
+  - first:
+      213: 1400140090700528440
+    second: level1_running_mask_70
+  - first:
+      213: 4493642107351011854
+    second: level1_running_mask_71
+  - first:
+      213: -4737224496342292007
+    second: level1_running_mask_72
+  - first:
+      213: 1370355157006642200
+    second: level1_running_mask_73
+  - first:
+      213: -6255398944570876555
+    second: level1_running_mask_74
+  - first:
+      213: -5238076227383563576
+    second: level1_running_mask_75
+  - first:
+      213: 6209981130309258249
+    second: level1_running_mask_76
+  - first:
+      213: -5260427002068771637
+    second: level1_running_mask_77
+  - first:
+      213: -7890165859305561866
+    second: level1_running_mask_78
+  - first:
+      213: -3713910209114317495
+    second: level1_running_mask_79
+  - first:
+      213: 840666696046583068
+    second: level1_running_mask_80
+  - first:
+      213: 5640830533826789577
+    second: level1_running_mask_81
+  - first:
+      213: 5888736606758567677
+    second: level1_running_mask_82
+  - first:
+      213: -2254597138292057881
+    second: level1_running_mask_83
+  - first:
+      213: 5630807072617699550
+    second: level1_running_mask_84
+  - first:
+      213: -3276774704840535489
+    second: level1_running_mask_85
+  - first:
+      213: -1683813563296780955
+    second: level1_running_mask_86
+  - first:
+      213: -4109038319047258655
+    second: level1_running_mask_87
+  - first:
+      213: -8876761828088291466
+    second: level1_running_mask_88
+  - first:
+      213: -5290482700049830576
+    second: level1_running_mask_89
+  - first:
+      213: -6056550957127033209
+    second: level1_running_mask_90
+  - first:
+      213: -4063390404934465769
+    second: level1_running_mask_91
+  - first:
+      213: 6620298100756960433
+    second: level1_running_mask_92
+  - first:
+      213: -3204836640324954745
+    second: level1_running_mask_93
+  - first:
+      213: 8450613778974862767
+    second: level1_running_mask_94
+  - first:
+      213: -3525403074427051724
+    second: level1_running_mask_95
+  - first:
+      213: -71462615207143972
+    second: level1_running_mask_96
+  - first:
+      213: 4581718308754467734
+    second: level1_running_mask_97
+  - first:
+      213: 7124650666661553094
+    second: level1_running_mask_98
+  - first:
+      213: -5489849681696998251
+    second: level1_running_mask_99
+  - first:
+      213: -6341774037529251892
+    second: level1_running_mask_100
+  - first:
+      213: -5507675459023845579
+    second: level1_running_mask_101
+  - first:
+      213: -5973574369934816055
+    second: level1_running_mask_102
+  - first:
+      213: 6793830333996749203
+    second: level1_running_mask_103
+  - first:
+      213: -5311292067411283247
+    second: level1_running_mask_104
+  - first:
+      213: -8235048811706030996
+    second: level1_running_mask_105
+  - first:
+      213: -2547744249396508200
+    second: level1_running_mask_106
+  - first:
+      213: -4764002611024562008
+    second: level1_running_mask_107
+  - first:
+      213: 769764477694379423
+    second: level1_running_mask_108
+  - first:
+      213: 7714664575974403169
+    second: level1_running_mask_109
+  - first:
+      213: -3163865666012711818
+    second: level1_running_mask_110
+  - first:
+      213: -7153050165622504449
+    second: level1_running_mask_111
+  - first:
+      213: 8417450328230293091
+    second: level1_running_mask_112
+  - first:
+      213: -3108848819198969299
+    second: level1_running_mask_113
+  - first:
+      213: -789628509740496138
+    second: level1_running_mask_114
+  - first:
+      213: -6007509720636713401
+    second: level1_running_mask_115
+  - first:
+      213: 332505476576892433
+    second: level1_running_mask_116
+  - first:
+      213: -7082035752244335748
+    second: level1_running_mask_117
+  - first:
+      213: 6367319401563215992
+    second: level1_running_mask_118
+  - first:
+      213: -3865975681815378447
+    second: level1_running_mask_119
+  - first:
+      213: -7532846761722933088
+    second: level1_running_mask_120
+  - first:
+      213: -4624318329733537922
+    second: level1_running_mask_121
+  - first:
+      213: 5010686811464225446
+    second: level1_running_mask_122
+  - first:
+      213: -50090618426982136
+    second: level1_running_mask_123
+  - first:
+      213: 3979664852493584146
+    second: level1_running_mask_124
+  - first:
+      213: 8354345907473128521
+    second: level1_running_mask_125
+  - first:
+      213: -1537499360065838820
+    second: level1_running_mask_126
+  - first:
+      213: -3977602735577807175
+    second: level1_running_mask_127
+  - first:
+      213: 5634788559737164152
+    second: level1_running_mask_128
+  - first:
+      213: -5199656859137185553
+    second: level1_running_mask_129
+  - first:
+      213: 8970135819669174186
+    second: level1_running_mask_130
+  - first:
+      213: -1261356496668394326
+    second: level1_running_mask_131
+  - first:
+      213: 2599005637128854023
+    second: level1_running_mask_132
+  - first:
+      213: 2427011177025393918
+    second: level1_running_mask_133
+  - first:
+      213: 951581513179000422
+    second: level1_running_mask_134
+  - first:
+      213: -4509339628214800911
+    second: level1_running_mask_135
+  - first:
+      213: -7816686940966956387
+    second: level1_running_mask_136
+  - first:
+      213: 2023030888838059809
+    second: level1_running_mask_137
+  - first:
+      213: -2200852640261359701
+    second: level1_running_mask_138
+  - first:
+      213: 8068361070738733487
+    second: level1_running_mask_139
+  - first:
+      213: -8721239094075205102
+    second: level1_running_mask_140
+  - first:
+      213: 1659688497199756343
+    second: level1_running_mask_141
+  - first:
+      213: 5024921783470360431
+    second: level1_running_mask_142
+  - first:
+      213: 7397830424541375346
+    second: level1_running_mask_143
+  - first:
+      213: -1984250553948960502
+    second: level1_running_mask_144
+  - first:
+      213: -5148727067146306356
+    second: level1_running_mask_145
+  - first:
+      213: -3679157536796672870
+    second: level1_running_mask_146
+  - first:
+      213: 2797280596066791185
+    second: level1_running_mask_147
+  - first:
+      213: 3396803324454455858
+    second: level1_running_mask_148
+  - first:
+      213: 4066475248594039691
+    second: level1_running_mask_149
+  - first:
+      213: -816473882599080281
+    second: level1_running_mask_150
+  - first:
+      213: -8182250819421692578
+    second: level1_running_mask_151
+  - first:
+      213: 7509841178351732738
+    second: level1_running_mask_152
+  - first:
+      213: -4086405816763693832
+    second: level1_running_mask_153
+  - first:
+      213: 617316178119226983
+    second: level1_running_mask_154
+  - first:
+      213: 1101978279529288953
+    second: level1_running_mask_155
+  - first:
+      213: 3757264453372387578
+    second: level1_running_mask_156
+  - first:
+      213: 4179873899729549303
+    second: level1_running_mask_157
+  - first:
+      213: -6049101136531626457
+    second: level1_running_mask_158
+  - first:
+      213: -2077187966583376050
+    second: level1_running_mask_159
+  - first:
+      213: -386668864334087787
+    second: level1_running_mask_160
+  - first:
+      213: -6629212597541114472
+    second: level1_running_mask_161
+  - first:
+      213: -5872441305444427371
+    second: level1_running_mask_162
+  - first:
+      213: -8669056162625586895
+    second: level1_running_mask_163
+  - first:
+      213: -7319344362663025405
+    second: level1_running_mask_164
+  - first:
+      213: -3744661481732042249
+    second: level1_running_mask_165
+  - first:
+      213: 3764574393049424866
+    second: level1_running_mask_166
+  - first:
+      213: 1058054710841680460
+    second: level1_running_mask_167
+  - first:
+      213: 7895624533660394815
+    second: level1_running_mask_168
+  - first:
+      213: 4367325179467908726
+    second: level1_running_mask_169
+  - first:
+      213: 4198741902940474440
+    second: level1_running_mask_170
+  - first:
+      213: 3640440594131793563
+    second: level1_running_mask_171
+  - first:
+      213: -6422114791151575969
+    second: level1_running_mask_172
+  - first:
+      213: -7030309238443885116
+    second: level1_running_mask_173
+  - first:
+      213: 5695419425622076622
+    second: level1_running_mask_174
+  - first:
+      213: -6362065094044424203
+    second: level1_running_mask_175
+  - first:
+      213: -7417448459810950993
+    second: level1_running_mask_176
+  - first:
+      213: 8439215680856477260
+    second: level1_running_mask_177
+  - first:
+      213: 3445770121413215004
+    second: level1_running_mask_178
+  - first:
+      213: -2744303445155564737
+    second: level1_running_mask_179
+  - first:
+      213: -1935452585308642276
+    second: level1_running_mask_180
+  - first:
+      213: -8782046755853414995
+    second: level1_running_mask_181
+  - first:
+      213: 4648210165046158941
+    second: level1_running_mask_182
+  - first:
+      213: 5315261109664644060
+    second: level1_running_mask_183
+  - first:
+      213: 1244594175576238852
+    second: level1_running_mask_184
+  - first:
+      213: -7603449422122534926
+    second: level1_running_mask_185
+  - first:
+      213: 5470194027898251645
+    second: level1_running_mask_186
+  - first:
+      213: -3598629301526370232
+    second: level1_running_mask_187
+  - first:
+      213: 1198340974404016974
+    second: level1_running_mask_188
+  - first:
+      213: 511285388473801815
+    second: level1_running_mask_189
+  - first:
+      213: 520943984240221562
+    second: level1_running_mask_190
+  - first:
+      213: -1987296330402607783
+    second: level1_running_mask_191
+  - first:
+      213: -4353085160900814962
+    second: level1_running_mask_192
+  - first:
+      213: 4040248241580345702
+    second: level1_running_mask_193
+  - first:
+      213: 7078639890016831046
+    second: level1_running_mask_194
+  - first:
+      213: -130168017478873903
+    second: level1_running_mask_195
+  - first:
+      213: 4560223623865715676
+    second: level1_running_mask_196
+  - first:
+      213: 496147311776639322
+    second: level1_running_mask_197
+  - first:
+      213: -3119970292276333847
+    second: level1_running_mask_198
+  - first:
+      213: -4501481091258115448
+    second: level1_running_mask_199
+  - first:
+      213: 8098891935649775387
+    second: level1_running_mask_200
+  - first:
+      213: -498502510755772777
+    second: level1_running_mask_201
+  - first:
+      213: -8405905472001490958
+    second: level1_running_mask_202
+  - first:
+      213: 8081428717824072943
+    second: level1_running_mask_203
+  - first:
+      213: -1703260980863854280
+    second: level1_running_mask_204
+  - first:
+      213: -4062678619128367108
+    second: level1_running_mask_205
+  - first:
+      213: 1583553245405070016
+    second: level1_running_mask_206
+  - first:
+      213: 8091878455788864276
+    second: level1_running_mask_207
+  - first:
+      213: -5188980597649494860
+    second: level1_running_mask_208
+  - first:
+      213: -3699151814130732213
+    second: level1_running_mask_209
+  - first:
+      213: 2523352222692130741
+    second: level1_running_mask_210
+  - first:
+      213: -3730346866978149435
+    second: level1_running_mask_211
+  - first:
+      213: 3018084315580491386
+    second: level1_running_mask_212
+  - first:
+      213: 601764645385588503
+    second: level1_running_mask_213
+  - first:
+      213: 8204231890431117468
+    second: level1_running_mask_214
+  - first:
+      213: -3913774209745070803
+    second: level1_running_mask_215
+  - first:
+      213: 2346933936524571828
+    second: level1_running_mask_216
+  - first:
+      213: -5824900314059790996
+    second: level1_running_mask_217
+  - first:
+      213: -4542799807172717836
+    second: level1_running_mask_218
+  - first:
+      213: 7746499699713790034
+    second: level1_running_mask_219
+  - first:
+      213: -4389567200401754291
+    second: level1_running_mask_220
+  - first:
+      213: 3196430064061716845
+    second: level1_running_mask_221
+  - first:
+      213: 6627357002596396173
+    second: level1_running_mask_222
+  - first:
+      213: -7748934547136797227
+    second: level1_running_mask_223
+  - first:
+      213: -4867482548128604052
+    second: level1_running_mask_224
+  - first:
+      213: -1482500060213015959
+    second: level1_running_mask_225
+  - first:
+      213: 276041517737967697
+    second: level1_running_mask_226
+  - first:
+      213: 6605595952568569910
+    second: level1_running_mask_227
+  - first:
+      213: 7982906345578184011
+    second: level1_running_mask_228
+  - first:
+      213: 5235356102139484855
+    second: level1_running_mask_229
+  - first:
+      213: 3705101441588245186
+    second: level1_running_mask_230
+  - first:
+      213: 1682350040742184853
+    second: level1_running_mask_231
+  - first:
+      213: 7285209244063531486
+    second: level1_running_mask_232
+  - first:
+      213: -8647240126357918061
+    second: level1_running_mask_233
+  - first:
+      213: -1776511563856722909
+    second: level1_running_mask_234
+  - first:
+      213: 4441106578889159544
+    second: level1_running_mask_235
+  - first:
+      213: -5938474325294584691
+    second: level1_running_mask_236
+  - first:
+      213: 7560454364677704026
+    second: level1_running_mask_237
+  - first:
+      213: -8604818307211867020
+    second: level1_running_mask_238
+  - first:
+      213: 299313221478630651
+    second: level1_running_mask_239
+  - first:
+      213: -2035521506902587015
+    second: level1_running_mask_240
+  - first:
+      213: 7389539027622367046
+    second: level1_running_mask_241
+  - first:
+      213: 6693578428608065434
+    second: level1_running_mask_242
+  - first:
+      213: -5375877156779567356
+    second: level1_running_mask_243
+  - first:
+      213: 4698260725730408611
+    second: level1_running_mask_244
+  - first:
+      213: 8821932418198419931
+    second: level1_running_mask_245
+  - first:
+      213: 8664175332091765179
+    second: level1_running_mask_246
+  - first:
+      213: 2193204191513390395
+    second: level1_running_mask_247
+  - first:
+      213: 7991950983128852155
+    second: level1_running_mask_248
+  - first:
+      213: -1034614629225480559
+    second: level1_running_mask_249
+  - first:
+      213: -2683018767877536316
+    second: level1_running_mask_250
+  - first:
+      213: 8208256932463358784
+    second: level1_running_mask_251
+  - first:
+      213: 6788466040307178066
+    second: level1_running_mask_252
+  - first:
+      213: 3532659190150559219
+    second: level1_running_mask_253
+  - first:
+      213: 1303566078944074651
+    second: level1_running_mask_254
+  - first:
+      213: 8561979555806682029
+    second: level1_running_mask_255
+  - first:
+      213: 7100112419536579309
+    second: level1_running_mask_256
+  - first:
+      213: -2820466742241572202
+    second: level1_running_mask_257
+  - first:
+      213: 2597858540762816994
+    second: level1_running_mask_258
+  - first:
+      213: -5882014707863380602
+    second: level1_running_mask_259
+  - first:
+      213: 2341439607744316906
+    second: level1_running_mask_260
+  - first:
+      213: -6939251479629905355
+    second: level1_running_mask_261
+  - first:
+      213: -8110323453279983250
+    second: level1_running_mask_262
+  - first:
+      213: 1095050045544241427
+    second: level1_running_mask_263
+  - first:
+      213: 9143064455254156635
+    second: level1_running_mask_264
+  - first:
+      213: -813223843615983201
+    second: level1_running_mask_265
+  - first:
+      213: -8483635892946608836
+    second: level1_running_mask_266
+  - first:
+      213: -7451463702747020140
+    second: level1_running_mask_267
+  - first:
+      213: -3179510870195618795
+    second: level1_running_mask_268
+  - first:
+      213: 1648572007970384277
+    second: level1_running_mask_269
+  - first:
+      213: -5790950805892310141
+    second: level1_running_mask_270
+  - first:
+      213: -3070401517964350399
+    second: level1_running_mask_271
+  - first:
+      213: 3471061402106635176
+    second: level1_running_mask_272
+  - first:
+      213: -230435849146278556
+    second: level1_running_mask_273
+  - first:
+      213: 6164480060727192457
+    second: level1_running_mask_274
+  - first:
+      213: 3524923684671570280
+    second: level1_running_mask_275
+  - first:
+      213: 4802431242249124577
+    second: level1_running_mask_276
+  - first:
+      213: -2998605274079605390
+    second: level1_running_mask_277
+  - first:
+      213: 7338243704830263631
+    second: level1_running_mask_278
+  - first:
+      213: 7749282339068174928
+    second: level1_running_mask_279
+  - first:
+      213: 4796732187110173291
+    second: level1_running_mask_280
+  - first:
+      213: -3555005086960397526
+    second: level1_running_mask_281
+  - first:
+      213: 8298413046828478673
+    second: level1_running_mask_282
+  - first:
+      213: 991679755257924549
+    second: level1_running_mask_283
+  - first:
+      213: -6136651603451142231
+    second: level1_running_mask_284
+  - first:
+      213: -6773329831135884045
+    second: level1_running_mask_285
+  - first:
+      213: 8348092461439916641
+    second: level1_running_mask_286
+  - first:
+      213: -2656192204752028751
+    second: level1_running_mask_287
+  - first:
+      213: -8845818986159973432
+    second: level1_running_mask_288
+  - first:
+      213: 6723575986496767573
+    second: level1_running_mask_289
+  - first:
+      213: 7906040816524887193
+    second: level1_running_mask_290
+  - first:
+      213: 8904503934118833844
+    second: level1_running_mask_291
+  - first:
+      213: 8936421671739305761
+    second: level1_running_mask_292
+  - first:
+      213: -7247238548699177822
+    second: level1_running_mask_293
+  - first:
+      213: -485080722405267507
+    second: level1_running_mask_294
+  - first:
+      213: 8335873106963570251
+    second: level1_running_mask_295
+  - first:
+      213: 1548925971214640692
+    second: level1_running_mask_296
+  - first:
+      213: 5756836669679084226
+    second: level1_running_mask_297
+  - first:
+      213: 7339225632192890480
+    second: level1_running_mask_298
+  - first:
+      213: 5600299278234431207
+    second: level1_running_mask_299
+  - first:
+      213: 8383118941520159
+    second: level1_running_mask_300
+  - first:
+      213: -4410282819884121397
+    second: level1_running_mask_301
+  - first:
+      213: 7686393781434793237
+    second: level1_running_mask_302
+  - first:
+      213: 8906894511190492895
+    second: level1_running_mask_303
+  - first:
+      213: -5452308328996351298
+    second: level1_running_mask_304
+  - first:
+      213: 4033552351616037687
+    second: level1_running_mask_305
+  - first:
+      213: -8938789312921333276
+    second: level1_running_mask_306
+  - first:
+      213: 1922757651145690265
+    second: level1_running_mask_307
+  - first:
+      213: 1738827844468017670
+    second: level1_running_mask_308
+  - first:
+      213: -4372636560686178748
+    second: level1_running_mask_309
+  - first:
+      213: 9204309545068334652
+    second: level1_running_mask_310
+  - first:
+      213: -7591882454999438613
+    second: level1_running_mask_311
+  - first:
+      213: 7489375636390715214
+    second: level1_running_mask_312
+  - first:
+      213: -187866498222412985
+    second: level1_running_mask_313
+  - first:
+      213: -8427530030378030828
+    second: level1_running_mask_314
+  - first:
+      213: -4732696306466594538
+    second: level1_running_mask_315
+  - first:
+      213: 1498088783377386395
+    second: level1_running_mask_316
+  - first:
+      213: 7222147794947140449
+    second: level1_running_mask_317
+  - first:
+      213: 7991714310154410561
+    second: level1_running_mask_318
+  - first:
+      213: -3182404265568712384
+    second: level1_running_mask_319
+  - first:
+      213: 6184655158642435940
+    second: level1_running_mask_320
+  - first:
+      213: 7948119129256419131
+    second: level1_running_mask_321
+  - first:
+      213: -6355501293735876745
+    second: level1_running_mask_322
+  - first:
+      213: -1322340894746919072
+    second: level1_running_mask_323
+  - first:
+      213: -6178852466414469750
+    second: level1_running_mask_324
+  - first:
+      213: -8483116892765925857
+    second: level1_running_mask_325
+  - first:
+      213: 8971097398107682900
+    second: level1_running_mask_326
+  - first:
+      213: 7789695360134449036
+    second: level1_running_mask_327
+  - first:
+      213: -3322354650466288020
+    second: level1_running_mask_328
+  - first:
+      213: 8347513818407872386
+    second: level1_running_mask_329
+  - first:
+      213: 5913163145278764895
+    second: level1_running_mask_330
+  - first:
+      213: -7041734753063388873
+    second: level1_running_mask_331
+  - first:
+      213: -3814575622599323527
+    second: level1_running_mask_332
+  - first:
+      213: -4813208312916576347
+    second: level1_running_mask_333
+  - first:
+      213: 7079201326017289891
+    second: level1_running_mask_334
+  - first:
+      213: 430640488470150548
+    second: level1_running_mask_335
+  - first:
+      213: -2667963722024385823
+    second: level1_running_mask_336
+  - first:
+      213: 7859189096561871577
+    second: level1_running_mask_337
+  - first:
+      213: 2927293803827828639
+    second: level1_running_mask_338
+  - first:
+      213: -4414757639124525219
+    second: level1_running_mask_339
+  - first:
+      213: -750108564810236480
+    second: level1_running_mask_340
+  - first:
+      213: -6528764703527597822
+    second: level1_running_mask_341
+  - first:
+      213: 634826412978440544
+    second: level1_running_mask_342
+  - first:
+      213: -402065252172264238
+    second: level1_running_mask_343
+  - first:
+      213: -5977750149935384135
+    second: level1_running_mask_344
+  - first:
+      213: -7028480507242899313
+    second: level1_running_mask_345
+  - first:
+      213: -5641542311696347349
+    second: level1_running_mask_346
+  - first:
+      213: 7277817824139482299
+    second: level1_running_mask_347
+  - first:
+      213: -8345619916779048426
+    second: level1_running_mask_348
+  - first:
+      213: 4643464089024318069
+    second: level1_running_mask_349
+  - first:
+      213: 9185502241360169819
+    second: level1_running_mask_350
+  - first:
+      213: 4261936020644021723
+    second: level1_running_mask_351
+  - first:
+      213: 5412285496407872919
+    second: level1_running_mask_352
+  - first:
+      213: -8515679343463203197
+    second: level1_running_mask_353
+  - first:
+      213: 6719814046195511418
+    second: level1_running_mask_354
+  - first:
+      213: 5357578148677644279
+    second: level1_running_mask_355
+  - first:
+      213: -8026273049975063636
+    second: level1_running_mask_356
+  - first:
+      213: -6580477807989928895
+    second: level1_running_mask_357
+  - first:
+      213: -141359176509530235
+    second: level1_running_mask_358
+  - first:
+      213: 2987490306811795522
+    second: level1_running_mask_359
+  - first:
+      213: -6378831929318712493
+    second: level1_running_mask_360
+  - first:
+      213: 8847544808372423612
+    second: level1_running_mask_361
+  - first:
+      213: -636328887498396928
+    second: level1_running_mask_362
+  - first:
+      213: 6196289849906653254
+    second: level1_running_mask_363
+  - first:
+      213: 2804624893846410432
+    second: level1_running_mask_364
+  - first:
+      213: 5445331866986339971
+    second: level1_running_mask_365
+  - first:
+      213: 7228028751059937597
+    second: level1_running_mask_366
+  - first:
+      213: -5204572810240759584
+    second: level1_running_mask_367
+  - first:
+      213: 2294220136387295156
+    second: level1_running_mask_368
+  - first:
+      213: 4893524963668887077
+    second: level1_running_mask_369
+  - first:
+      213: 3817414153465277775
+    second: level1_running_mask_370
+  - first:
+      213: 6079346583877972393
+    second: level1_running_mask_371
+  - first:
+      213: 8378824010077748304
+    second: level1_running_mask_372
+  - first:
+      213: 5654943556328503942
+    second: level1_running_mask_373
+  - first:
+      213: 2095810993161226655
+    second: level1_running_mask_374
+  - first:
+      213: -6942208340776648324
+    second: level1_running_mask_375
+  - first:
+      213: -6909849323671788097
+    second: level1_running_mask_376
+  - first:
+      213: -6504501774015205124
+    second: level1_running_mask_377
+  - first:
+      213: 1633406740404633248
+    second: level1_running_mask_378
+  - first:
+      213: -947905209332689529
+    second: level1_running_mask_379
+  - first:
+      213: -2511611878316635593
+    second: level1_running_mask_380
+  - first:
+      213: -7514863919920237145
+    second: level1_running_mask_381
+  - first:
+      213: -8311860235717173607
+    second: level1_running_mask_382
+  - first:
+      213: 3613688870049933892
+    second: level1_running_mask_383
+  - first:
+      213: -629845024674875438
+    second: level1_running_mask_384
+  - first:
+      213: -1836790547479008292
+    second: level1_running_mask_385
+  - first:
+      213: -3358796769274734460
+    second: level1_running_mask_386
+  - first:
+      213: -4020086899641268564
+    second: level1_running_mask_387
+  - first:
+      213: 805443268929805768
+    second: level1_running_mask_388
+  - first:
+      213: 1530021145668943906
+    second: level1_running_mask_389
+  - first:
+      213: -2918967756878813703
+    second: level1_running_mask_390
+  - first:
+      213: -8414407606217921101
+    second: level1_running_mask_391
+  - first:
+      213: 5842505569988028444
+    second: level1_running_mask_392
+  - first:
+      213: 4417246119428126549
+    second: level1_running_mask_393
+  - first:
+      213: -5860993989192139437
+    second: level1_running_mask_394
+  - first:
+      213: 8190336397912398786
+    second: level1_running_mask_395
+  - first:
+      213: -1515514000717607487
+    second: level1_running_mask_396
+  - first:
+      213: -4447534966771269821
+    second: level1_running_mask_397
+  - first:
+      213: -459234831259857372
+    second: level1_running_mask_398
+  - first:
+      213: 9221635041174399224
+    second: level1_running_mask_399
+  - first:
+      213: -5605810822989653350
+    second: level1_running_mask_400
+  - first:
+      213: 6705998205477324044
+    second: level1_running_mask_401
+  - first:
+      213: 6795075947869501593
+    second: level1_running_mask_402
+  - first:
+      213: 3092605537451701590
+    second: level1_running_mask_403
+  - first:
+      213: 1383141202279233057
+    second: level1_running_mask_404
+  - first:
+      213: 3551138710887214618
+    second: level1_running_mask_405
+  - first:
+      213: -8424081865668629824
+    second: level1_running_mask_406
+  - first:
+      213: -4236098962820113873
+    second: level1_running_mask_407
+  - first:
+      213: -3937651062945324211
+    second: level1_running_mask_408
+  - first:
+      213: -8965332673607047116
+    second: level1_running_mask_409
+  - first:
+      213: 2248231218882308388
+    second: level1_running_mask_410
+  - first:
+      213: -5080519656435034803
+    second: level1_running_mask_411
+  - first:
+      213: -3140592586563445311
+    second: level1_running_mask_412
+  - first:
+      213: -8030782814461215216
+    second: level1_running_mask_413
+  - first:
+      213: -8309060023559490421
+    second: level1_running_mask_414
+  - first:
+      213: 106659430315774248
+    second: level1_running_mask_415
+  - first:
+      213: -6344459010375123084
+    second: level1_running_mask_416
+  - first:
+      213: 1957055995464171816
+    second: level1_running_mask_417
+  - first:
+      213: -4279540853009906743
+    second: level1_running_mask_418
+  - first:
+      213: -2535055096620466744
+    second: level1_running_mask_419
+  - first:
+      213: 7892883212321607421
+    second: level1_running_mask_420
+  - first:
+      213: -5563142127051922389
+    second: level1_running_mask_421
+  - first:
+      213: 4126323007438512481
+    second: level1_running_mask_422
+  - first:
+      213: -7172269052637222231
+    second: level1_running_mask_423
+  - first:
+      213: 6324198475002380209
+    second: level1_running_mask_424
+  - first:
+      213: 273555136975935568
+    second: level1_running_mask_425
+  - first:
+      213: 7385720055101364440
+    second: level1_running_mask_426
+  - first:
+      213: 1978032957796578571
+    second: level1_running_mask_427
+  - first:
+      213: 6072695354175136949
+    second: level1_running_mask_428
+  - first:
+      213: 8329739647596862503
+    second: level1_running_mask_429
+  - first:
+      213: -2542193575019898596
+    second: level1_running_mask_430
+  - first:
+      213: -7799734796363975985
+    second: level1_running_mask_431
+  - first:
+      213: -131825796318894558
+    second: level1_running_mask_432
+  - first:
+      213: -640404372480704736
+    second: level1_running_mask_433
+  - first:
+      213: 3138569637115539086
+    second: level1_running_mask_434
+  - first:
+      213: -9128291992175004718
+    second: level1_running_mask_435
+  - first:
+      213: 5603482460765699872
+    second: level1_running_mask_436
+  - first:
+      213: 5346540347030722805
+    second: level1_running_mask_437
+  - first:
+      213: -7244034043057157171
+    second: level1_running_mask_438
+  - first:
+      213: 2640874061969897976
+    second: level1_running_mask_439
+  - first:
+      213: -3212468115077862826
+    second: level1_running_mask_440
+  - first:
+      213: 9098904842860092779
+    second: level1_running_mask_441
+  - first:
+      213: 7581276148508292320
+    second: level1_running_mask_442
+  - first:
+      213: 3319350973134280302
+    second: level1_running_mask_443
+  - first:
+      213: -7755254619452526573
+    second: level1_running_mask_444
+  - first:
+      213: -146102130093641716
+    second: level1_running_mask_445
+  - first:
+      213: 7709856713892449263
+    second: level1_running_mask_446
+  - first:
+      213: 5350342207315639194
+    second: level1_running_mask_447
+  - first:
+      213: -1179586405493822671
+    second: level1_running_mask_448
+  - first:
+      213: -7659847774305467427
+    second: level1_running_mask_449
+  - first:
+      213: -8603398931317276916
+    second: level1_running_mask_450
+  - first:
+      213: 6583258319394267465
+    second: level1_running_mask_451
+  - first:
+      213: 7921111332693031198
+    second: level1_running_mask_452
+  - first:
+      213: 1188470787029090987
+    second: level1_running_mask_453
+  - first:
+      213: 1257336142824017847
+    second: level1_running_mask_454
+  - first:
+      213: -3684140256197565154
+    second: level1_running_mask_455
+  - first:
+      213: 86451078664685940
+    second: level1_running_mask_456
+  - first:
+      213: -4207228941498810380
+    second: level1_running_mask_457
+  - first:
+      213: 3227527677030963125
+    second: level1_running_mask_458
+  - first:
+      213: -2790690399145317131
+    second: level1_running_mask_459
+  - first:
+      213: 3116618074341642675
+    second: level1_running_mask_460
+  - first:
+      213: 3340864044757943309
+    second: level1_running_mask_461
+  - first:
+      213: 304742523408006743
+    second: level1_running_mask_462
+  - first:
+      213: 6084337551617608588
+    second: level1_running_mask_463
+  - first:
+      213: 5479295465100186750
+    second: level1_running_mask_464
+  - first:
+      213: 292194300618411966
+    second: level1_running_mask_465
+  - first:
+      213: -7006973740278401851
+    second: level1_running_mask_466
+  - first:
+      213: 6724331459419340897
+    second: level1_running_mask_467
+  - first:
+      213: 5123701951419250436
+    second: level1_running_mask_468
+  - first:
+      213: 7225660592125443625
+    second: level1_running_mask_469
+  - first:
+      213: -5498375673827860813
+    second: level1_running_mask_470
+  - first:
+      213: 1381806119461524162
+    second: level1_running_mask_471
+  - first:
+      213: 6518497819561611282
+    second: level1_running_mask_472
+  - first:
+      213: 1924454119413841256
+    second: level1_running_mask_473
+  - first:
+      213: -3852818576951302658
+    second: level1_running_mask_474
+  - first:
+      213: -2902303590492947524
+    second: level1_running_mask_475
+  - first:
+      213: 6538387749738912449
+    second: level1_running_mask_476
+  - first:
+      213: 4770639484323232240
+    second: level1_running_mask_477
+  - first:
+      213: 6058927528746127129
+    second: level1_running_mask_478
+  - first:
+      213: 2494251936461976808
+    second: level1_running_mask_479
+  - first:
+      213: -8255522698721817982
+    second: level1_running_mask_480
+  - first:
+      213: 4614846607509075290
+    second: level1_running_mask_481
+  - first:
+      213: -1072279427269470151
+    second: level1_running_mask_482
+  - first:
+      213: 8565352025739356296
+    second: level1_running_mask_483
+  - first:
+      213: -455548939639325108
+    second: level1_running_mask_484
+  - first:
+      213: -5558170326596230481
+    second: level1_running_mask_485
+  - first:
+      213: -3980631854317860002
+    second: level1_running_mask_486
+  - first:
+      213: 4211688986976918047
+    second: level1_running_mask_487
+  - first:
+      213: -6924792858914244577
+    second: level1_running_mask_488
+  - first:
+      213: 2171832423003038269
+    second: level1_running_mask_489
+  - first:
+      213: -1390501284446915524
+    second: level1_running_mask_490
+  - first:
+      213: -4657540061050159660
+    second: level1_running_mask_491
+  - first:
+      213: 7516518831156161581
+    second: level1_running_mask_492
+  - first:
+      213: 8787019830344545531
+    second: level1_running_mask_493
+  - first:
+      213: 3987031139902297993
+    second: level1_running_mask_494
+  - first:
+      213: -2379492293855371863
+    second: level1_running_mask_495
+  - first:
+      213: -3509453422686880180
+    second: level1_running_mask_496
+  - first:
+      213: -5247149430137809785
+    second: level1_running_mask_497
+  - first:
+      213: 8796049342481595832
+    second: level1_running_mask_498
+  - first:
+      213: 2460895935989825245
+    second: level1_running_mask_499
+  - first:
+      213: 1429766369928264829
+    second: level1_running_mask_500
+  - first:
+      213: 4785986019370154536
+    second: level1_running_mask_501
+  - first:
+      213: 6265853156616462141
+    second: level1_running_mask_502
+  - first:
+      213: 3855804535616919061
+    second: level1_running_mask_503
+  - first:
+      213: 3286677855518321335
+    second: level1_running_mask_504
+  - first:
+      213: 8633706153260520161
+    second: level1_running_mask_505
+  - first:
+      213: -4550874745148285808
+    second: level1_running_mask_506
+  - first:
+      213: 6117192069993050968
+    second: level1_running_mask_507
+  - first:
+      213: -4088925408020155755
+    second: level1_running_mask_508
+  - first:
+      213: -5731196014585116068
+    second: level1_running_mask_509
+  - first:
+      213: -6309104365398777578
+    second: level1_running_mask_510
+  - first:
+      213: 8382980439012263483
+    second: level1_running_mask_511
+  - first:
+      213: -6628758287670984072
+    second: level1_running_mask_512
+  - first:
+      213: 5401201710126627334
+    second: level1_running_mask_513
+  - first:
+      213: 7969507530317753899
+    second: level1_running_mask_514
+  - first:
+      213: 4655562625410010268
+    second: level1_running_mask_515
+  - first:
+      213: 1041416002934132804
+    second: level1_running_mask_516
+  - first:
+      213: 8759041642753347971
+    second: level1_running_mask_517
+  - first:
+      213: -2125715517921765932
+    second: level1_running_mask_518
+  - first:
+      213: 2723737759145191288
+    second: level1_running_mask_519
+  - first:
+      213: 398269777065670765
+    second: level1_running_mask_520
+  - first:
+      213: 2303142826416412977
+    second: level1_running_mask_521
+  - first:
+      213: -8476866190940153962
+    second: level1_running_mask_522
+  - first:
+      213: 1504428572409944579
+    second: level1_running_mask_523
+  - first:
+      213: -6214265450170267757
+    second: level1_running_mask_524
+  - first:
+      213: -2127620619882132259
+    second: level1_running_mask_525
+  - first:
+      213: 7403124462661702186
+    second: level1_running_mask_526
+  - first:
+      213: -6336112352803943407
+    second: level1_running_mask_527
+  - first:
+      213: 6322295868712580708
+    second: level1_running_mask_528
+  - first:
+      213: -6227586497878902544
+    second: level1_running_mask_529
+  - first:
+      213: 9101177789227303163
+    second: level1_running_mask_530
+  - first:
+      213: 238627763907986912
+    second: level1_running_mask_531
+  - first:
+      213: -375433672159198785
+    second: level1_running_mask_532
+  - first:
+      213: 6396978447540965012
+    second: level1_running_mask_533
+  - first:
+      213: -6150852210758108371
+    second: level1_running_mask_534
+  - first:
+      213: 1293999828449469048
+    second: level1_running_mask_535
+  - first:
+      213: -306606566626020343
+    second: level1_running_mask_536
+  - first:
+      213: -2262863293890424672
+    second: level1_running_mask_537
+  - first:
+      213: 9030503209599717521
+    second: level1_running_mask_538
+  - first:
+      213: 9200721157401185711
+    second: level1_running_mask_539
+  - first:
+      213: 2512479221691481479
+    second: level1_running_mask_540
+  - first:
+      213: -2189898330774082917
+    second: level1_running_mask_541
+  - first:
+      213: -160574713503802000
+    second: level1_running_mask_542
+  - first:
+      213: 2462834610980841268
+    second: level1_running_mask_543
+  - first:
+      213: -7288998004353574037
+    second: level1_running_mask_544
+  - first:
+      213: 5855434212553109503
+    second: level1_running_mask_545
+  - first:
+      213: 3042645909396782398
+    second: level1_running_mask_546
+  - first:
+      213: 6701380220414897292
+    second: level1_running_mask_547
+  - first:
+      213: -329288774654555108
+    second: level1_running_mask_548
+  - first:
+      213: 341385254069106982
+    second: level1_running_mask_549
+  - first:
+      213: 7410660018333420751
+    second: level1_running_mask_550
+  - first:
+      213: 4804097335802577183
+    second: level1_running_mask_551
+  - first:
+      213: 3121611406477983368
+    second: level1_running_mask_552
+  - first:
+      213: -7921854812752273733
+    second: level1_running_mask_553
+  - first:
+      213: 6460237010528990739
+    second: level1_running_mask_554
+  - first:
+      213: -2221671742981492225
+    second: level1_running_mask_555
+  - first:
+      213: -7821371324513443911
+    second: level1_running_mask_556
+  - first:
+      213: 8997332241069090879
+    second: level1_running_mask_557
+  - first:
+      213: -4409141988002751522
+    second: level1_running_mask_558
+  - first:
+      213: 8642667010417249311
+    second: level1_running_mask_559
+  - first:
+      213: 8090351387453692981
+    second: level1_running_mask_560
+  - first:
+      213: -9085323007944311755
+    second: level1_running_mask_561
+  - first:
+      213: 4168161923566349104
+    second: level1_running_mask_562
+  - first:
+      213: 5907476080598295349
+    second: level1_running_mask_563
+  - first:
+      213: -918973815891140900
+    second: level1_running_mask_564
+  - first:
+      213: -7672499610033322370
+    second: level1_running_mask_565
+  - first:
+      213: 3869307456906810399
+    second: level1_running_mask_566
+  - first:
+      213: -1291618950562159075
+    second: level1_running_mask_567
+  - first:
+      213: -2838264583738643225
+    second: level1_running_mask_568
+  - first:
+      213: 1811978251970220904
+    second: level1_running_mask_569
+  - first:
+      213: 144590449616310922
+    second: level1_running_mask_570
+  - first:
+      213: 3047642697984957569
+    second: level1_running_mask_571
+  - first:
+      213: 2944298294078248382
+    second: level1_running_mask_572
+  - first:
+      213: 7661623466929468832
+    second: level1_running_mask_573
+  - first:
+      213: -4280073605772829984
+    second: level1_running_mask_574
+  - first:
+      213: 7118338462575290281
+    second: level1_running_mask_575
+  - first:
+      213: -4190717411107317691
+    second: level1_running_mask_576
+  - first:
+      213: -4496140499803456547
+    second: level1_running_mask_577
+  - first:
+      213: -5075711162215498832
+    second: level1_running_mask_578
+  - first:
+      213: -1856484122987569683
+    second: level1_running_mask_579
+  - first:
+      213: 4824290672983456256
+    second: level1_running_mask_580
+  - first:
+      213: 980768620535988739
+    second: level1_running_mask_581
+  - first:
+      213: 3607587043046691875
+    second: level1_running_mask_582
+  - first:
+      213: 7279650367814535144
+    second: level1_running_mask_583
+  - first:
+      213: 1005128274535203517
+    second: level1_running_mask_584
+  - first:
+      213: 1810489017686720386
+    second: level1_running_mask_585
+  - first:
+      213: -407322712131451834
+    second: level1_running_mask_586
+  - first:
+      213: 8863891401811148858
+    second: level1_running_mask_587
+  - first:
+      213: -5263518980934386473
+    second: level1_running_mask_588
+  - first:
+      213: -388444472224857341
+    second: level1_running_mask_589
+  - first:
+      213: 3309213677523058708
+    second: level1_running_mask_590
+  - first:
+      213: 6029526563221106448
+    second: level1_running_mask_591
+  - first:
+      213: -2161966114487945166
+    second: level1_running_mask_592
+  - first:
+      213: -8708897000831297577
+    second: level1_running_mask_593
+  - first:
+      213: -4984417424047047064
+    second: level1_running_mask_594
+  - first:
+      213: -2305091112267506241
+    second: level1_running_mask_595
+  - first:
+      213: 1711839813447693130
+    second: level1_running_mask_596
+  - first:
+      213: -2824873447882245224
+    second: level1_running_mask_597
+  - first:
+      213: -8126153383500935117
+    second: level1_running_mask_598
+  - first:
+      213: -7980833120395668689
+    second: level1_running_mask_599
+  - first:
+      213: -1786436655913919391
+    second: level1_running_mask_600
+  - first:
+      213: -2336924188075333674
+    second: level1_running_mask_601
+  - first:
+      213: 4538559972243030235
+    second: level1_running_mask_602
+  - first:
+      213: -3130311245536564869
+    second: level1_running_mask_603
+  - first:
+      213: 6973869412415242902
+    second: level1_running_mask_604
+  - first:
+      213: -7891087205824902319
+    second: level1_running_mask_605
+  - first:
+      213: -6035080480128685361
+    second: level1_running_mask_606
+  - first:
+      213: 1869103573082110039
+    second: level1_running_mask_607
+  - first:
+      213: -1817233346458871326
+    second: level1_running_mask_608
+  - first:
+      213: 2758036035096923216
+    second: level1_running_mask_609
+  - first:
+      213: 4224553365206566995
+    second: level1_running_mask_610
+  - first:
+      213: -6635058943043609555
+    second: level1_running_mask_611
+  - first:
+      213: 7268758750829910450
+    second: level1_running_mask_612
+  - first:
+      213: 4791446726302552685
+    second: level1_running_mask_613
+  - first:
+      213: 8796783697509783141
+    second: level1_running_mask_614
+  - first:
+      213: 9174409666564667134
+    second: level1_running_mask_615
+  - first:
+      213: -2462532577150642598
+    second: level1_running_mask_616
+  - first:
+      213: 3983792348687611452
+    second: level1_running_mask_617
+  - first:
+      213: -169481692823650862
+    second: level1_running_mask_618
+  - first:
+      213: -452604305413098955
+    second: level1_running_mask_619
+  - first:
+      213: -6787309207830614537
+    second: level1_running_mask_620
+  - first:
+      213: -3587229598025538053
+    second: level1_running_mask_621
+  - first:
+      213: 5299647084404703683
+    second: level1_running_mask_622
+  - first:
+      213: -6211089533557509248
+    second: level1_running_mask_623
+  - first:
+      213: 1751018438675119075
+    second: level1_running_mask_624
+  - first:
+      213: -3399439947876588838
+    second: level1_running_mask_625
+  - first:
+      213: 1561611771353832917
+    second: level1_running_mask_626
+  - first:
+      213: -7958457132036198819
+    second: level1_running_mask_627
+  - first:
+      213: -1573210553258197726
+    second: level1_running_mask_628
+  - first:
+      213: -8641587105671788559
+    second: level1_running_mask_629
+  - first:
+      213: -1220814176691473113
+    second: level1_running_mask_630
+  - first:
+      213: 6520092168750975777
+    second: level1_running_mask_631
+  - first:
+      213: 2446969972064597032
+    second: level1_running_mask_632
+  - first:
+      213: 2282257977989349493
+    second: level1_running_mask_633
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: level1_running_mask_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8e1b9c6d27c6b20800000000000000
+      internalID: 3129002107948099745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f016fbcc489cd3d70800000000000000
+      internalID: 9024590800528302351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a998d273d1c7ac0800000000000000
+      internalID: -3856175058111587815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_3
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edff43d58499661b0800000000000000
+      internalID: -5663670945291370530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db827c01757985560800000000000000
+      internalID: 7302753195980695741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_5
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb2f631c9c62ed60800000000000000
+      internalID: 7918010512467504119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_6
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0ef713113155c60800000000000000
+      internalID: 7806166493682458872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_7
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2551db62540f5d0800000000000000
+      internalID: -3030846516536978691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_8
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da0f1e0eaf2ee7d0800000000000000
+      internalID: -2887317886490178859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_9
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b1a247901433430800000000000000
+      internalID: 3761421622643923747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_10
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1890cc81c96254440800000000000000
+      internalID: 4919380619844913537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_11
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056e8df2f59cfc990800000000000000
+      internalID: -7363445455065651632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_12
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a109d1c74fc778f0800000000000000
+      internalID: -542737322973003358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_13
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ceace41b5c0cbde0800000000000000
+      internalID: -1316163405766414653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_14
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c4343f3df4ab500800000000000000
+      internalID: 412730087595789462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_15
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f491e8f5d672522f0800000000000000
+      internalID: -998348391684630193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_16
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88a84ee2c87274b0800000000000000
+      internalID: -5444156220920780662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_17
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a206fc231664c10800000000000000
+      internalID: 2037422752287173199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_18
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9288d00630f3280800000000000000
+      internalID: -9061520214167377426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_19
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb6663e3548cdcb0800000000000000
+      internalID: -4837846403870462982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_20
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fed646c72991840800000000000000
+      internalID: 5195344708107104036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_21
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 770
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9ef93eb7754ba30800000000000000
+      internalID: 4230102139619240436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418dd606dafc8cc60800000000000000
+      internalID: 7838743494992451604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1d3cd7bd8abeef0800000000000000
+      internalID: -77782907887562255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca7307be0a18be30800000000000000
+      internalID: 4519390876568615622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_25
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838c90cec8477a580800000000000000
+      internalID: -8815949596950149064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_26
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94a325b4d2425430800000000000000
+      internalID: 3770149319402038428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_27
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050e84cfcea18bc00800000000000000
+      internalID: 916512129317134416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_28
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d299da105a11bf0800000000000000
+      internalID: -355321468959511150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_29
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc728cf7193957e0800000000000000
+      internalID: -1776325802837508911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_30
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e36b2e355ea65f60800000000000000
+      internalID: 8022791467345601509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_31
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1530548d3916750800000000000000
+      internalID: 6296476311120728570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_32
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85680a01a5aa70500800000000000000
+      internalID: 362445598829348440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_33
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d78f24eb38aeaeb0800000000000000
+      internalID: -4706639585370732586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_34
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7717d66c7a45231c0800000000000000
+      internalID: -4525461595988594313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_35
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84626d54b39e6c920800000000000000
+      internalID: 3010349841727759944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_36
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43c9ea5f39a69810800000000000000
+      internalID: 1771789592990171981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_37
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9cb9d36f2bb2f50800000000000000
+      internalID: 6857771628267030960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_38
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7ed71a9f8e7ce50800000000000000
+      internalID: 6829683518784530422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_39
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66dad3acdb091960800000000000000
+      internalID: 7573097290669938286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_40
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23537d571a2a5b80800000000000000
+      internalID: -8405359474693156052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_41
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f145f3a4aa4b733d0800000000000000
+      internalID: -3226911964504566753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_42
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760518b00f49e84f0800000000000000
+      internalID: -824557923056136089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_43
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 660
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec472ac6f45e410a0800000000000000
+      internalID: -6911647398819105586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8402b8562e1b3b40800000000000000
+      internalID: 5420959726516176014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_45
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37010f69f92515d30800000000000000
+      internalID: 4418403554812760179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_46
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb5132e23beb2310800000000000000
+      internalID: 1381456314494966749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_47
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eac3fc947d6ae50800000000000000
+      internalID: 6820375397708639858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_48
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a383a3748523e000800000000000000
+      internalID: 63936070519325605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_49
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4dbc4cb76758fc60800000000000000
+      internalID: 7852122053372853580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_50
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031db92b0f0286390800000000000000
+      internalID: -7824968134395440848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_51
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f72f0c6d97706bd0800000000000000
+      internalID: -2638977863632607247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_52
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54b72b093fb70f30800000000000000
+      internalID: 4541809000947627100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_53
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032ec93c34a933d40800000000000000
+      internalID: 5562959580568019504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_54
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1621992e8b72a6e0800000000000000
+      internalID: -1827762648246049253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_55
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabd505552fec0240800000000000000
+      internalID: 4759441849843047338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_56
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f08f4df8e7ba13f0800000000000000
+      internalID: -929228161788444426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_57
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8204d71d648820a70800000000000000
+      internalID: 8791739260324364328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_58
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b117d723c940f560800000000000000
+      internalID: 7345452094777135538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_59
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccf170a596ada670800000000000000
+      internalID: 8551674429018602695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_60
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6689272abd0852a90800000000000000
+      internalID: -7339318336918742938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_61
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439f4c6e7335fd040800000000000000
+      internalID: 4674546437793839412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_62
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35986c4fbd0e63c20800000000000000
+      internalID: 3185981021720316243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_63
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27baae5da56a819c0800000000000000
+      internalID: -3956229363578786958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_64
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11bbe41c31377090800000000000000
+      internalID: -8036900875900571364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_65
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 550
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b761a0a3c214e70800000000000000
+      internalID: 9097601350054083349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba49b93325be4f290800000000000000
+      internalID: -7857396711568993109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_67
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c79523fcca81e470800000000000000
+      internalID: 8422165391016826819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_68
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2e28a7a022f07e0800000000000000
+      internalID: -1797180297897123155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_69
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cfd5850c71f1f80800000000000000
+      internalID: -8133756287124112261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_70
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83bfcf58efb4e6310800000000000000
+      internalID: 1400140090700528440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_71
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02156430bf9c5e30800000000000000
+      internalID: 4493642107351011854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_72
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d92d326b6ff14eb0800000000000000
+      internalID: -4737224496342292007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_73
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c618d31ca740310800000000000000
+      internalID: 1370355157006642200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_74
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ddf7c6dcb5039a0800000000000000
+      internalID: -6255398944570876555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_75
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca62687c6d9e47b0800000000000000
+      internalID: -5238076227383563576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_76
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c46f5afe84e2650800000000000000
+      internalID: 6209981130309258249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_77
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc51d633853ff6b0800000000000000
+      internalID: -5260427002068771637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_78
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f06d2174ff708290800000000000000
+      internalID: -7890165859305561866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_79
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d5b0a875a857cc0800000000000000
+      internalID: -3713910209114317495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_80
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d9b50f7e5aaab00800000000000000
+      internalID: 840666696046583068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_81
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c04ceeeb71484e40800000000000000
+      internalID: 5640830533826789577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_82
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfefea57ebef8b150800000000000000
+      internalID: 5888736606758567677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_83
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e85d7c19df06b0e0800000000000000
+      internalID: -2254597138292057881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_84
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed892220335a42e40800000000000000
+      internalID: 5630807072617699550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_85
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f329efc54ce8682d0800000000000000
+      internalID: -3276774704840535489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_86
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56de5b34c74e1a8e0800000000000000
+      internalID: -1683813563296780955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_87
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 440
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed48b06b63c9f6c0800000000000000
+      internalID: -4109038319047258655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fdc0106286fc480800000000000000
+      internalID: -8876761828088291466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_89
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d2e25b30e6496b0800000000000000
+      internalID: -5290482700049830576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_90
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e14645efec2fba0800000000000000
+      internalID: -6056550957127033209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_91
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717862a94ffeb97c0800000000000000
+      internalID: -4063390404934465769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_92
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4dfcafb0600eb50800000000000000
+      internalID: 6620298100756960433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_93
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785564a3e022683d0800000000000000
+      internalID: -3204836640324954745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_94
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad61dd657c964570800000000000000
+      internalID: 8450613778974862767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_95
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431a4ba0590431fc0800000000000000
+      internalID: -3525403074427051724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_96
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd59bdd412d120ff0800000000000000
+      internalID: -71462615207143972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_97
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ba63ed688859f30800000000000000
+      internalID: 4581718308754467734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_98
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3ac178808dfd260800000000000000
+      internalID: 7124650666661553094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_99
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cb82c0dc220d3b0800000000000000
+      internalID: -5489849681696998251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_100
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf264fec1e7df7a0800000000000000
+      internalID: -6341774037529251892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_101
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5374fb6d95ec093b0800000000000000
+      internalID: -5507675459023845579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_102
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc48a882c9991da0800000000000000
+      internalID: -5973574369934816055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_103
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391562a81b8884e50800000000000000
+      internalID: 6793830333996749203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_104
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2b99f41008a46b0800000000000000
+      internalID: -5311292067411283247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_105
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c646246acba37bd80800000000000000
+      internalID: -8235048811706030996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_106
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d94d2c8a1894acd0800000000000000
+      internalID: -2547744249396508200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_107
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8f8d4bddcd2edb0800000000000000
+      internalID: -4764002611024562008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_108
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9500bdc6b0ceaa00800000000000000
+      internalID: 769764477694379423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_109
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 330
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c6e3cce8eff0b60800000000000000
+      internalID: 7714664575974403169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674f14c80f0b714d0800000000000000
+      internalID: -3163865666012711818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_111
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff38589d5c24bbc90800000000000000
+      internalID: -7153050165622504449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_112
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e69a8d97ac0d470800000000000000
+      internalID: 8417450328230293091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_113
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ab04768762bd4d0800000000000000
+      internalID: -3108848819198969299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_114
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa8564dd0daa05f0800000000000000
+      internalID: -789628509740496138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_115
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7461ebcfcb901aca0800000000000000
+      internalID: -6007509720636713401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_116
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116dc3128fb4d9400800000000000000
+      internalID: 332505476576892433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_117
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b2cdc610e87bd90800000000000000
+      internalID: -7082035752244335748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_118
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878d0ad92434d5850800000000000000
+      internalID: 6367319401563215992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_119
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f58817a99b495ac0800000000000000
+      internalID: -3865975681815378447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_120
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a09d0ce7c3f57790800000000000000
+      internalID: -7532846761722933088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_121
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f97e3dafe13dfb0800000000000000
+      internalID: -4624318329733537922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_122
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a25f067b19898540800000000000000
+      internalID: 5010686811464225446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_123
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801841219da0e4ff0800000000000000
+      internalID: -50090618426982136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_124
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217ccf1291c9a3730800000000000000
+      internalID: 3979664852493584146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_125
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c9ca1f65990f370800000000000000
+      internalID: 8354345907473128521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_126
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11a2e06a74b9aae0800000000000000
+      internalID: -1537499360065838820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_127
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b64340e267bcc8c0800000000000000
+      internalID: -3977602735577807175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_128
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8719197375ac23e40800000000000000
+      internalID: 5634788559737164152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_129
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe86435b2ab17d7b0800000000000000
+      internalID: -5199656859137185553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_130
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7736e80035c7c70800000000000000
+      internalID: 8970135819669174186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_131
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 220
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacf2f003f2ce7ee0800000000000000
+      internalID: -1261356496668394326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a9d4a5bd5811420800000000000000
+      internalID: 2599005637128854023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_133
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef450808ec97ea120800000000000000
+      internalID: 2427011177025393918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_134
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66eecd33852b43d00800000000000000
+      internalID: 951581513179000422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_135
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd2aa8ef7b9b61c0800000000000000
+      internalID: -4509339628214800911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_136
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92da3b44ac858390800000000000000
+      internalID: -7816686940966956387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_137
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127d5daffdf331c10800000000000000
+      internalID: 2023030888838059809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_138
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7bd3e2f200571e0800000000000000
+      internalID: -2200852640261359701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_139
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9f8f455a398ff60800000000000000
+      internalID: 8068361070738733487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_140
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ad564404fe7f680800000000000000
+      internalID: -8721239094075205102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_141
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734b46115e5680710800000000000000
+      internalID: 1659688497199756343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_142
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f678fd72dbb1cb540800000000000000
+      internalID: 5024921783470360431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_143
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bad53639f5aa660800000000000000
+      internalID: 7397830424541375346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_144
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09008a52a68674e0800000000000000
+      internalID: -1984250553948960502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_145
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc3e45f20c0c88b0800000000000000
+      internalID: -5148727067146306356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_146
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c788a96b101fcc0800000000000000
+      internalID: -3679157536796672870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_147
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f67a9a1efe1d620800000000000000
+      internalID: 2797280596066791185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_148
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a49f560aed32f20800000000000000
+      internalID: 3396803324454455858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_149
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83bd5881b50f6830800000000000000
+      internalID: 4066475248594039691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_150
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae3c43645d4ba4f0800000000000000
+      internalID: -816473882599080281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_151
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d983d2b3ec27e80800000000000000
+      internalID: -8182250819421692578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_152
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208814b43c0583860800000000000000
+      internalID: 7509841178351732738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_153
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 110
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4c5b37f8b2a47c0800000000000000
+      internalID: -4086405816763693832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766f5e61bc5219800800000000000000
+      internalID: 617316178119226983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_155
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f41a8d18630b4f00800000000000000
+      internalID: 1101978279529288953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_156
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0a67e0d1c742430800000000000000
+      internalID: 3757264453372387578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_157
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f77e477a25e10a30800000000000000
+      internalID: 4179873899729549303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_158
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726ee9ad0964d0ca0800000000000000
+      internalID: -6049101136531626457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_159
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47f410cc885c23e0800000000000000
+      internalID: -2077187966583376050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_160
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599b9af67b642aaf0800000000000000
+      internalID: -386668864334087787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_161
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d640ff34e4004a0800000000000000
+      internalID: -6629212597541114472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_162
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59957a80fb5e08ea0800000000000000
+      internalID: -5872441305444427371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_163
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1397ac8c95351b780800000000000000
+      internalID: -8669056162625586895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_164
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30566bae4177c6a90800000000000000
+      internalID: -7319344362663025405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_165
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f11641f83a480cc0800000000000000
+      internalID: -3744661481732042249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_166
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e32e3407747e3430800000000000000
+      internalID: 3764574393049424866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_167
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42a5a85727feae00800000000000000
+      internalID: 1058054710841680460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_168
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35efa83ea4e29d60800000000000000
+      internalID: 7895624533660394815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_169
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676cdc49c1bdb9c30800000000000000
+      internalID: 4367325179467908726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_170
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c805cc38de44a30800000000000000
+      internalID: 4198741902940474440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_171
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b963327be61758230800000000000000
+      internalID: 3640440594131793563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_172
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cd0ae8f9010e6a0800000000000000
+      internalID: -6422114791151575969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_173
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdb76deef25f6e90800000000000000
+      internalID: -7030309238443885116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_174
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc201fbac13a0f40800000000000000
+      internalID: 5695419425622076622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_running_mask_175
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 0
+        width: 78
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7e19f218765b7a0800000000000000
+      internalID: -6362065094044424203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9f5b6365f9449aa4cbb41bd788231a4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      level1_running_mask_0: 3129002107948099745
+      level1_running_mask_1: 9024590800528302351
+      level1_running_mask_10: 4919380619844913537
+      level1_running_mask_100: -6341774037529251892
+      level1_running_mask_101: -5507675459023845579
+      level1_running_mask_102: -5973574369934816055
+      level1_running_mask_103: 6793830333996749203
+      level1_running_mask_104: -5311292067411283247
+      level1_running_mask_105: -8235048811706030996
+      level1_running_mask_106: -2547744249396508200
+      level1_running_mask_107: -4764002611024562008
+      level1_running_mask_108: 769764477694379423
+      level1_running_mask_109: 7714664575974403169
+      level1_running_mask_11: -7363445455065651632
+      level1_running_mask_110: -3163865666012711818
+      level1_running_mask_111: -7153050165622504449
+      level1_running_mask_112: 8417450328230293091
+      level1_running_mask_113: -3108848819198969299
+      level1_running_mask_114: -789628509740496138
+      level1_running_mask_115: -6007509720636713401
+      level1_running_mask_116: 332505476576892433
+      level1_running_mask_117: -7082035752244335748
+      level1_running_mask_118: 6367319401563215992
+      level1_running_mask_119: -3865975681815378447
+      level1_running_mask_12: -542737322973003358
+      level1_running_mask_120: -7532846761722933088
+      level1_running_mask_121: -4624318329733537922
+      level1_running_mask_122: 5010686811464225446
+      level1_running_mask_123: -50090618426982136
+      level1_running_mask_124: 3979664852493584146
+      level1_running_mask_125: 8354345907473128521
+      level1_running_mask_126: -1537499360065838820
+      level1_running_mask_127: -3977602735577807175
+      level1_running_mask_128: 5634788559737164152
+      level1_running_mask_129: -5199656859137185553
+      level1_running_mask_13: -1316163405766414653
+      level1_running_mask_130: 8970135819669174186
+      level1_running_mask_131: -1261356496668394326
+      level1_running_mask_132: 2599005637128854023
+      level1_running_mask_133: 2427011177025393918
+      level1_running_mask_134: 951581513179000422
+      level1_running_mask_135: -4509339628214800911
+      level1_running_mask_136: -7816686940966956387
+      level1_running_mask_137: 2023030888838059809
+      level1_running_mask_138: -2200852640261359701
+      level1_running_mask_139: 8068361070738733487
+      level1_running_mask_14: 412730087595789462
+      level1_running_mask_140: -8721239094075205102
+      level1_running_mask_141: 1659688497199756343
+      level1_running_mask_142: 5024921783470360431
+      level1_running_mask_143: 7397830424541375346
+      level1_running_mask_144: -1984250553948960502
+      level1_running_mask_145: -5148727067146306356
+      level1_running_mask_146: -3679157536796672870
+      level1_running_mask_147: 2797280596066791185
+      level1_running_mask_148: 3396803324454455858
+      level1_running_mask_149: 4066475248594039691
+      level1_running_mask_15: -998348391684630193
+      level1_running_mask_150: -816473882599080281
+      level1_running_mask_151: -8182250819421692578
+      level1_running_mask_152: 7509841178351732738
+      level1_running_mask_153: -4086405816763693832
+      level1_running_mask_154: 617316178119226983
+      level1_running_mask_155: 1101978279529288953
+      level1_running_mask_156: 3757264453372387578
+      level1_running_mask_157: 4179873899729549303
+      level1_running_mask_158: -6049101136531626457
+      level1_running_mask_159: -2077187966583376050
+      level1_running_mask_16: -5444156220920780662
+      level1_running_mask_160: -386668864334087787
+      level1_running_mask_161: -6629212597541114472
+      level1_running_mask_162: -5872441305444427371
+      level1_running_mask_163: -8669056162625586895
+      level1_running_mask_164: -7319344362663025405
+      level1_running_mask_165: -3744661481732042249
+      level1_running_mask_166: 3764574393049424866
+      level1_running_mask_167: 1058054710841680460
+      level1_running_mask_168: 7895624533660394815
+      level1_running_mask_169: 4367325179467908726
+      level1_running_mask_17: 2037422752287173199
+      level1_running_mask_170: 4198741902940474440
+      level1_running_mask_171: 3640440594131793563
+      level1_running_mask_172: -6422114791151575969
+      level1_running_mask_173: -7030309238443885116
+      level1_running_mask_174: 5695419425622076622
+      level1_running_mask_175: -6362065094044424203
+      level1_running_mask_18: -9061520214167377426
+      level1_running_mask_19: -4837846403870462982
+      level1_running_mask_2: -3856175058111587815
+      level1_running_mask_20: 5195344708107104036
+      level1_running_mask_21: 4230102139619240436
+      level1_running_mask_22: 7838743494992451604
+      level1_running_mask_23: -77782907887562255
+      level1_running_mask_24: 4519390876568615622
+      level1_running_mask_25: -8815949596950149064
+      level1_running_mask_26: 3770149319402038428
+      level1_running_mask_27: 916512129317134416
+      level1_running_mask_28: -355321468959511150
+      level1_running_mask_29: -1776325802837508911
+      level1_running_mask_3: -5663670945291370530
+      level1_running_mask_30: 8022791467345601509
+      level1_running_mask_31: 6296476311120728570
+      level1_running_mask_32: 362445598829348440
+      level1_running_mask_33: -4706639585370732586
+      level1_running_mask_34: -4525461595988594313
+      level1_running_mask_35: 3010349841727759944
+      level1_running_mask_36: 1771789592990171981
+      level1_running_mask_37: 6857771628267030960
+      level1_running_mask_38: 6829683518784530422
+      level1_running_mask_39: 7573097290669938286
+      level1_running_mask_4: 7302753195980695741
+      level1_running_mask_40: -8405359474693156052
+      level1_running_mask_41: -3226911964504566753
+      level1_running_mask_42: -824557923056136089
+      level1_running_mask_43: -6911647398819105586
+      level1_running_mask_44: 5420959726516176014
+      level1_running_mask_45: 4418403554812760179
+      level1_running_mask_46: 1381456314494966749
+      level1_running_mask_47: 6820375397708639858
+      level1_running_mask_48: 63936070519325605
+      level1_running_mask_49: 7852122053372853580
+      level1_running_mask_5: 7918010512467504119
+      level1_running_mask_50: -7824968134395440848
+      level1_running_mask_51: -2638977863632607247
+      level1_running_mask_52: 4541809000947627100
+      level1_running_mask_53: 5562959580568019504
+      level1_running_mask_54: -1827762648246049253
+      level1_running_mask_55: 4759441849843047338
+      level1_running_mask_56: -929228161788444426
+      level1_running_mask_57: 8791739260324364328
+      level1_running_mask_58: 7345452094777135538
+      level1_running_mask_59: 8551674429018602695
+      level1_running_mask_6: 7806166493682458872
+      level1_running_mask_60: -7339318336918742938
+      level1_running_mask_61: 4674546437793839412
+      level1_running_mask_62: 3185981021720316243
+      level1_running_mask_63: -3956229363578786958
+      level1_running_mask_64: -8036900875900571364
+      level1_running_mask_65: 9097601350054083349
+      level1_running_mask_66: -7857396711568993109
+      level1_running_mask_67: 8422165391016826819
+      level1_running_mask_68: -1797180297897123155
+      level1_running_mask_69: -8133756287124112261
+      level1_running_mask_7: -3030846516536978691
+      level1_running_mask_70: 1400140090700528440
+      level1_running_mask_71: 4493642107351011854
+      level1_running_mask_72: -4737224496342292007
+      level1_running_mask_73: 1370355157006642200
+      level1_running_mask_74: -6255398944570876555
+      level1_running_mask_75: -5238076227383563576
+      level1_running_mask_76: 6209981130309258249
+      level1_running_mask_77: -5260427002068771637
+      level1_running_mask_78: -7890165859305561866
+      level1_running_mask_79: -3713910209114317495
+      level1_running_mask_8: -2887317886490178859
+      level1_running_mask_80: 840666696046583068
+      level1_running_mask_81: 5640830533826789577
+      level1_running_mask_82: 5888736606758567677
+      level1_running_mask_83: -2254597138292057881
+      level1_running_mask_84: 5630807072617699550
+      level1_running_mask_85: -3276774704840535489
+      level1_running_mask_86: -1683813563296780955
+      level1_running_mask_87: -4109038319047258655
+      level1_running_mask_88: -8876761828088291466
+      level1_running_mask_89: -5290482700049830576
+      level1_running_mask_9: 3761421622643923747
+      level1_running_mask_90: -6056550957127033209
+      level1_running_mask_91: -4063390404934465769
+      level1_running_mask_92: 6620298100756960433
+      level1_running_mask_93: -3204836640324954745
+      level1_running_mask_94: 8450613778974862767
+      level1_running_mask_95: -3525403074427051724
+      level1_running_mask_96: -71462615207143972
+      level1_running_mask_97: 4581718308754467734
+      level1_running_mask_98: 7124650666661553094
+      level1_running_mask_99: -5489849681696998251
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
