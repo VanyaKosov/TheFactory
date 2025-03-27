@@ -44,13 +44,13 @@ namespace Dev.Kosov.Factory.Graphics
         void Update()
         {
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
-            Vector2Int roundedPos = worldController.WorldToMapPos(mouseWorldPos);
+            //Vector2Int roundedPos = worldController.WorldToMapPos(mouseWorldPos);
             TryPlaceBuilding(mouseWorldPos);
             DisplayBuildingHologram(mouseWorldPos);
 
             if (Input.GetMouseButtonDown(1))
             {
-                StartCoroutine(TryRemoveEntity(roundedPos));
+                StartCoroutine(TryRemoveEntity());
             }
         }
 
@@ -101,24 +101,40 @@ namespace Dev.Kosov.Factory.Graphics
             Raycaster.Raycast(clickData, UIObjectsUnderMouse);
         }
 
-        private IEnumerator TryRemoveEntity(Vector2Int pos)
+        private IEnumerator TryRemoveEntity()
         {
-
-            int entityID = world.GetTileInfo(pos).EntityID;
-            if (entityID == -1) yield break;
-
-            UpdateRaycaster();
-            if (UIObjectsUnderMouse.Count != 0) yield break;
-
-            float timeStarted = Time.time;
-            while (Time.time - timeStarted < entityRemovalDelay)
+            int entityID = -1;
+            float timeStarted = 0.0f;
+            Vector2Int pos;
+            while (Input.GetMouseButton(1))
             {
-                if (!Input.GetMouseButton(1)) yield break;
-                if (world.GetTileInfo(pos).EntityID != entityID) yield break;
+                pos = worldController.WorldToMapPos(Camera.ScreenToWorldPoint(Input.mousePosition));
+
+                if (entityID != world.GetTileInfo(pos).EntityID)
+                {
+                    entityID = world.GetTileInfo(pos).EntityID;
+                    timeStarted = Time.time;
+                }
+
+                while (Time.time - timeStarted < entityRemovalDelay)
+                {
+                    yield return null;
+                }
+
+                pos = worldController.WorldToMapPos(Camera.ScreenToWorldPoint(Input.mousePosition));
+                if (entityID != world.GetTileInfo(pos).EntityID)
+                {
+                    yield return null;
+                    continue;
+                }
+
+                UpdateRaycaster();
+                while (UIObjectsUnderMouse.Count != 0) yield return null;
+
+                world.RemoveEntity(pos);
+                timeStarted = Time.time;
                 yield return null;
             }
-
-            world.RemoveEntity(pos);
         }
 
         private void RemoveEntity(object sender, World.EntityRemovedEventArgs args)
