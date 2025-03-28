@@ -1,0 +1,7022 @@
+fileFormatVersion: 2
+guid: ab371634f7f419245bd5771a514eea2d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5887723094545830322
+    second: level1_mining_tool_mask_0
+  - first:
+      213: -6016338015394879638
+    second: level1_mining_tool_mask_1
+  - first:
+      213: 1243435392773449477
+    second: level1_mining_tool_mask_2
+  - first:
+      213: -5178337593094566327
+    second: level1_mining_tool_mask_3
+  - first:
+      213: -392182055697397079
+    second: level1_mining_tool_mask_4
+  - first:
+      213: -3125812903369566891
+    second: level1_mining_tool_mask_5
+  - first:
+      213: -8103002421590752364
+    second: level1_mining_tool_mask_6
+  - first:
+      213: -4468604438382725446
+    second: level1_mining_tool_mask_7
+  - first:
+      213: -2214339496415059186
+    second: level1_mining_tool_mask_8
+  - first:
+      213: 2372610108189516196
+    second: level1_mining_tool_mask_9
+  - first:
+      213: 2751681516481236359
+    second: level1_mining_tool_mask_10
+  - first:
+      213: -1666474601344722190
+    second: level1_mining_tool_mask_11
+  - first:
+      213: -2837865900579278161
+    second: level1_mining_tool_mask_12
+  - first:
+      213: 362265720661063626
+    second: level1_mining_tool_mask_13
+  - first:
+      213: -1559216864720936015
+    second: level1_mining_tool_mask_14
+  - first:
+      213: 5406793128808099783
+    second: level1_mining_tool_mask_15
+  - first:
+      213: -5886854578383254622
+    second: level1_mining_tool_mask_16
+  - first:
+      213: 1717390045226463414
+    second: level1_mining_tool_mask_17
+  - first:
+      213: -5543744083456447392
+    second: level1_mining_tool_mask_18
+  - first:
+      213: -8258330007306111577
+    second: level1_mining_tool_mask_19
+  - first:
+      213: 4863077482178434253
+    second: level1_mining_tool_mask_20
+  - first:
+      213: 4703646621738991213
+    second: level1_mining_tool_mask_21
+  - first:
+      213: -3095238950621790979
+    second: level1_mining_tool_mask_22
+  - first:
+      213: -7405375124676164422
+    second: level1_mining_tool_mask_23
+  - first:
+      213: 6660635689794419688
+    second: level1_mining_tool_mask_24
+  - first:
+      213: 2566333167073017794
+    second: level1_mining_tool_mask_25
+  - first:
+      213: 7478972017514858758
+    second: level1_mining_tool_mask_26
+  - first:
+      213: 3595408833366332359
+    second: level1_mining_tool_mask_27
+  - first:
+      213: -2913529605260067785
+    second: level1_mining_tool_mask_28
+  - first:
+      213: 1200303307235469249
+    second: level1_mining_tool_mask_29
+  - first:
+      213: 4102661593719054662
+    second: level1_mining_tool_mask_30
+  - first:
+      213: 5289513190733131079
+    second: level1_mining_tool_mask_31
+  - first:
+      213: 6384350234929549734
+    second: level1_mining_tool_mask_32
+  - first:
+      213: 8085389752530280055
+    second: level1_mining_tool_mask_33
+  - first:
+      213: 225889076138733576
+    second: level1_mining_tool_mask_34
+  - first:
+      213: 9037024492010986867
+    second: level1_mining_tool_mask_35
+  - first:
+      213: 4200614535486817694
+    second: level1_mining_tool_mask_36
+  - first:
+      213: 6046512482612853817
+    second: level1_mining_tool_mask_37
+  - first:
+      213: -454960802476840190
+    second: level1_mining_tool_mask_38
+  - first:
+      213: -5378111182053532974
+    second: level1_mining_tool_mask_39
+  - first:
+      213: 4690781118497986993
+    second: level1_mining_tool_mask_40
+  - first:
+      213: -1422730926116215352
+    second: level1_mining_tool_mask_41
+  - first:
+      213: -3098761997559879706
+    second: level1_mining_tool_mask_42
+  - first:
+      213: 4049481161937765045
+    second: level1_mining_tool_mask_43
+  - first:
+      213: 6877632608558110937
+    second: level1_mining_tool_mask_44
+  - first:
+      213: 971667605231109747
+    second: level1_mining_tool_mask_45
+  - first:
+      213: -4635305475396143057
+    second: level1_mining_tool_mask_46
+  - first:
+      213: 1998112299879903002
+    second: level1_mining_tool_mask_47
+  - first:
+      213: 1181095860624632573
+    second: level1_mining_tool_mask_48
+  - first:
+      213: 4042964751936650368
+    second: level1_mining_tool_mask_49
+  - first:
+      213: -9191712069495692050
+    second: level1_mining_tool_mask_50
+  - first:
+      213: 5805459922547668052
+    second: level1_mining_tool_mask_51
+  - first:
+      213: 6189563137570469818
+    second: level1_mining_tool_mask_52
+  - first:
+      213: -1586399085978944648
+    second: level1_mining_tool_mask_53
+  - first:
+      213: -669836045368025263
+    second: level1_mining_tool_mask_54
+  - first:
+      213: -706012812197651672
+    second: level1_mining_tool_mask_55
+  - first:
+      213: -3703786220020333813
+    second: level1_mining_tool_mask_56
+  - first:
+      213: -6768002510731452587
+    second: level1_mining_tool_mask_57
+  - first:
+      213: -6527373442894554282
+    second: level1_mining_tool_mask_58
+  - first:
+      213: -1212930295822974161
+    second: level1_mining_tool_mask_59
+  - first:
+      213: 2128866945858399037
+    second: level1_mining_tool_mask_60
+  - first:
+      213: -6049298539757236639
+    second: level1_mining_tool_mask_61
+  - first:
+      213: 840319114897109
+    second: level1_mining_tool_mask_62
+  - first:
+      213: -1460151021046819250
+    second: level1_mining_tool_mask_63
+  - first:
+      213: -9110483383999781569
+    second: level1_mining_tool_mask_64
+  - first:
+      213: -3043215400613416838
+    second: level1_mining_tool_mask_65
+  - first:
+      213: -7378318686769280731
+    second: level1_mining_tool_mask_66
+  - first:
+      213: -3668917940263999972
+    second: level1_mining_tool_mask_67
+  - first:
+      213: -9014877219837509800
+    second: level1_mining_tool_mask_68
+  - first:
+      213: 4965218148636996141
+    second: level1_mining_tool_mask_69
+  - first:
+      213: -2071932582740291888
+    second: level1_mining_tool_mask_70
+  - first:
+      213: 393399484597729373
+    second: level1_mining_tool_mask_71
+  - first:
+      213: -180973947637517575
+    second: level1_mining_tool_mask_72
+  - first:
+      213: 3784468832071345697
+    second: level1_mining_tool_mask_73
+  - first:
+      213: -2532023320912230629
+    second: level1_mining_tool_mask_74
+  - first:
+      213: -3494405257547462369
+    second: level1_mining_tool_mask_75
+  - first:
+      213: -6544217985911732745
+    second: level1_mining_tool_mask_76
+  - first:
+      213: 309080981933213064
+    second: level1_mining_tool_mask_77
+  - first:
+      213: 2274159042946133753
+    second: level1_mining_tool_mask_78
+  - first:
+      213: 3671556107740141582
+    second: level1_mining_tool_mask_79
+  - first:
+      213: -7399373521677615269
+    second: level1_mining_tool_mask_80
+  - first:
+      213: 8644668287890016170
+    second: level1_mining_tool_mask_81
+  - first:
+      213: 3033268919917180158
+    second: level1_mining_tool_mask_82
+  - first:
+      213: -4624805326681976019
+    second: level1_mining_tool_mask_83
+  - first:
+      213: 4404429297240707050
+    second: level1_mining_tool_mask_84
+  - first:
+      213: -2177997049745585044
+    second: level1_mining_tool_mask_85
+  - first:
+      213: 8783214368367619787
+    second: level1_mining_tool_mask_86
+  - first:
+      213: 1312523386786864933
+    second: level1_mining_tool_mask_87
+  - first:
+      213: 8215095111470927566
+    second: level1_mining_tool_mask_88
+  - first:
+      213: -8270405694247163761
+    second: level1_mining_tool_mask_89
+  - first:
+      213: -1967983133436483242
+    second: level1_mining_tool_mask_90
+  - first:
+      213: 3780213571265368815
+    second: level1_mining_tool_mask_91
+  - first:
+      213: 6987923336153359557
+    second: level1_mining_tool_mask_92
+  - first:
+      213: -438742118624991408
+    second: level1_mining_tool_mask_93
+  - first:
+      213: -4007809156190035682
+    second: level1_mining_tool_mask_94
+  - first:
+      213: -2633420823185048121
+    second: level1_mining_tool_mask_95
+  - first:
+      213: -5990872465916848186
+    second: level1_mining_tool_mask_96
+  - first:
+      213: 5154887109077605762
+    second: level1_mining_tool_mask_97
+  - first:
+      213: 1964803845022188969
+    second: level1_mining_tool_mask_98
+  - first:
+      213: 6169845566432626997
+    second: level1_mining_tool_mask_99
+  - first:
+      213: 6850593861730834339
+    second: level1_mining_tool_mask_100
+  - first:
+      213: -436578327591818973
+    second: level1_mining_tool_mask_101
+  - first:
+      213: 8266983844586055463
+    second: level1_mining_tool_mask_102
+  - first:
+      213: -3793534371444325719
+    second: level1_mining_tool_mask_103
+  - first:
+      213: 6491764407479810662
+    second: level1_mining_tool_mask_104
+  - first:
+      213: -8654057056933177909
+    second: level1_mining_tool_mask_105
+  - first:
+      213: -3005273883999007455
+    second: level1_mining_tool_mask_106
+  - first:
+      213: 2085049866373726527
+    second: level1_mining_tool_mask_107
+  - first:
+      213: -7712333313579481528
+    second: level1_mining_tool_mask_108
+  - first:
+      213: 4249801003037332893
+    second: level1_mining_tool_mask_109
+  - first:
+      213: -4209912161851302106
+    second: level1_mining_tool_mask_110
+  - first:
+      213: 5110255770790586023
+    second: level1_mining_tool_mask_111
+  - first:
+      213: -2635071085574567194
+    second: level1_mining_tool_mask_112
+  - first:
+      213: 8380633619842188592
+    second: level1_mining_tool_mask_113
+  - first:
+      213: -8485772280940172705
+    second: level1_mining_tool_mask_114
+  - first:
+      213: -3336447153965620056
+    second: level1_mining_tool_mask_115
+  - first:
+      213: 6459933403429124310
+    second: level1_mining_tool_mask_116
+  - first:
+      213: 6206299764754778338
+    second: level1_mining_tool_mask_117
+  - first:
+      213: -6545860075601362108
+    second: level1_mining_tool_mask_118
+  - first:
+      213: 4942838377911619847
+    second: level1_mining_tool_mask_119
+  - first:
+      213: 6704205707232396515
+    second: level1_mining_tool_mask_120
+  - first:
+      213: 8522604554787798458
+    second: level1_mining_tool_mask_121
+  - first:
+      213: 6289646994570455551
+    second: level1_mining_tool_mask_122
+  - first:
+      213: -7675019869496495957
+    second: level1_mining_tool_mask_123
+  - first:
+      213: 5393552714298687841
+    second: level1_mining_tool_mask_124
+  - first:
+      213: -4204259684571096109
+    second: level1_mining_tool_mask_125
+  - first:
+      213: 7559069299416181501
+    second: level1_mining_tool_mask_126
+  - first:
+      213: -3829576001355122403
+    second: level1_mining_tool_mask_127
+  - first:
+      213: -2515841457781129477
+    second: level1_mining_tool_mask_128
+  - first:
+      213: -7900223528852778574
+    second: level1_mining_tool_mask_129
+  - first:
+      213: -6881803422812892932
+    second: level1_mining_tool_mask_130
+  - first:
+      213: -6203818263997175435
+    second: level1_mining_tool_mask_131
+  - first:
+      213: 2438765191450001489
+    second: level1_mining_tool_mask_132
+  - first:
+      213: 6364274444123195626
+    second: level1_mining_tool_mask_133
+  - first:
+      213: 1803496002000613547
+    second: level1_mining_tool_mask_134
+  - first:
+      213: -7485315052170134720
+    second: level1_mining_tool_mask_135
+  - first:
+      213: 3060483183515336103
+    second: level1_mining_tool_mask_136
+  - first:
+      213: -7971633945679048006
+    second: level1_mining_tool_mask_137
+  - first:
+      213: -3831647213732147243
+    second: level1_mining_tool_mask_138
+  - first:
+      213: -3446950573204900576
+    second: level1_mining_tool_mask_139
+  - first:
+      213: 7354515256685654926
+    second: level1_mining_tool_mask_140
+  - first:
+      213: 8066513844261958195
+    second: level1_mining_tool_mask_141
+  - first:
+      213: -6758013959793681665
+    second: level1_mining_tool_mask_142
+  - first:
+      213: -2870949392157306188
+    second: level1_mining_tool_mask_143
+  - first:
+      213: 4711068125750831992
+    second: level1_mining_tool_mask_144
+  - first:
+      213: 5731298251034640854
+    second: level1_mining_tool_mask_145
+  - first:
+      213: -2020325826933999025
+    second: level1_mining_tool_mask_146
+  - first:
+      213: 2803715034513379148
+    second: level1_mining_tool_mask_147
+  - first:
+      213: -8428111266696929554
+    second: level1_mining_tool_mask_148
+  - first:
+      213: -3975055590893233481
+    second: level1_mining_tool_mask_149
+  - first:
+      213: -4028677963182854425
+    second: level1_mining_tool_mask_150
+  - first:
+      213: 2960628945928667161
+    second: level1_mining_tool_mask_151
+  - first:
+      213: -8505497631445441741
+    second: level1_mining_tool_mask_152
+  - first:
+      213: -3817654961965401244
+    second: level1_mining_tool_mask_153
+  - first:
+      213: 1726997053092275002
+    second: level1_mining_tool_mask_154
+  - first:
+      213: -1349806321254389251
+    second: level1_mining_tool_mask_155
+  - first:
+      213: -6995610630626929411
+    second: level1_mining_tool_mask_156
+  - first:
+      213: 4953132578154519112
+    second: level1_mining_tool_mask_157
+  - first:
+      213: 8583214156448158956
+    second: level1_mining_tool_mask_158
+  - first:
+      213: 1729026165922969275
+    second: level1_mining_tool_mask_159
+  - first:
+      213: 4669296757413467088
+    second: level1_mining_tool_mask_160
+  - first:
+      213: 8785070018916956402
+    second: level1_mining_tool_mask_161
+  - first:
+      213: 3238730873335390449
+    second: level1_mining_tool_mask_162
+  - first:
+      213: -295510844141519560
+    second: level1_mining_tool_mask_163
+  - first:
+      213: 9155313313400337465
+    second: level1_mining_tool_mask_164
+  - first:
+      213: -825941691658955183
+    second: level1_mining_tool_mask_165
+  - first:
+      213: 2946079755092150291
+    second: level1_mining_tool_mask_166
+  - first:
+      213: 5219081864046519809
+    second: level1_mining_tool_mask_167
+  - first:
+      213: -8615373371572954465
+    second: level1_mining_tool_mask_168
+  - first:
+      213: -4457785430901801516
+    second: level1_mining_tool_mask_169
+  - first:
+      213: -8748805034347887463
+    second: level1_mining_tool_mask_170
+  - first:
+      213: 4971851124317962971
+    second: level1_mining_tool_mask_171
+  - first:
+      213: 4687949110137118160
+    second: level1_mining_tool_mask_172
+  - first:
+      213: 2775249164469686043
+    second: level1_mining_tool_mask_173
+  - first:
+      213: 3679172511576127138
+    second: level1_mining_tool_mask_174
+  - first:
+      213: 1207773282684589379
+    second: level1_mining_tool_mask_175
+  - first:
+      213: -6873908442855617189
+    second: level1_mining_tool_mask_176
+  - first:
+      213: 7173624001746765966
+    second: level1_mining_tool_mask_177
+  - first:
+      213: -6543705699060788599
+    second: level1_mining_tool_mask_178
+  - first:
+      213: -2337016377656900269
+    second: level1_mining_tool_mask_179
+  - first:
+      213: -4319463036222165807
+    second: level1_mining_tool_mask_180
+  - first:
+      213: -3150690775367461610
+    second: level1_mining_tool_mask_181
+  - first:
+      213: -7095925729544173590
+    second: level1_mining_tool_mask_182
+  - first:
+      213: -8469180508073884286
+    second: level1_mining_tool_mask_183
+  - first:
+      213: 8642405308872405647
+    second: level1_mining_tool_mask_184
+  - first:
+      213: -831852338199055847
+    second: level1_mining_tool_mask_185
+  - first:
+      213: 9122530204268305412
+    second: level1_mining_tool_mask_186
+  - first:
+      213: 3415024987046279933
+    second: level1_mining_tool_mask_187
+  - first:
+      213: -3128926688468346119
+    second: level1_mining_tool_mask_188
+  - first:
+      213: 6982186409631884386
+    second: level1_mining_tool_mask_189
+  - first:
+      213: 23517711361242017
+    second: level1_mining_tool_mask_190
+  - first:
+      213: -7440935790926436842
+    second: level1_mining_tool_mask_191
+  - first:
+      213: -9088330400397373194
+    second: level1_mining_tool_mask_192
+  - first:
+      213: -5463677715584431945
+    second: level1_mining_tool_mask_193
+  - first:
+      213: 7987711902617461001
+    second: level1_mining_tool_mask_194
+  - first:
+      213: 4333909909140767559
+    second: level1_mining_tool_mask_195
+  - first:
+      213: 5596325413543647469
+    second: level1_mining_tool_mask_196
+  - first:
+      213: -4298474978278027023
+    second: level1_mining_tool_mask_197
+  - first:
+      213: 6785488291596070849
+    second: level1_mining_tool_mask_198
+  - first:
+      213: -4376668878965935704
+    second: level1_mining_tool_mask_199
+  - first:
+      213: 295810128118182343
+    second: level1_mining_tool_mask_200
+  - first:
+      213: 2224754191598394610
+    second: level1_mining_tool_mask_201
+  - first:
+      213: -5665219710733069233
+    second: level1_mining_tool_mask_202
+  - first:
+      213: -584135500791774095
+    second: level1_mining_tool_mask_203
+  - first:
+      213: 8744928535740838049
+    second: level1_mining_tool_mask_204
+  - first:
+      213: -2255792275366221770
+    second: level1_mining_tool_mask_205
+  - first:
+      213: -5632926847293445519
+    second: level1_mining_tool_mask_206
+  - first:
+      213: 7343003873898899896
+    second: level1_mining_tool_mask_207
+  - first:
+      213: 8158744185775126207
+    second: level1_mining_tool_mask_208
+  - first:
+      213: -2098533504601464950
+    second: level1_mining_tool_mask_209
+  - first:
+      213: -8584326458925046261
+    second: level1_mining_tool_mask_210
+  - first:
+      213: 4149433013887780478
+    second: level1_mining_tool_mask_211
+  - first:
+      213: -7682258547840105487
+    second: level1_mining_tool_mask_212
+  - first:
+      213: 6820808976177116432
+    second: level1_mining_tool_mask_213
+  - first:
+      213: 6730957720144718414
+    second: level1_mining_tool_mask_214
+  - first:
+      213: -2879541667677012318
+    second: level1_mining_tool_mask_215
+  - first:
+      213: 3497306904452645895
+    second: level1_mining_tool_mask_216
+  - first:
+      213: 856062950662027701
+    second: level1_mining_tool_mask_217
+  - first:
+      213: 2568656877400806889
+    second: level1_mining_tool_mask_218
+  - first:
+      213: 4440344469493813758
+    second: level1_mining_tool_mask_219
+  - first:
+      213: 3498149213940908270
+    second: level1_mining_tool_mask_220
+  - first:
+      213: -8962893496546022400
+    second: level1_mining_tool_mask_221
+  - first:
+      213: -4317345220324672680
+    second: level1_mining_tool_mask_222
+  - first:
+      213: 4060850743325102860
+    second: level1_mining_tool_mask_223
+  - first:
+      213: -4087879120721315023
+    second: level1_mining_tool_mask_224
+  - first:
+      213: 4536616370404984722
+    second: level1_mining_tool_mask_225
+  - first:
+      213: 467181406261738624
+    second: level1_mining_tool_mask_226
+  - first:
+      213: 2256679830051384996
+    second: level1_mining_tool_mask_227
+  - first:
+      213: 8027867130526147214
+    second: level1_mining_tool_mask_228
+  - first:
+      213: 4178834685764733105
+    second: level1_mining_tool_mask_229
+  - first:
+      213: 7666568658506342167
+    second: level1_mining_tool_mask_230
+  - first:
+      213: 8137830966112963735
+    second: level1_mining_tool_mask_231
+  - first:
+      213: -2607193282099935508
+    second: level1_mining_tool_mask_232
+  - first:
+      213: 7241839262196892282
+    second: level1_mining_tool_mask_233
+  - first:
+      213: -7663457226410528814
+    second: level1_mining_tool_mask_234
+  - first:
+      213: -1751403324227307504
+    second: level1_mining_tool_mask_235
+  - first:
+      213: -1973940523211400597
+    second: level1_mining_tool_mask_236
+  - first:
+      213: -2205309019532103822
+    second: level1_mining_tool_mask_237
+  - first:
+      213: 5136834473214240742
+    second: level1_mining_tool_mask_238
+  - first:
+      213: -4618157431549526232
+    second: level1_mining_tool_mask_239
+  - first:
+      213: -7165959283347797864
+    second: level1_mining_tool_mask_240
+  - first:
+      213: -6903426030325173146
+    second: level1_mining_tool_mask_241
+  - first:
+      213: -3079050654914027199
+    second: level1_mining_tool_mask_242
+  - first:
+      213: -4465286037289068744
+    second: level1_mining_tool_mask_243
+  - first:
+      213: 718979985398200933
+    second: level1_mining_tool_mask_244
+  - first:
+      213: 2356057122833762812
+    second: level1_mining_tool_mask_245
+  - first:
+      213: -6130478321853720783
+    second: level1_mining_tool_mask_246
+  - first:
+      213: -1572824206431420320
+    second: level1_mining_tool_mask_247
+  - first:
+      213: 6980330530271375305
+    second: level1_mining_tool_mask_248
+  - first:
+      213: -5501890404130000636
+    second: level1_mining_tool_mask_249
+  - first:
+      213: 6502955839381138678
+    second: level1_mining_tool_mask_250
+  - first:
+      213: -6099522162913101960
+    second: level1_mining_tool_mask_251
+  - first:
+      213: -712776526045297388
+    second: level1_mining_tool_mask_252
+  - first:
+      213: 6995725277688386223
+    second: level1_mining_tool_mask_253
+  - first:
+      213: -4540279286516675841
+    second: level1_mining_tool_mask_254
+  - first:
+      213: -4964146802771942150
+    second: level1_mining_tool_mask_255
+  - first:
+      213: 4720633671118591726
+    second: level1_mining_tool_mask_256
+  - first:
+      213: 157494752125639655
+    second: level1_mining_tool_mask_257
+  - first:
+      213: -348550874086581610
+    second: level1_mining_tool_mask_258
+  - first:
+      213: -5990222227835229638
+    second: level1_mining_tool_mask_259
+  - first:
+      213: -731061504482915666
+    second: level1_mining_tool_mask_260
+  - first:
+      213: 6475206959495094245
+    second: level1_mining_tool_mask_261
+  - first:
+      213: -8969555484915756512
+    second: level1_mining_tool_mask_262
+  - first:
+      213: 8416197355026424312
+    second: level1_mining_tool_mask_263
+  - first:
+      213: -5072104098764120334
+    second: level1_mining_tool_mask_264
+  - first:
+      213: -745047682374932837
+    second: level1_mining_tool_mask_265
+  - first:
+      213: 524167754202214566
+    second: level1_mining_tool_mask_266
+  - first:
+      213: 2513376985353219084
+    second: level1_mining_tool_mask_267
+  - first:
+      213: 3068091548046244879
+    second: level1_mining_tool_mask_268
+  - first:
+      213: -5266470160967019261
+    second: level1_mining_tool_mask_269
+  - first:
+      213: -5890070820850406533
+    second: level1_mining_tool_mask_270
+  - first:
+      213: -3253920674388233919
+    second: level1_mining_tool_mask_271
+  - first:
+      213: -3817458069777429151
+    second: level1_mining_tool_mask_272
+  - first:
+      213: -7793685528266176888
+    second: level1_mining_tool_mask_273
+  - first:
+      213: 601576093665878626
+    second: level1_mining_tool_mask_274
+  - first:
+      213: 2236017430905964785
+    second: level1_mining_tool_mask_275
+  - first:
+      213: -4301687257157712660
+    second: level1_mining_tool_mask_276
+  - first:
+      213: -7150512903307264153
+    second: level1_mining_tool_mask_277
+  - first:
+      213: -8622504959500703244
+    second: level1_mining_tool_mask_278
+  - first:
+      213: 4964603327354567045
+    second: level1_mining_tool_mask_279
+  - first:
+      213: -1373889841841650943
+    second: level1_mining_tool_mask_280
+  - first:
+      213: 4142964546125983381
+    second: level1_mining_tool_mask_281
+  - first:
+      213: -427490133074694934
+    second: level1_mining_tool_mask_282
+  - first:
+      213: 2905000443632342784
+    second: level1_mining_tool_mask_283
+  - first:
+      213: 1551485432790734932
+    second: level1_mining_tool_mask_284
+  - first:
+      213: 8387872312902087410
+    second: level1_mining_tool_mask_285
+  - first:
+      213: 6023617728099921418
+    second: level1_mining_tool_mask_286
+  - first:
+      213: 993049115886060224
+    second: level1_mining_tool_mask_287
+  - first:
+      213: -5392213734532772630
+    second: level1_mining_tool_mask_288
+  - first:
+      213: 8558877852763192631
+    second: level1_mining_tool_mask_289
+  - first:
+      213: -6984436484353306017
+    second: level1_mining_tool_mask_290
+  - first:
+      213: -2797388260456053141
+    second: level1_mining_tool_mask_291
+  - first:
+      213: -1663435666194224282
+    second: level1_mining_tool_mask_292
+  - first:
+      213: -903690141874171931
+    second: level1_mining_tool_mask_293
+  - first:
+      213: 8049715877965151200
+    second: level1_mining_tool_mask_294
+  - first:
+      213: 5382016675144865720
+    second: level1_mining_tool_mask_295
+  - first:
+      213: 6836416816040641913
+    second: level1_mining_tool_mask_296
+  - first:
+      213: 2337306576910467392
+    second: level1_mining_tool_mask_297
+  - first:
+      213: -7077644066615412607
+    second: level1_mining_tool_mask_298
+  - first:
+      213: 8064702125943389171
+    second: level1_mining_tool_mask_299
+  - first:
+      213: -9218414269550728293
+    second: level1_mining_tool_mask_300
+  - first:
+      213: -935701778002133699
+    second: level1_mining_tool_mask_301
+  - first:
+      213: 3502323845650139123
+    second: level1_mining_tool_mask_302
+  - first:
+      213: 7298172737328568551
+    second: level1_mining_tool_mask_303
+  - first:
+      213: -2224940364592860268
+    second: level1_mining_tool_mask_304
+  - first:
+      213: -5659213805475533024
+    second: level1_mining_tool_mask_305
+  - first:
+      213: -5136776360463992181
+    second: level1_mining_tool_mask_306
+  - first:
+      213: -7394985855082626849
+    second: level1_mining_tool_mask_307
+  - first:
+      213: -7229144073760459075
+    second: level1_mining_tool_mask_308
+  - first:
+      213: 2553028124470345096
+    second: level1_mining_tool_mask_309
+  - first:
+      213: -4409828553740388669
+    second: level1_mining_tool_mask_310
+  - first:
+      213: 3200961535432520809
+    second: level1_mining_tool_mask_311
+  - first:
+      213: 391651570362649542
+    second: level1_mining_tool_mask_312
+  - first:
+      213: -1735958694992083915
+    second: level1_mining_tool_mask_313
+  - first:
+      213: 2921437613839040736
+    second: level1_mining_tool_mask_314
+  - first:
+      213: -1138907691027677073
+    second: level1_mining_tool_mask_315
+  - first:
+      213: -2460656021118329402
+    second: level1_mining_tool_mask_316
+  - first:
+      213: 1174971200968442713
+    second: level1_mining_tool_mask_317
+  - first:
+      213: 1044433873021020776
+    second: level1_mining_tool_mask_318
+  - first:
+      213: 7095441890498858702
+    second: level1_mining_tool_mask_319
+  - first:
+      213: 7216802856642606702
+    second: level1_mining_tool_mask_320
+  - first:
+      213: -1015568276843529753
+    second: level1_mining_tool_mask_321
+  - first:
+      213: -8624160650354358697
+    second: level1_mining_tool_mask_322
+  - first:
+      213: 5839625019796072766
+    second: level1_mining_tool_mask_323
+  - first:
+      213: -1352100736746175655
+    second: level1_mining_tool_mask_324
+  - first:
+      213: 6445154381035459493
+    second: level1_mining_tool_mask_325
+  - first:
+      213: 4086989736411443496
+    second: level1_mining_tool_mask_326
+  - first:
+      213: 7194629403310089858
+    second: level1_mining_tool_mask_327
+  - first:
+      213: 6806410556725377483
+    second: level1_mining_tool_mask_328
+  - first:
+      213: 2661079100298481968
+    second: level1_mining_tool_mask_329
+  - first:
+      213: 5070831261128165008
+    second: level1_mining_tool_mask_330
+  - first:
+      213: -5448242833616668318
+    second: level1_mining_tool_mask_331
+  - first:
+      213: 1308227306762141176
+    second: level1_mining_tool_mask_332
+  - first:
+      213: -8431910257471469907
+    second: level1_mining_tool_mask_333
+  - first:
+      213: -4696923702271212157
+    second: level1_mining_tool_mask_334
+  - first:
+      213: 5530107723177310556
+    second: level1_mining_tool_mask_335
+  - first:
+      213: 3364081205120879302
+    second: level1_mining_tool_mask_336
+  - first:
+      213: 7355763817387533224
+    second: level1_mining_tool_mask_337
+  - first:
+      213: -1947899682945014229
+    second: level1_mining_tool_mask_338
+  - first:
+      213: -256323279668572556
+    second: level1_mining_tool_mask_339
+  - first:
+      213: -6224167442666582578
+    second: level1_mining_tool_mask_340
+  - first:
+      213: 1546565252127684974
+    second: level1_mining_tool_mask_341
+  - first:
+      213: -523038249066331604
+    second: level1_mining_tool_mask_342
+  - first:
+      213: 4125451447435740223
+    second: level1_mining_tool_mask_343
+  - first:
+      213: 7469394847975462092
+    second: level1_mining_tool_mask_344
+  - first:
+      213: 3188455746459089197
+    second: level1_mining_tool_mask_345
+  - first:
+      213: -9071893401205887021
+    second: level1_mining_tool_mask_346
+  - first:
+      213: 557304837891462394
+    second: level1_mining_tool_mask_347
+  - first:
+      213: -5888745534783356205
+    second: level1_mining_tool_mask_348
+  - first:
+      213: 2493964975386563623
+    second: level1_mining_tool_mask_349
+  - first:
+      213: -6533034094569500703
+    second: level1_mining_tool_mask_350
+  - first:
+      213: -5525894638903149098
+    second: level1_mining_tool_mask_351
+  - first:
+      213: -599854388218144594
+    second: level1_mining_tool_mask_352
+  - first:
+      213: 4885445754771657855
+    second: level1_mining_tool_mask_353
+  - first:
+      213: 8402371759534727054
+    second: level1_mining_tool_mask_354
+  - first:
+      213: -4522921194259952191
+    second: level1_mining_tool_mask_355
+  - first:
+      213: 3432503586519518124
+    second: level1_mining_tool_mask_356
+  - first:
+      213: 2960795167980592776
+    second: level1_mining_tool_mask_357
+  - first:
+      213: 7800454383985930559
+    second: level1_mining_tool_mask_358
+  - first:
+      213: -3130030467520247196
+    second: level1_mining_tool_mask_359
+  - first:
+      213: -6479343032755240563
+    second: level1_mining_tool_mask_360
+  - first:
+      213: 76707383510845233
+    second: level1_mining_tool_mask_361
+  - first:
+      213: -5830870040060086392
+    second: level1_mining_tool_mask_362
+  - first:
+      213: -7488876647398952930
+    second: level1_mining_tool_mask_363
+  - first:
+      213: 4797841891861199785
+    second: level1_mining_tool_mask_364
+  - first:
+      213: 8428394026162137615
+    second: level1_mining_tool_mask_365
+  - first:
+      213: 2086672340913297390
+    second: level1_mining_tool_mask_366
+  - first:
+      213: 5596496305108549106
+    second: level1_mining_tool_mask_367
+  - first:
+      213: -7332009023536980069
+    second: level1_mining_tool_mask_368
+  - first:
+      213: -2508387851098765833
+    second: level1_mining_tool_mask_369
+  - first:
+      213: -1704241164779828943
+    second: level1_mining_tool_mask_370
+  - first:
+      213: -447578967274285811
+    second: level1_mining_tool_mask_371
+  - first:
+      213: -181330130100713296
+    second: level1_mining_tool_mask_372
+  - first:
+      213: 4046934675272584337
+    second: level1_mining_tool_mask_373
+  - first:
+      213: -5475431027108834708
+    second: level1_mining_tool_mask_374
+  - first:
+      213: -8745334913962334475
+    second: level1_mining_tool_mask_375
+  - first:
+      213: -7058301167551966583
+    second: level1_mining_tool_mask_376
+  - first:
+      213: -3963534929996896099
+    second: level1_mining_tool_mask_377
+  - first:
+      213: -4290741098952238069
+    second: level1_mining_tool_mask_378
+  - first:
+      213: -4900733562625870317
+    second: level1_mining_tool_mask_379
+  - first:
+      213: 1780502978049905244
+    second: level1_mining_tool_mask_380
+  - first:
+      213: -1352357851600028566
+    second: level1_mining_tool_mask_381
+  - first:
+      213: 220339761507039038
+    second: level1_mining_tool_mask_382
+  - first:
+      213: -8836112896001599252
+    second: level1_mining_tool_mask_383
+  - first:
+      213: -1264669876785193954
+    second: level1_mining_tool_mask_384
+  - first:
+      213: -8192305501092778975
+    second: level1_mining_tool_mask_385
+  - first:
+      213: 1157839135327408648
+    second: level1_mining_tool_mask_386
+  - first:
+      213: 4700412742193928012
+    second: level1_mining_tool_mask_387
+  - first:
+      213: -7957764289031120885
+    second: level1_mining_tool_mask_388
+  - first:
+      213: 807169096556399589
+    second: level1_mining_tool_mask_389
+  - first:
+      213: -430804359258814262
+    second: level1_mining_tool_mask_390
+  - first:
+      213: 8883740684733199937
+    second: level1_mining_tool_mask_391
+  - first:
+      213: -9165939379600473802
+    second: level1_mining_tool_mask_392
+  - first:
+      213: -1371928906448573541
+    second: level1_mining_tool_mask_393
+  - first:
+      213: 5459372411364014358
+    second: level1_mining_tool_mask_394
+  - first:
+      213: -8678095572836885642
+    second: level1_mining_tool_mask_395
+  - first:
+      213: 6475253832889438830
+    second: level1_mining_tool_mask_396
+  - first:
+      213: -7264463666657833114
+    second: level1_mining_tool_mask_397
+  - first:
+      213: 5378012023203514345
+    second: level1_mining_tool_mask_398
+  - first:
+      213: 2042535006480736874
+    second: level1_mining_tool_mask_399
+  - first:
+      213: -2007431618730271146
+    second: level1_mining_tool_mask_400
+  - first:
+      213: -2550639065252672279
+    second: level1_mining_tool_mask_401
+  - first:
+      213: 5032869327170551345
+    second: level1_mining_tool_mask_402
+  - first:
+      213: 6007959360969728157
+    second: level1_mining_tool_mask_403
+  - first:
+      213: -3766466595740733637
+    second: level1_mining_tool_mask_404
+  - first:
+      213: -8058018035949101564
+    second: level1_mining_tool_mask_405
+  - first:
+      213: -1287774735012245555
+    second: level1_mining_tool_mask_406
+  - first:
+      213: -4528048165826124805
+    second: level1_mining_tool_mask_407
+  - first:
+      213: 6829546856254721317
+    second: level1_mining_tool_mask_408
+  - first:
+      213: 8755279971747125248
+    second: level1_mining_tool_mask_409
+  - first:
+      213: 5794977079812174745
+    second: level1_mining_tool_mask_410
+  - first:
+      213: -8254508069739580784
+    second: level1_mining_tool_mask_411
+  - first:
+      213: -1390556137927067168
+    second: level1_mining_tool_mask_412
+  - first:
+      213: 6372432108943715193
+    second: level1_mining_tool_mask_413
+  - first:
+      213: 2486183406199468393
+    second: level1_mining_tool_mask_414
+  - first:
+      213: -8720749796566847683
+    second: level1_mining_tool_mask_415
+  - first:
+      213: 2202352008255321754
+    second: level1_mining_tool_mask_416
+  - first:
+      213: 2290659776064012524
+    second: level1_mining_tool_mask_417
+  - first:
+      213: -2106153127999771035
+    second: level1_mining_tool_mask_418
+  - first:
+      213: -1506439923159071419
+    second: level1_mining_tool_mask_419
+  - first:
+      213: 2283554179520579824
+    second: level1_mining_tool_mask_420
+  - first:
+      213: 6863612357991984940
+    second: level1_mining_tool_mask_421
+  - first:
+      213: 2356883237056284446
+    second: level1_mining_tool_mask_422
+  - first:
+      213: -7611734128571161551
+    second: level1_mining_tool_mask_423
+  - first:
+      213: -2867825981091770499
+    second: level1_mining_tool_mask_424
+  - first:
+      213: 3828132901943505621
+    second: level1_mining_tool_mask_425
+  - first:
+      213: 616568281850801715
+    second: level1_mining_tool_mask_426
+  - first:
+      213: -1823014220682301093
+    second: level1_mining_tool_mask_427
+  - first:
+      213: -9177094514143058483
+    second: level1_mining_tool_mask_428
+  - first:
+      213: 6926173652348956751
+    second: level1_mining_tool_mask_429
+  - first:
+      213: -8294810693560509757
+    second: level1_mining_tool_mask_430
+  - first:
+      213: 6574274340001467567
+    second: level1_mining_tool_mask_431
+  - first:
+      213: -1393742242137338861
+    second: level1_mining_tool_mask_432
+  - first:
+      213: -5228117740400289087
+    second: level1_mining_tool_mask_433
+  - first:
+      213: 6320904803255675483
+    second: level1_mining_tool_mask_434
+  - first:
+      213: 4618542682350298672
+    second: level1_mining_tool_mask_435
+  - first:
+      213: -4096656254029821874
+    second: level1_mining_tool_mask_436
+  - first:
+      213: 2293749324144449826
+    second: level1_mining_tool_mask_437
+  - first:
+      213: 4937562063652878054
+    second: level1_mining_tool_mask_438
+  - first:
+      213: -2867679906028012891
+    second: level1_mining_tool_mask_439
+  - first:
+      213: -4967533775186910899
+    second: level1_mining_tool_mask_440
+  - first:
+      213: -4030792401760150816
+    second: level1_mining_tool_mask_441
+  - first:
+      213: 7524058401839426635
+    second: level1_mining_tool_mask_442
+  - first:
+      213: 6943571901085171928
+    second: level1_mining_tool_mask_443
+  - first:
+      213: 8940349868793827501
+    second: level1_mining_tool_mask_444
+  - first:
+      213: 4831450997617779034
+    second: level1_mining_tool_mask_445
+  - first:
+      213: 4415247675693277522
+    second: level1_mining_tool_mask_446
+  - first:
+      213: -4318590695992117974
+    second: level1_mining_tool_mask_447
+  - first:
+      213: 8238395889022494151
+    second: level1_mining_tool_mask_448
+  - first:
+      213: 2640710156328782893
+    second: level1_mining_tool_mask_449
+  - first:
+      213: -7898696739723389653
+    second: level1_mining_tool_mask_450
+  - first:
+      213: -7566197319981022633
+    second: level1_mining_tool_mask_451
+  - first:
+      213: 6680469406414227202
+    second: level1_mining_tool_mask_452
+  - first:
+      213: 5992871583438487994
+    second: level1_mining_tool_mask_453
+  - first:
+      213: 5039914228269564041
+    second: level1_mining_tool_mask_454
+  - first:
+      213: 2535306247325498184
+    second: level1_mining_tool_mask_455
+  - first:
+      213: -720710867727324012
+    second: level1_mining_tool_mask_456
+  - first:
+      213: -9029642219625856611
+    second: level1_mining_tool_mask_457
+  - first:
+      213: 7912450907218153230
+    second: level1_mining_tool_mask_458
+  - first:
+      213: -927580463481225125
+    second: level1_mining_tool_mask_459
+  - first:
+      213: 424222365294144910
+    second: level1_mining_tool_mask_460
+  - first:
+      213: -8302369666784753412
+    second: level1_mining_tool_mask_461
+  - first:
+      213: 6862174753531285751
+    second: level1_mining_tool_mask_462
+  - first:
+      213: -6479428007480206564
+    second: level1_mining_tool_mask_463
+  - first:
+      213: -7827270054360463827
+    second: level1_mining_tool_mask_464
+  - first:
+      213: -5644913357593190895
+    second: level1_mining_tool_mask_465
+  - first:
+      213: 7660226535562684627
+    second: level1_mining_tool_mask_466
+  - first:
+      213: -6665475493585632910
+    second: level1_mining_tool_mask_467
+  - first:
+      213: -5782649222122238421
+    second: level1_mining_tool_mask_468
+  - first:
+      213: -4609284022538052654
+    second: level1_mining_tool_mask_469
+  - first:
+      213: 8214538468464937397
+    second: level1_mining_tool_mask_470
+  - first:
+      213: 3694364275576128255
+    second: level1_mining_tool_mask_471
+  - first:
+      213: 609560451202133939
+    second: level1_mining_tool_mask_472
+  - first:
+      213: 4117292177027093607
+    second: level1_mining_tool_mask_473
+  - first:
+      213: 5285156134597199866
+    second: level1_mining_tool_mask_474
+  - first:
+      213: -978108224549165688
+    second: level1_mining_tool_mask_475
+  - first:
+      213: -8913555197067486100
+    second: level1_mining_tool_mask_476
+  - first:
+      213: -1748919981251270548
+    second: level1_mining_tool_mask_477
+  - first:
+      213: 7694352718843390323
+    second: level1_mining_tool_mask_478
+  - first:
+      213: -374192199672572197
+    second: level1_mining_tool_mask_479
+  - first:
+      213: 3380500524169957631
+    second: level1_mining_tool_mask_480
+  - first:
+      213: 1679515660919067063
+    second: level1_mining_tool_mask_481
+  - first:
+      213: -3397286201538059538
+    second: level1_mining_tool_mask_482
+  - first:
+      213: 3941569077426225778
+    second: level1_mining_tool_mask_483
+  - first:
+      213: 4255890164043205034
+    second: level1_mining_tool_mask_484
+  - first:
+      213: 5633758372852319654
+    second: level1_mining_tool_mask_485
+  - first:
+      213: -1980999833867949210
+    second: level1_mining_tool_mask_486
+  - first:
+      213: -4236642209112397750
+    second: level1_mining_tool_mask_487
+  - first:
+      213: -7752202052573521397
+    second: level1_mining_tool_mask_488
+  - first:
+      213: -7203776287040049991
+    second: level1_mining_tool_mask_489
+  - first:
+      213: 3630273194291701955
+    second: level1_mining_tool_mask_490
+  - first:
+      213: 7298430053547967352
+    second: level1_mining_tool_mask_491
+  - first:
+      213: 2301124233112613316
+    second: level1_mining_tool_mask_492
+  - first:
+      213: -389731913988509102
+    second: level1_mining_tool_mask_493
+  - first:
+      213: -5696988850041668144
+    second: level1_mining_tool_mask_494
+  - first:
+      213: 7671679356875227678
+    second: level1_mining_tool_mask_495
+  - first:
+      213: -5899549778429415418
+    second: level1_mining_tool_mask_496
+  - first:
+      213: -4459957276020598522
+    second: level1_mining_tool_mask_497
+  - first:
+      213: -4198937780577269209
+    second: level1_mining_tool_mask_498
+  - first:
+      213: -1872988190462826801
+    second: level1_mining_tool_mask_499
+  - first:
+      213: -7921919008520583910
+    second: level1_mining_tool_mask_500
+  - first:
+      213: -1072485551327214577
+    second: level1_mining_tool_mask_501
+  - first:
+      213: -2071102276792901
+    second: level1_mining_tool_mask_502
+  - first:
+      213: -301745077786776437
+    second: level1_mining_tool_mask_503
+  - first:
+      213: -2212965678816379941
+    second: level1_mining_tool_mask_504
+  - first:
+      213: -5592124776899470444
+    second: level1_mining_tool_mask_505
+  - first:
+      213: 4725064025725307474
+    second: level1_mining_tool_mask_506
+  - first:
+      213: -6645418390013880034
+    second: level1_mining_tool_mask_507
+  - first:
+      213: -901749233393121911
+    second: level1_mining_tool_mask_508
+  - first:
+      213: -9223340078472422449
+    second: level1_mining_tool_mask_509
+  - first:
+      213: -8898192853108997153
+    second: level1_mining_tool_mask_510
+  - first:
+      213: 260451329092797556
+    second: level1_mining_tool_mask_511
+  - first:
+      213: 7675671465446423436
+    second: level1_mining_tool_mask_512
+  - first:
+      213: 5612901982542733974
+    second: level1_mining_tool_mask_513
+  - first:
+      213: -3922808609862453149
+    second: level1_mining_tool_mask_514
+  - first:
+      213: 1358787740640293607
+    second: level1_mining_tool_mask_515
+  - first:
+      213: -6769098388555441550
+    second: level1_mining_tool_mask_516
+  - first:
+      213: 3733700009892328807
+    second: level1_mining_tool_mask_517
+  - first:
+      213: -7277037295464073554
+    second: level1_mining_tool_mask_518
+  - first:
+      213: 8342877119379234465
+    second: level1_mining_tool_mask_519
+  - first:
+      213: 8786377706220817033
+    second: level1_mining_tool_mask_520
+  - first:
+      213: 3631482224470407737
+    second: level1_mining_tool_mask_521
+  - first:
+      213: -4793999519170468591
+    second: level1_mining_tool_mask_522
+  - first:
+      213: 9152888259664061409
+    second: level1_mining_tool_mask_523
+  - first:
+      213: -1799930319885374647
+    second: level1_mining_tool_mask_524
+  - first:
+      213: 6842656839507653171
+    second: level1_mining_tool_mask_525
+  - first:
+      213: -2113952525710652160
+    second: level1_mining_tool_mask_526
+  - first:
+      213: -4750658238156880194
+    second: level1_mining_tool_mask_527
+  - first:
+      213: -1718745979066679329
+    second: level1_mining_tool_mask_528
+  - first:
+      213: -7862344552255841198
+    second: level1_mining_tool_mask_529
+  - first:
+      213: -4683499168952583916
+    second: level1_mining_tool_mask_530
+  - first:
+      213: 5238704049285509509
+    second: level1_mining_tool_mask_531
+  - first:
+      213: 7005009261123437347
+    second: level1_mining_tool_mask_532
+  - first:
+      213: 6943081135271275629
+    second: level1_mining_tool_mask_533
+  - first:
+      213: -973084093637700245
+    second: level1_mining_tool_mask_534
+  - first:
+      213: -1014308329845931731
+    second: level1_mining_tool_mask_535
+  - first:
+      213: -6513051494996443555
+    second: level1_mining_tool_mask_536
+  - first:
+      213: 1490720857817475453
+    second: level1_mining_tool_mask_537
+  - first:
+      213: 2219244278778817216
+    second: level1_mining_tool_mask_538
+  - first:
+      213: -2834672204612841520
+    second: level1_mining_tool_mask_539
+  - first:
+      213: -3381556529816031054
+    second: level1_mining_tool_mask_540
+  - first:
+      213: -6536470598175654038
+    second: level1_mining_tool_mask_541
+  - first:
+      213: 8758428156165614014
+    second: level1_mining_tool_mask_542
+  - first:
+      213: 5374232539140123049
+    second: level1_mining_tool_mask_543
+  - first:
+      213: 1151443261009366061
+    second: level1_mining_tool_mask_544
+  - first:
+      213: 3692499128009218956
+    second: level1_mining_tool_mask_545
+  - first:
+      213: -4815333369884978530
+    second: level1_mining_tool_mask_546
+  - first:
+      213: 2537805691660927914
+    second: level1_mining_tool_mask_547
+  - first:
+      213: -8230193806157837344
+    second: level1_mining_tool_mask_548
+  - first:
+      213: 5215589458270437880
+    second: level1_mining_tool_mask_549
+  - first:
+      213: 8627943152587468920
+    second: level1_mining_tool_mask_550
+  - first:
+      213: -4753890163129892810
+    second: level1_mining_tool_mask_551
+  - first:
+      213: 2132129322553137225
+    second: level1_mining_tool_mask_552
+  - first:
+      213: -2967644991648714826
+    second: level1_mining_tool_mask_553
+  - first:
+      213: -6780855583495033642
+    second: level1_mining_tool_mask_554
+  - first:
+      213: -1816573158356828312
+    second: level1_mining_tool_mask_555
+  - first:
+      213: 5325944655437754833
+    second: level1_mining_tool_mask_556
+  - first:
+      213: 7330472152383661405
+    second: level1_mining_tool_mask_557
+  - first:
+      213: 3658602624601415004
+    second: level1_mining_tool_mask_558
+  - first:
+      213: -2330162169114000671
+    second: level1_mining_tool_mask_559
+  - first:
+      213: 1350145093911763004
+    second: level1_mining_tool_mask_560
+  - first:
+      213: -1185545673488272545
+    second: level1_mining_tool_mask_561
+  - first:
+      213: -3212867807247840480
+    second: level1_mining_tool_mask_562
+  - first:
+      213: -7929399765424056242
+    second: level1_mining_tool_mask_563
+  - first:
+      213: -7405707786742290000
+    second: level1_mining_tool_mask_564
+  - first:
+      213: -2019273265102156706
+    second: level1_mining_tool_mask_565
+  - first:
+      213: 2224879294067038278
+    second: level1_mining_tool_mask_566
+  - first:
+      213: -7293255598624679442
+    second: level1_mining_tool_mask_567
+  - first:
+      213: -4095159739432552002
+    second: level1_mining_tool_mask_568
+  - first:
+      213: 8580130845572383056
+    second: level1_mining_tool_mask_569
+  - first:
+      213: -1093274933238723348
+    second: level1_mining_tool_mask_570
+  - first:
+      213: -864106200118679234
+    second: level1_mining_tool_mask_571
+  - first:
+      213: 7206395609141451871
+    second: level1_mining_tool_mask_572
+  - first:
+      213: -4401226152992733262
+    second: level1_mining_tool_mask_573
+  - first:
+      213: 9217064636417369533
+    second: level1_mining_tool_mask_574
+  - first:
+      213: -5773226909305102990
+    second: level1_mining_tool_mask_575
+  - first:
+      213: -3749175536180966704
+    second: level1_mining_tool_mask_576
+  - first:
+      213: -3304333594173417846
+    second: level1_mining_tool_mask_577
+  - first:
+      213: 1845711224984119842
+    second: level1_mining_tool_mask_578
+  - first:
+      213: 1590971256654543237
+    second: level1_mining_tool_mask_579
+  - first:
+      213: 8177093702115571193
+    second: level1_mining_tool_mask_580
+  - first:
+      213: -4748358559036144596
+    second: level1_mining_tool_mask_581
+  - first:
+      213: -5034666598060868260
+    second: level1_mining_tool_mask_582
+  - first:
+      213: -4200999944437703729
+    second: level1_mining_tool_mask_583
+  - first:
+      213: -8120554080445427007
+    second: level1_mining_tool_mask_584
+  - first:
+      213: 7846478611886973531
+    second: level1_mining_tool_mask_585
+  - first:
+      213: -1824740334639739241
+    second: level1_mining_tool_mask_586
+  - first:
+      213: 1275855782173560189
+    second: level1_mining_tool_mask_587
+  - first:
+      213: -6369844121396619296
+    second: level1_mining_tool_mask_588
+  - first:
+      213: 6761370737874346736
+    second: level1_mining_tool_mask_589
+  - first:
+      213: -8009965912351058407
+    second: level1_mining_tool_mask_590
+  - first:
+      213: 8136105078097345970
+    second: level1_mining_tool_mask_591
+  - first:
+      213: -736633933908247544
+    second: level1_mining_tool_mask_592
+  - first:
+      213: 8600351433310336863
+    second: level1_mining_tool_mask_593
+  - first:
+      213: 2587118513049551367
+    second: level1_mining_tool_mask_594
+  - first:
+      213: -5375359245926837775
+    second: level1_mining_tool_mask_595
+  - first:
+      213: 7149126348777008450
+    second: level1_mining_tool_mask_596
+  - first:
+      213: 8577749929428258127
+    second: level1_mining_tool_mask_597
+  - first:
+      213: -6687514250224313293
+    second: level1_mining_tool_mask_598
+  - first:
+      213: 203311305162371351
+    second: level1_mining_tool_mask_599
+  - first:
+      213: 6245278732579612940
+    second: level1_mining_tool_mask_600
+  - first:
+      213: 1691299696107115168
+    second: level1_mining_tool_mask_601
+  - first:
+      213: 1012210946008253105
+    second: level1_mining_tool_mask_602
+  - first:
+      213: 9110326821985672172
+    second: level1_mining_tool_mask_603
+  - first:
+      213: 7438235624864749041
+    second: level1_mining_tool_mask_604
+  - first:
+      213: 8897626121765622142
+    second: level1_mining_tool_mask_605
+  - first:
+      213: -4091621003135990466
+    second: level1_mining_tool_mask_606
+  - first:
+      213: 100191792314362566
+    second: level1_mining_tool_mask_607
+  - first:
+      213: 3564029782529692358
+    second: level1_mining_tool_mask_608
+  - first:
+      213: -8276499934368112004
+    second: level1_mining_tool_mask_609
+  - first:
+      213: -1079891468664087625
+    second: level1_mining_tool_mask_610
+  - first:
+      213: -4671795313899242779
+    second: level1_mining_tool_mask_611
+  - first:
+      213: -752139105930486724
+    second: level1_mining_tool_mask_612
+  - first:
+      213: -8496847358340525079
+    second: level1_mining_tool_mask_613
+  - first:
+      213: -2611338144739380654
+    second: level1_mining_tool_mask_614
+  - first:
+      213: 205381779879927110
+    second: level1_mining_tool_mask_615
+  - first:
+      213: -2117959746734480246
+    second: level1_mining_tool_mask_616
+  - first:
+      213: -8435519837825756599
+    second: level1_mining_tool_mask_617
+  - first:
+      213: 1522587375703815397
+    second: level1_mining_tool_mask_618
+  - first:
+      213: -3827928174343427787
+    second: level1_mining_tool_mask_619
+  - first:
+      213: 3504986289711859518
+    second: level1_mining_tool_mask_620
+  - first:
+      213: -2356602255328946840
+    second: level1_mining_tool_mask_621
+  - first:
+      213: 6009632567684091963
+    second: level1_mining_tool_mask_622
+  - first:
+      213: -1058698371632923041
+    second: level1_mining_tool_mask_623
+  - first:
+      213: 2443238502507943391
+    second: level1_mining_tool_mask_624
+  - first:
+      213: 1837151844686176044
+    second: level1_mining_tool_mask_625
+  - first:
+      213: 5281248240849330649
+    second: level1_mining_tool_mask_626
+  - first:
+      213: -5848188177872761678
+    second: level1_mining_tool_mask_627
+  - first:
+      213: -3647137776562057961
+    second: level1_mining_tool_mask_628
+  - first:
+      213: -1864708839687079975
+    second: level1_mining_tool_mask_629
+  - first:
+      213: -2466580582565465734
+    second: level1_mining_tool_mask_630
+  - first:
+      213: 109822812370242913
+    second: level1_mining_tool_mask_631
+  - first:
+      213: 7665658952475145106
+    second: level1_mining_tool_mask_632
+  - first:
+      213: -5592258703631541487
+    second: level1_mining_tool_mask_633
+  - first:
+      213: -5140722566415264740
+    second: level1_mining_tool_mask_634
+  - first:
+      213: 3705962636515273387
+    second: level1_mining_tool_mask_635
+  - first:
+      213: -1844122671420026642
+    second: level1_mining_tool_mask_636
+  - first:
+      213: -5151584733880329240
+    second: level1_mining_tool_mask_637
+  - first:
+      213: -3017138520184776439
+    second: level1_mining_tool_mask_638
+  - first:
+      213: 2688566359724973988
+    second: level1_mining_tool_mask_639
+  - first:
+      213: 6278940595636353565
+    second: level1_mining_tool_mask_640
+  - first:
+      213: 8741687636240776386
+    second: level1_mining_tool_mask_641
+  - first:
+      213: 4319848962645422294
+    second: level1_mining_tool_mask_642
+  - first:
+      213: 7216322449330501326
+    second: level1_mining_tool_mask_643
+  - first:
+      213: -1956866815441666913
+    second: level1_mining_tool_mask_644
+  - first:
+      213: -2193670948567061037
+    second: level1_mining_tool_mask_645
+  - first:
+      213: 7795762084253650834
+    second: level1_mining_tool_mask_646
+  - first:
+      213: 5904382474240046436
+    second: level1_mining_tool_mask_647
+  - first:
+      213: -7576079644731025005
+    second: level1_mining_tool_mask_648
+  - first:
+      213: -5104854227022797553
+    second: level1_mining_tool_mask_649
+  - first:
+      213: -1838027899747077597
+    second: level1_mining_tool_mask_650
+  - first:
+      213: -304281058548906955
+    second: level1_mining_tool_mask_651
+  - first:
+      213: 3590120060282396928
+    second: level1_mining_tool_mask_652
+  - first:
+      213: -6155658639961477730
+    second: level1_mining_tool_mask_653
+  - first:
+      213: 5719560924160155111
+    second: level1_mining_tool_mask_654
+  - first:
+      213: -5822629474625008127
+    second: level1_mining_tool_mask_655
+  - first:
+      213: -6948185638271606232
+    second: level1_mining_tool_mask_656
+  - first:
+      213: 810343160202414726
+    second: level1_mining_tool_mask_657
+  - first:
+      213: -5977246275326306847
+    second: level1_mining_tool_mask_658
+  - first:
+      213: 6659024344028397556
+    second: level1_mining_tool_mask_659
+  - first:
+      213: 9061239603553775143
+    second: level1_mining_tool_mask_660
+  - first:
+      213: -8555279444020075197
+    second: level1_mining_tool_mask_661
+  - first:
+      213: 2804583302422890003
+    second: level1_mining_tool_mask_662
+  - first:
+      213: 9198443803900641991
+    second: level1_mining_tool_mask_663
+  - first:
+      213: -6676948517738394610
+    second: level1_mining_tool_mask_664
+  - first:
+      213: 6592637613361310131
+    second: level1_mining_tool_mask_665
+  - first:
+      213: 7207931240700780000
+    second: level1_mining_tool_mask_666
+  - first:
+      213: -506550416856322891
+    second: level1_mining_tool_mask_667
+  - first:
+      213: -8030094033178097278
+    second: level1_mining_tool_mask_668
+  - first:
+      213: -7458909835359092470
+    second: level1_mining_tool_mask_669
+  - first:
+      213: 5613767648307736678
+    second: level1_mining_tool_mask_670
+  - first:
+      213: 5416726655082672398
+    second: level1_mining_tool_mask_671
+  - first:
+      213: 3660190562472752453
+    second: level1_mining_tool_mask_672
+  - first:
+      213: -292636956762840227
+    second: level1_mining_tool_mask_673
+  - first:
+      213: -8336292429489474068
+    second: level1_mining_tool_mask_674
+  - first:
+      213: -5263450186522705552
+    second: level1_mining_tool_mask_675
+  - first:
+      213: 7715390639644662892
+    second: level1_mining_tool_mask_676
+  - first:
+      213: 4914227660395629497
+    second: level1_mining_tool_mask_677
+  - first:
+      213: 4741060974608058833
+    second: level1_mining_tool_mask_678
+  - first:
+      213: -888879284704946484
+    second: level1_mining_tool_mask_679
+  - first:
+      213: -9157550196732390258
+    second: level1_mining_tool_mask_680
+  - first:
+      213: -683083646131748143
+    second: level1_mining_tool_mask_681
+  - first:
+      213: -1051497073041365054
+    second: level1_mining_tool_mask_682
+  - first:
+      213: -505480337315753547
+    second: level1_mining_tool_mask_683
+  - first:
+      213: -6714015011319350949
+    second: level1_mining_tool_mask_684
+  - first:
+      213: -707616985388224139
+    second: level1_mining_tool_mask_685
+  - first:
+      213: 8572466387389387845
+    second: level1_mining_tool_mask_686
+  - first:
+      213: -6217520950355122345
+    second: level1_mining_tool_mask_687
+  - first:
+      213: -8855396209692710428
+    second: level1_mining_tool_mask_688
+  - first:
+      213: -6637660175585840033
+    second: level1_mining_tool_mask_689
+  - first:
+      213: -7118189609507688753
+    second: level1_mining_tool_mask_690
+  - first:
+      213: 8750442802839346146
+    second: level1_mining_tool_mask_691
+  - first:
+      213: 1147501147746455777
+    second: level1_mining_tool_mask_692
+  - first:
+      213: 1185182713046682210
+    second: level1_mining_tool_mask_693
+  - first:
+      213: 4457861351053160942
+    second: level1_mining_tool_mask_694
+  - first:
+      213: -7226322127110705747
+    second: level1_mining_tool_mask_695
+  - first:
+      213: 8317493998181398668
+    second: level1_mining_tool_mask_696
+  - first:
+      213: 4595814490625780456
+    second: level1_mining_tool_mask_697
+  - first:
+      213: 790636371638695842
+    second: level1_mining_tool_mask_698
+  - first:
+      213: -591761985786372349
+    second: level1_mining_tool_mask_699
+  - first:
+      213: 8306447911991144505
+    second: level1_mining_tool_mask_700
+  - first:
+      213: -7717965481245861105
+    second: level1_mining_tool_mask_701
+  - first:
+      213: -3985019915406965408
+    second: level1_mining_tool_mask_702
+  - first:
+      213: 2275871462857720474
+    second: level1_mining_tool_mask_703
+  - first:
+      213: -2950372188069564345
+    second: level1_mining_tool_mask_704
+  - first:
+      213: 1911991453539196015
+    second: level1_mining_tool_mask_705
+  - first:
+      213: -2602812541604278264
+    second: level1_mining_tool_mask_706
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e6bbd3a0b9a4ea0800000000000000
+      internalID: -5887723094545830322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67a5bf637ca18ca0800000000000000
+      internalID: -6016338015394879638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507e867d6e1914110800000000000000
+      internalID: 1243435392773449477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e0c842569d228b0800000000000000
+      internalID: -5178337593094566327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aacfda8f70be8af0800000000000000
+      internalID: -392182055697397079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_5
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5551354c9b1ee94d0800000000000000
+      internalID: -3125812903369566891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_6
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49304f6aa3a5c8f80800000000000000
+      internalID: -8103002421590752364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_7
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6b67060f35cf1c0800000000000000
+      internalID: -4468604438382725446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_8
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e032018c5f51541e0800000000000000
+      internalID: -2214339496415059186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_9
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a12321a2543de020800000000000000
+      internalID: 2372610108189516196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_10
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d4fdc92cfef2620800000000000000
+      internalID: 2751681516481236359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_11
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa13afed2e7fd8e0800000000000000
+      internalID: -1666474601344722190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_12
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa237c3cfffdd98d0800000000000000
+      internalID: -2837865900579278161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_13
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7bd4ae0c6070500800000000000000
+      internalID: 362265720661063626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_14
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3a28ac58c8c5ae0800000000000000
+      internalID: -1559216864720936015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_15
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf21a844b9c80b40800000000000000
+      internalID: 5406793128808099783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_16
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab851b63f0bd4ea0800000000000000
+      internalID: -5886854578383254622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_17
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0f382a52565d710800000000000000
+      internalID: 1717390045226463414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_18
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ca7ebc02aa013b0800000000000000
+      internalID: -5543744083456447392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_19
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5f194ec94846d80800000000000000
+      internalID: -8258330007306111577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_20
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc45270543f1d7340800000000000000
+      internalID: 4863077482178434253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_21
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ef7b57ea5b64140800000000000000
+      internalID: 4703646621738991213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_22
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc3c3dd2908b05d0800000000000000
+      internalID: -3095238950621790979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_23
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4c9293f82da3990800000000000000
+      internalID: -7405375124676164422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_24
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb3c7cced45f6c50800000000000000
+      internalID: 6660635689794419688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_25
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 966
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cfb0be1b627d9320800000000000000
+      internalID: 2566333167073017794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6094f05bc65aac760800000000000000
+      internalID: 7478972017514858758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_27
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c31a1fd84575e130800000000000000
+      internalID: 3595408833366332359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_28
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cb3e3b2401197d0800000000000000
+      internalID: -2913529605260067785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_29
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c72f7a9f7558a010800000000000000
+      internalID: 1200303307235469249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_30
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641234f8bf49fe830800000000000000
+      internalID: 4102661593719054662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_31
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d2460d830286940800000000000000
+      internalID: 5289513190733131079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_32
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a158a286b4c99850800000000000000
+      internalID: 6384350234929549734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_33
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e96264423153070800000000000000
+      internalID: 8085389752530280055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_34
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800f3edfae4822300800000000000000
+      internalID: 225889076138733576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_35
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dd1d035e5f96d70800000000000000
+      internalID: 9037024492010986867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_36
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95c80a0aa49b4a30800000000000000
+      internalID: 4200614535486817694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_37
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93cba10311789e350800000000000000
+      internalID: 6046512482612853817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_38
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b24a58f87afa9f0800000000000000
+      internalID: -454960802476840190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_39
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da9427df5c1d55b0800000000000000
+      internalID: -5378111182053532974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_40
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b99e2f0390091140800000000000000
+      internalID: 4690781118497986993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_41
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c561e9b2c1714ce0800000000000000
+      internalID: -1422730926116215352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_42
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7a6f3916cfef4d0800000000000000
+      internalID: -3098761997559879706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_43
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2cfe569a5a23830800000000000000
+      internalID: 4049481161937765045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_44
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8dfb01b62427f50800000000000000
+      internalID: 6877632608558110937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_45
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3760e81f98e0c7d00800000000000000
+      internalID: 971667605231109747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_46
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28f691aa361cafb0800000000000000
+      internalID: -4635305475396143057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_47
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f2eafdc88babb10800000000000000
+      internalID: 1998112299879903002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_48
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa27327d68146010800000000000000
+      internalID: 1181095860624632573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_49
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cfb96750f7b1830800000000000000
+      internalID: 4042964751936650368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_50
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4e904929a707080800000000000000
+      internalID: -9191712069495692050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_51
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 828
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45478397a03219050800000000000000
+      internalID: 5805459922547668052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab77db141eeb5e550800000000000000
+      internalID: 6189563137570469818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_53
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b7838bf6afbf9e0800000000000000
+      internalID: -1586399085978944648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_54
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f161a6aa344b6f0800000000000000
+      internalID: -669836045368025263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_55
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b9512861db336f0800000000000000
+      internalID: -706012812197651672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_56
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0383bf6e02899cc0800000000000000
+      internalID: -3703786220020333813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_57
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f56ec23993312a0800000000000000
+      internalID: -6768002510731452587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_58
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b93fbef6c1a65a0800000000000000
+      internalID: -6527373442894554282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_59
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f238924825eca2fe0800000000000000
+      internalID: -1212930295822974161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_60
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3be5f145314b8d10800000000000000
+      internalID: 2128866945858399037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_61
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e0b7557039c0ca0800000000000000
+      internalID: -6049298539757236639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_62
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6675a044cf20000800000000000000
+      internalID: 840319114897109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_63
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e469410f1608cbbe0800000000000000
+      internalID: -1460151021046819250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_64
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f352894b1af019180800000000000000
+      internalID: -9110483383999781569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_65
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70707f77b354c5d0800000000000000
+      internalID: -3043215400613416838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_66
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5298d731f32fa9990800000000000000
+      internalID: -7378318686769280731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_67
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16a1847292651dc0800000000000000
+      internalID: -3668917940263999972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_68
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ff2d17ee8b4e280800000000000000
+      internalID: -9014877219837509800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_69
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22b4dd699ff7e440800000000000000
+      internalID: 4965218148636996141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_70
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de05372b440f33e0800000000000000
+      internalID: -2071932582740291888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_71
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58f4463fb2a57500800000000000000
+      internalID: 393399484597729373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_72
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f23779472d0d7df0800000000000000
+      internalID: -180973947637517575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_73
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126662f0a52258430800000000000000
+      internalID: 3784468832071345697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_74
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17850274327cdcd0800000000000000
+      internalID: -2532023320912230629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_75
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1940a2bee0618fc0800000000000000
+      internalID: -3494405257547462369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_76
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f542012a644e25a0800000000000000
+      internalID: -6544217985911732745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_77
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 690
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88545f6f3831a4400800000000000000
+      internalID: 309080981933213064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9feeb8db99f6f8f10800000000000000
+      internalID: 2274159042946133753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_79
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0854c6c3dcf3f230800000000000000
+      internalID: 3671556107740141582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_80
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f79ff4cf4205990800000000000000
+      internalID: -7399373521677615269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_81
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7c4c4a10808f770800000000000000
+      internalID: 8644668287890016170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_82
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef475eff206581a20800000000000000
+      internalID: 3033268919917180158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_83
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2359c30f0461dfb0800000000000000
+      internalID: -4624805326681976019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_84
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef0b543c1daf1d30800000000000000
+      internalID: 4404429297240707050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_85
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6cc018093336c1e0800000000000000
+      internalID: -2177997049745585044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_86
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcea8acbeee34e970800000000000000
+      internalID: 8783214368367619787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_87
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fd2d4f015073210800000000000000
+      internalID: 1312523386786864933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_88
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecec54b7a71e10270800000000000000
+      internalID: 8215095111470927566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_89
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88a70ee6dd993d80800000000000000
+      internalID: -8270405694247163761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_90
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659ee8754c150b4e0800000000000000
+      internalID: -1967983133436483242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_91
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe21262f634067430800000000000000
+      internalID: 3780213571265368815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_92
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4651920471af060800000000000000
+      internalID: 6987923336153359557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_93
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057ea5f1e5649e9f0800000000000000
+      internalID: -438742118624991408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_94
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e112cb58ec66168c0800000000000000
+      internalID: -4007809156190035682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_95
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd30f9b6b5347bd0800000000000000
+      internalID: -2633420823185048121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_96
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c79b56bb352cdca0800000000000000
+      internalID: -5990872465916848186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_97
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d9fc19386d98740800000000000000
+      internalID: 5154887109077605762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_98
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a58ed3efa2644b10800000000000000
+      internalID: 1964803845022188969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_99
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5394c3a7ad1bf9550800000000000000
+      internalID: 6169845566432626997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_100
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a710fc32d2321f50800000000000000
+      internalID: 6850593861730834339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_101
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329614bf256f0f9f0800000000000000
+      internalID: -436578327591818973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_102
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727e17c910a3ab270800000000000000
+      internalID: 8266983844586055463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_103
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 552
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a283d29698aa5bc0800000000000000
+      internalID: -3793534371444325719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66abb517551671a50800000000000000
+      internalID: 6491764407479810662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_105
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5198735fc96e780800000000000000
+      internalID: -8654057056933177909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_106
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d0b7b335f1b46d0800000000000000
+      internalID: -3005273883999007455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_107
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f318e207ec59fec10800000000000000
+      internalID: 2085049866373726527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_108
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8460fa686b948f490800000000000000
+      internalID: -7712333313579481528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_109
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d959320fe735afa30800000000000000
+      internalID: 4249801003037332893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_110
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f9141a1336395c0800000000000000
+      internalID: -4209912161851302106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_111
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6ec595c864be640800000000000000
+      internalID: 5110255770790586023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_112
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eacc621fc85e6bd0800000000000000
+      internalID: -2635071085574567194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_113
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035c36fefddfd4470800000000000000
+      internalID: 8380633619842188592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_114
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a64bde11b7c3a80800000000000000
+      internalID: -8485772280940172705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_115
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a42400adfe82b1d0800000000000000
+      internalID: -3336447153965620056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_116
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8b218443b46a950800000000000000
+      internalID: 6459933403429124310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_117
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e88ccfe0c4312650800000000000000
+      internalID: 6206299764754778338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_118
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4438e5451fe6825a0800000000000000
+      internalID: -6545860075601362108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_119
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7011791015d789440800000000000000
+      internalID: 4942838377911619847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_120
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4cbb0029f1a0d50800000000000000
+      internalID: 6704205707232396515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_121
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abdb04910bf564670800000000000000
+      internalID: 8522604554787798458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_122
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9a9f91e90594750800000000000000
+      internalID: 6289646994570455551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_123
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0b89ab71adc7590800000000000000
+      internalID: -7675019869496495957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_124
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1610e1d0e9fb9da40800000000000000
+      internalID: 5393552714298687841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_125
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbd4ad871877a5c0800000000000000
+      internalID: -4204259684571096109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_126
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa23486a7537e860800000000000000
+      internalID: 7559069299416181501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_127
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19fddeaaec9adac0800000000000000
+      internalID: -3829576001355122403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_128
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe31cd068fe51dd0800000000000000
+      internalID: -2515841457781129477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_129
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 414
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b11c84ce84cc5290800000000000000
+      internalID: -7900223528852778574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf09b219f3cee70a0800000000000000
+      internalID: -6881803422812892932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_131
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5792e5b782c97e9a0800000000000000
+      internalID: -6203818263997175435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_132
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15007fe350c38d120800000000000000
+      internalID: 2438765191450001489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_133
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae84f0733e1725850800000000000000
+      internalID: 6364274444123195626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_134
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba07519fe0e470910800000000000000
+      internalID: 1803496002000613547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_135
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bb3837e91de1890800000000000000
+      internalID: -7485315052170134720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_136
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adfc728d35097a20800000000000000
+      internalID: 3060483183515336103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_137
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2da5479211f5190800000000000000
+      internalID: -7971633945679048006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_138
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df41e8f82143dac0800000000000000
+      internalID: -3831647213732147243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_139
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025fac567b8f920d0800000000000000
+      internalID: -3446950573204900576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_140
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8370f9f8ac701660800000000000000
+      internalID: 7354515256685654926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_141
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33231076a9302ff60800000000000000
+      internalID: 8066513844261958195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_142
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffadd5beb16b632a0800000000000000
+      internalID: -6758013959793681665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_143
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b217502db65828d0800000000000000
+      internalID: -2870949392157306188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_144
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b2b040083116140800000000000000
+      internalID: 4711068125750831992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_145
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1ccb2c469a98f40800000000000000
+      internalID: 5731298251034640854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_146
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a3d035d5c56f3e0800000000000000
+      internalID: -2020325826933999025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_147
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f879b18fbc8e620800000000000000
+      internalID: 2803715034513379148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_148
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeedf0df475590b80800000000000000
+      internalID: -8428111266696929554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_149
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bad0663004c5d8c0800000000000000
+      internalID: -3975055590893233481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_150
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eeaa02ccb24718c0800000000000000
+      internalID: -4028677963182854425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_151
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91041d91754461920800000000000000
+      internalID: 2960628945928667161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_152
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333a4cfd7f666f980800000000000000
+      internalID: -8505497631445441741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_153
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b7b05f907f40bc0800000000000000
+      internalID: -3817654961965401244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_154
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3326b57ba687f710800000000000000
+      internalID: 1726997053092275002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_155
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 276
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df92e0a6d46844de0800000000000000
+      internalID: -1349806321254389251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4198e12399aee90800000000000000
+      internalID: -6995610630626929411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_157
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a905646df0db440800000000000000
+      internalID: 4953132578154519112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_158
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4523aacc3bd1770800000000000000
+      internalID: 8583214156448158956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_159
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6b13b132cbef710800000000000000
+      internalID: 1729026165922969275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_160
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3538079acacc040800000000000000
+      internalID: 4669296757413467088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_161
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8ba7c03a6dae970800000000000000
+      internalID: 8785070018916956402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_162
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f02f3cd19842fc20800000000000000
+      internalID: 3238730873335390449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_163
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d3ba3f37226ebf0800000000000000
+      internalID: -295510844141519560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_164
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934b1ac93f43e0f70800000000000000
+      internalID: 9155313313400337465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_165
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1569b7f486aa984f0800000000000000
+      internalID: -825941691658955183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_166
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318cc32ade392e820800000000000000
+      internalID: 2946079755092150291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_167
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1062d20bd47ed6840800000000000000
+      internalID: 5219081864046519809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_168
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ad804909b007880800000000000000
+      internalID: -8615373371572954465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_169
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ddbf2ad4c3c222c0800000000000000
+      internalID: -4457785430901801516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_170
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9948b86ac20069680800000000000000
+      internalID: -8748805034347887463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_171
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2491d61409ff440800000000000000
+      internalID: 4971851124317962971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_172
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddd4dab0e0fe0140800000000000000
+      internalID: 4687949110137118160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_173
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f4a63496aa38620800000000000000
+      internalID: 2775249164469686043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_174
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a670ebf7eb0f0330800000000000000
+      internalID: 3679172511576127138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_175
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3455f9bc66fd2c010800000000000000
+      internalID: 1207773282684589379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_176
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d4805d0b8fa90a0800000000000000
+      internalID: -6873908442855617189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_177
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e880558a505dd8360800000000000000
+      internalID: 7173624001746765966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_178
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98258c436561035a0800000000000000
+      internalID: -6543705699060788599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_179
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3558d7f8cff319fd0800000000000000
+      internalID: -2337016377656900269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_180
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc2c89014f2e04c0800000000000000
+      internalID: -4319463036222165807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_181
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 138
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6155f11de6f7644d0800000000000000
+      internalID: -3150690775367461610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_182
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae707f11525368d90800000000000000
+      internalID: -7095925729544173590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_183
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2850895133d677a80800000000000000
+      internalID: -8469180508073884286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_184
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f823a48c6ddffe770800000000000000
+      internalID: 8642405308872405647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_185
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912311ca4baa474f0800000000000000
+      internalID: -831852338199055847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_186
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c1f2633ecb99e70800000000000000
+      internalID: 9122530204268305412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_187
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfaf9f3d12b946f20800000000000000
+      internalID: 3415024987046279933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_188
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fada9d21c1d394d0800000000000000
+      internalID: -3128926688468346119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_189
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2642baddb85b5e060800000000000000
+      internalID: 6982186409631884386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_190
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3fd9fdb3d835000800000000000000
+      internalID: 23517711361242017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_191
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616e659625c7cb890800000000000000
+      internalID: -7440935790926436842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_192
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f05ee227a3cfd180800000000000000
+      internalID: -9088330400397373194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_193
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b84f53c01e1d24b0800000000000000
+      internalID: -5463677715584431945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_194
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9016cab97ad0ade60800000000000000
+      internalID: 7987711902617461001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_195
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74381eea914252c30800000000000000
+      internalID: 4333909909140767559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_196
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de892c120542aad40800000000000000
+      internalID: 5596325413543647469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_197
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f055d318cfb854c0800000000000000
+      internalID: -4298474978278027023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_198
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cfe72076a5ea2e50800000000000000
+      internalID: 6785488291596070849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_199
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a17ab9d7d2f243c0800000000000000
+      internalID: -4376668878965935704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_200
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c172778ebdea1400800000000000000
+      internalID: 295810128118182343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_201
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc98c6662aefde10800000000000000
+      internalID: 2224754191598394610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_202
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44d63f40b81161b0800000000000000
+      internalID: -5665219710733069233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_203
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1748c9e5bdbb4e7f0800000000000000
+      internalID: -584135500791774095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_204
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0720fab2a3c5970800000000000000
+      internalID: 8744928535740838049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_205
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638e9b390e0d1b0e0800000000000000
+      internalID: -2255792275366221770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_206
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a205d70e2d3d1b0800000000000000
+      internalID: -5632926847293445519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level1_mining_tool_mask_207
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 0
+        width: 140
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9af005e1797e560800000000000000
+      internalID: 7343003873898899896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 25d4ce86a8062cd46852eb7b4f60a562
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      level1_mining_tool_mask_0: -5887723094545830322
+      level1_mining_tool_mask_1: -6016338015394879638
+      level1_mining_tool_mask_10: 2751681516481236359
+      level1_mining_tool_mask_100: 6850593861730834339
+      level1_mining_tool_mask_101: -436578327591818973
+      level1_mining_tool_mask_102: 8266983844586055463
+      level1_mining_tool_mask_103: -3793534371444325719
+      level1_mining_tool_mask_104: 6491764407479810662
+      level1_mining_tool_mask_105: -8654057056933177909
+      level1_mining_tool_mask_106: -3005273883999007455
+      level1_mining_tool_mask_107: 2085049866373726527
+      level1_mining_tool_mask_108: -7712333313579481528
+      level1_mining_tool_mask_109: 4249801003037332893
+      level1_mining_tool_mask_11: -1666474601344722190
+      level1_mining_tool_mask_110: -4209912161851302106
+      level1_mining_tool_mask_111: 5110255770790586023
+      level1_mining_tool_mask_112: -2635071085574567194
+      level1_mining_tool_mask_113: 8380633619842188592
+      level1_mining_tool_mask_114: -8485772280940172705
+      level1_mining_tool_mask_115: -3336447153965620056
+      level1_mining_tool_mask_116: 6459933403429124310
+      level1_mining_tool_mask_117: 6206299764754778338
+      level1_mining_tool_mask_118: -6545860075601362108
+      level1_mining_tool_mask_119: 4942838377911619847
+      level1_mining_tool_mask_12: -2837865900579278161
+      level1_mining_tool_mask_120: 6704205707232396515
+      level1_mining_tool_mask_121: 8522604554787798458
+      level1_mining_tool_mask_122: 6289646994570455551
+      level1_mining_tool_mask_123: -7675019869496495957
+      level1_mining_tool_mask_124: 5393552714298687841
+      level1_mining_tool_mask_125: -4204259684571096109
+      level1_mining_tool_mask_126: 7559069299416181501
+      level1_mining_tool_mask_127: -3829576001355122403
+      level1_mining_tool_mask_128: -2515841457781129477
+      level1_mining_tool_mask_129: -7900223528852778574
+      level1_mining_tool_mask_13: 362265720661063626
+      level1_mining_tool_mask_130: -6881803422812892932
+      level1_mining_tool_mask_131: -6203818263997175435
+      level1_mining_tool_mask_132: 2438765191450001489
+      level1_mining_tool_mask_133: 6364274444123195626
+      level1_mining_tool_mask_134: 1803496002000613547
+      level1_mining_tool_mask_135: -7485315052170134720
+      level1_mining_tool_mask_136: 3060483183515336103
+      level1_mining_tool_mask_137: -7971633945679048006
+      level1_mining_tool_mask_138: -3831647213732147243
+      level1_mining_tool_mask_139: -3446950573204900576
+      level1_mining_tool_mask_14: -1559216864720936015
+      level1_mining_tool_mask_140: 7354515256685654926
+      level1_mining_tool_mask_141: 8066513844261958195
+      level1_mining_tool_mask_142: -6758013959793681665
+      level1_mining_tool_mask_143: -2870949392157306188
+      level1_mining_tool_mask_144: 4711068125750831992
+      level1_mining_tool_mask_145: 5731298251034640854
+      level1_mining_tool_mask_146: -2020325826933999025
+      level1_mining_tool_mask_147: 2803715034513379148
+      level1_mining_tool_mask_148: -8428111266696929554
+      level1_mining_tool_mask_149: -3975055590893233481
+      level1_mining_tool_mask_15: 5406793128808099783
+      level1_mining_tool_mask_150: -4028677963182854425
+      level1_mining_tool_mask_151: 2960628945928667161
+      level1_mining_tool_mask_152: -8505497631445441741
+      level1_mining_tool_mask_153: -3817654961965401244
+      level1_mining_tool_mask_154: 1726997053092275002
+      level1_mining_tool_mask_155: -1349806321254389251
+      level1_mining_tool_mask_156: -6995610630626929411
+      level1_mining_tool_mask_157: 4953132578154519112
+      level1_mining_tool_mask_158: 8583214156448158956
+      level1_mining_tool_mask_159: 1729026165922969275
+      level1_mining_tool_mask_16: -5886854578383254622
+      level1_mining_tool_mask_160: 4669296757413467088
+      level1_mining_tool_mask_161: 8785070018916956402
+      level1_mining_tool_mask_162: 3238730873335390449
+      level1_mining_tool_mask_163: -295510844141519560
+      level1_mining_tool_mask_164: 9155313313400337465
+      level1_mining_tool_mask_165: -825941691658955183
+      level1_mining_tool_mask_166: 2946079755092150291
+      level1_mining_tool_mask_167: 5219081864046519809
+      level1_mining_tool_mask_168: -8615373371572954465
+      level1_mining_tool_mask_169: -4457785430901801516
+      level1_mining_tool_mask_17: 1717390045226463414
+      level1_mining_tool_mask_170: -8748805034347887463
+      level1_mining_tool_mask_171: 4971851124317962971
+      level1_mining_tool_mask_172: 4687949110137118160
+      level1_mining_tool_mask_173: 2775249164469686043
+      level1_mining_tool_mask_174: 3679172511576127138
+      level1_mining_tool_mask_175: 1207773282684589379
+      level1_mining_tool_mask_176: -6873908442855617189
+      level1_mining_tool_mask_177: 7173624001746765966
+      level1_mining_tool_mask_178: -6543705699060788599
+      level1_mining_tool_mask_179: -2337016377656900269
+      level1_mining_tool_mask_18: -5543744083456447392
+      level1_mining_tool_mask_180: -4319463036222165807
+      level1_mining_tool_mask_181: -3150690775367461610
+      level1_mining_tool_mask_182: -7095925729544173590
+      level1_mining_tool_mask_183: -8469180508073884286
+      level1_mining_tool_mask_184: 8642405308872405647
+      level1_mining_tool_mask_185: -831852338199055847
+      level1_mining_tool_mask_186: 9122530204268305412
+      level1_mining_tool_mask_187: 3415024987046279933
+      level1_mining_tool_mask_188: -3128926688468346119
+      level1_mining_tool_mask_189: 6982186409631884386
+      level1_mining_tool_mask_19: -8258330007306111577
+      level1_mining_tool_mask_190: 23517711361242017
+      level1_mining_tool_mask_191: -7440935790926436842
+      level1_mining_tool_mask_192: -9088330400397373194
+      level1_mining_tool_mask_193: -5463677715584431945
+      level1_mining_tool_mask_194: 7987711902617461001
+      level1_mining_tool_mask_195: 4333909909140767559
+      level1_mining_tool_mask_196: 5596325413543647469
+      level1_mining_tool_mask_197: -4298474978278027023
+      level1_mining_tool_mask_198: 6785488291596070849
+      level1_mining_tool_mask_199: -4376668878965935704
+      level1_mining_tool_mask_2: 1243435392773449477
+      level1_mining_tool_mask_20: 4863077482178434253
+      level1_mining_tool_mask_200: 295810128118182343
+      level1_mining_tool_mask_201: 2224754191598394610
+      level1_mining_tool_mask_202: -5665219710733069233
+      level1_mining_tool_mask_203: -584135500791774095
+      level1_mining_tool_mask_204: 8744928535740838049
+      level1_mining_tool_mask_205: -2255792275366221770
+      level1_mining_tool_mask_206: -5632926847293445519
+      level1_mining_tool_mask_207: 7343003873898899896
+      level1_mining_tool_mask_21: 4703646621738991213
+      level1_mining_tool_mask_22: -3095238950621790979
+      level1_mining_tool_mask_23: -7405375124676164422
+      level1_mining_tool_mask_24: 6660635689794419688
+      level1_mining_tool_mask_25: 2566333167073017794
+      level1_mining_tool_mask_26: 7478972017514858758
+      level1_mining_tool_mask_27: 3595408833366332359
+      level1_mining_tool_mask_28: -2913529605260067785
+      level1_mining_tool_mask_29: 1200303307235469249
+      level1_mining_tool_mask_3: -5178337593094566327
+      level1_mining_tool_mask_30: 4102661593719054662
+      level1_mining_tool_mask_31: 5289513190733131079
+      level1_mining_tool_mask_32: 6384350234929549734
+      level1_mining_tool_mask_33: 8085389752530280055
+      level1_mining_tool_mask_34: 225889076138733576
+      level1_mining_tool_mask_35: 9037024492010986867
+      level1_mining_tool_mask_36: 4200614535486817694
+      level1_mining_tool_mask_37: 6046512482612853817
+      level1_mining_tool_mask_38: -454960802476840190
+      level1_mining_tool_mask_39: -5378111182053532974
+      level1_mining_tool_mask_4: -392182055697397079
+      level1_mining_tool_mask_40: 4690781118497986993
+      level1_mining_tool_mask_41: -1422730926116215352
+      level1_mining_tool_mask_42: -3098761997559879706
+      level1_mining_tool_mask_43: 4049481161937765045
+      level1_mining_tool_mask_44: 6877632608558110937
+      level1_mining_tool_mask_45: 971667605231109747
+      level1_mining_tool_mask_46: -4635305475396143057
+      level1_mining_tool_mask_47: 1998112299879903002
+      level1_mining_tool_mask_48: 1181095860624632573
+      level1_mining_tool_mask_49: 4042964751936650368
+      level1_mining_tool_mask_5: -3125812903369566891
+      level1_mining_tool_mask_50: -9191712069495692050
+      level1_mining_tool_mask_51: 5805459922547668052
+      level1_mining_tool_mask_52: 6189563137570469818
+      level1_mining_tool_mask_53: -1586399085978944648
+      level1_mining_tool_mask_54: -669836045368025263
+      level1_mining_tool_mask_55: -706012812197651672
+      level1_mining_tool_mask_56: -3703786220020333813
+      level1_mining_tool_mask_57: -6768002510731452587
+      level1_mining_tool_mask_58: -6527373442894554282
+      level1_mining_tool_mask_59: -1212930295822974161
+      level1_mining_tool_mask_6: -8103002421590752364
+      level1_mining_tool_mask_60: 2128866945858399037
+      level1_mining_tool_mask_61: -6049298539757236639
+      level1_mining_tool_mask_62: 840319114897109
+      level1_mining_tool_mask_63: -1460151021046819250
+      level1_mining_tool_mask_64: -9110483383999781569
+      level1_mining_tool_mask_65: -3043215400613416838
+      level1_mining_tool_mask_66: -7378318686769280731
+      level1_mining_tool_mask_67: -3668917940263999972
+      level1_mining_tool_mask_68: -9014877219837509800
+      level1_mining_tool_mask_69: 4965218148636996141
+      level1_mining_tool_mask_7: -4468604438382725446
+      level1_mining_tool_mask_70: -2071932582740291888
+      level1_mining_tool_mask_71: 393399484597729373
+      level1_mining_tool_mask_72: -180973947637517575
+      level1_mining_tool_mask_73: 3784468832071345697
+      level1_mining_tool_mask_74: -2532023320912230629
+      level1_mining_tool_mask_75: -3494405257547462369
+      level1_mining_tool_mask_76: -6544217985911732745
+      level1_mining_tool_mask_77: 309080981933213064
+      level1_mining_tool_mask_78: 2274159042946133753
+      level1_mining_tool_mask_79: 3671556107740141582
+      level1_mining_tool_mask_8: -2214339496415059186
+      level1_mining_tool_mask_80: -7399373521677615269
+      level1_mining_tool_mask_81: 8644668287890016170
+      level1_mining_tool_mask_82: 3033268919917180158
+      level1_mining_tool_mask_83: -4624805326681976019
+      level1_mining_tool_mask_84: 4404429297240707050
+      level1_mining_tool_mask_85: -2177997049745585044
+      level1_mining_tool_mask_86: 8783214368367619787
+      level1_mining_tool_mask_87: 1312523386786864933
+      level1_mining_tool_mask_88: 8215095111470927566
+      level1_mining_tool_mask_89: -8270405694247163761
+      level1_mining_tool_mask_9: 2372610108189516196
+      level1_mining_tool_mask_90: -1967983133436483242
+      level1_mining_tool_mask_91: 3780213571265368815
+      level1_mining_tool_mask_92: 6987923336153359557
+      level1_mining_tool_mask_93: -438742118624991408
+      level1_mining_tool_mask_94: -4007809156190035682
+      level1_mining_tool_mask_95: -2633420823185048121
+      level1_mining_tool_mask_96: -5990872465916848186
+      level1_mining_tool_mask_97: 5154887109077605762
+      level1_mining_tool_mask_98: 1964803845022188969
+      level1_mining_tool_mask_99: 6169845566432626997
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
