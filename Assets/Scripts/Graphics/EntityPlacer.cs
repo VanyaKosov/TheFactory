@@ -73,10 +73,10 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void TryPlaceBuilding(Vector2 centerPos)
         {
-            if (!Input.GetMouseButtonDown(0)) return;
+            if (!Input.GetMouseButton(0)) return;
+            if (!ItemInfo.Get(hologramItemType).Placable) return;
             UpdateRaycaster();
             if (UIObjectsUnderMouse.Count != 0) return;
-            if (!ItemInfo.Get(hologramItemType).Placable) return;
 
             world.PlaceEntity(DecenterEntityPos(centerPos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size));
         }
