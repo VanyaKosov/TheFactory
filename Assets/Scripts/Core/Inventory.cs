@@ -46,6 +46,39 @@ namespace Dev.Kosov.Factory.Core
             SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
         }
 
+        internal int AddItemToInventory(ItemType type, int amount)
+        {
+            for (int y = 0; y < Height; y++)
+            {
+                for (int x = 0; x < Width; x++)
+                {
+                    InvSlot slot = inventory[x, y];
+
+                    if (slot.Type != ItemType.Empty && slot.Type != type) continue;
+                    int maxStackSize = ItemInfo.Get(type).MaxStackSize;
+                    if (slot.Amount >= maxStackSize) continue;
+                    if (slot.Type == ItemType.Empty) slot.Type = type;
+
+                    int overflow = slot.Amount + amount - maxStackSize;
+                    if (overflow <= 0)
+                    {
+                        slot.Amount += amount;
+                        SetInvItem?.Invoke(this, new(new(x, y), type, slot.Amount));
+
+                        return 0;
+                    }
+
+                    amount -= maxStackSize - slot.Amount;
+                    slot.Amount = maxStackSize;
+                    SetInvItem?.Invoke(this, new(new(x, y), type, slot.Amount));
+
+                    return AddItemToInventory(type, amount);
+                }
+            }
+
+            return amount;
+        }
+
         internal int AddItemToCursor(ItemType type, int amount) // Returns remainder
         {
             if (CursorSlot.Type != type) return amount;
@@ -96,12 +129,16 @@ namespace Dev.Kosov.Factory.Core
                 }
             }
 
-            inventory[0, 0] = new(ItemType.Assembler1, 50);
-            SetInvItem?.Invoke(this, new(new(0, 0), ItemType.Assembler1, 50));
-            inventory[1, 0] = new(ItemType.WoodChest, 100);
-            SetInvItem?.Invoke(this, new(new(1, 0), ItemType.WoodChest, 100));
-            inventory[2, 0] = new(ItemType.StoneFurnace, 50);
-            SetInvItem?.Invoke(this, new(new(2, 0), ItemType.StoneFurnace, 50));
+            AddItemToInventory(ItemType.Assembler1, 50);
+            AddItemToInventory(ItemType.WoodChest, 200);
+            AddItemToInventory(ItemType.StoneFurnace, 100);
+
+            //inventory[0, 0] = new(ItemType.Assembler1, 50);
+            //SetInvItem?.Invoke(this, new(new(0, 0), ItemType.Assembler1, 50));
+            //inventory[1, 0] = new(ItemType.WoodChest, 100);
+            //SetInvItem?.Invoke(this, new(new(1, 0), ItemType.WoodChest, 100));
+            //inventory[2, 0] = new(ItemType.StoneFurnace, 50);
+            //SetInvItem?.Invoke(this, new(new(2, 0), ItemType.StoneFurnace, 50));
         }
 
 
