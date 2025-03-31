@@ -17,6 +17,14 @@
             EntityID = -1;
         }
 
+        internal Tile(BackType backType, OreType oreType, int oreAmount, int entityID)
+        {
+            BackType = backType;
+            OreType = oreType;
+            OreAmount = oreAmount;
+            EntityID = entityID;
+        }
+
         internal static int GenEntityID()
         {
             nextID++;

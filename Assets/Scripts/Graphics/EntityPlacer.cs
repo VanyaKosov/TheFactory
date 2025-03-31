@@ -1,5 +1,6 @@
 using Dev.Kosov.Factory.Core;
 using Dev.Kosov.Factory.Core.Assets.Scripts.Core;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,7 @@ namespace Dev.Kosov.Factory.Graphics
         private Inventory inventory;
         private ItemType hologramItemType;
 
+        public ActionType ActionType { get; private set; }
         public Catalogs Catalogs;
         public SpriteRenderer hologramRenderer;
         public Camera Camera;
@@ -104,39 +106,48 @@ namespace Dev.Kosov.Factory.Graphics
 
         private IEnumerator TryRemoveEntity()
         {
-            int entityID = -1;
-            float timeStarted = 0.0f;
-            Vector2Int pos;
-            while (Input.GetMouseButton(1))
+            try
             {
-                pos = worldController.WorldToMapPos(Camera.ScreenToWorldPoint(Input.mousePosition));
-
-                if (entityID != world.GetTileInfo(pos).EntityID)
+                int entityID = -1;
+                float timeStarted = Time.time;
+                Vector2Int pos;
+                while (Input.GetMouseButton(1))
                 {
-                    entityID = world.GetTileInfo(pos).EntityID;
+                    while (Time.time - timeStarted < entityRemovalDelay)
+                    {
+                        pos = worldController.WorldToMapPos(Camera.ScreenToWorldPoint(Input.mousePosition));
+                        ActionType = world.GetActionType(pos);
+
+                        if (entityID != world.GetTileInfo(pos).EntityID)
+                        {
+                            entityID = world.GetTileInfo(pos).EntityID;
+                            timeStarted = Time.time;
+
+                            continue;
+                        }
+
+                        if (!Input.GetMouseButton(1)) yield break;
+                        yield return null;
+                    }
+
+                    pos = worldController.WorldToMapPos(Camera.ScreenToWorldPoint(Input.mousePosition));
+                    if (entityID != world.GetTileInfo(pos).EntityID)
+                    {
+                        yield return null;
+                        continue;
+                    }
+
+                    UpdateRaycaster();
+                    while (UIObjectsUnderMouse.Count != 0) yield return null;
+
+                    world.Remove(pos);
                     timeStarted = Time.time;
-
-
-                }
-
-                while (Time.time - timeStarted < entityRemovalDelay)
-                {
                     yield return null;
                 }
-
-                pos = worldController.WorldToMapPos(Camera.ScreenToWorldPoint(Input.mousePosition));
-                if (entityID != world.GetTileInfo(pos).EntityID)
-                {
-                    yield return null;
-                    continue;
-                }
-
-                UpdateRaycaster();
-                while (UIObjectsUnderMouse.Count != 0) yield return null;
-
-                world.Remove(pos);
-                timeStarted = Time.time;
-                yield return null;
+            }
+            finally
+            {
+                ActionType = ActionType.None;
             }
         }
 
@@ -156,7 +167,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void UpdateOre(object sender, World.OreMinedEvenArgs args)
         {
-
+            throw new NotImplementedException("TODO: update ore sprite");
         }
 
         private void SetHologramItem(object sender, Inventory.SetCursorEventArgs args)

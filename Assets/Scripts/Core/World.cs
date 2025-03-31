@@ -139,7 +139,7 @@ namespace Dev.Kosov.Factory.Core
             }
             float newRichnessPercent = (tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
 
-            OreMined?.Invoke(this, new(prevRichnessPercent, newRichnessPercent));
+            OreMined?.Invoke(this, new(pos, prevRichnessPercent, newRichnessPercent));
             return oreType;
         }
 
@@ -250,7 +250,7 @@ namespace Dev.Kosov.Factory.Core
                             }
 
                             float richnessPercent = 100f - (distSquared / radiusSquared) * 100;
-                            map[pos] = new(map[pos].BackType, oreType, (int)(richnessPercent * oreInfo.MaxRichness));
+                            map[pos] = new(map[pos].BackType, oreType, (int)(richnessPercent * oreInfo.MaxRichness), map[pos].EntityID);
                             OreSpawned?.Invoke(this, new(pos, oreType, richnessPercent));
                         }
                     }
@@ -367,13 +367,15 @@ namespace Dev.Kosov.Factory.Core
 
         public class OreMinedEvenArgs : EventArgs
         {
+            public readonly Vector2Int Pos;
             public readonly float PrevRichnessPercent;
             public readonly float NewRichnessPercent;
 
-            public OreMinedEvenArgs(float prevRichnessPercent, float newRichnessPercent)
+            public OreMinedEvenArgs(Vector2Int pos, float prevRichnessPercent, float newRichnessPercent)
             {
                 PrevRichnessPercent = prevRichnessPercent;
                 NewRichnessPercent = newRichnessPercent;
+                Pos = pos;
             }
         }
     }
