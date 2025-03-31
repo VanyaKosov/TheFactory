@@ -76,6 +76,8 @@ namespace Dev.Kosov.Factory.Core
         public void Remove(Vector2Int pos)
         {
             ActionType action = GetActionType(pos);
+            if (action == ActionType.None) return;
+
             if (action == ActionType.RemoveBuilding)
             {
                 RemoveEntity(pos);

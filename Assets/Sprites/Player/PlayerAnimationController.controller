@@ -136,10 +136,74 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 495c9cce277d48946b4f76514b81aa6b, type: 2}
+    m_Threshold: 1.6999993
+    m_Position: {x: 0, y: 3}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: bd6a6de62d132cd4f9286e0510a5f1eb, type: 2}
+    m_Threshold: 1.7999992
+    m_Position: {x: 2.1213202, y: 2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 1a3e43872c34dd44cad46edfb6b857c0, type: 2}
+    m_Threshold: 1.8999991
+    m_Position: {x: 3, y: 0}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 1c718902b869caa48965051facd8e83b, type: 2}
+    m_Threshold: 1.999999
+    m_Position: {x: 2.1213202, y: -2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: ebbe8b80e04f564468a9b90d608af88f, type: 2}
+    m_Threshold: 2.099999
+    m_Position: {x: 0, y: -3}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: deb2c3dfa833c5c46b772bc34c4238f9, type: 2}
+    m_Threshold: 2.1999989
+    m_Position: {x: -2.1213202, y: -2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: bae69221b600a1d4fb7404c1fbfab502, type: 2}
+    m_Threshold: 2.2999988
+    m_Position: {x: -3, y: 0}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 860f8a349ed26ae4886eb298930b50f3, type: 2}
+    m_Threshold: 2.3999987
+    m_Position: {x: -2.1213202, y: 2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
   m_BlendParameter: xOffset
   m_BlendParameterY: yOffset
   m_MinThreshold: 0.1
-  m_MaxThreshold: 1.5999994
+  m_MaxThreshold: 2.3999987
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 3
@@ -169,6 +233,21 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!206 &-2382371281064900716
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BlendTree
+  m_Childs: []
+  m_BlendParameter: xOffset
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0

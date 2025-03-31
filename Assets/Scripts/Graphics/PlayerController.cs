@@ -8,6 +8,7 @@ namespace Dev.Kosov.Factory.Graphics
     {
         private Vector2 prevMoveVector = new(0, 1);
 
+        public WorldController WorldController;
         public Animator MovementAnimator;
         public Animator ShadowAnimator;
         public Camera Camera;
@@ -41,9 +42,9 @@ namespace Dev.Kosov.Factory.Graphics
             Vector2 moveVector = new Vector2(xVel, yVel).normalized;
             RigidBody.MovePosition(RigidBody.position + Time.deltaTime * MoveSpeed * moveVector);
 
-            ActionType action = ChooseAnimation(moveVector);
-            if (action == ActionType.Running) prevMoveVector = moveVector;
-            UpdateAnimations(action);
+            ActionType movementAction = ChooseAnimation(moveVector);
+            if (movementAction == ActionType.Running) prevMoveVector = moveVector;
+            UpdateAnimations(movementAction);
         }
 
         private ActionType ChooseAnimation(Vector2 moveVector)

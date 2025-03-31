@@ -136,10 +136,74 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 63a6a581f56d3cf41b88178e6b6ac069, type: 2}
+    m_Threshold: 1.6999993
+    m_Position: {x: 0, y: 3}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 44aceec46e6524442b3c81366d90d934, type: 2}
+    m_Threshold: 1.7999992
+    m_Position: {x: 2.1213202, y: 2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: df54962495c32974f8c38ec16749a559, type: 2}
+    m_Threshold: 1.8999991
+    m_Position: {x: 3, y: 0}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 0559f86ea28197444aceb74a1377c75f, type: 2}
+    m_Threshold: 1.999999
+    m_Position: {x: 2.1213202, y: -2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 1f6630ac367834c4f8fd1db755293f34, type: 2}
+    m_Threshold: 2.099999
+    m_Position: {x: 0, y: -3}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: bd21d11a487e10b4b94241b20fc8b9be, type: 2}
+    m_Threshold: 2.1999989
+    m_Position: {x: -2.1213202, y: -2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 404a1019aea17f34c922d2e9b5b2424e, type: 2}
+    m_Threshold: 2.2999988
+    m_Position: {x: -3, y: 0}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9977964f18675754aa5e5a3aec13eb23, type: 2}
+    m_Threshold: 2.3999987
+    m_Position: {x: -2.1213202, y: 2.1213202}
+    m_TimeScale: 4
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend
+    m_Mirror: 0
   m_BlendParameter: xOffset
   m_BlendParameterY: yOffset
   m_MinThreshold: 0.1
-  m_MaxThreshold: 1.5999994
+  m_MaxThreshold: 2.3999987
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 3
