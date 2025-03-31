@@ -1,3 +1,4 @@
+using Dev.Kosov.Factory.Core.Assets.Scripts.Core;
 using System;
 using UnityEngine;
 
@@ -40,28 +41,46 @@ namespace Dev.Kosov.Factory.Graphics
             Vector2 moveVector = new Vector2(xVel, yVel).normalized;
             RigidBody.MovePosition(RigidBody.position + Time.deltaTime * MoveSpeed * moveVector);
 
-            UpdateAnimations(moveVector);
+            ActionType action = ChooseAnimation(moveVector);
+            if (action == ActionType.Running) prevMoveVector = moveVector;
+            UpdateAnimations(action);
         }
 
-        private void UpdateAnimations(Vector2 moveVector)
+        private ActionType ChooseAnimation(Vector2 moveVector)
         {
-            if (moveVector.magnitude == 0) // Might have problems with precision
+            // Might have problems with precision?
+            if (Mathf.Approximately(moveVector.magnitude, 0.0f)) return ActionType.Idle;
+            if (Mathf.Approximately(moveVector.magnitude, 1.0f)) return ActionType.Running;
+            throw new Exception("Unnormalized vector???");
+        }
+
+        private void UpdateAnimations(ActionType actionType)
+        {
+            switch (actionType)
             {
-                MovementAnimator.SetFloat("xOffset", prevMoveVector.x);
-                MovementAnimator.SetFloat("yOffset", prevMoveVector.y);
+                case ActionType.RemoveBuilding:
+                    return;
+                case ActionType.ChopTree:
+                    return;
+                case ActionType.MineOre:
+                    return;
+                case ActionType.Idle:
+                    MovementAnimator.SetFloat("xOffset", prevMoveVector.x);
+                    MovementAnimator.SetFloat("yOffset", prevMoveVector.y);
 
-                ShadowAnimator.SetFloat("xOffset", prevMoveVector.x);
-                ShadowAnimator.SetFloat("yOffset", prevMoveVector.y);
+                    ShadowAnimator.SetFloat("xOffset", prevMoveVector.x);
+                    ShadowAnimator.SetFloat("yOffset", prevMoveVector.y);
+                    return;
+                case ActionType.Running:
+                    MovementAnimator.SetFloat("xOffset", prevMoveVector.x * 2);
+                    MovementAnimator.SetFloat("yOffset", prevMoveVector.y * 2);
 
-                return;
+                    ShadowAnimator.SetFloat("xOffset", prevMoveVector.x * 2);
+                    ShadowAnimator.SetFloat("yOffset", prevMoveVector.y * 2);
+                    return;
+                default:
+                    throw new Exception("No action");
             }
-            prevMoveVector = moveVector;
-
-            MovementAnimator.SetFloat("xOffset", prevMoveVector.x * 2);
-            MovementAnimator.SetFloat("yOffset", prevMoveVector.y * 2);
-
-            ShadowAnimator.SetFloat("xOffset", prevMoveVector.x * 2);
-            ShadowAnimator.SetFloat("yOffset", prevMoveVector.y * 2);
         }
 
         private void Zoom()

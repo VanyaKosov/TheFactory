@@ -7,7 +7,7 @@ namespace Dev.Kosov.Factory.Core
     {
         private static readonly Dictionary<EntityType, Info> info = new()
         {
-            { EntityType.Tree, new(ItemType.Empty, new(2, 2)) },
+            { EntityType.Tree, new(ItemType.None, new(2, 2)) },
             { EntityType.Assembler1, new(ItemType.Assembler1, new(3, 3)) },
             { EntityType.WoodChest, new(ItemType.WoodChest, new(1, 1)) },
             { EntityType.StoneFurnace, new(ItemType.StoneFurnace, new(2, 2)) }

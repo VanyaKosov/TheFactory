@@ -24,7 +24,7 @@ namespace Dev.Kosov.Factory.Core
         {
             inventory = new InvSlot[Width, Height];
             hotbar = new InvSlot[HotbarWidth, HotbarHeight];
-            CursorSlot = new(ItemType.Empty, 0);
+            CursorSlot = new(ItemType.None, 0);
         }
 
         public void Run()
@@ -54,10 +54,10 @@ namespace Dev.Kosov.Factory.Core
                 {
                     InvSlot slot = inventory[x, y];
 
-                    if (slot.Type != ItemType.Empty && slot.Type != type) continue;
+                    if (slot.Type != ItemType.None && slot.Type != type) continue;
                     int maxStackSize = ItemInfo.Get(type).MaxStackSize;
                     if (slot.Amount >= maxStackSize) continue;
-                    if (slot.Type == ItemType.Empty) slot.Type = type;
+                    if (slot.Type == ItemType.None) slot.Type = type;
 
                     int overflow = slot.Amount + amount - maxStackSize;
                     if (overflow <= 0)
@@ -103,7 +103,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 int removedAmount = CursorSlot.Amount;
                 CursorSlot.Amount = 0;
-                CursorSlot.Type = ItemType.Empty;
+                CursorSlot.Type = ItemType.None;
                 return removedAmount;
             }
 
@@ -117,7 +117,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 for (int y = 0; y < Height; y++)
                 {
-                    inventory[x, y] = new(ItemType.Empty, 0);
+                    inventory[x, y] = new(ItemType.None, 0);
                 }
             }
 
@@ -125,7 +125,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 for (int y = 0; y < HotbarHeight; y++)
                 {
-                    hotbar[x, y] = new(ItemType.Empty, 0);
+                    hotbar[x, y] = new(ItemType.None, 0);
                 }
             }
 

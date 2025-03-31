@@ -969,6 +969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250e3ff6e03e308488b565316dd15534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Catalogs: {fileID: 334683}
   EntityPlacer: {fileID: 2082821265}
   UIController: {fileID: 1437781438}
   Player: {fileID: 615863789}

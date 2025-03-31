@@ -6,11 +6,11 @@ namespace Dev.Kosov.Factory.Core
     {
         private static readonly Dictionary<ItemType, Info> info = new()
         {
-            { ItemType.Empty, new(EntityType.Empty, 0) },
-            { ItemType.Wood, new(EntityType.Empty, 200) },
-            { ItemType.Coal, new(EntityType.Empty, 200) },
-            { ItemType.Iron_ore, new(EntityType.Empty, 200) },
-            { ItemType.Copper_ore, new(EntityType.Empty, 200) },
+            { ItemType.None, new(EntityType.None, 0) },
+            { ItemType.Wood, new(EntityType.None, 200) },
+            { ItemType.Coal, new(EntityType.None, 200) },
+            { ItemType.Iron_ore, new(EntityType.None, 200) },
+            { ItemType.Copper_ore, new(EntityType.None, 200) },
             { ItemType.WoodChest, new(EntityType.WoodChest, 100) },
             { ItemType.Assembler1, new(EntityType.Assembler1, 50) },
             { ItemType.StoneFurnace, new(EntityType.StoneFurnace, 50) }
@@ -32,7 +32,7 @@ namespace Dev.Kosov.Factory.Core
                 MaxStackSize = maxStackSize;
             }
 
-            public bool Placable { get => EntityType != EntityType.Empty; }
+            public bool Placable { get => EntityType != EntityType.None; }
         }
     }
 }

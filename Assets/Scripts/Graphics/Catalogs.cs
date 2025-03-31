@@ -29,6 +29,8 @@ namespace Dev.Kosov.Factory.Graphics
 
         private readonly Dictionary<ItemType, Sprite> itemTypeToSprite = new();
         private readonly Dictionary<EntityType, Sprite> entityTypeToSprite = new();
+        private readonly Dictionary<BackType, Sprite[]> backTypeToSprite = new();
+        private readonly Dictionary<OreType, Sprite[]> oreToSprite = new();
 
         void Awake()
         {
@@ -46,8 +48,18 @@ namespace Dev.Kosov.Factory.Graphics
             entityTypeToSprite.Add(EntityType.WoodChest, WoodChestEntity);
             entityTypeToSprite.Add(EntityType.StoneFurnace, StoneFurnaceEntity);
 
-            // Entity prefabs
+            // Background tiles
+            backTypeToSprite.Add(BackType.Empty, null);
+            backTypeToSprite.Add(BackType.Grass1, Resources.LoadAll<Sprite>("Grass1"));
+
+            // Ores
+            oreToSprite.Add(OreType.None, null);
+            oreToSprite.Add(OreType.Coal, Resources.LoadAll<Sprite>("Coal"));
+            oreToSprite.Add(OreType.Copper, Resources.LoadAll<Sprite>("Copper"));
+            oreToSprite.Add(OreType.Iron, Resources.LoadAll<Sprite>("Iron"));
         }
+
+
 
         public Sprite GetIconSprite(ItemType type)
         {
@@ -57,6 +69,24 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite GetEntitySprite(EntityType type)
         {
             return entityTypeToSprite[type];
+        }
+
+        public Sprite GetRandomBackSprite(BackType type)
+        {
+            Sprite[] sprites = backTypeToSprite[type];
+
+            return sprites[UnityEngine.Random.Range(0, sprites.Length)];
+        }
+
+        public Sprite GetRandomOreSprite(OreType type, float richnessPercent)
+        {
+            Sprite[] sprites = oreToSprite[type];
+
+            int idx = sprites.Length - 1 - (int)(sprites.Length / 100f * richnessPercent);
+            idx -= idx % 8;
+            idx += UnityEngine.Random.Range(0, 8);
+
+            return sprites[idx];
         }
 
         public GameObject EntityTypeToPrefab(EntityType type)

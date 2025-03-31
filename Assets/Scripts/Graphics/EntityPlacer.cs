@@ -1,4 +1,5 @@
 using Dev.Kosov.Factory.Core;
+using Dev.Kosov.Factory.Core.Assets.Scripts.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,6 +34,7 @@ namespace Dev.Kosov.Factory.Graphics
 
             world.EntityCreated += SpawnEntity;
             world.EntityRemoved += RemoveEntity;
+            world.OreMined += UpdateOre;
             inventory.SetCursorItem += SetHologramItem;
         }
 
@@ -44,7 +46,6 @@ namespace Dev.Kosov.Factory.Graphics
         void Update()
         {
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
-            //Vector2Int roundedPos = worldController.WorldToMapPos(mouseWorldPos);
             TryPlaceBuilding(mouseWorldPos);
             DisplayBuildingHologram(mouseWorldPos);
 
@@ -114,6 +115,8 @@ namespace Dev.Kosov.Factory.Graphics
                 {
                     entityID = world.GetTileInfo(pos).EntityID;
                     timeStarted = Time.time;
+
+
                 }
 
                 while (Time.time - timeStarted < entityRemovalDelay)
@@ -131,7 +134,7 @@ namespace Dev.Kosov.Factory.Graphics
                 UpdateRaycaster();
                 while (UIObjectsUnderMouse.Count != 0) yield return null;
 
-                world.RemoveEntity(pos);
+                world.Remove(pos);
                 timeStarted = Time.time;
                 yield return null;
             }
@@ -149,6 +152,11 @@ namespace Dev.Kosov.Factory.Graphics
             Vector2 pos = CenterEntityPos(args.Pos, args.Size);
             GameObject instance = Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
             entities.Add(args.EntityID, instance);
+        }
+
+        private void UpdateOre(object sender, World.OreMinedEvenArgs args)
+        {
+
         }
 
         private void SetHologramItem(object sender, Inventory.SetCursorEventArgs args)

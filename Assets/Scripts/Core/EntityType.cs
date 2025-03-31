@@ -2,7 +2,7 @@
 {
     public enum EntityType
     {
-        Empty,
+        None,
         Tree,
         Assembler1,
         WoodChest,

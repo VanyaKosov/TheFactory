@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 namespace Dev.Kosov.Factory.Core
 {
@@ -13,12 +12,6 @@ namespace Dev.Kosov.Factory.Core
         private const float treeGenThreshold = 0.25f;
         private const float treeNoiseScale = 0.005f;
         private float2 treeNoiseOffset;
-        private readonly OreInfo[] oreInfos =
-        {
-            new(Ore.Coal, new(8f, 12f), 10_000, 0.00001f),
-            new(Ore.Copper, new(8f, 12f), 10_000, 0.00001f),
-            new(Ore.Iron, new(8f, 12f), 10_000, 0.00001f)
-        };
         private readonly Dictionary<Vector2Int, Tile> map = new();
         private readonly Dictionary<int, Entity> entities = new();
 
@@ -28,6 +21,7 @@ namespace Dev.Kosov.Factory.Core
         public event EventHandler<OreSpawnedEventArgs> OreSpawned;
         public event EventHandler<EntityCreatedEventArgs> EntityCreated;
         public event EventHandler<EntityRemovedEventArgs> EntityRemoved;
+        public event EventHandler<OreMinedEvenArgs> OreMined;
 
         public World()
         {
@@ -42,7 +36,7 @@ namespace Dev.Kosov.Factory.Core
 
             Inventory.Run();
 
-            //SpawnOre(Ore.Coal, coalRadiusVariation, new(0, 0));
+            // TODO: add ores around the spawn
         }
 
         public void UpdatePlayerPos(Vector3 newPos)
@@ -65,7 +59,50 @@ namespace Dev.Kosov.Factory.Core
             CreateEntity(bottomLeftPos, type);
         }
 
-        public void RemoveEntity(Vector2Int pos)
+        public Tile GetTileInfo(Vector2Int pos)
+        {
+            return map[pos];
+        }
+
+        public ActionType GetActionType(Vector2Int pos)
+        {
+            if (map[pos].EntityID != -1 && entities[map[pos].EntityID].type == EntityType.Tree) return ActionType.ChopTree;
+            if (map[pos].EntityID != -1) return ActionType.RemoveBuilding;
+            if (map[pos].OreType != OreType.None) return ActionType.MineOre;
+
+            return ActionType.None;
+        }
+
+        public void Remove(Vector2Int pos)
+        {
+            ActionType action = GetActionType(pos);
+            if (action == ActionType.RemoveBuilding)
+            {
+                RemoveEntity(pos);
+
+                return;
+            }
+
+            if (action == ActionType.ChopTree)
+            {
+                RemoveEntity(pos);
+
+                return;
+            }
+
+            if (action == ActionType.MineOre)
+            {
+                OreType oreType = MineOre(pos);
+                if (oreType == OreType.None) return;
+                Inventory.AddItemToInventory(OreInfo.Get(oreType).ItemType, 1);
+
+                return;
+            }
+
+            throw new Exception("Unknown action");
+        }
+
+        private void RemoveEntity(Vector2Int pos)
         {
             Tile tile = map[pos];
             int id = tile.EntityID;
@@ -86,9 +123,22 @@ namespace Dev.Kosov.Factory.Core
             EntityRemoved?.Invoke(this, new(id));
         }
 
-        public Tile GetTileInfo(Vector2Int pos)
+        private OreType MineOre(Vector2Int pos)
         {
-            return map[pos];
+            Tile tile = map[pos];
+            if (tile.OreType == OreType.None) return OreType.None;
+
+            OreType oreType = map[pos].OreType;
+            float prevRichnessPercent = (tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
+            tile.OreAmount--;
+            if (tile.OreAmount == 0)
+            {
+                tile.OreType = OreType.None;
+            }
+            float newRichnessPercent = (tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
+
+            OreMined?.Invoke(this, new(prevRichnessPercent, newRichnessPercent));
+            return oreType;
         }
 
         private void CreateEntity(Vector2Int bottomLeftPos, EntityType type)
@@ -147,11 +197,11 @@ namespace Dev.Kosov.Factory.Core
 
         private void GenTile(Vector2Int pos)
         {
-            foreach (OreInfo oreInfo in oreInfos)
+            foreach ((OreType oreType, OreInfo.Info oreInfo) in OreInfo.GetAll())
             {
-                if (CheckSpawnChance(oreInfo.spawnChance))
+                if (CheckSpawnChance(oreInfo.SpawnChance))
                 {
-                    SpawnOre(oreInfo, pos);
+                    SpawnOre(oreType, oreInfo, pos);
                     return;
                 }
             }
@@ -167,14 +217,14 @@ namespace Dev.Kosov.Factory.Core
                 return;
             }
 
-            Tile tile = new(Back.Grass1, Ore.Empty, 0);
+            Tile tile = new(BackType.Grass1, OreType.None, 0);
             map.Add(pos, tile);
             TileGenerated?.Invoke(this, new(pos, tile.BackType));
         }
 
-        private void SpawnOre(OreInfo oreInfo, Vector2Int center)
+        private void SpawnOre(OreType oreType, OreInfo.Info oreInfo, Vector2Int center)
         {
-            float radiusSquared = UnityEngine.Random.Range(oreInfo.radiusVariation.x, oreInfo.radiusVariation.y);
+            float radiusSquared = UnityEngine.Random.Range(oreInfo.RadiusVariation.x, oreInfo.RadiusVariation.y);
             int intRadius = (int)(radiusSquared + 0.5f);
             radiusSquared *= radiusSquared;
 
@@ -192,17 +242,14 @@ namespace Dev.Kosov.Factory.Core
                         {
                             if (i == 0)
                             {
-                                if (map[pos]?.OreType != Ore.Empty)
-                                {
-                                    return;
-                                }
+                                if (map[pos]?.OreType != OreType.None) return;
 
                                 continue;
                             }
 
                             float richnessPercent = 100f - (distSquared / radiusSquared) * 100;
-                            map[pos] = new(map[pos].BackType, oreInfo.type, (int)(richnessPercent * oreInfo.maxRichness));
-                            OreSpawned?.Invoke(this, new(pos, oreInfo.type, richnessPercent));
+                            map[pos] = new(map[pos].BackType, oreType, (int)(richnessPercent * oreInfo.MaxRichness));
+                            OreSpawned?.Invoke(this, new(pos, oreType, richnessPercent));
                         }
                     }
                 }
@@ -267,9 +314,9 @@ namespace Dev.Kosov.Factory.Core
         public class TileGeneratedEventArgs : EventArgs
         {
             public readonly Vector2Int Pos;
-            public readonly Back Background;
+            public readonly BackType Background;
 
-            internal TileGeneratedEventArgs(Vector2Int pos, Back background)
+            internal TileGeneratedEventArgs(Vector2Int pos, BackType background)
             {
                 Pos = pos;
                 Background = background;
@@ -279,10 +326,10 @@ namespace Dev.Kosov.Factory.Core
         public class OreSpawnedEventArgs : EventArgs
         {
             public readonly Vector2Int Pos;
-            public readonly Ore Type;
+            public readonly OreType Type;
             public readonly float RichnessPercent;
 
-            internal OreSpawnedEventArgs(Vector2Int pos, Ore type, float richnessPercent)
+            internal OreSpawnedEventArgs(Vector2Int pos, OreType type, float richnessPercent)
             {
                 Pos = pos;
                 Type = type;
@@ -316,19 +363,15 @@ namespace Dev.Kosov.Factory.Core
             }
         }
 
-        private class OreInfo
+        public class OreMinedEvenArgs : EventArgs
         {
-            public readonly Ore type;
-            public readonly Vector2 radiusVariation;
-            public readonly int maxRichness;
-            public readonly float spawnChance;
+            public readonly float PrevRichnessPercent;
+            public readonly float NewRichnessPercent;
 
-            public OreInfo(Ore type, Vector2 radiusVariation, int maxRichness, float spawnChance)
+            public OreMinedEvenArgs(float prevRichnessPercent, float newRichnessPercent)
             {
-                this.type = type;
-                this.radiusVariation = radiusVariation;
-                this.maxRichness = maxRichness;
-                this.spawnChance = spawnChance;
+                PrevRichnessPercent = prevRichnessPercent;
+                NewRichnessPercent = newRichnessPercent;
             }
         }
     }

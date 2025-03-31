@@ -1,6 +1,6 @@
 ﻿namespace Dev.Kosov.Factory.Core
 {
-    public enum Back
+    public enum BackType
     {
         Empty,
         Grass1

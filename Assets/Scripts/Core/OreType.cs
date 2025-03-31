@@ -1,8 +1,8 @@
 ﻿namespace Dev.Kosov.Factory.Core
 {
-    public enum Ore
+    public enum OreType
     {
-        Empty,
+        None,
         Coal,
         Copper,
         Iron,

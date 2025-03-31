@@ -2,7 +2,7 @@
 {
     public enum ItemType
     {
-        Empty,
+        None,
         Wood,
         Coal,
         Iron_ore,

@@ -13,7 +13,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         public void SetItem(ItemType type, int amount)
         {
-            if (type == ItemType.Empty)
+            if (type == ItemType.None)
             {
                 ItemRenderer.gameObject.SetActive(false);
                 TextRenderer.gameObject.SetActive(false);

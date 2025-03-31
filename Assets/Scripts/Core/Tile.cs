@@ -4,12 +4,12 @@
     {
         private static int nextID = 0;
 
-        public Back BackType { get; internal set; }
+        public BackType BackType { get; internal set; }
         public int EntityID { get; internal set; }
-        public Ore OreType { get; }
-        public int OreAmount { get; }
+        public int OreAmount { get; internal set; }
+        public OreType OreType { get; internal set; }
 
-        internal Tile(Back backType, Ore oreType, int oreAmount)
+        internal Tile(BackType backType, OreType oreType, int oreAmount)
         {
             BackType = backType;
             OreType = oreType;
