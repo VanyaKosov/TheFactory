@@ -10,5 +10,11 @@
             Type = type;
             Amount = amount;
         }
+
+        internal InvSlot(InvSlot other)
+        {
+            Type = other.Type;
+            Amount = other.Amount;
+        }
     }
 }
