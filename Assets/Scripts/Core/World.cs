@@ -131,15 +131,15 @@ namespace Dev.Kosov.Factory.Core
             if (tile.OreType == OreType.None) return OreType.None;
 
             OreType oreType = map[pos].OreType;
-            float prevRichnessPercent = (tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
+            float prevRichnessPercent = ((float)tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
             tile.OreAmount--;
-            if (tile.OreAmount == 0)
+            if (tile.OreAmount <= 0)
             {
                 tile.OreType = OreType.None;
             }
-            float newRichnessPercent = (tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
+            float newRichnessPercent = ((float)tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
 
-            OreMined?.Invoke(this, new(pos, prevRichnessPercent, newRichnessPercent));
+            OreMined?.Invoke(this, new(pos, prevRichnessPercent, newRichnessPercent, tile.OreType));
             return oreType;
         }
 
@@ -250,7 +250,7 @@ namespace Dev.Kosov.Factory.Core
                             }
 
                             float richnessPercent = 100f - (distSquared / radiusSquared) * 100;
-                            map[pos] = new(map[pos].BackType, oreType, (int)(richnessPercent * oreInfo.MaxRichness), map[pos].EntityID);
+                            map[pos] = new(map[pos].BackType, oreType, (int)(richnessPercent / 100 * oreInfo.MaxRichness), map[pos].EntityID);
                             OreSpawned?.Invoke(this, new(pos, oreType, richnessPercent));
                         }
                     }
@@ -370,12 +370,14 @@ namespace Dev.Kosov.Factory.Core
             public readonly Vector2Int Pos;
             public readonly float PrevRichnessPercent;
             public readonly float NewRichnessPercent;
+            public readonly OreType Type;
 
-            public OreMinedEvenArgs(Vector2Int pos, float prevRichnessPercent, float newRichnessPercent)
+            public OreMinedEvenArgs(Vector2Int pos, float prevRichnessPercent, float newRichnessPercent, OreType type)
             {
                 PrevRichnessPercent = prevRichnessPercent;
                 NewRichnessPercent = newRichnessPercent;
                 Pos = pos;
+                Type = type;
             }
         }
     }

@@ -11,8 +11,11 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class EntityPlacer : MonoBehaviour
     {
+        private const float backGroundLayer = 10;
+        private const float oreLayer = 1;
         private const float entityRemovalDelay = 0.5f;
         private readonly Dictionary<int, GameObject> entities = new();
+        private readonly Dictionary<Vector2Int, GameObject> ores = new();
         private readonly List<RaycastResult> UIObjectsUnderMouse = new();
         private PointerEventData clickData;
         private WorldController worldController;
@@ -27,6 +30,9 @@ namespace Dev.Kosov.Factory.Graphics
         public GraphicRaycaster Raycaster;
         public GameObject BuildingHologram;
         public GameObject EntityParent;
+        public GameObject TilePrefab;
+        public GameObject OreParent;
+        public GameObject TileParent;
 
         void OnEnable()
         {
@@ -37,6 +43,8 @@ namespace Dev.Kosov.Factory.Graphics
             world.EntityCreated += SpawnEntity;
             world.EntityRemoved += RemoveEntity;
             world.OreMined += UpdateOre;
+            world.TileGenerated += SpawnTile;
+            world.OreSpawned += SpawnOre;
             inventory.SetCursorItem += SetHologramItem;
         }
 
@@ -167,7 +175,35 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void UpdateOre(object sender, World.OreMinedEvenArgs args)
         {
-            throw new NotImplementedException("TODO: update ore sprite");
+            if (args.Type == OreType.None)
+            {
+                Destroy(ores[args.Pos]);
+                ores.Remove(args.Pos);
+
+                return;
+            }
+
+            Sprite newSprite = Catalogs.GetNewOreSpriteIfNeeded(args.Type, args.PrevRichnessPercent, args.NewRichnessPercent);
+            if (newSprite == null) return;
+
+            ores[args.Pos].GetComponent<SpriteRenderer>().sprite = newSprite;
+        }
+
+        private void SpawnOre(object sender, World.OreSpawnedEventArgs args)
+        {
+            var created = Instantiate(TilePrefab, new Vector3(args.Pos.x, args.Pos.y, oreLayer), Quaternion.identity, OreParent.transform);
+            var renderer = created.GetComponent<SpriteRenderer>();
+            renderer.sprite = Catalogs.GetRandomOreSprite(args.Type, args.RichnessPercent);
+
+            ores.Add(args.Pos, created);
+        }
+
+        private void SpawnTile(object sender, World.TileGeneratedEventArgs args)
+        {
+            var created = Instantiate(TilePrefab, new Vector3(args.Pos.x, args.Pos.y, backGroundLayer), Quaternion.identity, TileParent.transform);
+            var renderer = created.GetComponent<SpriteRenderer>();
+            renderer.sprite = Catalogs.GetRandomBackSprite(args.Background);
+            renderer.sortingOrder = -10;
         }
 
         private void SetHologramItem(object sender, Inventory.SetCursorEventArgs args)

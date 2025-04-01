@@ -7,6 +7,8 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class Catalogs : MonoBehaviour
     {
+        private const int oreVariantsPerRichnessLevel = 8;
+
         [Header("Item Icons Sprites")]
         public Sprite Wood;
         public Sprite Coal;
@@ -82,11 +84,24 @@ namespace Dev.Kosov.Factory.Graphics
         {
             Sprite[] sprites = oreToSprite[type];
 
-            int idx = sprites.Length - 1 - (int)(sprites.Length / 100f * richnessPercent);
-            idx -= idx % 8;
-            idx += UnityEngine.Random.Range(0, 8);
+            //int idx = sprites.Length - 1 - (int)(sprites.Length / 100f * richnessPercent);
+            //idx -= idx % 8;
+            int idx = GetOreRichnessLevel(richnessPercent, sprites.Length);
+            idx += UnityEngine.Random.Range(0, oreVariantsPerRichnessLevel);
 
             return sprites[idx];
+        }
+
+        public Sprite GetNewOreSpriteIfNeeded(OreType type, float prevRichnessPercent, float newRichnessPercent)
+        {
+            Sprite[] sprites = oreToSprite[type];
+
+            int prevLevel = GetOreRichnessLevel(prevRichnessPercent, sprites.Length);
+            int newLevel = GetOreRichnessLevel(newRichnessPercent, sprites.Length);
+
+            if (prevLevel == newLevel) return null;
+
+            return GetRandomOreSprite(type, newRichnessPercent);
         }
 
         public GameObject EntityTypeToPrefab(EntityType type)
@@ -99,6 +114,14 @@ namespace Dev.Kosov.Factory.Graphics
                 EntityType.StoneFurnace => StoneFurnacePrefab,
                 _ => throw new Exception("Missing entity prefab"),
             };
+        }
+
+        private int GetOreRichnessLevel(float richnessPercent, int levelSize)
+        {
+            int idx = levelSize - 1 - (int)(levelSize / 100f * richnessPercent);
+            idx -= idx % oreVariantsPerRichnessLevel;
+
+            return idx;
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
@@ -11,9 +7,9 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
     {
         private static readonly Dictionary<OreType, Info> info = new()
         {
-            { OreType.Coal, new(new(8f, 12f), 10_000, 0.00001f, ItemType.Coal) },
-            { OreType.Copper, new(new(8f, 12f), 10_000, 0.00001f, ItemType.Copper_ore) },
-            { OreType.Iron, new(new(8f, 12f), 10_000, 0.00001f, ItemType.Iron_ore) }
+            { OreType.Coal, new(new(8f, 12f), 10_000, 0.000_01f, ItemType.Coal) },
+            { OreType.Copper, new(new(8f, 12f), 10_000, 0.000_01f, ItemType.Copper_ore) },
+            { OreType.Iron, new(new(8f, 12f), 10_000, 0.000_01f, ItemType.Iron_ore) }
         };
 
         internal static Info Get(OreType type)
