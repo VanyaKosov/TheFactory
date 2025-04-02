@@ -1,4 +1,5 @@
 using Dev.Kosov.Factory.Core.Assets.Scripts.Core;
+using UnityEngine.U2D;
 using System;
 using UnityEngine;
 
@@ -15,11 +16,12 @@ namespace Dev.Kosov.Factory.Graphics
         public WorldController WorldController;
         public Animator MovementAnimator;
         public Animator ShadowAnimator;
-        public Camera Camera;
+        //public Camera Camera;
+        public PixelPerfectCamera PixelPerfectCamera;
         public Rigidbody2D RigidBody;
         public float MoveSpeed = 10;
-        public float MinZoom = 5;
-        public float MaxZoom = 40;
+        public int MinZoom = 5;
+        public int MaxZoom = 40;
         public float ZoomSpeed = 5;
 
         void FixedUpdate()
@@ -92,11 +94,9 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void Zoom()
         {
-            Camera.orthographicSize =
+            PixelPerfectCamera.assetsPPU =
                 Math.Min(
-                    Math.Max(
-                        Camera.orthographicSize + Input.mouseScrollDelta.y * ZoomSpeed * -1,
-                    MinZoom),
+                    Math.Max(Mathf.RoundToInt(PixelPerfectCamera.assetsPPU + Input.mouseScrollDelta.y * ZoomSpeed), MinZoom),
                 MaxZoom);
         }
     }

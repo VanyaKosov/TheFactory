@@ -365,11 +365,11 @@ MonoBehaviour:
   WorldController: {fileID: 1762007038}
   MovementAnimator: {fileID: 615863795}
   ShadowAnimator: {fileID: 2061813856}
-  Camera: {fileID: 1371078440}
+  PixelPerfectCamera: {fileID: 1371078441}
   RigidBody: {fileID: 615863793}
   MoveSpeed: 10
-  MinZoom: 5
-  MaxZoom: 40
+  MinZoom: 4
+  MaxZoom: 64
   ZoomSpeed: 5
 --- !u!50 &615863793
 Rigidbody2D:
@@ -731,6 +731,7 @@ GameObject:
   - component: {fileID: 1371078438}
   - component: {fileID: 1371078440}
   - component: {fileID: 1371078439}
+  - component: {fileID: 1371078441}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -796,7 +797,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -812,6 +813,26 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1371078441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371078437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 64
+  m_RefResolutionX: 640
+  m_RefResolutionY: 360
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &1437781437
 GameObject:
   m_ObjectHideFlags: 0
