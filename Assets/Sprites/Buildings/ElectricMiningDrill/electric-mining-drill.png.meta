@@ -1,0 +1,822 @@
+fileFormatVersion: 2
+guid: 2b9858d68882ee84a89f11d325668ccd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1066696897281387259
+    second: electric-mining-drill_0
+  - first:
+      213: 8429633832846139863
+    second: electric-mining-drill_1
+  - first:
+      213: -8577912065854728936
+    second: electric-mining-drill_2
+  - first:
+      213: 4246651198129746006
+    second: electric-mining-drill_3
+  - first:
+      213: -2349453011115909128
+    second: electric-mining-drill_4
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: electric-mining-drill_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfae77d2d2badce00800000000000000
+      internalID: 1066696897281387259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 624
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1a8611f431cf470800000000000000
+      internalID: 8429633832846139863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 624
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81511308c6225f880800000000000000
+      internalID: -8577912065854728936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_3
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 624
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650b285d3c22fea30800000000000000
+      internalID: 4246651198129746006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_4
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 624
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffd6ff2fe0156fd0800000000000000
+      internalID: -2349453011115909128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_5
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 624
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195c1f24a29a6cc48bb5f77369808b10
+      internalID: -140056319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 468
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d0930af5ca722448396670f2b2a0a4
+      internalID: -999166973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_7
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 468
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909e558e8e8f5804682f89037f668fdf
+      internalID: -452983292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_8
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 468
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae79f8bad8193e48878f21d1e0712aa
+      internalID: -1784104472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 468
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad15114b7c88fc04789e669266a19aae
+      internalID: 25124280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_10
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 468
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425d90e0aeb60544693bc7490737ae60
+      internalID: -464083072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_11
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 468
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f780cbf1f8a416e4483d55961be4ad0c
+      internalID: 154960281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4ca163ebf0307448618716238b3c26
+      internalID: 324709250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 312
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec001bc08c1042840a1cbc3ddec3d114
+      internalID: 2024771235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_14
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 312
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbedd5506292e59458fa2b3efe846ab7
+      internalID: 1339760111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_15
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 312
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a460132fe5905304db27b20b9394478e
+      internalID: 1244203172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_16
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 312
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff7b2bfdff2d4a42b95e490c7f8d5f5
+      internalID: 1462736483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_17
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 312
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fa4ad3ed99f6f47970f4326755f95a
+      internalID: -362325814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b25a5d69f82d44c97ba689550ee00d
+      internalID: -920667113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 156
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bc606935bd5f34dad295be4494d948
+      internalID: -2076739780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_20
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 156
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f864a66d440d63c438f1af964b2af329
+      internalID: -463146164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_21
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 156
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca3de9840505b240b88f4176a6db666
+      internalID: -760018603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_22
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 156
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695db3bdda48fe043a0d6bdb9fbf8846
+      internalID: -1694067491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_23
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 156
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77b91c89ea0d6f408229bd32773785f
+      internalID: -592731176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2939eb0e7cf804f934117b5963cd65
+      internalID: 660015358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_25
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b49abbb5b3e4b14ea48508370d8e2da
+      internalID: 243106465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_26
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93964cb15bd14a140ba45576a2b228c0
+      internalID: 474604170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_27
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6586f79fd2cec40a6110bebb960515
+      internalID: 925133716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_28
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3558324745786ca429ac56d7dd4a4b93
+      internalID: 1227956172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric-mining-drill_29
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 162
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69d9a876f2631c469710f4d535bd56a
+      internalID: 670773681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 67b94dddeb93a0249a67369d2897f969
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      electric-mining-drill_0: 1066696897281387259
+      electric-mining-drill_1: 8429633832846139863
+      electric-mining-drill_10: -464083072
+      electric-mining-drill_11: 154960281
+      electric-mining-drill_12: 324709250
+      electric-mining-drill_13: 2024771235
+      electric-mining-drill_14: 1339760111
+      electric-mining-drill_15: 1244203172
+      electric-mining-drill_16: 1462736483
+      electric-mining-drill_17: -362325814
+      electric-mining-drill_18: -920667113
+      electric-mining-drill_19: -2076739780
+      electric-mining-drill_2: -8577912065854728936
+      electric-mining-drill_20: -463146164
+      electric-mining-drill_21: -760018603
+      electric-mining-drill_22: -1694067491
+      electric-mining-drill_23: -592731176
+      electric-mining-drill_24: 660015358
+      electric-mining-drill_25: 243106465
+      electric-mining-drill_26: 474604170
+      electric-mining-drill_27: 925133716
+      electric-mining-drill_28: 1227956172
+      electric-mining-drill_29: 670773681
+      electric-mining-drill_3: 4246651198129746006
+      electric-mining-drill_4: -2349453011115909128
+      electric-mining-drill_5: -140056319
+      electric-mining-drill_6: -999166973
+      electric-mining-drill_7: -452983292
+      electric-mining-drill_8: -1784104472
+      electric-mining-drill_9: 25124280
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
