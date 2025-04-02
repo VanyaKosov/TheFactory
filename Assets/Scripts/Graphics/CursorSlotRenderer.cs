@@ -38,7 +38,6 @@ namespace Dev.Kosov.Factory.Graphics
         {
             if (!ItemInfo.Get(itemType).Placable)
             {
-                ItemRenderer.gameObject.SetActive(false);
                 return;
             }
 
