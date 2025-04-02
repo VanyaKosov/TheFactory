@@ -13,12 +13,13 @@ namespace Dev.Kosov.Factory.Graphics
         private const float hotbarBottomHalfOffsetPercent = 0.10f;
         private SlotRenderer[,] invSlotRenderers;
         private SlotRenderer[,] hotbarSlotRenderers;
-        private SlotRenderer cursorSlotRenderer;
+        private CursorSlotRenderer cursorSlotRenderer;
         private bool invOpen = false;
         private Inventory inventory;
         private RectTransform canvasRectTransform;
         private RectTransform cursorRectTransform;
 
+        public GraphicRaycaster Raycaster;
         public Catalogs SpriteCatalogs;
         public GameObject InventoryParent;
         public GameObject HotbarParent;
@@ -45,7 +46,7 @@ namespace Dev.Kosov.Factory.Graphics
                 inventory.Width, inventory.Height, OnInvSlotClick);
             hotbarSlotRenderers = GenerateSlotPanel(HotbarParent,
                 new(Canvas.transform.position.x, Canvas.transform.position.y * hotbarBottomHalfOffsetPercent),
-                inventory.HotbarWidth, 1, OnHotarSlotClick);
+                inventory.HotbarWidth, inventory.HotbarHeight, OnHotarSlotClick);
 
             inventory.SetInvItem += SetInvItem;
             inventory.SetHotbarItem += SetHotbarItem;
@@ -117,25 +118,25 @@ namespace Dev.Kosov.Factory.Graphics
             cursorRectTransform.anchoredPosition = scaledMouseOffset;
         }
 
-        private SlotRenderer GenerateCursorSlot()
+        private CursorSlotRenderer GenerateCursorSlot()
         {
             GameObject slot = Instantiate(CursorSlotPrefab, new(), Quaternion.identity, CursorParent.transform);
             slot.GetComponent<RectTransform>().sizeDelta = new(slotSize, slotSize);
             SlotRenderer slotRenderer = slot.GetComponent<SlotRenderer>();
             slotRenderer.ItemSpriteCatalog = SpriteCatalogs;
+            CursorSlotRenderer cursorSlotRenderer = slot.GetComponent<CursorSlotRenderer>();
+            cursorSlotRenderer.Raycaster = Raycaster;
 
-            return slotRenderer;
+            return cursorSlotRenderer;
         }
 
         private void OnInvSlotClick(Vector2Int pos)
         {
-            //inventory.SwitchItemWithInventory(pos);
             inventory.TryPutToInventory(pos);
         }
 
         private void OnHotarSlotClick(Vector2Int pos)
         {
-            //inventory.SwitchItemWithHotbar(pos);
             inventory.TryPutToHotbar(pos);
         }
 

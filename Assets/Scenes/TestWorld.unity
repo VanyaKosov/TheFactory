@@ -862,6 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5fca89e863178049b993e8edec101e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Raycaster: {fileID: 2042186223}
   SpriteCatalogs: {fileID: 334683}
   InventoryParent: {fileID: 1229636091}
   HotbarParent: {fileID: 499921460}

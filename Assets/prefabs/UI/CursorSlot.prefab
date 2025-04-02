@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 764657357306236246}
   - component: {fileID: 852825237651552509}
   - component: {fileID: 2079758347866824302}
+  - component: {fileID: -2315406254579329186}
   m_Layer: 5
   m_Name: CursorSlot
   m_TagString: Untagged
@@ -301,6 +302,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9911fc89bc9624c9317c3671f1d33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ItemRenderer: {fileID: 2885025834863407493}
+  TextRenderer: {fileID: 5906613016299786314}
+  ItemSpriteCatalog: {fileID: 0}
+--- !u!114 &-2315406254579329186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5853213013112112345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af09c0e06aaeb64b8b4c2bcf5f3fe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlotRenderer: {fileID: 2079758347866824302}
+  Raycaster: {fileID: 0}
   ItemRenderer: {fileID: 2885025834863407493}
   TextRenderer: {fileID: 5906613016299786314}
   ItemSpriteCatalog: {fileID: 0}
