@@ -1,4 +1,4 @@
-using Dev.Kosov.Factory.Core.Assets.Scripts.Core;
+using Dev.Kosov.Factory.Core;
 using UnityEngine.U2D;
 using System;
 using UnityEngine;

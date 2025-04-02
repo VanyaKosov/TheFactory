@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core.Entities
+namespace Dev.Kosov.Factory.Core.Entities
 {
     internal class StoneFurnace : Entity
     {

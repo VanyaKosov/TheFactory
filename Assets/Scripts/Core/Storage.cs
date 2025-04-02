@@ -23,13 +23,31 @@ namespace Dev.Kosov.Factory.Core
 
         internal InvSlot GetItem(Vector2Int pos)
         {
-            return new(items[pos.x, pos.y]);
+            return items[pos.x, pos.y];
         }
 
         internal void SetItem(InvSlot slot, Vector2Int pos)
         {
             items[pos.x, pos.y] = new(slot.Type, slot.Amount);
             SlotChanged?.Invoke(this, new(pos, slot.Type, slot.Amount));
+        }
+
+        internal int TryStack(InvSlot inputSlot, Vector2Int pos)
+        {
+            if (items[pos.x, pos.y].Type != inputSlot.Type) return inputSlot.Amount;
+
+            int stackSize = ItemInfo.Get(inputSlot.Type).MaxStackSize;
+            int canFit = stackSize - items[pos.x, pos.y].Amount;
+            if (inputSlot.Amount <= canFit)
+            {
+                items[pos.x, pos.y].Amount += inputSlot.Amount;
+                SlotChanged?.Invoke(this, new(pos, items[pos.x, pos.y].Type, items[pos.x, pos.y].Amount));
+                return 0;
+            }
+
+            items[pos.x, pos.y].Amount += canFit;
+            SlotChanged?.Invoke(this, new(pos, items[pos.x, pos.y].Type, items[pos.x, pos.y].Amount));
+            return inputSlot.Amount -= canFit;
         }
 
         internal InvSlot AutoTake() // Returns taken type and count
@@ -60,14 +78,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 for (int x = 0; x < Width; x++)
                 {
-                    if (items[x, y].Type != type) continue;
-                    int canFit = stackSize - items[x, y].Amount;
-                    canFit = Math.Min(canFit, amount);
-
-                    items[x, y].Amount += canFit;
-                    amount -= canFit;
-
-                    SlotChanged?.Invoke(this, new(new(x, y), items[x, y].Type, items[x, y].Amount));
+                    amount = TryStack(new(type, amount), new(x, y));
 
                     if (amount == 0) return 0;
                 }

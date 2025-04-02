@@ -1,6 +1,4 @@
-﻿using Dev.Kosov.Factory.Core.Assets.Scripts.Core.Entities;
-using Dev.Kosov.Factory.Core.Entities;
-using static UnityEngine.EventSystems.EventTrigger;
+﻿using Dev.Kosov.Factory.Core.Entities;
 using System;
 using UnityEngine;
 

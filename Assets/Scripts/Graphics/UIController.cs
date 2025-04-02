@@ -129,12 +129,14 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OnInvSlotClick(Vector2Int pos)
         {
-            inventory.SwitchItemWithInventory(pos);
+            //inventory.SwitchItemWithInventory(pos);
+            inventory.TryPutToInventory(pos);
         }
 
         private void OnHotarSlotClick(Vector2Int pos)
         {
-            inventory.SwitchItemWithHotbar(pos);
+            //inventory.SwitchItemWithHotbar(pos);
+            inventory.TryPutToHotbar(pos);
         }
 
         private void SetInvItem(object sender, Inventory.SetItemEventArgs args)

@@ -1,6 +1,6 @@
 ﻿namespace Dev.Kosov.Factory.Core
 {
-    public class InvSlot
+    public struct InvSlot
     {
         internal ItemType Type { get; set; }
         internal int Amount { get; set; }
@@ -9,12 +9,6 @@
         {
             Type = type;
             Amount = amount;
-        }
-
-        internal InvSlot(InvSlot other)
-        {
-            Type = other.Type;
-            Amount = other.Amount;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
+﻿namespace Dev.Kosov.Factory.Core
 {
     public enum ActionType
     {

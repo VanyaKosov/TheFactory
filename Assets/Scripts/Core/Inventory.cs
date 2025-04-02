@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
@@ -36,17 +35,53 @@ namespace Dev.Kosov.Factory.Core
             DefaultInvInitialize();
         }
 
-        public void SwitchItemWithInventory(Vector2Int pos)
+        public void TryPutToInventory(Vector2Int pos)
         {
-            InvSlot temp = new(CursorSlot);
+            if (inventory.GetItem(pos).Type == CursorSlot.Type)
+            {
+                int remainder = inventory.TryStack(CursorSlot, pos);
+                if (remainder == 0)
+                {
+                    SetCursorSlot(ItemType.None, 0);
+                    return;
+                }
+
+                SetCursorSlot(CursorSlot.Type, remainder);
+                return;
+            }
+
+            SwitchItemWithInventory(pos);
+        }
+
+        public void TryPutToHotbar(Vector2Int pos)
+        {
+            if (hotbar.GetItem(pos).Type == CursorSlot.Type)
+            {
+                int remainder = hotbar.TryStack(CursorSlot, pos);
+                if (remainder == 0)
+                {
+                    SetCursorSlot(ItemType.None, 0);
+                    return;
+                }
+
+                SetCursorSlot(CursorSlot.Type, remainder);
+                return;
+            }
+
+            SwitchItemWithHotbar(pos);
+        }
+
+        private void SwitchItemWithInventory(Vector2Int pos)
+        {
+            InvSlot temp = CursorSlot;
             CursorSlot = inventory.GetItem(pos);
             inventory.SetItem(temp, pos);
             SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
         }
 
-        public void SwitchItemWithHotbar(Vector2Int pos)
+        private void SwitchItemWithHotbar(Vector2Int pos)
         {
-            InvSlot temp = new(CursorSlot);
+            InvSlot temp = CursorSlot;
             CursorSlot = hotbar.GetItem(pos);
             hotbar.SetItem(temp, pos);
             SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
@@ -65,12 +100,25 @@ namespace Dev.Kosov.Factory.Core
             int overflow = CursorSlot.Amount + amount - maxStackSize;
             if (overflow <= 0)
             {
-                CursorSlot.Amount += amount;
+                CursorSlot = new(CursorSlot.Type, CursorSlot.Amount + amount);
                 return 0;
             }
 
-            CursorSlot.Amount = maxStackSize;
+            CursorSlot = new(CursorSlot.Type, maxStackSize);
             return amount;
+        }
+
+        private void SetCursorSlot(ItemType type, int amount)
+        {
+            CursorSlot = new(type, amount);
+            SetCursorItem?.Invoke(this, new(type, amount));
+        }
+
+        private void DefaultInvInitialize()
+        {
+            AddItemToInventory(ItemType.Assembler1, 50);
+            AddItemToInventory(ItemType.WoodChest, 200);
+            AddItemToInventory(ItemType.StoneFurnace, 100);
         }
 
         private void OnInventorySlotChange(object sender, Storage.SlotCahangedEventArgs args)
@@ -81,13 +129,6 @@ namespace Dev.Kosov.Factory.Core
         private void OnHotbarSlotChange(object sender, Storage.SlotCahangedEventArgs args)
         {
             SetHotbarItem?.Invoke(this, new(args.Pos, args.Type, args.Amount));
-        }
-
-        private void DefaultInvInitialize()
-        {
-            AddItemToInventory(ItemType.Assembler1, 50);
-            AddItemToInventory(ItemType.WoodChest, 200);
-            AddItemToInventory(ItemType.StoneFurnace, 100);
         }
 
         public class SetCursorEventArgs : EventArgs
