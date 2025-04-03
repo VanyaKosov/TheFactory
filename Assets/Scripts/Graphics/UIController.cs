@@ -7,6 +7,7 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class UIController : MonoBehaviour
     {
+        private const float invHorOffset = 0;
         private const float spaceBetweenSlots = 8f;
         private const float slotSize = 45f;
         private const float invVertOffset = 40f;
@@ -42,7 +43,7 @@ namespace Dev.Kosov.Factory.Graphics
             cursorRectTransform = cursorSlotRenderer.GetComponent<RectTransform>();
 
             invSlotRenderers = GenerateSlotPanel(InventoryParent,
-                new(Canvas.transform.position.x, Canvas.transform.position.y + invVertOffset),
+                new(Canvas.transform.position.x + invHorOffset, Canvas.transform.position.y + invVertOffset),
                 inventory.Width, inventory.Height, OnInvSlotClick);
             hotbarSlotRenderers = GenerateSlotPanel(HotbarParent,
                 new(Canvas.transform.position.x, Canvas.transform.position.y * hotbarBottomHalfOffsetPercent),
