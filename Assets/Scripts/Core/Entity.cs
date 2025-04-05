@@ -5,19 +5,23 @@ namespace Dev.Kosov.Factory.Core
 {
     internal class Entity
     {
+        private readonly List<InvSlot> deconstructionComponents;
+
         internal readonly Rotation rotation;
         internal readonly Vector2Int bottomLeftPos;
-        internal readonly List<ItemType> items;
-        internal readonly List<int> itemCounts;
         internal readonly EntityType type;
 
-        internal Entity(Rotation rotation, Vector2Int bottomLeftPos, List<ItemType> items, List<int> itemCounts, EntityType type)
+        internal Entity(Rotation rotation, Vector2Int bottomLeftPos, List<InvSlot> deconstructionComponents, EntityType type)
         {
             this.rotation = rotation;
             this.bottomLeftPos = bottomLeftPos;
-            this.items = items;
-            this.itemCounts = itemCounts;
             this.type = type;
+            this.deconstructionComponents = deconstructionComponents;
+        }
+
+        virtual internal List<InvSlot> GetComponents()
+        {
+            return deconstructionComponents;
         }
     }
 }

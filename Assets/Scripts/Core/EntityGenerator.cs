@@ -10,7 +10,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
         {
             return type switch
             {
-                EntityType.Tree => new Entity(Rotation.Up, pos, new() { ItemType.Wood }, new() { 10 }, EntityType.Tree),
+                EntityType.Tree => new Entity(Rotation.Up, pos, new() { new(ItemType.Wood, 4) }, EntityType.Tree),
                 EntityType.Assembler1 => new Assembler1(Rotation.Up, pos),
                 EntityType.WoodChest => new WoodChest(Rotation.Up, pos),
                 EntityType.StoneFurnace => new StoneFurnace(Rotation.Up, pos),

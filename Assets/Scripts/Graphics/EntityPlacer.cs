@@ -1,4 +1,5 @@
 using Dev.Kosov.Factory.Core;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,7 @@ namespace Dev.Kosov.Factory.Graphics
         private Inventory inventory;
         private ItemType hologramItemType;
 
+        public UserInput UserInput;
         public ActionType ActionType { get; private set; }
         public Catalogs Catalogs;
         public SpriteRenderer hologramRenderer;
@@ -44,6 +46,7 @@ namespace Dev.Kosov.Factory.Graphics
             world.TileGenerated += SpawnTile;
             world.OreSpawned += SpawnOre;
             inventory.SetCursorItem += SetHologramItem;
+            UserInput.SecondaryInput += OnSecondaryInput;
         }
 
         void Start()
@@ -56,11 +59,6 @@ namespace Dev.Kosov.Factory.Graphics
             Vector3 mouseWorldPos = Camera.ScreenToWorldPoint(Input.mousePosition);
             TryPlaceBuilding(mouseWorldPos);
             DisplayBuildingHologram(mouseWorldPos);
-
-            if (Input.GetMouseButtonDown(1))
-            {
-                StartCoroutine(TryRemoveEntity());
-            }
         }
 
         private void DisplayBuildingHologram(Vector2 centerPos)
@@ -171,7 +169,7 @@ namespace Dev.Kosov.Factory.Graphics
             entities.Add(args.EntityID, instance);
         }
 
-        private void UpdateOre(object sender, World.OreMinedEvenArgs args)
+        private void UpdateOre(object sender, World.OreMinedEventArgs args)
         {
             if (args.Type == OreType.None)
             {
@@ -207,6 +205,11 @@ namespace Dev.Kosov.Factory.Graphics
         private void SetHologramItem(object sender, Inventory.SetCursorEventArgs args)
         {
             hologramItemType = args.Type;
+        }
+
+        private void OnSecondaryInput(object sender, EventArgs args)
+        {
+            StartCoroutine(TryRemoveEntity());
         }
     }
 }

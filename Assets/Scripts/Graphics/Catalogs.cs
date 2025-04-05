@@ -41,9 +41,9 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Coal, Coal);
             itemTypeToSprite.Add(ItemType.Iron_ore, Iron_Ore);
             itemTypeToSprite.Add(ItemType.Copper_ore, Copper_Ore);
-            itemTypeToSprite.Add(ItemType.Assembler1, Assembler1);
-            itemTypeToSprite.Add(ItemType.WoodChest, WoodChest);
-            itemTypeToSprite.Add(ItemType.StoneFurnace, StoneFurnace);
+            itemTypeToSprite.Add(ItemType.Assembler_1, Assembler1);
+            itemTypeToSprite.Add(ItemType.Wood_chest, WoodChest);
+            itemTypeToSprite.Add(ItemType.Stone_furnace, StoneFurnace);
 
             // Entities
             entityTypeToSprite.Add(EntityType.Assembler1, Assembler1Entity);

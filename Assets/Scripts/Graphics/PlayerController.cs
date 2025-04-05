@@ -11,18 +11,28 @@ namespace Dev.Kosov.Factory.Graphics
         private const float runningAnim = 2f;
         private const float miningAnim = 3f;
         private Vector2 prevMoveVector = new(0, 1);
+        private World world;
+        private Inventory inventory;
 
+        public UserInput UserInput;
+        public Camera Camera;
         public EntityPlacer EntityPlacer;
         public WorldController WorldController;
         public Animator MovementAnimator;
         public Animator ShadowAnimator;
-        //public Camera Camera;
         public PixelPerfectCamera PixelPerfectCamera;
         public Rigidbody2D RigidBody;
         public float MoveSpeed = 10;
         public int MinZoom = 5;
         public int MaxZoom = 40;
         public float ZoomSpeed = 5;
+
+        void OnEnable()
+        {
+            world = WorldController.World;
+            inventory = world.Inventory;
+            UserInput.PrimaryInput += OnPrimaryInput;
+        }
 
         void FixedUpdate()
         {
@@ -98,6 +108,12 @@ namespace Dev.Kosov.Factory.Graphics
                 Math.Min(
                     Math.Max(Mathf.RoundToInt(PixelPerfectCamera.assetsPPU + Input.mouseScrollDelta.y * ZoomSpeed), MinZoom),
                 MaxZoom);
+        }
+
+        private void OnPrimaryInput(object sender, EventArgs args)
+        {
+            Vector2 mousePos = Camera.ScreenToWorldPoint(Input.mousePosition);
+            world.OpenEntity(WorldController.WorldToMapPos(mousePos));
         }
     }
 }

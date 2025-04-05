@@ -15,11 +15,12 @@ namespace Dev.Kosov.Factory.Graphics
         private SlotRenderer[,] invSlotRenderers;
         private SlotRenderer[,] hotbarSlotRenderers;
         private CursorSlotRenderer cursorSlotRenderer;
-        private bool invOpen = false;
         private Inventory inventory;
         private RectTransform canvasRectTransform;
         private RectTransform cursorRectTransform;
 
+        public UserInput UserInput;
+        public bool InvOpen = false;
         public GraphicRaycaster Raycaster;
         public Catalogs SpriteCatalogs;
         public GameObject InventoryParent;
@@ -34,6 +35,7 @@ namespace Dev.Kosov.Factory.Graphics
         void OnEnable()
         {
             inventory = GameObject.Find("WorldController").GetComponent<WorldController>().World.Inventory;
+            UserInput.OpenInventory += OnPrimaryInput;
         }
 
         void Start()
@@ -53,18 +55,14 @@ namespace Dev.Kosov.Factory.Graphics
             inventory.SetHotbarItem += SetHotbarItem;
             inventory.SetCursorItem += SetCursorItem;
 
-            InventoryParent.SetActive(invOpen);
+            InventoryParent.SetActive(InvOpen);
         }
 
         void Update()
         {
             UpdateCursorSlotPos();
 
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                invOpen = !invOpen;
-                InventoryParent.SetActive(invOpen);
-            }
+            InventoryParent.SetActive(InvOpen);
         }
 
         private SlotRenderer[,] GenerateSlotPanel(GameObject parent, Vector2 position, int width, int height, Action<Vector2Int> callback)
@@ -139,6 +137,11 @@ namespace Dev.Kosov.Factory.Graphics
         private void OnHotarSlotClick(Vector2Int pos)
         {
             inventory.TryPutToHotbar(pos);
+        }
+
+        private void OnPrimaryInput(object sender, EventArgs args)
+        {
+            InvOpen = !InvOpen;
         }
 
         private void SetInvItem(object sender, Inventory.SetItemEventArgs args)

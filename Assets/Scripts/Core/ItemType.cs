@@ -6,9 +6,11 @@
         Wood,
         Coal,
         Iron_ore,
+        Iron_plate,
         Copper_ore,
-        Assembler1,
-        WoodChest,
-        StoneFurnace
+        Copper_plate,
+        Assembler_1,
+        Wood_chest,
+        Stone_furnace
     }
 }

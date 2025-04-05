@@ -2,8 +2,8 @@
 {
     public struct InvSlot
     {
-        internal ItemType Type { get; set; }
-        internal int Amount { get; set; }
+        public ItemType Type { get; internal set; }
+        public int Amount { get; internal set; }
 
         internal InvSlot(ItemType type, int amount)
         {

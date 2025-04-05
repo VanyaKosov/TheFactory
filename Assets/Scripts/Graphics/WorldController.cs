@@ -29,11 +29,6 @@ namespace Dev.Kosov.Factory.Graphics
             World.UpdatePlayerPos(Player.transform.position);
         }
 
-        void OnDestroy()
-        {
-
-        }
-
         public Vector2Int WorldToMapPos(Vector2 worldPos)
         {
             return new(Mathf.RoundToInt(worldPos.x), Mathf.RoundToInt(worldPos.y));

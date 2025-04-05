@@ -4,14 +4,15 @@ namespace Dev.Kosov.Factory.Core.Entities
 {
     internal class WoodChest : Entity
     {
-        internal const int InvWidth = 10;
-        internal const int InvHeight = 2;
-        internal readonly InvSlot[,] inventory;
+        private readonly Storage storage = new(InvWidth, InvHeight);
 
-        public WoodChest(Rotation rotation, Vector2Int bottomLeftPos)
-            : base(rotation, bottomLeftPos, new() { ItemType.WoodChest }, new() { 1 }, EntityType.WoodChest)
+        internal const int InvWidth = 6;
+        internal const int InvHeight = 2;
+
+        internal WoodChest(Rotation rotation, Vector2Int bottomLeftPos)
+            : base(rotation, bottomLeftPos, new() { new(ItemType.Wood_chest, 1) }, EntityType.WoodChest)
         {
-            inventory = new InvSlot[InvWidth, InvHeight];
+
         }
     }
 }

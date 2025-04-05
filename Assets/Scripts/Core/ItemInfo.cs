@@ -11,9 +11,9 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Coal, new(EntityType.None, 200) },
             { ItemType.Iron_ore, new(EntityType.None, 200) },
             { ItemType.Copper_ore, new(EntityType.None, 200) },
-            { ItemType.WoodChest, new(EntityType.WoodChest, 100) },
-            { ItemType.Assembler1, new(EntityType.Assembler1, 50) },
-            { ItemType.StoneFurnace, new(EntityType.StoneFurnace, 50) }
+            { ItemType.Wood_chest, new(EntityType.WoodChest, 100) },
+            { ItemType.Assembler_1, new(EntityType.Assembler1, 50) },
+            { ItemType.Stone_furnace, new(EntityType.StoneFurnace, 50) }
         };
 
         public static Info Get(ItemType type)

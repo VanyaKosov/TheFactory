@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
-    internal class Storage
+    public class Storage
     {
         private readonly InvSlot[,] items;
 
-        internal readonly int Width;
-        internal readonly int Height;
+        public readonly int Width;
+        public readonly int Height;
 
         internal event EventHandler<SlotCahangedEventArgs> SlotChanged;
 
@@ -21,7 +21,7 @@ namespace Dev.Kosov.Factory.Core
             DefaultInitialize();
         }
 
-        internal InvSlot GetItem(Vector2Int pos)
+        public InvSlot GetItem(Vector2Int pos)
         {
             return items[pos.x, pos.y];
         }

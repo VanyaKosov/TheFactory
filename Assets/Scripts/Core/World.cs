@@ -21,7 +21,8 @@ namespace Dev.Kosov.Factory.Core
         public event EventHandler<OreSpawnedEventArgs> OreSpawned;
         public event EventHandler<EntityCreatedEventArgs> EntityCreated;
         public event EventHandler<EntityRemovedEventArgs> EntityRemoved;
-        public event EventHandler<OreMinedEvenArgs> OreMined;
+        public event EventHandler<OreMinedEventArgs> OreMined;
+        public event EventHandler<EntityOpenedEventArgs> EntityOpened;
 
         public World()
         {
@@ -37,6 +38,20 @@ namespace Dev.Kosov.Factory.Core
             Inventory.Run();
 
             // TODO: add ores around the spawn
+        }
+
+        public void OpenEntity(Vector2Int pos)
+        {
+            if (Inventory.CursorSlot.Type != ItemType.None) return;
+            Tile tile = map[pos];
+            if (tile.EntityID == -1) return;
+            Entity entity = entities[tile.EntityID];
+            if (entity.type == EntityType.Tree) return;
+
+            if (entity is ICrafter crafter)
+            {
+                EntityOpened?.Invoke(this, new(crafter.GetCrafter()));
+            }
         }
 
         public void UpdatePlayerPos(Vector3 newPos)
@@ -365,19 +380,29 @@ namespace Dev.Kosov.Factory.Core
             }
         }
 
-        public class OreMinedEvenArgs : EventArgs
+        public class OreMinedEventArgs : EventArgs
         {
             public readonly Vector2Int Pos;
             public readonly float PrevRichnessPercent;
             public readonly float NewRichnessPercent;
             public readonly OreType Type;
 
-            public OreMinedEvenArgs(Vector2Int pos, float prevRichnessPercent, float newRichnessPercent, OreType type)
+            public OreMinedEventArgs(Vector2Int pos, float prevRichnessPercent, float newRichnessPercent, OreType type)
             {
                 PrevRichnessPercent = prevRichnessPercent;
                 NewRichnessPercent = newRichnessPercent;
                 Pos = pos;
                 Type = type;
+            }
+        }
+
+        public class EntityOpenedEventArgs : EventArgs
+        {
+            public readonly Crafter Crafter;
+
+            public EntityOpenedEventArgs(Crafter crafter)
+            {
+                Crafter = crafter;
             }
         }
     }
