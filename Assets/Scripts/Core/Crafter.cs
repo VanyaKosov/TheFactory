@@ -8,10 +8,10 @@ namespace Dev.Kosov.Factory.Core
         private readonly List<RecipeType> availableRecipes;
         private float timeStarted;
         private float time;
-        private RecipeType CurrentRecipe { get; set; }
+        private RecipeType CurrentRecipe { get; set; } = RecipeType.Smelt_copper_ore; // Make default none
 
-        public readonly Storage InputStorage = new(6, 1); // TODO: subscribe to events
-        public readonly Storage OutputStorage = new(6, 1); // TODO: subscribe to events
+        public readonly Storage InputStorage = new(6, 1);
+        public readonly Storage OutputStorage = new(6, 1);
 
         internal Crafter(List<RecipeType> availableRecipes)
         {
@@ -24,15 +24,25 @@ namespace Dev.Kosov.Factory.Core
             return (time - timeStarted) / CraftingRecipes.Get(CurrentRecipe).time * 100;
         }
 
+        internal ItemType GetExpectedInputItem(Vector2Int pos)
+        {
+            if (CurrentRecipe == RecipeType.None) return ItemType.None;
+
+            var recipe = CraftingRecipes.Get(CurrentRecipe);
+            if (pos.x >= recipe.inputs.Length) return ItemType.None;
+
+            return recipe.inputs[pos.x].Type;
+        }
+
         internal void ChangeRecipe(RecipeType recipe)
         {
             CurrentRecipe = recipe;
             timeStarted = time;
         }
 
-        internal void UpdateState(float time)
+        internal void UpdateState()
         {
-            this.time = time;
+            time = Time.time;
 
             CheckCraft();
         }
@@ -69,6 +79,7 @@ namespace Dev.Kosov.Factory.Core
             for (int i = 0; i < outputs.Length; i++)
             {
                 InvSlot storageSlot = OutputStorage.GetItem(new(i, 0));
+                if (storageSlot.Type == ItemType.None) continue;
                 if (storageSlot.Type != outputs[i].Type) return false;
                 if (storageSlot.Amount + outputs[i].Amount > ItemInfo.Get(storageSlot.Type).MaxStackSize) return false;
             }

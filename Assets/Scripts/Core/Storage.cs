@@ -34,6 +34,14 @@ namespace Dev.Kosov.Factory.Core
 
         internal int TryStack(InvSlot inputSlot, Vector2Int pos)
         {
+            if (items[pos.x, pos.y].Type == ItemType.None)
+            {
+                items[pos.x, pos.y] = inputSlot;
+                SlotChanged?.Invoke(this, new(pos, items[pos.x, pos.y].Type, items[pos.x, pos.y].Amount));
+
+                return 0;
+            }
+
             if (items[pos.x, pos.y].Type != inputSlot.Type) return inputSlot.Amount;
 
             int stackSize = ItemInfo.Get(inputSlot.Type).MaxStackSize;

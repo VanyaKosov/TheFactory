@@ -166,7 +166,9 @@ MonoBehaviour:
   Wood: {fileID: 7440981132975211316, guid: e8161e8efe1144e45a1a8c45726d649c, type: 3}
   Coal: {fileID: 6482737013037613852, guid: 3abf49434e380e24696fcb7efcadf048, type: 3}
   Iron_Ore: {fileID: -5473642129915720609, guid: 2650fab284d1bb049b10d8f80c8be7ea, type: 3}
+  Iron_Plate: {fileID: 3114402333797436475, guid: 360f0590fa62e4c48b38bb0e1e5719bc, type: 3}
   Copper_Ore: {fileID: 3789500478940260231, guid: 63997aa537bab404bbd94f64bf608901, type: 3}
+  Copper_Plate: {fileID: 7956701527557852811, guid: b9f01f814d8502f4394a9edcd8557ae6, type: 3}
   Assembler1: {fileID: -3960403711501517520, guid: e1ab9f470705df741b81ba3c53129903, type: 3}
   WoodChest: {fileID: -7832606381233642770, guid: 48e45ede799697e4e9660e99609b29ce, type: 3}
   StoneFurnace: {fileID: -2036658041419098786, guid: a48ab4c38ee54814d9b8e8f5ddd93c64, type: 3}
@@ -274,6 +276,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183139134}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -390,6 +396,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1272948989}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -492,6 +502,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183139134}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -971,6 +985,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1272948989}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1146,6 +1164,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183139134}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1248,6 +1270,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1272948989}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1628,6 +1654,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1272948989}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1847,6 +1877,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183139134}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2229,6 +2263,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183139134}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2573,6 +2611,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 183139134}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2675,6 +2717,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1272948989}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2777,6 +2823,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1272948989}
     m_Modifications:
+    - target: {fileID: 2079758347866824302, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
+      propertyPath: ItemSpriteCatalog
+      value: 
+      objectReference: {fileID: 334683}
     - target: {fileID: 4957429548098577221, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2904,8 +2954,8 @@ RectTransform:
   m_Children:
   - {fileID: 1229636092}
   - {fileID: 499921461}
-  - {fileID: 31069431}
   - {fileID: 1510928343}
+  - {fileID: 31069431}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

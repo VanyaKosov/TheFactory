@@ -20,7 +20,7 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject[] OutputSlots;
         public Button ChangeRecipeButton;
 
-        void OnEnable()
+        void Start()
         {
             world = WorldController.World;
             inputSlotRenderers = new SlotRenderer[6];
@@ -81,7 +81,8 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OnInputSlotClick(Vector2Int pos)
         {
-            print("Input " + pos.x);
+            //print("Input " + pos.x);
+            world.TryPutOrTakeFromCrafterInput(crafter, pos);
         }
 
         private void OnOutputSlotClick(Vector2Int pos)

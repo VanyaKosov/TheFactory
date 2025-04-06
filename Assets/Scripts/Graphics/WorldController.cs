@@ -27,6 +27,7 @@ namespace Dev.Kosov.Factory.Graphics
         void Update()
         {
             World.UpdatePlayerPos(Player.transform.position);
+            World.UpdateState();
         }
 
         public Vector2Int WorldToMapPos(Vector2 worldPos)

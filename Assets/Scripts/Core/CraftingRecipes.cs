@@ -4,7 +4,7 @@ namespace Dev.Kosov.Factory.Core
 {
     static class CraftingRecipes
     {
-        private static readonly Dictionary<RecipeType, (InvSlot[] inputs, InvSlot[] outputs, float time)> recipies = new()
+        private static readonly Dictionary<RecipeType, (InvSlot[] inputs, InvSlot[] outputs, float time)> recipes = new()
         {
             {
                 RecipeType.Smelt_iron_ore,
@@ -42,7 +42,7 @@ namespace Dev.Kosov.Factory.Core
 
         internal static (InvSlot[] inputs, InvSlot[] outputs, float time) Get(RecipeType type)
         {
-            return recipies[type];
+            return recipes[type];
         }
     }
 }

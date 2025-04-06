@@ -10,7 +10,9 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Wood, new(EntityType.None, 200) },
             { ItemType.Coal, new(EntityType.None, 200) },
             { ItemType.Iron_ore, new(EntityType.None, 200) },
+            { ItemType.Iron_plate, new(EntityType.None, 200) },
             { ItemType.Copper_ore, new(EntityType.None, 200) },
+            { ItemType.Copper_plate, new(EntityType.None, 200) },
             { ItemType.Wood_chest, new(EntityType.WoodChest, 100) },
             { ItemType.Assembler_1, new(EntityType.Assembler1, 50) },
             { ItemType.Stone_furnace, new(EntityType.StoneFurnace, 50) }

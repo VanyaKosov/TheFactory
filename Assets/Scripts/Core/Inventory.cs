@@ -71,22 +71,6 @@ namespace Dev.Kosov.Factory.Core
             SwitchItemWithHotbar(pos);
         }
 
-        private void SwitchItemWithInventory(Vector2Int pos)
-        {
-            InvSlot temp = CursorSlot;
-            CursorSlot = inventory.GetItem(pos);
-            inventory.SetItem(temp, pos);
-            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
-        }
-
-        private void SwitchItemWithHotbar(Vector2Int pos)
-        {
-            InvSlot temp = CursorSlot;
-            CursorSlot = hotbar.GetItem(pos);
-            hotbar.SetItem(temp, pos);
-            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
-        }
-
         internal int AddItemToInventory(ItemType type, int amount)
         {
             return inventory.AutoPut(type, amount);
@@ -108,10 +92,26 @@ namespace Dev.Kosov.Factory.Core
             return amount;
         }
 
-        private void SetCursorSlot(ItemType type, int amount)
+        internal void SetCursorSlot(ItemType type, int amount)
         {
             CursorSlot = new(type, amount);
             SetCursorItem?.Invoke(this, new(type, amount));
+        }
+
+        private void SwitchItemWithInventory(Vector2Int pos)
+        {
+            InvSlot temp = CursorSlot;
+            CursorSlot = inventory.GetItem(pos);
+            inventory.SetItem(temp, pos);
+            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
+        }
+
+        private void SwitchItemWithHotbar(Vector2Int pos)
+        {
+            InvSlot temp = CursorSlot;
+            CursorSlot = hotbar.GetItem(pos);
+            hotbar.SetItem(temp, pos);
+            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
         }
 
         private void DefaultInvInitialize()
@@ -119,6 +119,8 @@ namespace Dev.Kosov.Factory.Core
             AddItemToInventory(ItemType.Assembler_1, 50);
             AddItemToInventory(ItemType.Wood_chest, 200);
             AddItemToInventory(ItemType.Stone_furnace, 100);
+            AddItemToInventory(ItemType.Copper_ore, 200);
+            AddItemToInventory(ItemType.Iron_ore, 200);
         }
 
         private void OnInventorySlotChange(object sender, Storage.SlotCahangedEventArgs args)

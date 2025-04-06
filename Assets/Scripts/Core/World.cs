@@ -30,6 +30,11 @@ namespace Dev.Kosov.Factory.Core
             PlayerPos = new(0, 0);
         }
 
+        public void UpdateState()
+        {
+            UpdateEntities();
+        }
+
         public void Run()
         {
             treeNoiseOffset = new(UnityEngine.Random.Range(-1_000_000, 1_000_000), UnityEngine.Random.Range(-1_000_000, 1_000_000));
@@ -38,6 +43,28 @@ namespace Dev.Kosov.Factory.Core
             Inventory.Run();
 
             // TODO: add ores around the spawn
+        }
+
+        public void TryPutOrTakeFromCrafterInput(Crafter crafter, Vector2Int pos)
+        {
+            Debug.Log("method called");
+            if (Inventory.CursorSlot.Type == ItemType.None)
+            {
+                InvSlot item = crafter.InputStorage.GetItem(pos);
+                crafter.InputStorage.SetItem(new(ItemType.None, 0), pos);
+                Inventory.SetCursorSlot(item.Type, item.Amount);
+
+                return;
+            }
+
+            if (Inventory.CursorSlot.Type != crafter.GetExpectedInputItem(pos)) return;
+            int remainder = crafter.InputStorage.TryStack(Inventory.CursorSlot, pos);
+            if (remainder == 0)
+            {
+                Inventory.SetCursorSlot(ItemType.None, 0);
+                return;
+            }
+            Inventory.SetCursorSlot(Inventory.CursorSlot.Type, remainder);
         }
 
         public void OpenEntity(Vector2Int pos)
@@ -117,6 +144,17 @@ namespace Dev.Kosov.Factory.Core
             }
 
             throw new Exception("Unknown action");
+        }
+
+        private void UpdateEntities()
+        {
+            foreach (Entity entity in entities.Values)
+            {
+                if (entity is ICrafter crafter)
+                {
+                    crafter.GetCrafter().UpdateState();
+                }
+            }
         }
 
         private void RemoveEntity(Vector2Int pos)

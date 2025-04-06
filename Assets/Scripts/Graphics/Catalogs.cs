@@ -13,7 +13,9 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite Wood;
         public Sprite Coal;
         public Sprite Iron_Ore;
+        public Sprite Iron_Plate;
         public Sprite Copper_Ore;
+        public Sprite Copper_Plate;
         public Sprite Assembler1;
         public Sprite WoodChest;
         public Sprite StoneFurnace;
@@ -40,7 +42,9 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Wood, Wood);
             itemTypeToSprite.Add(ItemType.Coal, Coal);
             itemTypeToSprite.Add(ItemType.Iron_ore, Iron_Ore);
+            itemTypeToSprite.Add(ItemType.Iron_plate, Iron_Plate);
             itemTypeToSprite.Add(ItemType.Copper_ore, Copper_Ore);
+            itemTypeToSprite.Add(ItemType.Copper_plate, Copper_Plate);
             itemTypeToSprite.Add(ItemType.Assembler_1, Assembler1);
             itemTypeToSprite.Add(ItemType.Wood_chest, WoodChest);
             itemTypeToSprite.Add(ItemType.Stone_furnace, StoneFurnace);
