@@ -8,7 +8,7 @@ namespace Dev.Kosov.Factory.Core
         private readonly List<RecipeType> availableRecipes;
         private float timeStarted;
         private float time;
-        private RecipeType CurrentRecipe { get; set; } = RecipeType.Smelt_copper_ore; // Make default none
+        private RecipeType CurrentRecipe { get; set; } = RecipeType.None;
 
         public readonly Storage InputStorage = new(6, 1);
         public readonly Storage OutputStorage = new(6, 1);
@@ -24,7 +24,7 @@ namespace Dev.Kosov.Factory.Core
             return (time - timeStarted) / CraftingRecipes.Get(CurrentRecipe).time * 100;
         }
 
-        internal ItemType GetExpectedInputItem(Vector2Int pos)
+        public ItemType GetExpectedInputItem(Vector2Int pos)
         {
             if (CurrentRecipe == RecipeType.None) return ItemType.None;
 
@@ -32,6 +32,16 @@ namespace Dev.Kosov.Factory.Core
             if (pos.x >= recipe.inputs.Length) return ItemType.None;
 
             return recipe.inputs[pos.x].Type;
+        }
+
+        public ItemType GetExpectedOutputItem(Vector2Int pos)
+        {
+            if (CurrentRecipe == RecipeType.None) return ItemType.None;
+
+            var recipe = CraftingRecipes.Get(CurrentRecipe);
+            if (pos.x >= recipe.outputs.Length) return ItemType.None;
+
+            return recipe.outputs[pos.x].Type;
         }
 
         internal void ChangeRecipe(RecipeType recipe)

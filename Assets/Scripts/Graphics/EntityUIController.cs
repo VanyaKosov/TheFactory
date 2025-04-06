@@ -62,12 +62,29 @@ namespace Dev.Kosov.Factory.Graphics
             for (int i = 0; i < inputSlotRenderers.Length; i++)
             {
                 InvSlot item = crafter.InputStorage.GetItem(new(i, 0));
+                if (crafter.GetExpectedInputItem(new(i, 0)) == ItemType.None)
+                {
+                    inputSlotRenderers[i].gameObject.SetActive(false);
+                }
+                else
+                {
+                    inputSlotRenderers[i].gameObject.SetActive(true);
+                }
+
                 inputSlotRenderers[i].SetItem(item.Type, item.Amount);
             }
 
             for (int i = 0; i < outputSlotRenderers.Length; i++)
             {
                 InvSlot item = crafter.OutputStorage.GetItem(new(i, 0));
+                if (crafter.GetExpectedOutputItem(new(i, 0)) == ItemType.None)
+                {
+                    outputSlotRenderers[i].gameObject.SetActive(false);
+                }
+                else
+                {
+                    outputSlotRenderers[i].gameObject.SetActive(true);
+                }
                 outputSlotRenderers[i].SetItem(item.Type, item.Amount);
             }
 
@@ -87,7 +104,8 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OnOutputSlotClick(Vector2Int pos)
         {
-            print("Output " + pos.x);
+            //print("Output " + pos.x);
+            world.TryTakeFromCrafterOutput(crafter, pos);
         }
 
         private void OpenEntity(object sender, World.EntityOpenedEventArgs args)

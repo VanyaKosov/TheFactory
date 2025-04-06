@@ -28,18 +28,24 @@ namespace Dev.Kosov.Factory.Core
 
         internal void SetItem(InvSlot slot, Vector2Int pos)
         {
-            items[pos.x, pos.y] = new(slot.Type, slot.Amount);
+            if (slot.Amount == 0)
+            {
+                slot = new(ItemType.None, 0);
+            }
+
+            items[pos.x, pos.y] = slot;
             SlotChanged?.Invoke(this, new(pos, slot.Type, slot.Amount));
         }
 
-        internal int TryStack(InvSlot inputSlot, Vector2Int pos)
+        internal int TryStack(InvSlot inputSlot, Vector2Int pos) // Returns remainder
         {
-            if (items[pos.x, pos.y].Type == ItemType.None)
+            if (items[pos.x, pos.y].Type == ItemType.None && inputSlot.Amount > 0)
             {
-                items[pos.x, pos.y] = inputSlot;
-                SlotChanged?.Invoke(this, new(pos, items[pos.x, pos.y].Type, items[pos.x, pos.y].Amount));
+                items[pos.x, pos.y] = new(inputSlot.Type, 0);
+                //items[pos.x, pos.y] = inputSlot; // Can overfill the slot
+                //SlotChanged?.Invoke(this, new(pos, items[pos.x, pos.y].Type, items[pos.x, pos.y].Amount));
 
-                return 0;
+                //return 0;
             }
 
             if (items[pos.x, pos.y].Type != inputSlot.Type) return inputSlot.Amount;
@@ -55,7 +61,7 @@ namespace Dev.Kosov.Factory.Core
 
             items[pos.x, pos.y].Amount += canFit;
             SlotChanged?.Invoke(this, new(pos, items[pos.x, pos.y].Type, items[pos.x, pos.y].Amount));
-            return inputSlot.Amount -= canFit;
+            return inputSlot.Amount - canFit;
         }
 
         internal InvSlot AutoTake() // Returns taken type and count
@@ -86,6 +92,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 for (int x = 0; x < Width; x++)
                 {
+                    if (items[x, y].Type == ItemType.None) continue;
                     amount = TryStack(new(type, amount), new(x, y));
 
                     if (amount == 0) return 0;

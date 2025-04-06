@@ -19,7 +19,7 @@ namespace Dev.Kosov.Factory.Core
                 (
                     new InvSlot[] { new(ItemType.Copper_ore, 1) },
                     new InvSlot[] { new(ItemType.Copper_plate, 1) },
-                    2f
+                    2f // 2f
                 )
             },
             {

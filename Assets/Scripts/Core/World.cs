@@ -47,7 +47,6 @@ namespace Dev.Kosov.Factory.Core
 
         public void TryPutOrTakeFromCrafterInput(Crafter crafter, Vector2Int pos)
         {
-            Debug.Log("method called");
             if (Inventory.CursorSlot.Type == ItemType.None)
             {
                 InvSlot item = crafter.InputStorage.GetItem(pos);
@@ -65,6 +64,14 @@ namespace Dev.Kosov.Factory.Core
                 return;
             }
             Inventory.SetCursorSlot(Inventory.CursorSlot.Type, remainder);
+        }
+
+        public void TryTakeFromCrafterOutput(Crafter crafter, Vector2Int pos)
+        {
+            if (Inventory.CursorSlot.Type != ItemType.None) return;
+            InvSlot item = crafter.OutputStorage.GetItem(pos);
+            crafter.OutputStorage.SetItem(new(ItemType.None, 0), pos);
+            Inventory.SetCursorSlot(item.Type, item.Amount);
         }
 
         public void OpenEntity(Vector2Int pos)

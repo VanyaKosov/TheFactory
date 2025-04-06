@@ -156,7 +156,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void SetCursorItem(object sender, Inventory.SetCursorEventArgs args)
         {
-            print("Set cursor item to: " + args.Type + " " + args.Amount);
+            //print("Set cursor item to: " + args.Type + " " + args.Amount);
             cursorSlotRenderer.SetItem(args.Type, args.Amount);
         }
     }

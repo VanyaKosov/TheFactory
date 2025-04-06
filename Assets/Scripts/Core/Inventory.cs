@@ -119,8 +119,8 @@ namespace Dev.Kosov.Factory.Core
             AddItemToInventory(ItemType.Assembler_1, 50);
             AddItemToInventory(ItemType.Wood_chest, 200);
             AddItemToInventory(ItemType.Stone_furnace, 100);
-            AddItemToInventory(ItemType.Copper_ore, 200);
-            AddItemToInventory(ItemType.Iron_ore, 200);
+            AddItemToInventory(ItemType.Copper_ore, 405);
+            AddItemToInventory(ItemType.Iron_ore, 205);
         }
 
         private void OnInventorySlotChange(object sender, Storage.SlotCahangedEventArgs args)
