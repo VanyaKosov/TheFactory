@@ -11,6 +11,8 @@
         Copper_plate,
         Assembler_1,
         Wood_chest,
-        Stone_furnace
+        Stone_furnace,
+        Copper_wire,
+        Simple_circuit
     }
 }

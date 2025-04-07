@@ -19,6 +19,8 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite Assembler1;
         public Sprite WoodChest;
         public Sprite StoneFurnace;
+        public Sprite CopperWire;
+        public Sprite SimpleCircuit;
 
         [Header("Entity Sprites")]
         public Sprite Assembler1Entity;
@@ -48,6 +50,8 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Assembler_1, Assembler1);
             itemTypeToSprite.Add(ItemType.Wood_chest, WoodChest);
             itemTypeToSprite.Add(ItemType.Stone_furnace, StoneFurnace);
+            itemTypeToSprite.Add(ItemType.Copper_wire, CopperWire);
+            itemTypeToSprite.Add(ItemType.Simple_circuit, SimpleCircuit);
 
             // Entities
             entityTypeToSprite.Add(EntityType.Assembler1, Assembler1Entity);
@@ -88,8 +92,6 @@ namespace Dev.Kosov.Factory.Graphics
         {
             Sprite[] sprites = oreToSprite[type];
 
-            //int idx = sprites.Length - 1 - (int)(sprites.Length / 100f * richnessPercent);
-            //idx -= idx % 8;
             int idx = GetOreRichnessLevel(richnessPercent, sprites.Length);
             idx += UnityEngine.Random.Range(0, oreVariantsPerRichnessLevel);
 

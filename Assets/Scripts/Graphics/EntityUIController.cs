@@ -162,7 +162,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OnChangeRecipeClick()
         {
-            print("Change recipe");
+            //print("Change recipe");
             GenerateRecipeChoicePanel();
         }
 

@@ -172,6 +172,8 @@ MonoBehaviour:
   Assembler1: {fileID: -3960403711501517520, guid: e1ab9f470705df741b81ba3c53129903, type: 3}
   WoodChest: {fileID: -7832606381233642770, guid: 48e45ede799697e4e9660e99609b29ce, type: 3}
   StoneFurnace: {fileID: -2036658041419098786, guid: a48ab4c38ee54814d9b8e8f5ddd93c64, type: 3}
+  CopperWire: {fileID: -5422338261286329985, guid: a9a97a3b7b9e67045ae62e70eb8dab44, type: 3}
+  SimpleCircuit: {fileID: 3237213998755575852, guid: b7174164f99bd9e499cc6198cdb80b42, type: 3}
   Assembler1Entity: {fileID: -3960403711501517520, guid: 1811cef6610451642b3d1a4965419f1e, type: 3}
   WoodChestEntity: {fileID: 21300000, guid: f8a817942ecbae346a0c15652d01786f, type: 3}
   StoneFurnaceEntity: {fileID: 21300000, guid: 47ee55e678be25942beaea04cf94a733, type: 3}

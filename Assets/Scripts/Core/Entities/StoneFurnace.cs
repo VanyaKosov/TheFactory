@@ -21,24 +21,25 @@ namespace Dev.Kosov.Factory.Core.Entities
         override internal List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
-            Storage inputSorage = crafter.InputStorage;
-            for (int x = 0; x < inputSorage.Width; x++)
+            items.AddRange(crafter.GetComponents());
+            /*Storage inputStorage = crafter.InputStorage;
+            for (int x = 0; x < inputStorage.Width; x++)
             {
-                for (int y = 0; y < inputSorage.Height; y++)
+                for (int y = 0; y < inputStorage.Height; y++)
                 {
-                    items.Add(inputSorage.GetItem(new(x, y)));
+                    items.Add(inputStorage.GetItem(new(x, y)));
                 }
             }
 
-            Storage outputSorage = crafter.OutputStorage;
-            for (int x = 0; x < outputSorage.Width; x++)
+            Storage outputStorage = crafter.OutputStorage;
+            for (int x = 0; x < outputStorage.Width; x++)
             {
-                for (int y = 0; y < outputSorage.Height; y++)
+                for (int y = 0; y < outputStorage.Height; y++)
                 {
-                    items.Add(outputSorage.GetItem(new(x, y)));
+                    items.Add(outputStorage.GetItem(new(x, y)));
                 }
 
-            }
+            }*/
 
             return items;
         }

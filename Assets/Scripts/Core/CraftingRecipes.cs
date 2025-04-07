@@ -19,13 +19,13 @@ namespace Dev.Kosov.Factory.Core
                 (
                     new InvSlot[] { new(ItemType.Copper_ore, 1) },
                     new InvSlot[] { new(ItemType.Copper_plate, 1) },
-                    2f // 2f
+                    2f 
                 )
             },
             {
                 RecipeType.Mine_iron_ore,
                 (
-                    new InvSlot[] { new() },
+                    new InvSlot[] { },
                     new InvSlot[] { new(ItemType.Iron_ore, 1) },
                     1f
                 )
@@ -33,8 +33,24 @@ namespace Dev.Kosov.Factory.Core
             {
                 RecipeType.Mine_copper_ore,
                 (
-                    new InvSlot[] { new() },
+                    new InvSlot[] { },
                     new InvSlot[] { new(ItemType.Copper_ore, 1) },
+                    1f
+                )
+            },
+            {
+                RecipeType.Make_copper_wire,
+                (
+                    new InvSlot[] { new(ItemType.Copper_plate, 2 ) },
+                    new InvSlot[] { new(ItemType.Copper_wire, 1) },
+                    1f
+                )
+            },
+            {
+                RecipeType.Make_simple_circuit,
+                (
+                    new InvSlot[] { new(ItemType.Copper_wire, 2 ), new(ItemType.Iron_plate, 1) },
+                    new InvSlot[] { new(ItemType.Simple_circuit, 1) },
                     1f
                 )
             }

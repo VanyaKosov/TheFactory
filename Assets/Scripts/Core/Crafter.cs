@@ -54,6 +54,31 @@ namespace Dev.Kosov.Factory.Core
             timeStarted = time;
         }
 
+        internal List<InvSlot> GetComponents()
+        {
+            List<InvSlot> items = new();
+            Storage inputStorage = InputStorage;
+            for (int x = 0; x < inputStorage.Width; x++)
+            {
+                for (int y = 0; y < inputStorage.Height; y++)
+                {
+                    items.Add(inputStorage.GetItem(new(x, y)));
+                }
+            }
+
+            Storage outputStorage = OutputStorage;
+            for (int x = 0; x < outputStorage.Width; x++)
+            {
+                for (int y = 0; y < outputStorage.Height; y++)
+                {
+                    items.Add(outputStorage.GetItem(new(x, y)));
+                }
+
+            }
+
+            return items;
+        }
+
         internal void UpdateState()
         {
             time = Time.time;
