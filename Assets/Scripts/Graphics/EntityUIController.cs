@@ -115,7 +115,6 @@ namespace Dev.Kosov.Factory.Graphics
             recipeChoiceScreen = back;
             RectTransform rectTransform = back.GetComponent<RectTransform>();
             rectTransform.anchoredPosition = crafterUIRectTransform.anchoredPosition + recipeChoiceScreenOffset;
-            print(crafterUIRectTransform.anchoredPosition + " " + rectTransform.anchoredPosition);
             rectTransform.sizeDelta = new(
                 slotSize * width + spaceBetweenSlots * (width + 1),
                 slotSize * height + spaceBetweenSlots * (height + 1));
@@ -133,7 +132,6 @@ namespace Dev.Kosov.Factory.Graphics
                 {
                     if (slotsCreated == numRecipes) return;
 
-
                     Vector3 worldPos = new(x * (slotSize + spaceBetweenSlots) - xOffset,
                         y * (slotSize + spaceBetweenSlots) - yOffset);
                     GameObject slot = Instantiate(RecipeUISlotPrefab, worldPos, Quaternion.identity, back.transform);
@@ -148,7 +146,8 @@ namespace Dev.Kosov.Factory.Graphics
                     slotRenderer.SetItem(recipe.outputs[0].Type, recipe.outputs[0].Amount);
 
                     Button button = slot.GetComponent<Button>();
-                    button.onClick.AddListener(() => ChosenRecipe(crafter.AvailableRecipes[slotsCreated]));
+                    RecipeType recipeType = crafter.AvailableRecipes[slotsCreated];
+                    button.onClick.AddListener(() => ChosenRecipe(recipeType));
 
                     slotsCreated++;
                 }
