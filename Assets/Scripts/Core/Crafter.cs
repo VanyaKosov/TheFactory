@@ -1,21 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
     public class Crafter
     {
-        private readonly List<RecipeType> availableRecipes;
         private float timeStarted;
         private float time;
         private RecipeType CurrentRecipe { get; set; } = RecipeType.None;
 
+        public readonly List<RecipeType> AvailableRecipes;
         public readonly Storage InputStorage = new(6, 1);
         public readonly Storage OutputStorage = new(6, 1);
 
         internal Crafter(List<RecipeType> availableRecipes)
         {
-            this.availableRecipes = availableRecipes;
+            AvailableRecipes = availableRecipes;
         }
 
         public float GetPercentComplete()
@@ -44,8 +46,10 @@ namespace Dev.Kosov.Factory.Core
             return recipe.outputs[pos.x].Type;
         }
 
-        internal void ChangeRecipe(RecipeType recipe)
+        public void ChangeRecipe(RecipeType recipe)
         {
+            if (!AvailableRecipes.Any(a => a == recipe)) throw new Exception("Tried changing to an unsupported recipe");
+
             CurrentRecipe = recipe;
             timeStarted = time;
         }

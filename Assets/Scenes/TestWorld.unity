@@ -2205,6 +2205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca5ed8586a59644083a90994e19afc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Catalogs: {fileID: 334683}
+  RecipeUIBackPrefab: {fileID: 3648267955918465723, guid: 548cca2a4e9b21940a65403bb5251d43, type: 3}
+  RecipeUISlotPrefab: {fileID: 5853213013112112345, guid: 9c39f07773726f046bdd6c76a8a604b3, type: 3}
   UIController: {fileID: 1437781438}
   WorldController: {fileID: 1762007038}
   CrafterUI: {fileID: 3648267954618173596}

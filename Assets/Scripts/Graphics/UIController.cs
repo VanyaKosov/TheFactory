@@ -49,7 +49,7 @@ namespace Dev.Kosov.Factory.Graphics
                 inventory.Width, inventory.Height, OnInvSlotClick);
             hotbarSlotRenderers = GenerateSlotPanel(HotbarParent,
                 new(Canvas.transform.position.x, Canvas.transform.position.y * hotbarBottomHalfOffsetPercent),
-                inventory.HotbarWidth, inventory.HotbarHeight, OnHotarSlotClick);
+                inventory.HotbarWidth, inventory.HotbarHeight, OnHotbarSlotClick);
 
             inventory.SetInvItem += SetInvItem;
             inventory.SetHotbarItem += SetHotbarItem;
@@ -75,18 +75,18 @@ namespace Dev.Kosov.Factory.Graphics
                 slotSize * width + spaceBetweenSlots * (width + 1),
                 slotSize * height + spaceBetweenSlots * (height + 1));
 
-            float xOffest = (width * slotSize + (width - 1) * spaceBetweenSlots) / 2;
-            xOffest -= slotSize / 2;
+            float xOffset = (width * slotSize + (width - 1) * spaceBetweenSlots) / 2;
+            xOffset -= slotSize / 2;
 
-            float yOffest = (height * slotSize + (height - 1) * spaceBetweenSlots) / 2;
-            yOffest -= slotSize / 2;
+            float yOffset = (height * slotSize + (height - 1) * spaceBetweenSlots) / 2;
+            yOffset -= slotSize / 2;
 
             for (int x = 0; x < width; x++)
             {
                 for (int y = 0; y < height; y++)
                 {
-                    Vector3 worldPos = new(x * (slotSize + spaceBetweenSlots) - xOffest,
-                        y * (slotSize + spaceBetweenSlots) - yOffest);
+                    Vector3 worldPos = new(x * (slotSize + spaceBetweenSlots) - xOffset,
+                        y * (slotSize + spaceBetweenSlots) - yOffset);
                     GameObject slot = Instantiate(SlotPrefab, worldPos, Quaternion.identity, back.transform);
 
                     RectTransform slotRectTrans = slot.GetComponent<RectTransform>();
@@ -134,7 +134,7 @@ namespace Dev.Kosov.Factory.Graphics
             inventory.TryPutToInventory(pos);
         }
 
-        private void OnHotarSlotClick(Vector2Int pos)
+        private void OnHotbarSlotClick(Vector2Int pos)
         {
             inventory.TryPutToHotbar(pos);
         }
