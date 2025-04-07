@@ -6,6 +6,7 @@
         Tree,
         Assembler1,
         WoodChest,
-        StoneFurnace
+        StoneFurnace,
+        Electric_drill
     }
 }

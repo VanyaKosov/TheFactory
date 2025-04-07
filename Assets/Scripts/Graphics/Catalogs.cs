@@ -21,17 +21,20 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite StoneFurnace;
         public Sprite CopperWire;
         public Sprite SimpleCircuit;
+        public Sprite ElectricDrill;
 
         [Header("Entity Sprites")]
         public Sprite Assembler1Entity;
         public Sprite WoodChestEntity;
         public Sprite StoneFurnaceEntity;
+        public Sprite ElectricDrillEntity;
 
         [Header("Entity Prefabs")]
         public GameObject[] TreePrefabs;
         public GameObject Assembler1Prefab;
         public GameObject WoodChestPrefab;
         public GameObject StoneFurnacePrefab;
+        public GameObject ElectricDrillPrefab;
 
         private readonly Dictionary<ItemType, Sprite> itemTypeToSprite = new();
         private readonly Dictionary<EntityType, Sprite> entityTypeToSprite = new();
@@ -52,11 +55,13 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Stone_furnace, StoneFurnace);
             itemTypeToSprite.Add(ItemType.Copper_wire, CopperWire);
             itemTypeToSprite.Add(ItemType.Simple_circuit, SimpleCircuit);
+            itemTypeToSprite.Add(ItemType.Electric_drill, ElectricDrill);
 
             // Entities
             entityTypeToSprite.Add(EntityType.Assembler1, Assembler1Entity);
             entityTypeToSprite.Add(EntityType.WoodChest, WoodChestEntity);
             entityTypeToSprite.Add(EntityType.StoneFurnace, StoneFurnaceEntity);
+            entityTypeToSprite.Add(EntityType.Electric_drill, ElectricDrillEntity);
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);
@@ -118,6 +123,7 @@ namespace Dev.Kosov.Factory.Graphics
                 EntityType.Assembler1 => Assembler1Prefab,
                 EntityType.WoodChest => WoodChestPrefab,
                 EntityType.StoneFurnace => StoneFurnacePrefab,
+                EntityType.Electric_drill => ElectricDrillPrefab,
                 _ => throw new Exception("Missing entity prefab"),
             };
         }

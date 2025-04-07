@@ -13,6 +13,7 @@
         Wood_chest,
         Stone_furnace,
         Copper_wire,
-        Simple_circuit
+        Simple_circuit,
+        Electric_drill
     }
 }

@@ -17,7 +17,8 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Assembler_1, new(EntityType.Assembler1, 50) },
             { ItemType.Stone_furnace, new(EntityType.StoneFurnace, 50) },
             { ItemType.Copper_wire, new(EntityType.None, 200) },
-            { ItemType.Simple_circuit, new(EntityType.None, 200) }
+            { ItemType.Simple_circuit, new(EntityType.None, 200) },
+            { ItemType.Electric_drill, new(EntityType.Electric_drill, 50) }
         };
 
         public static Info Get(ItemType type)
