@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core.Entities
 {
-    internal class StoneFurnace : Entity, ICrafter
+    internal class ElectricDrill : Entity, ICrafter
     {
         private readonly Crafter crafter;
 
-        internal StoneFurnace(Rotation rotation, Vector2Int bottomLeftPos)
-            : base(rotation, bottomLeftPos, new() { new(ItemType.Stone_furnace, 1) }, EntityType.StoneFurnace)
+        internal ElectricDrill(Rotation rotation, Vector2Int bottomLeftPos) 
+            : base(rotation, bottomLeftPos, new() { new(ItemType.Electric_drill, 1) }, EntityType.Electric_drill)
         {
-            crafter = new(new() { RecipeType.Smelt_iron_ore, RecipeType.Smelt_copper_ore });
+            crafter = new(new() { RecipeType.Mine_iron_ore, RecipeType.Mine_copper_ore });
         }
 
         public Crafter GetCrafter()

@@ -2,6 +2,9 @@ using Dev.Kosov.Factory.Core;
 using UnityEngine.U2D;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 namespace Dev.Kosov.Factory.Graphics
 {
@@ -10,10 +13,13 @@ namespace Dev.Kosov.Factory.Graphics
         private const float idleAnim = 1f;
         private const float runningAnim = 2f;
         private const float miningAnim = 3f;
+        private readonly List<RaycastResult> UIObjectsUnderMouse = new();
+        private PointerEventData clickData;
         private Vector2 prevMoveVector = new(0, 1);
         private World world;
         private Inventory inventory;
 
+        public GraphicRaycaster Raycaster;
         public UserInput UserInput;
         public Camera Camera;
         public EntityPlacer EntityPlacer;
@@ -32,6 +38,11 @@ namespace Dev.Kosov.Factory.Graphics
             world = WorldController.World;
             inventory = world.Inventory;
             UserInput.PrimaryInput += OnPrimaryInput;
+        }
+
+        void Start()
+        {
+            clickData = new(EventSystem.current);
         }
 
         void FixedUpdate()
@@ -110,9 +121,18 @@ namespace Dev.Kosov.Factory.Graphics
                 MaxZoom);
         }
 
+        private void UpdateRaycaster()
+        {
+            clickData.position = Input.mousePosition;
+            UIObjectsUnderMouse.Clear();
+            Raycaster.Raycast(clickData, UIObjectsUnderMouse);
+        }
+
         private void OnPrimaryInput(object sender, EventArgs args)
         {
             Vector2 mousePos = Camera.ScreenToWorldPoint(Input.mousePosition);
+            UpdateRaycaster();
+            if (UIObjectsUnderMouse.Count > 0) return;
             world.OpenEntity(WorldController.WorldToMapPos(mousePos));
         }
     }

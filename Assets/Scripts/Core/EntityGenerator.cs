@@ -14,6 +14,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
                 EntityType.Assembler1 => new Assembler1(Rotation.Up, pos),
                 EntityType.WoodChest => new WoodChest(Rotation.Up, pos),
                 EntityType.StoneFurnace => new StoneFurnace(Rotation.Up, pos),
+                EntityType.Electric_drill => new ElectricDrill(Rotation.Up, pos),
                 _ => throw new Exception("Missing entity class"),
             };
         }

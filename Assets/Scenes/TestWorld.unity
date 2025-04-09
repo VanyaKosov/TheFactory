@@ -174,9 +174,11 @@ MonoBehaviour:
   StoneFurnace: {fileID: -2036658041419098786, guid: a48ab4c38ee54814d9b8e8f5ddd93c64, type: 3}
   CopperWire: {fileID: -5422338261286329985, guid: a9a97a3b7b9e67045ae62e70eb8dab44, type: 3}
   SimpleCircuit: {fileID: 3237213998755575852, guid: b7174164f99bd9e499cc6198cdb80b42, type: 3}
+  ElectricDrill: {fileID: 1066696897281387259, guid: 8c544e3f017b1774f9f0daeb033a3fc7, type: 3}
   Assembler1Entity: {fileID: -3960403711501517520, guid: 1811cef6610451642b3d1a4965419f1e, type: 3}
   WoodChestEntity: {fileID: 21300000, guid: f8a817942ecbae346a0c15652d01786f, type: 3}
   StoneFurnaceEntity: {fileID: 21300000, guid: 47ee55e678be25942beaea04cf94a733, type: 3}
+  ElectricDrillEntity: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   TreePrefabs:
   - {fileID: 5358693995335720704, guid: 513f030923e1f08418d660ebbf613872, type: 3}
   - {fileID: 37130282111523190, guid: c3e0c890bd1272144a8615ade07d2044, type: 3}
@@ -189,6 +191,7 @@ MonoBehaviour:
   Assembler1Prefab: {fileID: 8044838345107808686, guid: e47bf3027286e084f9c8ac7bb69545f7, type: 3}
   WoodChestPrefab: {fileID: 7709493752874064309, guid: efab51a3e14f63e40b5d9340e283e2cd, type: 3}
   StoneFurnacePrefab: {fileID: 3747669906638790718, guid: 03baf75f2146a274dbacc8398a540273, type: 3}
+  ElectricDrillPrefab: {fileID: 1687413848384364277, guid: d7562b10f7da863438663af100fb046c, type: 3}
 --- !u!1 &31069430
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,6 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ffd086e66fe1d74eadba07f1071b42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Raycaster: {fileID: 2042186223}
   UserInput: {fileID: 565484155}
   Camera: {fileID: 1371078440}
   EntityPlacer: {fileID: 2082821265}
