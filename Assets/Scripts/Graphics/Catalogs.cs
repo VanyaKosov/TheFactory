@@ -24,17 +24,23 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite ElectricDrill;
 
         [Header("Entity Sprites")]
-        public Sprite Assembler1Entity;
-        public Sprite WoodChestEntity;
-        public Sprite StoneFurnaceEntity;
-        public Sprite ElectricDrillEntity;
+        public Sprite Assembler1Ghost;
+        public Sprite WoodChestGhost;
+        public Sprite StoneFurnaceGhost;
+        public Sprite ElectricDrillNGhost;
+        public Sprite ElectricDrillEGhost;
+        public Sprite ElectricDrillSGhost;
+        public Sprite ElectricDrillWGhost;
 
         [Header("Entity Prefabs")]
         public GameObject[] TreePrefabs;
         public GameObject Assembler1Prefab;
         public GameObject WoodChestPrefab;
         public GameObject StoneFurnacePrefab;
-        public GameObject ElectricDrillPrefab;
+        public GameObject ElectricDrillNPrefab;
+        public GameObject ElectricDrillEPrefab;
+        public GameObject ElectricDrillSPrefab;
+        public GameObject ElectricDrillWPrefab;
 
         private readonly Dictionary<ItemType, Sprite> itemTypeToSprite = new();
         private readonly Dictionary<EntityType, Sprite> entityTypeToSprite = new();
@@ -58,10 +64,10 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Electric_drill, ElectricDrill);
 
             // Entities
-            entityTypeToSprite.Add(EntityType.Assembler1, Assembler1Entity);
-            entityTypeToSprite.Add(EntityType.WoodChest, WoodChestEntity);
-            entityTypeToSprite.Add(EntityType.StoneFurnace, StoneFurnaceEntity);
-            entityTypeToSprite.Add(EntityType.Electric_drill, ElectricDrillEntity);
+            entityTypeToSprite.Add(EntityType.Assembler1, Assembler1Ghost);
+            entityTypeToSprite.Add(EntityType.WoodChest, WoodChestGhost);
+            entityTypeToSprite.Add(EntityType.StoneFurnace, StoneFurnaceGhost);
+            entityTypeToSprite.Add(EntityType.Electric_drill, ElectricDrillNGhost);
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);
@@ -123,7 +129,7 @@ namespace Dev.Kosov.Factory.Graphics
                 EntityType.Assembler1 => Assembler1Prefab,
                 EntityType.WoodChest => WoodChestPrefab,
                 EntityType.StoneFurnace => StoneFurnacePrefab,
-                EntityType.Electric_drill => ElectricDrillPrefab,
+                EntityType.Electric_drill => ElectricDrillNPrefab,
                 _ => throw new Exception("Missing entity prefab"),
             };
         }

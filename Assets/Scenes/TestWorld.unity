@@ -175,10 +175,13 @@ MonoBehaviour:
   CopperWire: {fileID: -5422338261286329985, guid: a9a97a3b7b9e67045ae62e70eb8dab44, type: 3}
   SimpleCircuit: {fileID: 3237213998755575852, guid: b7174164f99bd9e499cc6198cdb80b42, type: 3}
   ElectricDrill: {fileID: 1066696897281387259, guid: 8c544e3f017b1774f9f0daeb033a3fc7, type: 3}
-  Assembler1Entity: {fileID: -3960403711501517520, guid: 1811cef6610451642b3d1a4965419f1e, type: 3}
-  WoodChestEntity: {fileID: 21300000, guid: f8a817942ecbae346a0c15652d01786f, type: 3}
-  StoneFurnaceEntity: {fileID: 21300000, guid: 47ee55e678be25942beaea04cf94a733, type: 3}
-  ElectricDrillEntity: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Assembler1Ghost: {fileID: -3960403711501517520, guid: 1811cef6610451642b3d1a4965419f1e, type: 3}
+  WoodChestGhost: {fileID: 21300000, guid: f8a817942ecbae346a0c15652d01786f, type: 3}
+  StoneFurnaceGhost: {fileID: 21300000, guid: 47ee55e678be25942beaea04cf94a733, type: 3}
+  ElectricDrillNGhost: {fileID: 21300000, guid: 726c3156022d1d44eaaa6b08677dba34, type: 3}
+  ElectricDrillEGhost: {fileID: 21300000, guid: 5ec78591088a8014d9382416d6f16539, type: 3}
+  ElectricDrillSGhost: {fileID: 21300000, guid: 85e37989fec203445b22c3a0bf722a5d, type: 3}
+  ElectricDrillWGhost: {fileID: 21300000, guid: 39a9fcfe01021b7419c3a631c525f289, type: 3}
   TreePrefabs:
   - {fileID: 5358693995335720704, guid: 513f030923e1f08418d660ebbf613872, type: 3}
   - {fileID: 37130282111523190, guid: c3e0c890bd1272144a8615ade07d2044, type: 3}
@@ -191,7 +194,10 @@ MonoBehaviour:
   Assembler1Prefab: {fileID: 8044838345107808686, guid: e47bf3027286e084f9c8ac7bb69545f7, type: 3}
   WoodChestPrefab: {fileID: 7709493752874064309, guid: efab51a3e14f63e40b5d9340e283e2cd, type: 3}
   StoneFurnacePrefab: {fileID: 3747669906638790718, guid: 03baf75f2146a274dbacc8398a540273, type: 3}
-  ElectricDrillPrefab: {fileID: 1687413848384364277, guid: d7562b10f7da863438663af100fb046c, type: 3}
+  ElectricDrillNPrefab: {fileID: 1687413848384364277, guid: d7562b10f7da863438663af100fb046c, type: 3}
+  ElectricDrillEPrefab: {fileID: 4105317139800762013, guid: 5299ec0f04e93354fb5152c876d835e3, type: 3}
+  ElectricDrillSPrefab: {fileID: 9222653842015515710, guid: 53b0e62bf76abcc4596fbb68709e6bd1, type: 3}
+  ElectricDrillWPrefab: {fileID: 1324555312680241066, guid: 44d776dbb9632e047b0ea12a61797a78, type: 3}
 --- !u!1 &31069430
 GameObject:
   m_ObjectHideFlags: 0
