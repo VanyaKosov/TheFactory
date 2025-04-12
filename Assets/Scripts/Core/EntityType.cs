@@ -7,6 +7,7 @@
         Assembler1,
         WoodChest,
         StoneFurnace,
-        Electric_drill
+        Electric_drill,
+        Inserter
     }
 }

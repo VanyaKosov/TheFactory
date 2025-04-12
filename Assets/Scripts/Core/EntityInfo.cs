@@ -11,7 +11,8 @@ namespace Dev.Kosov.Factory.Core
             { EntityType.Assembler1, new(ItemType.Assembler_1, new(3, 3)) },
             { EntityType.WoodChest, new(ItemType.Wood_chest, new(1, 1)) },
             { EntityType.StoneFurnace, new(ItemType.Stone_furnace, new(2, 2)) },
-            { EntityType.Electric_drill, new(ItemType.Electric_drill, new(3, 3)) }
+            { EntityType.Electric_drill, new(ItemType.Electric_drill, new(3, 3)) },
+            { EntityType.Inserter, new(ItemType.Inserter, new(1, 1)) }
         };
 
         public static Info Get(EntityType type)

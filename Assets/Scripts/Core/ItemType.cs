@@ -14,6 +14,7 @@
         Stone_furnace,
         Copper_wire,
         Simple_circuit,
-        Electric_drill
+        Electric_drill,
+        Inserter
     }
 }
