@@ -23,7 +23,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite SimpleCircuit;
         public Sprite ElectricDrill;
 
-        [Header("Entity Sprites")]
+        [Header("Entity Ghost Sprites")]
         public Sprite Assembler1Ghost;
         public Sprite WoodChestGhost;
         public Sprite StoneFurnaceGhost;
@@ -43,7 +43,7 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject ElectricDrillWPrefab;
 
         private readonly Dictionary<ItemType, Sprite> itemTypeToSprite = new();
-        private readonly Dictionary<EntityType, Sprite> entityTypeToSprite = new();
+        //private readonly Dictionary<EntityType, Sprite> entityTypeToSprite = new();
         private readonly Dictionary<BackType, Sprite[]> backTypeToSprite = new();
         private readonly Dictionary<OreType, Sprite[]> oreToSprite = new();
 
@@ -63,11 +63,11 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Simple_circuit, SimpleCircuit);
             itemTypeToSprite.Add(ItemType.Electric_drill, ElectricDrill);
 
-            // Entities
+            /*// Ghosts
             entityTypeToSprite.Add(EntityType.Assembler1, Assembler1Ghost);
             entityTypeToSprite.Add(EntityType.WoodChest, WoodChestGhost);
             entityTypeToSprite.Add(EntityType.StoneFurnace, StoneFurnaceGhost);
-            entityTypeToSprite.Add(EntityType.Electric_drill, ElectricDrillNGhost);
+            entityTypeToSprite.Add(EntityType.Electric_drill, ElectricDrillNGhost);*/
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);
@@ -87,9 +87,28 @@ namespace Dev.Kosov.Factory.Graphics
             return itemTypeToSprite[type];
         }
 
-        public Sprite GetEntitySprite(EntityType type)
+        //public Sprite GetEntitySprite(EntityType type)
+        //{
+        //    return entityTypeToSprite[type];
+        //}
+
+        public Sprite GetEntitySprite(EntityType type, Rotation rotation)
         {
-            return entityTypeToSprite[type];
+            return type switch
+            {
+                EntityType.Assembler1 => Assembler1Ghost,
+                EntityType.WoodChest => WoodChestGhost,
+                EntityType.StoneFurnace => StoneFurnaceGhost,
+                EntityType.Electric_drill => rotation switch
+                {
+                    Rotation.Up => ElectricDrillNGhost,
+                    Rotation.Right => ElectricDrillEGhost,
+                    Rotation.Down => ElectricDrillSGhost,
+                    Rotation.Left => ElectricDrillWGhost,
+                    _ => throw new Exception("Unknown rotation")
+                },
+                _ => throw new Exception("Missing entity ghost")
+            };
         }
 
         public Sprite GetRandomBackSprite(BackType type)
@@ -121,7 +140,20 @@ namespace Dev.Kosov.Factory.Graphics
             return GetRandomOreSprite(type, newRichnessPercent);
         }
 
-        public GameObject EntityTypeToPrefab(EntityType type)
+        //public GameObject EntityTypeToPrefab(EntityType type)
+        //{
+        //    return type switch
+        //    {
+        //        EntityType.Tree => TreePrefabs[UnityEngine.Random.Range(0, TreePrefabs.Length)],
+        //        EntityType.Assembler1 => Assembler1Prefab,
+        //        EntityType.WoodChest => WoodChestPrefab,
+        //        EntityType.StoneFurnace => StoneFurnacePrefab,
+        //        EntityType.Electric_drill => ElectricDrillNPrefab,
+        //        _ => throw new Exception("Missing entity prefab"),
+        //    };
+        //}
+
+        public GameObject EntityTypeToPrefab(EntityType type, Rotation rotation)
         {
             return type switch
             {
@@ -129,8 +161,15 @@ namespace Dev.Kosov.Factory.Graphics
                 EntityType.Assembler1 => Assembler1Prefab,
                 EntityType.WoodChest => WoodChestPrefab,
                 EntityType.StoneFurnace => StoneFurnacePrefab,
-                EntityType.Electric_drill => ElectricDrillNPrefab,
-                _ => throw new Exception("Missing entity prefab"),
+                EntityType.Electric_drill => rotation switch
+                {
+                    Rotation.Up => ElectricDrillNPrefab,
+                    Rotation.Right => ElectricDrillEPrefab,
+                    Rotation.Down => ElectricDrillSPrefab,
+                    Rotation.Left => ElectricDrillWPrefab,
+                    _ => throw new Exception("Unknown rotation")
+                },
+                _ => throw new Exception("Missing entity prefab")
             };
         }
 

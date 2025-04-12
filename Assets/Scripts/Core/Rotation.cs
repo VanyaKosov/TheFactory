@@ -1,10 +1,10 @@
 ﻿namespace Dev.Kosov.Factory.Core
 {
-    internal enum Rotation
+    public enum Rotation
     {
         Up,
-        down,
-        left,
-        right
+        Right,
+        Down,
+        Left
     }
 }

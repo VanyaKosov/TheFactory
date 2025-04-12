@@ -21,6 +21,7 @@ namespace Dev.Kosov.Factory.Graphics
         private World world;
         private Inventory inventory;
         private ItemType hologramItemType;
+        private Rotation currentRotation = Rotation.Up;
 
         public UserInput UserInput;
         public ActionType ActionType { get; private set; }
@@ -47,6 +48,7 @@ namespace Dev.Kosov.Factory.Graphics
             world.OreSpawned += SpawnOre;
             inventory.SetCursorItem += SetHologramItem;
             UserInput.SecondaryInput += OnSecondaryInput;
+            UserInput.RotateEntity += OnRotateEntity;
         }
 
         void Start()
@@ -74,7 +76,7 @@ namespace Dev.Kosov.Factory.Graphics
 
             BuildingHologram.transform.position = pos;
 
-            hologramRenderer.sprite = Catalogs.GetEntitySprite(ItemInfo.Get(hologramItemType).EntityType);
+            hologramRenderer.sprite = Catalogs.GetEntitySprite(ItemInfo.Get(hologramItemType).EntityType, currentRotation);
             BuildingHologram.SetActive(true);
         }
 
@@ -85,7 +87,7 @@ namespace Dev.Kosov.Factory.Graphics
             UpdateRaycaster();
             if (UIObjectsUnderMouse.Count != 0) return;
 
-            world.PlaceEntity(DecenterEntityPos(centerPos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size));
+            world.PlaceEntity(DecenterEntityPos(centerPos, EntityInfo.Get(ItemInfo.Get(hologramItemType).EntityType).Size), currentRotation);
         }
 
         private Vector2 CenterEntityPos(Vector2Int bottomLeftPos, Vector2Int size)
@@ -163,7 +165,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
         {
-            GameObject prefab = Catalogs.EntityTypeToPrefab(args.Type);
+            GameObject prefab = Catalogs.EntityTypeToPrefab(args.Type, args.Rotation);
             Vector2 pos = CenterEntityPos(args.Pos, args.Size);
             GameObject instance = Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
             entities.Add(args.EntityID, instance);
@@ -210,6 +212,27 @@ namespace Dev.Kosov.Factory.Graphics
         private void OnSecondaryInput(object sender, EventArgs args)
         {
             StartCoroutine(TryRemoveEntity());
+        }
+
+        private void OnRotateEntity(object sender, EventArgs args)
+        {
+            switch (currentRotation)
+            {
+                case Rotation.Up:
+                    currentRotation = Rotation.Right;
+                    return;
+                case Rotation.Right:
+                    currentRotation = Rotation.Down;
+                    return;
+                case Rotation.Down:
+                    currentRotation = Rotation.Left;
+                    return;
+                case Rotation.Left:
+                    currentRotation = Rotation.Up;
+                    return;
+                default:
+                    throw new Exception("Unknown rotation");
+            }
         }
     }
 }

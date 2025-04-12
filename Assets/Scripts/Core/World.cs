@@ -99,13 +99,13 @@ namespace Dev.Kosov.Factory.Core
             ExpandMap(roundedPos);
         }
 
-        public void PlaceEntity(Vector2Int bottomLeftPos)
+        public void PlaceEntity(Vector2Int bottomLeftPos, Rotation rotation)
         {
             if (Inventory.CursorSlot.Amount <= 0) return;
             if (!ItemInfo.Get(Inventory.CursorSlot.Type).Placable) return;
 
             EntityType type = ItemInfo.Get(Inventory.CursorSlot.Type).EntityType;
-            CreateEntity(bottomLeftPos, type);
+            CreateEntity(bottomLeftPos, type, rotation);
         }
 
         public Tile GetTileInfo(Vector2Int pos)
@@ -203,9 +203,9 @@ namespace Dev.Kosov.Factory.Core
             return oreType;
         }
 
-        private void CreateEntity(Vector2Int bottomLeftPos, EntityType type)
+        private void CreateEntity(Vector2Int bottomLeftPos, EntityType type, Rotation rotation)
         {
-            Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos);
+            Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos, rotation);
             Vector2Int size = EntityInfo.Get(entity.type).Size;
             if (!CheckAvailability(entity.bottomLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
@@ -219,7 +219,7 @@ namespace Dev.Kosov.Factory.Core
                 }
             }
 
-            EntityCreated?.Invoke(this, new(bottomLeftPos, type, size, entityID));
+            EntityCreated?.Invoke(this, new(bottomLeftPos, type, size, rotation, entityID));
         }
 
         private void ExpandMap(Vector2Int newPlayerPos)
@@ -336,7 +336,7 @@ namespace Dev.Kosov.Factory.Core
                 }
             }
 
-            CreateEntity(bottomLeftPos, EntityType.Tree);
+            CreateEntity(bottomLeftPos, EntityType.Tree, Rotation.Up);
         }
 
         private void GenInitialWorld(int radius)
@@ -404,13 +404,15 @@ namespace Dev.Kosov.Factory.Core
             public readonly Vector2Int Pos;
             public readonly EntityType Type;
             public readonly Vector2Int Size;
+            public readonly Rotation Rotation;
             public readonly int EntityID;
 
-            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type, Vector2Int size, int entityID)
+            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type, Vector2Int size, Rotation rotation, int entityID)
             {
                 Pos = pos;
                 Type = type;
                 Size = size;
+                Rotation = rotation;
                 EntityID = entityID;
             }
         }
