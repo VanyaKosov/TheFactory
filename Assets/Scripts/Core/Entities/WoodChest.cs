@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Dev.Kosov.Factory.Core.Entities
+namespace Dev.Kosov.Factory.Core
 {
     internal class WoodChest : Entity
     {

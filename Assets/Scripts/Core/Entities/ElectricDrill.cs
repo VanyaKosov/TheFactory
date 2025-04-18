@@ -1,27 +1,27 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dev.Kosov.Factory.Core.Entities
+namespace Dev.Kosov.Factory.Core
 {
     internal class ElectricDrill : Entity, ICrafter
     {
-        private readonly Crafter crafter;
+        private readonly Crafter Crafter;
 
-        internal ElectricDrill(Rotation rotation, Vector2Int bottomLeftPos) 
+        internal ElectricDrill(Rotation rotation, Vector2Int bottomLeftPos)
             : base(rotation, bottomLeftPos, new() { new(ItemType.Electric_drill, 1) }, EntityType.Electric_drill)
         {
-            crafter = new(new() { RecipeType.Mine_iron_ore, RecipeType.Mine_copper_ore });
+            Crafter = new(new() { RecipeType.Mine_iron_ore, RecipeType.Mine_copper_ore });
         }
 
         public Crafter GetCrafter()
         {
-            return crafter;
+            return Crafter;
         }
 
         override internal List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
-            items.AddRange(crafter.GetComponents());
+            items.AddRange(Crafter.GetComponents());
 
             return items;
         }

@@ -160,6 +160,7 @@ namespace Dev.Kosov.Factory.Core
                 if (entity is ICrafter crafter)
                 {
                     crafter.GetCrafter().UpdateState();
+                    return;
                 }
             }
         }

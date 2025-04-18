@@ -1,27 +1,27 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dev.Kosov.Factory.Core.Entities
+namespace Dev.Kosov.Factory.Core
 {
     internal class Assembler1 : Entity, ICrafter
     {
-        private readonly Crafter crafter;
+        private readonly Crafter Crafter;
 
         internal Assembler1(Rotation rotation, Vector2Int bottomLeftPos)
             : base(rotation, bottomLeftPos, new() { new(ItemType.Assembler_1, 1) }, EntityType.Assembler1)
         {
-            crafter = new(new() { RecipeType.Make_copper_wire, RecipeType.Make_simple_circuit } );
+            Crafter = new(new() { RecipeType.Make_copper_wire, RecipeType.Make_simple_circuit });
         }
 
         public Crafter GetCrafter()
         {
-            return crafter;
+            return Crafter;
         }
 
         override internal List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
-            items.AddRange(crafter.GetComponents());
+            items.AddRange(Crafter.GetComponents());
 
             return items;
         }

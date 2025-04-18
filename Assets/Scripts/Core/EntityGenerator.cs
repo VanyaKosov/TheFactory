@@ -1,4 +1,4 @@
-﻿using Dev.Kosov.Factory.Core.Entities;
+﻿using Dev.Kosov.Factory.Core;
 using System;
 using UnityEngine;
 
