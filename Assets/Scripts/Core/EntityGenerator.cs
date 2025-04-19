@@ -6,7 +6,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
 {
     internal class EntityGenerator
     {
-        internal static Entity GenEntityInstance(EntityType type, Vector2Int pos, Rotation rotation)
+        internal static Entity GenEntityInstance(EntityType type, Vector2Int pos, Rotation rotation, Func<Vector2Int, Entity> getEntityAtPos)
         {
             return type switch
             {
@@ -15,7 +15,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
                 EntityType.WoodChest => new WoodChest(rotation, pos),
                 EntityType.StoneFurnace => new StoneFurnace(rotation, pos),
                 EntityType.Electric_drill => new ElectricDrill(rotation, pos),
-                EntityType.Inserter => new Inserter(rotation, pos),
+                EntityType.Inserter => new Inserter(rotation, pos, getEntityAtPos),
                 _ => throw new Exception("Missing entity class")
             };
         }

@@ -213,7 +213,7 @@ namespace Dev.Kosov.Factory.Core
 
         private void CreateEntity(Vector2Int bottomLeftPos, EntityType type, Rotation rotation)
         {
-            Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos, rotation);
+            Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos, rotation, GetEntityAtPos);
             Vector2Int size = EntityInfo.Get(entity.Type).Size;
             if (!CheckAvailability(entity.BottomLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
@@ -228,6 +228,13 @@ namespace Dev.Kosov.Factory.Core
             }
 
             EntityCreated?.Invoke(this, new(entity, bottomLeftPos, entityID));
+        }
+
+        private Entity GetEntityAtPos(Vector2Int pos)
+        {
+            int id = map[pos].EntityID;
+            if (id == -1) return null;
+            return entities[id];
         }
 
         private void ExpandMap(Vector2Int newPlayerPos)
