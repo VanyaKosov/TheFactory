@@ -98,6 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5107367999514645187}
   - component: {fileID: 7959240316273149321}
+  - component: {fileID: -3843998123664910330}
   m_Layer: 0
   m_Name: inserter-east
   m_TagString: Untagged
@@ -176,6 +177,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-3843998123664910330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2571336197939391678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe62c957d4680944bfb29a4bea643fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArmBase: {fileID: 1973433235989942327}
 --- !u!1 &7430001525750851343
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,12 @@ namespace Dev.Kosov.Factory.Core
             return Crafter;
         }
 
+        internal override void UpdateState()
+        {
+            base.UpdateState();
+            Crafter.UpdateState();
+        }
+
         override internal List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();

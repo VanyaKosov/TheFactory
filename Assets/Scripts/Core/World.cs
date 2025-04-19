@@ -80,7 +80,7 @@ namespace Dev.Kosov.Factory.Core
             Tile tile = map[pos];
             if (tile.EntityID == -1) return;
             Entity entity = entities[tile.EntityID];
-            if (entity.type == EntityType.Tree) return;
+            if (entity.Type == EntityType.Tree) return;
 
             if (entity is ICrafter crafter)
             {
@@ -115,7 +115,7 @@ namespace Dev.Kosov.Factory.Core
 
         public ActionType GetActionType(Vector2Int pos)
         {
-            if (map[pos].EntityID != -1 && entities[map[pos].EntityID].type == EntityType.Tree) return ActionType.ChopTree;
+            if (map[pos].EntityID != -1 && entities[map[pos].EntityID].Type == EntityType.Tree) return ActionType.ChopTree;
             if (map[pos].EntityID != -1) return ActionType.RemoveBuilding;
             if (map[pos].OreType != OreType.None) return ActionType.MineOre;
 
@@ -157,11 +157,18 @@ namespace Dev.Kosov.Factory.Core
         {
             foreach (Entity entity in entities.Values)
             {
-                if (entity is ICrafter crafter)
-                {
-                    crafter.GetCrafter().UpdateState();
-                    return;
-                }
+                entity.UpdateState();
+                //if (entity is ICrafter crafter)
+                //{
+                //    crafter.GetCrafter().UpdateState();
+                //    return;
+                //}
+
+                //if (entity is Inserter inserter)
+                //{
+                //    inserter.UpdateState();
+                //    return;
+                //}
             }
         }
 
@@ -173,10 +180,10 @@ namespace Dev.Kosov.Factory.Core
 
             Entity entity = entities[id];
             entities.Remove(id);
-            Vector2Int size = EntityInfo.Get(entity.type).Size;
-            for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
+            Vector2Int size = EntityInfo.Get(entity.Type).Size;
+            for (int x = entity.BottomLeftPos.x; x < entity.BottomLeftPos.x + size.x; x++)
             {
-                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.y + size.y; y++)
+                for (int y = entity.BottomLeftPos.y; y < entity.BottomLeftPos.y + size.y; y++)
                 {
                     Vector2Int newPos = new(x, y);
                     map[newPos].EntityID = -1;
@@ -207,20 +214,20 @@ namespace Dev.Kosov.Factory.Core
         private void CreateEntity(Vector2Int bottomLeftPos, EntityType type, Rotation rotation)
         {
             Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos, rotation);
-            Vector2Int size = EntityInfo.Get(entity.type).Size;
-            if (!CheckAvailability(entity.bottomLeftPos, size)) return;
+            Vector2Int size = EntityInfo.Get(entity.Type).Size;
+            if (!CheckAvailability(entity.BottomLeftPos, size)) return;
             int entityID = Tile.GenEntityID();
             entities.Add(entityID, entity);
 
-            for (int x = entity.bottomLeftPos.x; x < entity.bottomLeftPos.x + size.x; x++)
+            for (int x = entity.BottomLeftPos.x; x < entity.BottomLeftPos.x + size.x; x++)
             {
-                for (int y = entity.bottomLeftPos.y; y < entity.bottomLeftPos.y + size.y; y++)
+                for (int y = entity.BottomLeftPos.y; y < entity.BottomLeftPos.y + size.y; y++)
                 {
                     map[new(x, y)].EntityID = entityID;
                 }
             }
 
-            EntityCreated?.Invoke(this, new(bottomLeftPos, type, size, rotation, entityID));
+            EntityCreated?.Invoke(this, new(entity, bottomLeftPos, entityID));
         }
 
         private void ExpandMap(Vector2Int newPlayerPos)
@@ -402,18 +409,20 @@ namespace Dev.Kosov.Factory.Core
 
         public class EntityCreatedEventArgs : EventArgs
         {
+            public readonly Entity Entity;
             public readonly Vector2Int Pos;
-            public readonly EntityType Type;
-            public readonly Vector2Int Size;
-            public readonly Rotation Rotation;
+            //public readonly EntityType Type;
+            //public readonly Vector2Int Size;
+            //public readonly Rotation Rotation;
             public readonly int EntityID;
 
-            internal EntityCreatedEventArgs(Vector2Int pos, EntityType type, Vector2Int size, Rotation rotation, int entityID)
+            internal EntityCreatedEventArgs(Entity entity, Vector2Int pos, int entityID)
             {
+                Entity = entity;
                 Pos = pos;
-                Type = type;
-                Size = size;
-                Rotation = rotation;
+                //Type = type;
+                //Size = size;
+                //Rotation = rotation;
                 EntityID = entityID;
             }
         }

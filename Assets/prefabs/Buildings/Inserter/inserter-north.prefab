@@ -98,6 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3825321689635560906}
   - component: {fileID: 5213826384905283808}
+  - component: {fileID: 5367978489634249560}
   m_Layer: 0
   m_Name: inserter-north
   m_TagString: Untagged
@@ -176,6 +177,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5367978489634249560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6415357003142787029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe62c957d4680944bfb29a4bea643fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArmBase: {fileID: 2299560436982504818}
 --- !u!1 &6717828970629621883
 GameObject:
   m_ObjectHideFlags: 0

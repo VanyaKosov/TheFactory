@@ -165,9 +165,10 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void SpawnEntity(object sender, World.EntityCreatedEventArgs args)
         {
-            GameObject prefab = Catalogs.EntityTypeToPrefab(args.Type, args.Rotation);
-            Vector2 pos = CenterEntityPos(args.Pos, args.Size);
+            GameObject prefab = Catalogs.EntityTypeToPrefab(args.Entity.Type, args.Entity.Rotation);
+            Vector2 pos = CenterEntityPos(args.Pos, args.Entity.Size);
             GameObject instance = Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
+            instance.GetComponent<IEntityInitializer>()?.Init(args.Entity);
             entities.Add(args.EntityID, instance);
         }
 

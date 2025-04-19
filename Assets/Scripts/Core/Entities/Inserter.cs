@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
-    internal class Inserter : Entity
+    public class Inserter : Entity
     {
         private const float degreesPerSecond = 720f;
         private const float secondsPerCycle = 0.5f;
@@ -11,6 +11,7 @@ namespace Dev.Kosov.Factory.Core
         private float armDegrees; // 0 == take position, 180 == put position
         private float timeStarted;
         private float prevTime;
+        private InvSlot takenItem;
 
         internal readonly Vector2Int TakePos;
         internal readonly Vector2Int PutPos;
@@ -48,22 +49,24 @@ namespace Dev.Kosov.Factory.Core
             }
         }
 
-        internal void UpdateState()
+        override internal void UpdateState()
         {
-            float timeDiff = Time.time - prevTime;
+            base.UpdateState();
+            float currTime = Time.time;
+            float timeDiff = currTime - prevTime;
 
-            if (prevTime <= secondsPerCycle / 2 && Time.time > secondsPerCycle / 2)
+            if (prevTime <= secondsPerCycle / 2 && currTime > secondsPerCycle / 2)
             {
                 DropItem();
             }
 
-            if (Time.time - timeStarted >= secondsPerCycle) // Maybe take in the beginning instead of the end?
+            if (currTime - timeStarted >= secondsPerCycle) // Maybe take in the beginning instead of the end?
             {
                 TakeItem();
-                timeStarted = Time.time;
+                timeStarted = currTime;
             }
 
-            if (Time.time - timeStarted < secondsPerCycle / 2)
+            if (currTime - timeStarted < secondsPerCycle / 2)
             {
                 armDegrees += timeDiff * degreesPerSecond;
             }
@@ -71,9 +74,11 @@ namespace Dev.Kosov.Factory.Core
             {
                 armDegrees -= timeDiff * degreesPerSecond;
             }
+
+            prevTime = currTime;
         }
 
-        internal float GetTotalDegrees()
+        public float GetTotalDegrees()
         {
             return takePosDegrees + armDegrees;
         }

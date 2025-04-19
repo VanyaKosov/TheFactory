@@ -3,20 +3,29 @@ using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
-    internal class Entity
+    public class Entity
     {
         private readonly List<InvSlot> deconstructionComponents;
 
-        internal readonly Rotation rotation;
-        internal readonly Vector2Int bottomLeftPos;
-        internal readonly EntityType type;
+        public readonly Rotation Rotation;
+        public readonly Vector2Int BottomLeftPos;
+        public readonly EntityType Type;
+        public Vector2Int Size
+        {
+            get => EntityInfo.Get(Type).Size;
+        }
 
         internal Entity(Rotation rotation, Vector2Int bottomLeftPos, List<InvSlot> deconstructionComponents, EntityType type)
         {
-            this.rotation = rotation;
-            this.bottomLeftPos = bottomLeftPos;
-            this.type = type;
+            Rotation = rotation;
+            BottomLeftPos = bottomLeftPos;
+            Type = type;
             this.deconstructionComponents = deconstructionComponents;
+        }
+
+        virtual internal void UpdateState()
+        {
+            // Nothing to be here
         }
 
         virtual internal List<InvSlot> GetComponents()
