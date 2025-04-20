@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
-    internal class StoneFurnace : Entity, ICrafter
+    internal class StoneFurnace : Entity, ICrafter, ITakeable, IPuttable
     {
         private readonly Crafter Crafter;
 
@@ -30,6 +30,16 @@ namespace Dev.Kosov.Factory.Core
             items.AddRange(Crafter.GetComponents());
 
             return items;
+        }
+
+        InvSlot ITakeable.Take(int amount)
+        {
+            return Crafter.OutputStorage.AutoTake();
+        }
+
+        int IPuttable.Put(InvSlot item)
+        {
+            return Crafter.InputStorage.AutoPut(item.Type, item.Amount);
         }
     }
 }

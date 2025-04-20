@@ -2,7 +2,7 @@
 
 namespace Dev.Kosov.Factory.Core
 {
-    internal class WoodChest : Entity
+    internal class WoodChest : Entity, IPuttable, ITakeable
     {
         private readonly Storage storage = new(InvWidth, InvHeight);
 
@@ -13,6 +13,16 @@ namespace Dev.Kosov.Factory.Core
             : base(rotation, bottomLeftPos, new() { new(ItemType.Wood_chest, 1) }, EntityType.WoodChest)
         {
 
+        }
+
+        int IPuttable.Put(InvSlot item)
+        {
+            return storage.AutoPut(item.Type, item.Amount);
+        }
+
+        InvSlot ITakeable.Take(int amount)
+        {
+            return storage.AutoTake();
         }
     }
 }

@@ -42,10 +42,6 @@ namespace Dev.Kosov.Factory.Core
             if (items[pos.x, pos.y].Type == ItemType.None && inputSlot.Amount > 0)
             {
                 items[pos.x, pos.y] = new(inputSlot.Type, 0);
-                //items[pos.x, pos.y] = inputSlot; // Can overfill the slot
-                //SlotChanged?.Invoke(this, new(pos, items[pos.x, pos.y].Type, items[pos.x, pos.y].Amount));
-
-                //return 0;
             }
 
             if (items[pos.x, pos.y].Type != inputSlot.Type) return inputSlot.Amount;
@@ -64,6 +60,7 @@ namespace Dev.Kosov.Factory.Core
             return inputSlot.Amount - canFit;
         }
 
+        // Takes 1 at a time
         internal InvSlot AutoTake() // Returns taken type and count
         {
             for (int y = Height - 1; y >= 0; y--)

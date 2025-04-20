@@ -6,14 +6,16 @@ namespace Dev.Kosov.Factory.Core
 {
     public class Inserter : Entity
     {
+        private const int capacity = 1;
         private const float degreesPerSecond = 720f;
-        private const float secondsPerCycle = 360f / degreesPerSecond;
+        //private const float secondsPerCycle = 360f / degreesPerSecond;
         private readonly Func<Vector2Int, Entity> getEntityAtPos;
         private readonly float takePosDegrees;
+        private Action<float> state;
         private float armDegrees; // 0 == take position, 180 == put position
         private float timeStarted;
         private float prevTime;
-        private ItemType item;
+        private InvSlot item;
 
         internal readonly Vector2Int TakePos;
         internal readonly Vector2Int PutPos;
@@ -22,6 +24,7 @@ namespace Dev.Kosov.Factory.Core
             : base(rotation, bottomLeftPos, new() { new(ItemType.Inserter, 1) }, EntityType.Inserter)
         {
             this.getEntityAtPos = getEntityAtPos;
+            state = StateTake;
             timeStarted = Time.time;
             prevTime = timeStarted;
 
@@ -61,30 +64,9 @@ namespace Dev.Kosov.Factory.Core
         {
             base.UpdateState();
             float currTime = Time.time;
-            float timeDiff = currTime - prevTime;
+            float deltaTime = currTime - prevTime;
 
-            if (prevTime - timeStarted <= secondsPerCycle / 2 && currTime - timeStarted > secondsPerCycle / 2)
-            {
-                DropItem();
-                armDegrees = 180f;
-            }
-
-            if (currTime - timeStarted >= secondsPerCycle) // Maybe take in the beginning instead of the end?
-            {
-                TakeItem();
-                timeStarted = currTime;
-                armDegrees = 0;
-                return;
-            }
-
-            if (currTime - timeStarted < secondsPerCycle / 2)
-            {
-                armDegrees += timeDiff * degreesPerSecond;
-            }
-            else
-            {
-                armDegrees -= timeDiff * degreesPerSecond;
-            }
+            state(deltaTime);
 
             prevTime = currTime;
         }
@@ -92,24 +74,52 @@ namespace Dev.Kosov.Factory.Core
         override internal List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
-            if (item != ItemType.None)
-            {
-                items.Add(new(item, 1));
-            }
+            items.Add(item);
 
             return items;
         }
 
-        private void DropItem()
+        private void StateTake(float deltaTime)
         {
-            Entity entity = getEntityAtPos.Invoke(PutPos);
+            Entity entity = getEntityAtPos(TakePos);
             if (entity == null) return;
+            if (entity is not ITakeable source) return;
+
+            InvSlot taken = source.Take(capacity);
+            if (taken.Type == ItemType.None) return;
+            item = taken;
+
+            state = StateRotateToTarget;
         }
 
-        private void TakeItem()
+        private void StateRotateToTarget(float deltaTime)
         {
-            Entity entity = getEntityAtPos.Invoke(TakePos);
+            armDegrees += degreesPerSecond * deltaTime;
+            if (armDegrees < 180) return;
+            armDegrees = 180;
+            state = StatePut;
+        }
+
+        private void StatePut(float deltaTime)
+        {
+            Entity entity = getEntityAtPos(PutPos);
             if (entity == null) return;
+            if (entity is not IPuttable target) return;
+
+            int remainder = target.Put(item);
+            item.Amount = remainder;
+            if (remainder != 0) return;
+            item.Type = ItemType.None;
+
+            state = StateRotateToSource;
+        }
+
+        private void StateRotateToSource(float deltaTime)
+        {
+            armDegrees -= degreesPerSecond * deltaTime;
+            if (armDegrees > 0) return;
+            armDegrees = 0;
+            state = StateTake;
         }
     }
 }

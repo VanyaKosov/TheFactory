@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
-    internal class Assembler1 : Entity, ICrafter
+    internal class Assembler1 : Entity, ICrafter, ITakeable, IPuttable
     {
         private readonly Crafter Crafter;
 
@@ -27,9 +27,19 @@ namespace Dev.Kosov.Factory.Core
         override internal List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
-            items.AddRange(Crafter.GetComponents());
+            items.AddRange(Crafter.GetComponents()); // Also adds ItemType.None
 
             return items;
+        }
+
+        InvSlot ITakeable.Take(int amount)
+        {
+            return Crafter.OutputStorage.AutoTake();
+        }
+
+        int IPuttable.Put(InvSlot item)
+        {
+            return Crafter.InputStorage.AutoPut(item.Type, item.Amount);
         }
     }
 }
