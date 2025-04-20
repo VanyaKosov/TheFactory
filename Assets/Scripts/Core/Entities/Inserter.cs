@@ -8,7 +8,6 @@ namespace Dev.Kosov.Factory.Core
     {
         private const int capacity = 1;
         private const float degreesPerSecond = 720f;
-        //private const float secondsPerCycle = 360f / degreesPerSecond;
         private readonly Func<Vector2Int, Entity> getEntityAtPos;
         private readonly float takePosDegrees;
         private Action<float> state;
@@ -16,6 +15,7 @@ namespace Dev.Kosov.Factory.Core
         private float timeStarted;
         private float prevTime;
         private InvSlot item;
+        public InvSlot Item { get => item; }
 
         internal readonly Vector2Int TakePos;
         internal readonly Vector2Int PutPos;

@@ -168,7 +168,7 @@ namespace Dev.Kosov.Factory.Graphics
             GameObject prefab = Catalogs.EntityTypeToPrefab(args.Entity.Type, args.Entity.Rotation);
             Vector2 pos = CenterEntityPos(args.Pos, args.Entity.Size);
             GameObject instance = Instantiate(prefab, pos, Quaternion.identity, EntityParent.transform);
-            instance.GetComponent<IEntityInitializer>()?.Init(args.Entity);
+            instance.GetComponent<IEntityInitializer>()?.Init(args.Entity, Catalogs);
             entities.Add(args.EntityID, instance);
         }
 

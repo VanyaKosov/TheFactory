@@ -4,6 +4,6 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public interface IEntityInitializer
     {
-        void Init(Entity entity);
+        void Init(Entity entity, Catalogs catalogs);
     }
 }
