@@ -21,6 +21,7 @@ namespace Dev.Kosov.Factory.Graphics
         void Update()
         {
             ArmBase.transform.eulerAngles = new(0, 0, inserter.GetTotalDegrees());
+            ItemIcon.transform.rotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);
 
             if (inserter.Item.Type == ItemType.None)
             {

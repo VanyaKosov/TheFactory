@@ -7,7 +7,7 @@ namespace Dev.Kosov.Factory.Core
     public class Inserter : Entity
     {
         private const int capacity = 1;
-        private const float degreesPerSecond = 720f;
+        private const float degreesPerSecond = 180f;
         private readonly Func<Vector2Int, Entity> getEntityAtPos;
         private readonly float takePosDegrees;
         private Action<float> state;
