@@ -6,6 +6,7 @@ namespace Dev.Kosov.Factory.Core
     public class Storage
     {
         private readonly InvSlot[,] items;
+        private readonly ItemType[,] reserved;
 
         public readonly int Width;
         public readonly int Height;
@@ -17,6 +18,7 @@ namespace Dev.Kosov.Factory.Core
             Width = width;
             Height = height;
             items = new InvSlot[Width, Height];
+            reserved = new ItemType[Width, Height]; // Hope the default is ItemType.None
 
             DefaultInitialize();
         }
@@ -24,6 +26,11 @@ namespace Dev.Kosov.Factory.Core
         public InvSlot GetItem(Vector2Int pos)
         {
             return items[pos.x, pos.y];
+        }
+
+        internal void SetReserve(ItemType type, Vector2Int pos)
+        {
+            reserved[pos.x, pos.y] = type;
         }
 
         internal void SetItem(InvSlot slot, Vector2Int pos)
@@ -90,6 +97,7 @@ namespace Dev.Kosov.Factory.Core
                 for (int x = 0; x < Width; x++)
                 {
                     if (items[x, y].Type == ItemType.None) continue;
+                    if (reserved[x, y] != ItemType.None && reserved[x, y] != type) continue;
                     amount = TryStack(new(type, amount), new(x, y));
 
                     if (amount == 0) return 0;
@@ -101,6 +109,7 @@ namespace Dev.Kosov.Factory.Core
                 for (int x = 0; x < Width; x++)
                 {
                     if (items[x, y].Type != ItemType.None) continue;
+                    if (reserved[x, y] != ItemType.None && reserved[x, y] != type) continue;
                     items[x, y].Type = type;
                     items[x, y].Amount = Math.Min(stackSize, amount);
 

@@ -41,5 +41,10 @@ namespace Dev.Kosov.Factory.Core
         {
             return Crafter.InputStorage.AutoPut(item.Type, item.Amount);
         }
+
+        List<ItemType> IPuttable.GetWantedItems()
+        {
+            return Crafter.WantedItems;
+        }
     }
 }

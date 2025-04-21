@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
@@ -23,6 +24,11 @@ namespace Dev.Kosov.Factory.Core
         InvSlot ITakeable.Take(int amount)
         {
             return storage.AutoTake();
+        }
+
+        List<ItemType> IPuttable.GetWantedItems()
+        {
+            return null;
         }
     }
 }
