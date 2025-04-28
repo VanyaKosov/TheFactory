@@ -85,7 +85,7 @@ namespace Dev.Kosov.Factory.Core
             if (entity == null) return;
             if (entity is not ITakeable source) return;
 
-            //TODO check what's needed and take that
+            //TODO check what's needed and take that 
 
             InvSlot taken = source.Take(capacity);
             if (taken.Type == ItemType.None) return;

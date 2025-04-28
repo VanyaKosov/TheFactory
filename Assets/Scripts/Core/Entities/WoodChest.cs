@@ -26,7 +26,7 @@ namespace Dev.Kosov.Factory.Core
             return storage.AutoTake();
         }
 
-        List<ItemType> IPuttable.GetWantedItems()
+        List<InvSlot> IPuttable.GetWantedItems()
         {
             return null;
         }

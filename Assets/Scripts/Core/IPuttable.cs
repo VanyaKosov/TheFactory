@@ -6,6 +6,6 @@ namespace Dev.Kosov.Factory.Core
     {
         internal int Put(InvSlot item); // Returns remainder
 
-        internal List<ItemType> GetWantedItems();
+        internal List<InvSlot> GetWantedItems();
     }
 }

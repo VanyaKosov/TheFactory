@@ -7,11 +7,12 @@ namespace Dev.Kosov.Factory.Core
 {
     public class Crafter
     {
+        private const int itemRequestMultiplier = 3;
         private float timeStarted;
         private float time;
         private RecipeType currentRecipe = RecipeType.None;
 
-        internal readonly List<ItemType> WantedItems;
+        internal readonly List<InvSlot> WantedItems;
 
         public readonly List<RecipeType> AvailableRecipes;
         public readonly Storage InputStorage = new(6, 1);
@@ -56,19 +57,7 @@ namespace Dev.Kosov.Factory.Core
             currentRecipe = recipe;
             timeStarted = time;
 
-            WantedItems.Clear();
-            InvSlot[] inputs = CraftingRecipes.Get(currentRecipe).inputs;
-            for (int i = 0; i < inputs.Length; i++)
-            {
-                if (i < inputs.Length)
-                {
-                    WantedItems.Add(inputs[i].Type);
-                    continue;
-                }
-
-                WantedItems.Add(ItemType.Empty);
-            }
-            // TODO: update storage reserved items
+            UpdateWantedItems();
         }
 
         internal List<InvSlot> GetComponents()
@@ -103,6 +92,20 @@ namespace Dev.Kosov.Factory.Core
             CheckCraft();
         }
 
+        private void UpdateWantedItems()
+        {
+            WantedItems.Clear();
+            InvSlot[] inputs = CraftingRecipes.Get(currentRecipe).inputs;
+            for (int i = 0; i < inputs.Length; i++)
+            {
+                InvSlot storageSlot = InputStorage.GetItem(new(0, i));
+                if (storageSlot.Type != ItemType.Empty && storageSlot.Type != inputs[i].Type) continue;
+                if (storageSlot.Amount >= inputs[i].Amount * itemRequestMultiplier) continue;
+
+                WantedItems.Add(new(inputs[i].Type, inputs[i].Amount * itemRequestMultiplier - storageSlot.Amount));
+            }
+        }
+
         private void CheckCraft()
         {
             if (currentRecipe == RecipeType.None) return;
@@ -120,6 +123,8 @@ namespace Dev.Kosov.Factory.Core
             {
                 Vector2Int pos = new(i, 0);
                 InputStorage.SetItem(new(inputs[i].Type, InputStorage.GetItem(pos).Amount - inputs[i].Amount), pos);
+
+                UpdateWantedItems();
             }
 
             for (int i = 0; i < outputs.Length; i++)
