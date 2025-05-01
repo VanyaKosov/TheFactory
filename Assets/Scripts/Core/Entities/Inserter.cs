@@ -81,13 +81,22 @@ namespace Dev.Kosov.Factory.Core
 
         private void StateTake(float deltaTime)
         {
-            Entity entity = getEntityAtPos(TakePos);
-            if (entity == null) return;
-            if (entity is not ITakeable source) return;
+            Entity takeEntity = getEntityAtPos(TakePos);
+            if (takeEntity == null) return;
+            if (takeEntity is not ITakeable source) return;
 
-            //TODO check what's needed and take that 
+            Entity putEntity = getEntityAtPos(PutPos);
+            if (putEntity == null) return;
+            if (putEntity is not IPuttable target) return;
 
-            InvSlot taken = source.Take(capacity);
+            List<InvSlot> wantedItems = target.GetWantedItems();
+            InvSlot taken = new(ItemType.None, 0);
+            foreach (InvSlot item in wantedItems)
+            {
+                taken = source.Take(item.Type);
+                if (taken.Type != ItemType.None) break;
+            }
+
             if (taken.Type == ItemType.None) return;
             item = taken;
 

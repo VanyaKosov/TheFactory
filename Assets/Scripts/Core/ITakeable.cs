@@ -2,6 +2,8 @@
 {
     internal interface ITakeable
     {
-        internal InvSlot Take(int amount);
+        internal InvSlot Take();
+
+        internal InvSlot Take(ItemType type); // Take specific item
     }
 }

@@ -99,7 +99,7 @@ namespace Dev.Kosov.Factory.Core
             for (int i = 0; i < inputs.Length; i++)
             {
                 InvSlot storageSlot = InputStorage.GetItem(new(0, i));
-                if (storageSlot.Type != ItemType.Empty && storageSlot.Type != inputs[i].Type) continue;
+                if (storageSlot.Type != ItemType.None && storageSlot.Type != ItemType.Empty && storageSlot.Type != inputs[i].Type) continue;
                 if (storageSlot.Amount >= inputs[i].Amount * itemRequestMultiplier) continue;
 
                 WantedItems.Add(new(inputs[i].Type, inputs[i].Amount * itemRequestMultiplier - storageSlot.Amount));

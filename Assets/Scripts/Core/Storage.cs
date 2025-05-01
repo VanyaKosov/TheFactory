@@ -88,6 +88,25 @@ namespace Dev.Kosov.Factory.Core
             return new(ItemType.None, 0);
         }
 
+        internal InvSlot AutoTake(ItemType request)
+        {
+            for (int y = Height - 1; y >= 0; y--)
+            {
+                for (int x = 0; x < Width; x++)
+                {
+                    if (items[x, y].Type != request) continue;
+
+                    items[x, y].Amount--;
+                    if (items[x, y].Amount == 0) items[x, y].Type = ItemType.None;
+
+                    SlotChanged?.Invoke(this, new(new(x, y), items[x, y].Type, items[x, y].Amount));
+                    return new(request, 1);
+                }
+            }
+
+            return new(ItemType.None, 0);
+        }
+
         internal int AutoPut(ItemType type, int amount) // Returns remainder
         {
             int stackSize = ItemInfo.Get(type).MaxStackSize;

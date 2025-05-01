@@ -21,9 +21,14 @@ namespace Dev.Kosov.Factory.Core
             return storage.AutoPut(item.Type, item.Amount);
         }
 
-        InvSlot ITakeable.Take(int amount)
+        InvSlot ITakeable.Take()
         {
             return storage.AutoTake();
+        }
+
+        InvSlot ITakeable.Take(ItemType type)
+        {
+            return storage.AutoTake(type);
         }
 
         List<InvSlot> IPuttable.GetWantedItems()

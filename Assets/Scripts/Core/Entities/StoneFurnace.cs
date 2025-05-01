@@ -32,9 +32,14 @@ namespace Dev.Kosov.Factory.Core
             return items;
         }
 
-        InvSlot ITakeable.Take(int amount)
+        InvSlot ITakeable.Take()
         {
             return Crafter.OutputStorage.AutoTake();
+        }
+
+        InvSlot ITakeable.Take(ItemType type)
+        {
+            return Crafter.OutputStorage.AutoTake(type);
         }
 
         int IPuttable.Put(InvSlot item)
