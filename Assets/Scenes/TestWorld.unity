@@ -165,6 +165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wood: {fileID: 7440981132975211316, guid: e8161e8efe1144e45a1a8c45726d649c, type: 3}
   Coal: {fileID: 6482737013037613852, guid: 3abf49434e380e24696fcb7efcadf048, type: 3}
+  Stone: {fileID: 5725184139431673129, guid: fd6e790e1b1d98e48ac33ea1c1ab2496, type: 3}
+  Stone_brick: {fileID: -1561518679464199015, guid: a975fa6ff5c7cdd4baa95962d3faffbc, type: 3}
   Iron_Ore: {fileID: -5473642129915720609, guid: 2650fab284d1bb049b10d8f80c8be7ea, type: 3}
   Iron_Plate: {fileID: 3114402333797436475, guid: 360f0590fa62e4c48b38bb0e1e5719bc, type: 3}
   Copper_Ore: {fileID: 3789500478940260231, guid: 63997aa537bab404bbd94f64bf608901, type: 3}

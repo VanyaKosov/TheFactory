@@ -4,7 +4,8 @@
     {
         None,
         Coal,
+        Stone,
         Copper,
-        Iron,
+        Iron
     }
 }

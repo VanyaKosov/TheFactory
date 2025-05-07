@@ -6,6 +6,8 @@
         Empty,
         Wood,
         Coal,
+        Stone,
+        Stone_brick,
         Iron_ore,
         Iron_plate,
         Copper_ore,

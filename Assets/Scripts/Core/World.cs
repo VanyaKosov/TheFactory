@@ -158,17 +158,6 @@ namespace Dev.Kosov.Factory.Core
             foreach (Entity entity in entities.Values)
             {
                 entity.UpdateState();
-                //if (entity is ICrafter crafter)
-                //{
-                //    crafter.GetCrafter().UpdateState();
-                //    return;
-                //}
-
-                //if (entity is Inserter inserter)
-                //{
-                //    inserter.UpdateState();
-                //    return;
-                //}
             }
         }
 

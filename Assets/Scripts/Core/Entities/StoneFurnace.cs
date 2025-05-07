@@ -10,7 +10,7 @@ namespace Dev.Kosov.Factory.Core
         internal StoneFurnace(Rotation rotation, Vector2Int bottomLeftPos)
             : base(rotation, bottomLeftPos, new() { new(ItemType.Stone_furnace, 1) }, EntityType.StoneFurnace)
         {
-            Crafter = new(new() { RecipeType.Smelt_iron_ore, RecipeType.Smelt_copper_ore });
+            Crafter = new(new() { RecipeType.Smelt_iron_ore, RecipeType.Smelt_copper_ore, RecipeType.Smelt_stone_ore });
         }
 
         public Crafter GetCrafter()

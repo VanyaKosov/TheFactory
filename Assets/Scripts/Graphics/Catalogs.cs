@@ -12,6 +12,8 @@ namespace Dev.Kosov.Factory.Graphics
         [Header("Item Icons Sprites")]
         public Sprite Wood;
         public Sprite Coal;
+        public Sprite Stone;
+        public Sprite Stone_brick;
         public Sprite Iron_Ore;
         public Sprite Iron_Plate;
         public Sprite Copper_Ore;
@@ -60,6 +62,8 @@ namespace Dev.Kosov.Factory.Graphics
             // Icons
             itemTypeToSprite.Add(ItemType.Wood, Wood);
             itemTypeToSprite.Add(ItemType.Coal, Coal);
+            itemTypeToSprite.Add(ItemType.Stone, Stone);
+            itemTypeToSprite.Add(ItemType.Stone_brick, Stone_brick);
             itemTypeToSprite.Add(ItemType.Iron_ore, Iron_Ore);
             itemTypeToSprite.Add(ItemType.Iron_plate, Iron_Plate);
             itemTypeToSprite.Add(ItemType.Copper_ore, Copper_Ore);
@@ -81,6 +85,7 @@ namespace Dev.Kosov.Factory.Graphics
             oreToSprite.Add(OreType.Coal, Resources.LoadAll<Sprite>("Coal"));
             oreToSprite.Add(OreType.Copper, Resources.LoadAll<Sprite>("Copper"));
             oreToSprite.Add(OreType.Iron, Resources.LoadAll<Sprite>("Iron"));
+            oreToSprite.Add(OreType.Stone, Resources.LoadAll<Sprite>("Stone"));
         }
 
 

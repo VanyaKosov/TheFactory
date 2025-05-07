@@ -19,7 +19,15 @@ namespace Dev.Kosov.Factory.Core
                 (
                     new InvSlot[] { new(ItemType.Copper_ore, 1) },
                     new InvSlot[] { new(ItemType.Copper_plate, 1) },
-                    2f 
+                    2f
+                )
+            },
+            {
+                RecipeType.Smelt_stone_ore,
+                (
+                    new InvSlot[] { new(ItemType.Stone, 1) },
+                    new InvSlot[] { new(ItemType.Stone_brick, 1) },
+                    2f
                 )
             },
             {
@@ -35,6 +43,14 @@ namespace Dev.Kosov.Factory.Core
                 (
                     new InvSlot[] { },
                     new InvSlot[] { new(ItemType.Copper_ore, 1) },
+                    1f
+                )
+            },
+            {
+                RecipeType.Mine_stone_ore,
+                (
+                    new InvSlot[] { },
+                    new InvSlot[] { new(ItemType.Stone, 1) },
                     1f
                 )
             },

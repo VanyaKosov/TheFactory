@@ -8,6 +8,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
         private static readonly Dictionary<OreType, Info> info = new()
         {
             { OreType.Coal, new(new(8f, 12f), 10_000, 0.000_01f, ItemType.Coal) },
+            { OreType.Stone, new(new(8f, 12f), 10_000, 0.000_01f, ItemType.Stone) },
             { OreType.Copper, new(new(8f, 12f), 10_000, 0.000_01f, ItemType.Copper_ore) },
             { OreType.Iron, new(new(8f, 12f), 10_000, 0.000_01f, ItemType.Iron_ore) }
         };
