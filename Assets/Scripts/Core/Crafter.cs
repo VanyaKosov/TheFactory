@@ -98,7 +98,7 @@ namespace Dev.Kosov.Factory.Core
             InvSlot[] inputs = CraftingRecipes.Get(currentRecipe).inputs;
             for (int i = 0; i < inputs.Length; i++)
             {
-                InvSlot storageSlot = InputStorage.GetItem(new(0, i));
+                InvSlot storageSlot = InputStorage.GetItem(new(i, 0));
                 if (storageSlot.Type != ItemType.None && storageSlot.Type != ItemType.Empty && storageSlot.Type != inputs[i].Type) continue;
                 if (storageSlot.Amount >= inputs[i].Amount * itemRequestMultiplier) continue;
 

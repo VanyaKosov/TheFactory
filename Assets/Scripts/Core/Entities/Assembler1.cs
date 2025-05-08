@@ -14,7 +14,8 @@ namespace Dev.Kosov.Factory.Core
             { 
                 RecipeType.Make_copper_wire, 
                 RecipeType.Make_simple_circuit, 
-                RecipeType.Make_iron_gear 
+                RecipeType.Make_iron_gear,
+                RecipeType.Make_inserter
             });
         }
 

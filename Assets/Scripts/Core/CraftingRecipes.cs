@@ -77,6 +77,14 @@ namespace Dev.Kosov.Factory.Core
                     new InvSlot[] { new(ItemType.Iron_gear, 1) },
                     1f
                 )
+            },
+            {
+                RecipeType.Make_inserter,
+                (
+                    new InvSlot[] { new(ItemType.Iron_plate, 2), new(ItemType.Iron_gear, 1), new(ItemType.Copper_wire, 1) },
+                    new InvSlot[] { new(ItemType.Inserter, 1) },
+                    2f
+                )
             }
         };
 
