@@ -15,6 +15,7 @@
         Make_Assembler1,
         Make_Furnace,
         Make_electric_drill,
-        Make_wooden_chest
+        Make_wooden_chest,
+        Make_iron_gear
     }
 }

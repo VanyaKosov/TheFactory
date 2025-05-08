@@ -25,6 +25,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite SimpleCircuit;
         public Sprite ElectricDrill;
         public Sprite Inserter;
+        public Sprite IronGear;
 
         [Header("Entity Ghost Sprites")]
         public Sprite Assembler1Ghost;
@@ -75,6 +76,7 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Simple_circuit, SimpleCircuit);
             itemTypeToSprite.Add(ItemType.Electric_drill, ElectricDrill);
             itemTypeToSprite.Add(ItemType.Inserter, Inserter);
+            itemTypeToSprite.Add(ItemType.Iron_gear, IronGear);
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);

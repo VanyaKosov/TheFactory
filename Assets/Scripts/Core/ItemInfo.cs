@@ -18,10 +18,11 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Wood_chest, new(EntityType.WoodChest, 50) },
             { ItemType.Assembler_1, new(EntityType.Assembler1, 50) },
             { ItemType.Stone_furnace, new(EntityType.StoneFurnace, 50) },
-            { ItemType.Copper_wire, new(EntityType.None, 200) },
+            { ItemType.Copper_wire, new(EntityType.None, 100) },
             { ItemType.Simple_circuit, new(EntityType.None, 200) },
             { ItemType.Electric_drill, new(EntityType.Electric_drill, 50) },
-            { ItemType.Inserter, new(EntityType.Inserter, 50) }
+            { ItemType.Inserter, new(EntityType.Inserter, 50) },
+            { ItemType.Iron_gear, new(EntityType.None, 100) }
         };
 
         public static Info Get(ItemType type)

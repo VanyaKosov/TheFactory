@@ -18,6 +18,7 @@
         Copper_wire,
         Simple_circuit,
         Electric_drill,
-        Inserter
+        Inserter,
+        Iron_gear
     }
 }

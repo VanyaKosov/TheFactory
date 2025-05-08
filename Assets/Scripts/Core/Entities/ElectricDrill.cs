@@ -10,7 +10,12 @@ namespace Dev.Kosov.Factory.Core
         internal ElectricDrill(Rotation rotation, Vector2Int bottomLeftPos)
             : base(rotation, bottomLeftPos, new() { new(ItemType.Electric_drill, 1) }, EntityType.Electric_drill)
         {
-            Crafter = new(new() { RecipeType.Mine_iron_ore, RecipeType.Mine_copper_ore, RecipeType.Mine_stone_ore });
+            Crafter = new(new() 
+            { 
+                RecipeType.Mine_iron_ore, 
+                RecipeType.Mine_copper_ore, 
+                RecipeType.Mine_stone_ore }
+            );
         }
 
         public Crafter GetCrafter()
