@@ -10,12 +10,13 @@ namespace Dev.Kosov.Factory.Core
         internal Assembler1(Rotation rotation, Vector2Int bottomLeftPos)
             : base(rotation, bottomLeftPos, new() { new(ItemType.Assembler_1, 1) }, EntityType.Assembler1)
         {
-            Crafter = new(new() 
-            { 
-                RecipeType.Make_copper_wire, 
-                RecipeType.Make_simple_circuit, 
+            Crafter = new(new()
+            {
+                RecipeType.Make_copper_wire,
+                RecipeType.Make_simple_circuit,
                 RecipeType.Make_iron_gear,
-                RecipeType.Make_inserter
+                RecipeType.Make_inserter,
+                RecipeType.Make_assembler1
             });
         }
 

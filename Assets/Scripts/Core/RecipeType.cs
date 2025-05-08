@@ -12,7 +12,7 @@
         Make_copper_wire,
         Make_simple_circuit,
         Make_inserter,
-        Make_Assembler1,
+        Make_assembler1,
         Make_Furnace,
         Make_electric_drill,
         Make_wooden_chest,
