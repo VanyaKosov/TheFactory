@@ -18,7 +18,8 @@ namespace Dev.Kosov.Factory.Core
                 RecipeType.Make_inserter,
                 RecipeType.Make_assembler1,
                 RecipeType.Make_wooden_chest,
-                RecipeType.Make_furnace
+                RecipeType.Make_furnace,
+                RecipeType.Make_electric_drill
             });
         }
 

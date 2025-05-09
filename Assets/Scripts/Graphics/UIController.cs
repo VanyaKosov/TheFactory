@@ -46,10 +46,10 @@ namespace Dev.Kosov.Factory.Graphics
 
             invSlotRenderers = GenerateSlotPanel(InventoryParent,
                 new(Canvas.transform.position.x + invHorOffset, Canvas.transform.position.y + invVertOffset),
-                inventory.Width, inventory.Height, OnInvSlotClick);
+                inventory.Width, inventory.Height, OnInvSlotLeftClick, OnInvSlotRightClick);
             hotbarSlotRenderers = GenerateSlotPanel(HotbarParent,
                 new(Canvas.transform.position.x, Canvas.transform.position.y * hotbarBottomHalfOffsetPercent),
-                inventory.HotbarWidth, inventory.HotbarHeight, OnHotbarSlotClick);
+                inventory.HotbarWidth, inventory.HotbarHeight, OnHotbarSlotLeftClick, OnHotbarSlotRightClick);
 
             inventory.SetInvItem += SetInvItem;
             inventory.SetHotbarItem += SetHotbarItem;
@@ -65,7 +65,7 @@ namespace Dev.Kosov.Factory.Graphics
             InventoryParent.SetActive(InvOpen);
         }
 
-        private SlotRenderer[,] GenerateSlotPanel(GameObject parent, Vector2 position, int width, int height, Action<Vector2Int> callback)
+        private SlotRenderer[,] GenerateSlotPanel(GameObject parent, Vector2 position, int width, int height, Action<Vector2Int> leftCallback, Action<Vector2Int> rightCallback)
         {
             SlotRenderer[,] slotRenderers = new SlotRenderer[width, height];
 
@@ -94,12 +94,10 @@ namespace Dev.Kosov.Factory.Graphics
                     slotRectTrans.anchoredPosition = worldPos;
 
                     SlotRenderer slotRenderer = slot.GetComponent<SlotRenderer>();
-                    slotRenderer.ItemSpriteCatalog = SpriteCatalogs;
-                    slotRenderers[x, y] = slotRenderer;
-
-                    Button button = slot.GetComponent<Button>();
                     Vector2Int pos = new(x, y);
-                    button.onClick.AddListener(() => callback(pos));
+                    slotRenderer.Init(SpriteCatalogs, () => leftCallback(pos), () => rightCallback(pos));
+
+                    slotRenderers[x, y] = slotRenderer;
                 }
             }
 
@@ -122,21 +120,31 @@ namespace Dev.Kosov.Factory.Graphics
             GameObject slot = Instantiate(CursorSlotPrefab, new(), Quaternion.identity, CursorParent.transform);
             slot.GetComponent<RectTransform>().sizeDelta = new(slotSize, slotSize);
             SlotRenderer slotRenderer = slot.GetComponent<SlotRenderer>();
-            slotRenderer.ItemSpriteCatalog = SpriteCatalogs;
+            slotRenderer.Init(SpriteCatalogs, null, null);
             CursorSlotRenderer cursorSlotRenderer = slot.GetComponent<CursorSlotRenderer>();
             cursorSlotRenderer.Raycaster = Raycaster;
 
             return cursorSlotRenderer;
         }
 
-        private void OnInvSlotClick(Vector2Int pos)
+        private void OnInvSlotLeftClick(Vector2Int pos)
         {
             inventory.TryPutToInventory(pos);
         }
 
-        private void OnHotbarSlotClick(Vector2Int pos)
+        private void OnInvSlotRightClick(Vector2Int pos)
+        {
+            inventory.TryTakeHalfFromInventory(pos);
+        }
+
+        private void OnHotbarSlotLeftClick(Vector2Int pos)
         {
             inventory.TryPutToHotbar(pos);
+        }
+
+        private void OnHotbarSlotRightClick(Vector2Int pos)
+        {
+            inventory.TryTakeHalfFromHotbar(pos);
         }
 
         private void OnPrimaryInput(object sender, EventArgs args)
@@ -156,7 +164,6 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void SetCursorItem(object sender, Inventory.SetCursorEventArgs args)
         {
-            //print("Set cursor item to: " + args.Type + " " + args.Amount);
             cursorSlotRenderer.SetItem(args.Type, args.Amount);
         }
     }

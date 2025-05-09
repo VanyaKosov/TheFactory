@@ -149,13 +149,11 @@ namespace Dev.Kosov.Factory.Graphics
                     slotRectTrans.anchoredPosition = worldPos;
 
                     SlotRenderer slotRenderer = slot.GetComponent<SlotRenderer>();
-                    slotRenderer.ItemSpriteCatalog = Catalogs;
+                    RecipeType recipeType = crafter.AvailableRecipes[slotsCreated];
+                    slotRenderer.Init(Catalogs, () => ChosenRecipe(recipeType), null);
+
                     var recipe = CraftingRecipes.Get(crafter.AvailableRecipes[slotsCreated]);
                     slotRenderer.SetItem(recipe.outputs[0].Type, recipe.outputs[0].Amount);
-
-                    Button button = slot.GetComponent<Button>();
-                    RecipeType recipeType = crafter.AvailableRecipes[slotsCreated];
-                    button.onClick.AddListener(() => ChosenRecipe(recipeType));
 
                     slotsCreated++;
                 }

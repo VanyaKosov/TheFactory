@@ -35,6 +35,30 @@ namespace Dev.Kosov.Factory.Core
             DefaultInvInitialize();
         }
 
+        public void TryTakeHalfFromInventory(Vector2Int pos)
+        {
+            if (CursorSlot.Type != ItemType.None) return;
+            InvSlot item = inventory.GetItem(pos);
+            if (item.Type == ItemType.None) return;
+            int toTake = item.Amount / 2;
+            if (toTake == 0) return;
+
+            SetCursorSlot(item.Type, toTake);
+            inventory.SetItem(new(item.Type, item.Amount - toTake), pos);
+        }
+
+        public void TryTakeHalfFromHotbar(Vector2Int pos)
+        {
+            if (CursorSlot.Type != ItemType.None) return;
+            InvSlot item = hotbar.GetItem(pos);
+            if (item.Type == ItemType.None) return;
+            int toTake = item.Amount / 2;
+            if (toTake == 0) return;
+
+            SetCursorSlot(item.Type, toTake);
+            hotbar.SetItem(new(item.Type, item.Amount - toTake), pos);
+        }
+
         public void TryPutToInventory(Vector2Int pos)
         {
             if (inventory.GetItem(pos).Type == CursorSlot.Type)

@@ -110,6 +110,15 @@ namespace Dev.Kosov.Factory.Core
                     3f
                 )
             }
+            ,
+            {
+                RecipeType.Make_electric_drill,
+                (
+                    new InvSlot[] { new(ItemType.Iron_plate, 6), new(ItemType.Copper_plate, 4) },
+                    new InvSlot[] { new(ItemType.Electric_drill, 1) },
+                    3f
+                )
+            }
         };
 
         public static (InvSlot[] inputs, InvSlot[] outputs, float time) Get(RecipeType type)
