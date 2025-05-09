@@ -13,7 +13,7 @@
         Make_simple_circuit,
         Make_inserter,
         Make_assembler1,
-        Make_Furnace,
+        Make_furnace,
         Make_electric_drill,
         Make_wooden_chest,
         Make_iron_gear

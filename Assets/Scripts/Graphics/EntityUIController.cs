@@ -10,7 +10,7 @@ namespace Dev.Kosov.Factory.Graphics
         private const int recipesPerRow = 6;
         private const float spaceBetweenSlots = 8f;
         private const float slotSize = 45f;
-        private readonly Vector2 recipeChoiceScreenOffset = new(-26.5f, -157.5f);
+        private readonly Vector2 recipeChoiceScreenOffset = new(-26.5f, -157.5f + 45 / 2); // new(-26.5f, -157.5f);
         private SlotRenderer[] inputSlotRenderers;
         private SlotRenderer[] outputSlotRenderers;
         private World world;
@@ -104,7 +104,7 @@ namespace Dev.Kosov.Factory.Graphics
         private void GenerateRecipeChoicePanel()
         {
             int numRecipes = crafter.AvailableRecipes.Count;
-            int width = Math.Max(numRecipes, recipesPerRow);
+            int width = recipesPerRow;
             int height = 1;
             if (numRecipes > recipesPerRow)
             {
@@ -114,21 +114,26 @@ namespace Dev.Kosov.Factory.Graphics
             GameObject back = Instantiate(RecipeUIBackPrefab, new(0, 0), Quaternion.identity, gameObject.transform);
             recipeChoiceScreen = back;
             RectTransform rectTransform = back.GetComponent<RectTransform>();
-            rectTransform.anchoredPosition = crafterUIRectTransform.anchoredPosition + recipeChoiceScreenOffset;
+
+            float xOffset = (width * slotSize + (width - 1) * spaceBetweenSlots) / 2;
+            float yOffset = (height * slotSize + (height - 1) * spaceBetweenSlots) / 2;
+
+            rectTransform.anchoredPosition =
+                crafterUIRectTransform.anchoredPosition +
+                recipeChoiceScreenOffset -
+                new Vector2(0, yOffset);
+
             rectTransform.sizeDelta = new(
                 slotSize * width + spaceBetweenSlots * (width + 1),
                 slotSize * height + spaceBetweenSlots * (height + 1));
 
-            float xOffset = (width * slotSize + (width - 1) * spaceBetweenSlots) / 2;
             xOffset -= slotSize / 2;
-
-            float yOffset = (height * slotSize + (height - 1) * spaceBetweenSlots) / 2;
             yOffset -= slotSize / 2;
 
             int slotsCreated = 0;
-            for (int x = 0; x < width; x++)
+            for (int y = height - 1; y >= 0; y--)
             {
-                for (int y = 0; y < height; y++)
+                for (int x = 0; x < width; x++)
                 {
                     if (slotsCreated == numRecipes) return;
 

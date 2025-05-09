@@ -93,6 +93,22 @@ namespace Dev.Kosov.Factory.Core
                     new InvSlot[] { new(ItemType.Assembler_1, 1) },
                     2f
                 )
+            },
+            {
+                RecipeType.Make_wooden_chest,
+                (
+                    new InvSlot[] { new(ItemType.Wood, 5) },
+                    new InvSlot[] { new(ItemType.Wood_chest, 1) },
+                    1f
+                )
+            },
+            {
+                RecipeType.Make_furnace,
+                (
+                    new InvSlot[] { new(ItemType.Stone_brick, 5) },
+                    new InvSlot[] { new(ItemType.Stone_furnace, 1) },
+                    3f
+                )
             }
         };
 
