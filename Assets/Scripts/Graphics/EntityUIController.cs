@@ -15,8 +15,9 @@ namespace Dev.Kosov.Factory.Graphics
         private SlotRenderer[] outputSlotRenderers;
         private World world;
         private Crafter crafter;
-        private GameObject recipeChoiceScreen;
+        private GameObject recipeChoicePanel;
         private RectTransform crafterUIRectTransform;
+        private bool choicePanelOpen = false;
 
         public Catalogs Catalogs;
         public GameObject RecipeUIBackPrefab;
@@ -59,6 +60,8 @@ namespace Dev.Kosov.Factory.Graphics
         {
             if (!UIController.InvOpen)
             {
+                choicePanelOpen = false;
+                Destroy(recipeChoicePanel);
                 gameObject.SetActive(false);
             }
 
@@ -112,7 +115,7 @@ namespace Dev.Kosov.Factory.Graphics
             }
 
             GameObject back = Instantiate(RecipeUIBackPrefab, new(0, 0), Quaternion.identity, gameObject.transform);
-            recipeChoiceScreen = back;
+            recipeChoicePanel = back;
             RectTransform rectTransform = back.GetComponent<RectTransform>();
 
             float xOffset = (width * slotSize + (width - 1) * spaceBetweenSlots) / 2;
@@ -161,30 +164,40 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void ChosenRecipe(RecipeType recipe)
         {
-            Destroy(recipeChoiceScreen);
+            choicePanelOpen = false;
+            Destroy(recipeChoicePanel);
             crafter.ChangeRecipe(recipe);
         }
 
         private void OnChangeRecipeClick()
         {
-            //print("Change recipe");
-            GenerateRecipeChoicePanel();
+            choicePanelOpen = !choicePanelOpen;
+
+            if (choicePanelOpen)
+            {
+                GenerateRecipeChoicePanel();
+            }
+            else
+            {
+                Destroy(recipeChoicePanel);
+            }
         }
 
         private void OnInputSlotClick(Vector2Int pos)
         {
-            //print("Input " + pos.x);
             world.TryPutOrTakeFromCrafterInput(crafter, pos);
         }
 
         private void OnOutputSlotClick(Vector2Int pos)
         {
-            //print("Output " + pos.x);
             world.TryTakeFromCrafterOutput(crafter, pos);
         }
 
         private void OpenEntity(object sender, World.EntityOpenedEventArgs args)
         {
+            choicePanelOpen = false;
+            Destroy(recipeChoicePanel);
+
             crafter = args.Crafter;
             UIController.InvOpen = true;
             gameObject.SetActive(true);
