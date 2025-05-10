@@ -3,7 +3,7 @@
     public enum ItemType
     {
         None,
-        Empty,
+        //Empty,
         Wood,
         Coal,
         Stone,

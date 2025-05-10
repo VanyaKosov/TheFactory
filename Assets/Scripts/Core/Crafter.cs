@@ -68,6 +68,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 for (int y = 0; y < inputStorage.Height; y++)
                 {
+                    if (inputStorage.GetItem(new(x, y)).Type == ItemType.None) continue;
                     items.Add(inputStorage.GetItem(new(x, y)));
                 }
             }
@@ -77,6 +78,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 for (int y = 0; y < outputStorage.Height; y++)
                 {
+                    if (outputStorage.GetItem(new(x, y)).Type == ItemType.None) continue;
                     items.Add(outputStorage.GetItem(new(x, y)));
                 }
 
@@ -99,7 +101,7 @@ namespace Dev.Kosov.Factory.Core
             for (int i = 0; i < inputs.Length; i++)
             {
                 InvSlot storageSlot = InputStorage.GetItem(new(i, 0));
-                if (storageSlot.Type != ItemType.None && storageSlot.Type != ItemType.Empty && storageSlot.Type != inputs[i].Type) continue;
+                if (storageSlot.Type != ItemType.None && storageSlot.Type != inputs[i].Type) continue; // && storageSlot.Type != ItemType.Empty
                 if (storageSlot.Amount >= inputs[i].Amount * itemRequestMultiplier) continue;
 
                 WantedItems.Add(new(inputs[i].Type, inputs[i].Amount * itemRequestMultiplier - storageSlot.Amount));

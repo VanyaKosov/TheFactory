@@ -100,11 +100,15 @@ namespace Dev.Kosov.Factory.Core
 
         public void PlaceEntity(Vector2Int bottomLeftPos, Rotation rotation)
         {
-            if (Inventory.CursorSlot.Amount <= 0) return;
-            if (!ItemInfo.Get(Inventory.CursorSlot.Type).Placable) return;
+            InvSlot cursorSlot = Inventory.CursorSlot;
+            if (cursorSlot.Amount <= 0) return;
+            if (!ItemInfo.Get(cursorSlot.Type).Placable) return;
 
-            EntityType type = ItemInfo.Get(Inventory.CursorSlot.Type).EntityType;
-            CreateEntity(bottomLeftPos, type, rotation);
+            EntityType type = ItemInfo.Get(cursorSlot.Type).EntityType;
+            if (CreateEntity(bottomLeftPos, type, rotation))
+            {
+                Inventory.SetCursorSlot(cursorSlot.Type, cursorSlot.Amount - 1);
+            }
         }
 
         public Tile GetTileInfo(Vector2Int pos)
@@ -167,6 +171,12 @@ namespace Dev.Kosov.Factory.Core
             if (id == -1) return;
 
             Entity entity = entities[id];
+            List<InvSlot> deconstructionComponents = entity.GetComponents();
+            foreach (InvSlot item in deconstructionComponents)
+            {
+                Inventory.AddItemToInventory(item.Type, item.Amount);
+            }
+
             entities.Remove(id);
             Vector2Int size = EntityInfo.Get(entity.Type).Size;
             for (int x = entity.BottomLeftPos.x; x < entity.BottomLeftPos.x + size.x; x++)
@@ -199,11 +209,11 @@ namespace Dev.Kosov.Factory.Core
             return oreType;
         }
 
-        private void CreateEntity(Vector2Int bottomLeftPos, EntityType type, Rotation rotation)
+        private bool CreateEntity(Vector2Int bottomLeftPos, EntityType type, Rotation rotation)
         {
             Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos, rotation, GetEntityAtPos);
             Vector2Int size = EntityInfo.Get(entity.Type).Size;
-            if (!CheckAvailability(entity.BottomLeftPos, size)) return;
+            if (!CheckAvailability(entity.BottomLeftPos, size)) return false;
             int entityID = Tile.GenEntityID();
             entities.Add(entityID, entity);
 
@@ -216,6 +226,7 @@ namespace Dev.Kosov.Factory.Core
             }
 
             EntityCreated?.Invoke(this, new(entity, bottomLeftPos, entityID));
+            return true;
         }
 
         private Entity GetEntityAtPos(Vector2Int pos)

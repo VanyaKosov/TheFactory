@@ -118,6 +118,11 @@ namespace Dev.Kosov.Factory.Core
 
         internal void SetCursorSlot(ItemType type, int amount)
         {
+            if (amount == 0)
+            {
+                type = ItemType.None;
+            }
+
             CursorSlot = new(type, amount);
             SetCursorItem?.Invoke(this, new(type, amount));
         }
