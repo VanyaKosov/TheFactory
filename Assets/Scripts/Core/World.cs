@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 namespace Dev.Kosov.Factory.Core
 {
     public class World
     {
+        private const int startingOreRadius = 40;
         private const int worldGenRadius = 100;
         private const float treeGenThreshold = 0.25f;
         private const float treeNoiseScale = 0.005f;
@@ -41,8 +43,6 @@ namespace Dev.Kosov.Factory.Core
             GenInitialWorld(worldGenRadius * 2);
 
             Inventory.Run();
-
-            // TODO: add ores around the spawn
         }
 
         public void TryPutOrTakeFromCrafterInput(Crafter crafter, Vector2Int pos)
@@ -226,6 +226,40 @@ namespace Dev.Kosov.Factory.Core
             return entities[id];
         }
 
+        private void SpawnStartingOres()
+        {
+            foreach ((OreType oreType, OreInfo.Info oreInfo) in OreInfo.GetAll())
+            {
+                bool found = false;
+                while (!found)
+                {
+                    int centerX = UnityEngine.Random.Range(-startingOreRadius, startingOreRadius);
+                    int centerY = UnityEngine.Random.Range(-startingOreRadius, startingOreRadius);
+                    float radius = UnityEngine.Random.Range(oreInfo.RadiusVariation.x, oreInfo.RadiusVariation.y);
+                    int intRadius = (int)(radius + 0.5f);
+
+                    found = true;
+                    for (int x = centerX - intRadius; x <= centerX + intRadius; x++)
+                    {
+                        if (!found) break;
+                        for (int y = centerY - intRadius; y <= centerY + intRadius; y++)
+                        {
+                            Vector2Int pos = new(x, y);
+                            if (map.ContainsKey(pos) && map[pos].OreType != OreType.None)
+                            {
+                                found = false;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (!found) continue;
+
+                    SpawnOre(oreType, oreInfo, new(centerX, centerY), radius);
+                }
+            }
+        }
+
         private void ExpandMap(Vector2Int newPlayerPos)
         {
             Vector2Int offset = newPlayerPos - PlayerPos;
@@ -288,9 +322,12 @@ namespace Dev.Kosov.Factory.Core
             TileGenerated?.Invoke(this, new(pos, tile.BackType));
         }
 
-        private void SpawnOre(OreType oreType, OreInfo.Info oreInfo, Vector2Int center)
+        private void SpawnOre(OreType oreType, OreInfo.Info oreInfo, Vector2Int center, float radiusSquared = -1)
         {
-            float radiusSquared = UnityEngine.Random.Range(oreInfo.RadiusVariation.x, oreInfo.RadiusVariation.y);
+            if (radiusSquared == -1)
+            {
+                radiusSquared = UnityEngine.Random.Range(oreInfo.RadiusVariation.x, oreInfo.RadiusVariation.y);
+            }
             int intRadius = (int)(radiusSquared + 0.5f);
             radiusSquared *= radiusSquared;
 
@@ -308,7 +345,7 @@ namespace Dev.Kosov.Factory.Core
                         {
                             if (i == 0)
                             {
-                                if (map[pos]?.OreType != OreType.None) return;
+                                if (map[pos].OreType != OreType.None) return;
 
                                 continue;
                             }
@@ -345,6 +382,8 @@ namespace Dev.Kosov.Factory.Core
 
         private void GenInitialWorld(int radius)
         {
+            SpawnStartingOres();
+
             for (int x = -radius; x <= radius; x++)
             {
                 for (int y = -radius; y <= radius; y++)
