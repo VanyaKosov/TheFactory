@@ -1,6 +1,5 @@
 using Dev.Kosov.Factory.Core;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -31,7 +30,7 @@ namespace Dev.Kosov.Factory.Graphics
         {
             itemType = type;
 
-            SlotRenderer.SetItem(type, amount);
+            SlotRenderer.SetItem(type, amount, false);
         }
 
         private void UpdateVisibility()

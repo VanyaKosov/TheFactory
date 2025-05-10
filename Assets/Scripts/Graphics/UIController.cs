@@ -154,12 +154,12 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void SetInvItem(object sender, Inventory.SetItemEventArgs args)
         {
-            invSlotRenderers[args.Pos.x, args.Pos.y].SetItem(args.Type, args.Amount);
+            invSlotRenderers[args.Pos.x, args.Pos.y].SetItem(args.Type, args.Amount, false);
         }
 
         private void SetHotbarItem(object sender, Inventory.SetItemEventArgs args)
         {
-            hotbarSlotRenderers[args.Pos.x, args.Pos.y].SetItem(args.Type, args.Amount);
+            hotbarSlotRenderers[args.Pos.x, args.Pos.y].SetItem(args.Type, args.Amount, false);
         }
 
         private void SetCursorItem(object sender, Inventory.SetCursorEventArgs args)

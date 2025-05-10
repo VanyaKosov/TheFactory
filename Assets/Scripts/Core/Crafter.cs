@@ -30,24 +30,24 @@ namespace Dev.Kosov.Factory.Core
             return (time - timeStarted) / CraftingRecipes.Get(currentRecipe).time * 100;
         }
 
-        public ItemType GetExpectedInputItem(Vector2Int pos)
+        public InvSlot GetExpectedInputItem(Vector2Int pos)
         {
-            if (currentRecipe == RecipeType.None) return ItemType.None;
+            if (currentRecipe == RecipeType.None) return new(ItemType.None, 0);
 
             var recipe = CraftingRecipes.Get(currentRecipe);
-            if (pos.x >= recipe.inputs.Length) return ItemType.None;
+            if (pos.x >= recipe.inputs.Length) return new(ItemType.None, 0);
 
-            return recipe.inputs[pos.x].Type;
+            return recipe.inputs[pos.x];
         }
 
-        public ItemType GetExpectedOutputItem(Vector2Int pos)
+        public InvSlot GetExpectedOutputItem(Vector2Int pos)
         {
-            if (currentRecipe == RecipeType.None) return ItemType.None;
+            if (currentRecipe == RecipeType.None) return new(ItemType.None, 0);
 
             var recipe = CraftingRecipes.Get(currentRecipe);
-            if (pos.x >= recipe.outputs.Length) return ItemType.None;
+            if (pos.x >= recipe.outputs.Length) return new(ItemType.None, 0);
 
-            return recipe.outputs[pos.x].Type;
+            return recipe.outputs[pos.x];
         }
 
         public void ChangeRecipe(RecipeType recipe)

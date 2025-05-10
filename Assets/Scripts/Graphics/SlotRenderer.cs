@@ -9,6 +9,8 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class SlotRenderer : MonoBehaviour, IPointerClickHandler
     {
+        private readonly Color hologramColor = new(86 / 256f, 173 / 256f, 215 / 256f, 237 / 256f);
+        private readonly Color itemColor = new(1f, 1f, 1f, 1f);
         private Catalogs itemSpriteCatalog;
         private Action leftClickCallback;
         private Action rightClickCallback;
@@ -23,13 +25,22 @@ namespace Dev.Kosov.Factory.Graphics
             this.rightClickCallback = rightClickCallback;
         }
 
-        public void SetItem(ItemType type, int amount)
+        public void SetItem(ItemType type, int amount, bool isHologram)
         {
             if (type == ItemType.None)
             {
                 ItemRenderer.gameObject.SetActive(false);
                 TextRenderer.gameObject.SetActive(false);
                 return;
+            }
+
+            if (isHologram)
+            {
+                ItemRenderer.color = hologramColor;
+            }
+            else
+            {
+                ItemRenderer.color = itemColor;
             }
 
             ItemRenderer.sprite = itemSpriteCatalog.GetIconSprite(type);

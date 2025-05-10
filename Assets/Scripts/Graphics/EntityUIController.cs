@@ -70,36 +70,36 @@ namespace Dev.Kosov.Factory.Graphics
         {
             if (crafter == null) return;
 
-            for (int i = 0; i < inputSlotRenderers.Length; i++)
-            {
-                InvSlot item = crafter.InputStorage.GetItem(new(i, 0));
-                if (crafter.GetExpectedInputItem(new(i, 0)) == ItemType.None)
-                {
-                    inputSlotRenderers[i].gameObject.SetActive(false);
-                }
-                else
-                {
-                    inputSlotRenderers[i].gameObject.SetActive(true);
-                }
-
-                inputSlotRenderers[i].SetItem(item.Type, item.Amount);
-            }
-
-            for (int i = 0; i < outputSlotRenderers.Length; i++)
-            {
-                InvSlot item = crafter.OutputStorage.GetItem(new(i, 0));
-                if (crafter.GetExpectedOutputItem(new(i, 0)) == ItemType.None)
-                {
-                    outputSlotRenderers[i].gameObject.SetActive(false);
-                }
-                else
-                {
-                    outputSlotRenderers[i].gameObject.SetActive(true);
-                }
-                outputSlotRenderers[i].SetItem(item.Type, item.Amount);
-            }
+            UpdateStorageState(crafter.InputStorage, inputSlotRenderers, crafter.GetExpectedInputItem);
+            UpdateStorageState(crafter.OutputStorage, outputSlotRenderers, crafter.GetExpectedOutputItem);
 
             ProgressBar.value = crafter.GetPercentComplete();
+        }
+
+        private void UpdateStorageState(Storage storage, SlotRenderer[] slotRenderers, Func<Vector2Int, InvSlot> getExpected)
+        {
+            for (int i = 0; i < slotRenderers.Length; i++)
+            {
+                InvSlot item = storage.GetItem(new(i, 0));
+                InvSlot expected = getExpected(new(i, 0));
+                if (expected.Type == ItemType.None)
+                {
+                    slotRenderers[i].gameObject.SetActive(false);
+                }
+                else
+                {
+                    slotRenderers[i].gameObject.SetActive(true);
+                }
+
+                if (item.Amount == 0)
+                {
+                    slotRenderers[i].SetItem(expected.Type, expected.Amount, true);
+                }
+                else
+                {
+                    slotRenderers[i].SetItem(item.Type, item.Amount, false);
+                }
+            }
         }
 
         private void GenerateRecipeChoicePanel()
@@ -151,7 +151,7 @@ namespace Dev.Kosov.Factory.Graphics
                     slotRenderer.Init(Catalogs, () => ChosenRecipe(recipeType), null);
 
                     var recipe = CraftingRecipes.Get(crafter.AvailableRecipes[slotsCreated]);
-                    slotRenderer.SetItem(recipe.outputs[0].Type, recipe.outputs[0].Amount);
+                    slotRenderer.SetItem(recipe.outputs[0].Type, recipe.outputs[0].Amount, false);
 
                     slotsCreated++;
                 }

@@ -55,7 +55,7 @@ namespace Dev.Kosov.Factory.Core
                 return;
             }
 
-            if (Inventory.CursorSlot.Type != crafter.GetExpectedInputItem(pos)) return;
+            if (Inventory.CursorSlot.Type != crafter.GetExpectedInputItem(pos).Type) return;
             int remainder = crafter.InputStorage.TryStack(Inventory.CursorSlot, pos);
             if (remainder == 0)
             {
