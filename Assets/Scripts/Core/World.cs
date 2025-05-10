@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 namespace Dev.Kosov.Factory.Core
 {
@@ -446,18 +445,12 @@ namespace Dev.Kosov.Factory.Core
         {
             public readonly Entity Entity;
             public readonly Vector2Int Pos;
-            //public readonly EntityType Type;
-            //public readonly Vector2Int Size;
-            //public readonly Rotation Rotation;
             public readonly int EntityID;
 
             internal EntityCreatedEventArgs(Entity entity, Vector2Int pos, int entityID)
             {
                 Entity = entity;
                 Pos = pos;
-                //Type = type;
-                //Size = size;
-                //Rotation = rotation;
                 EntityID = entityID;
             }
         }

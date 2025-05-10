@@ -11,7 +11,7 @@ namespace Dev.Kosov.Factory.Core
         public readonly int Width;
         public readonly int Height;
 
-        internal event EventHandler<SlotCahangedEventArgs> SlotChanged;
+        internal event EventHandler<SlotChangedEventArgs> SlotChanged;
 
         internal Storage(int width, int height)
         {
@@ -157,13 +157,13 @@ namespace Dev.Kosov.Factory.Core
             }
         }
 
-        internal class SlotCahangedEventArgs : EventArgs
+        internal class SlotChangedEventArgs : EventArgs
         {
             internal readonly Vector2Int Pos;
             internal readonly ItemType Type;
             internal readonly int Amount;
 
-            public SlotCahangedEventArgs(Vector2Int pos, ItemType type, int amount)
+            public SlotChangedEventArgs(Vector2Int pos, ItemType type, int amount)
             {
                 Pos = pos;
                 Type = type;

@@ -154,12 +154,12 @@ namespace Dev.Kosov.Factory.Core
             AddItemToInventory(ItemType.Iron_chest, 60);
         }
 
-        private void OnInventorySlotChange(object sender, Storage.SlotCahangedEventArgs args)
+        private void OnInventorySlotChange(object sender, Storage.SlotChangedEventArgs args)
         {
             SetInvItem?.Invoke(this, new(args.Pos, args.Type, args.Amount));
         }
 
-        private void OnHotbarSlotChange(object sender, Storage.SlotCahangedEventArgs args)
+        private void OnHotbarSlotChange(object sender, Storage.SlotChangedEventArgs args)
         {
             SetHotbarItem?.Invoke(this, new(args.Pos, args.Type, args.Amount));
         }
