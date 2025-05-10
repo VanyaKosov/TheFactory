@@ -97,7 +97,7 @@ namespace Dev.Kosov.Factory.Core
             {
                 RecipeType.Make_wooden_chest,
                 (
-                    new InvSlot[] { new(ItemType.Wood, 5) },
+                    new InvSlot[] { new(ItemType.Wood, 6) },
                     new InvSlot[] { new(ItemType.Wood_chest, 1) },
                     1f
                 )
@@ -109,14 +109,21 @@ namespace Dev.Kosov.Factory.Core
                     new InvSlot[] { new(ItemType.Stone_furnace, 1) },
                     3f
                 )
-            }
-            ,
+            },
             {
                 RecipeType.Make_electric_drill,
                 (
                     new InvSlot[] { new(ItemType.Iron_plate, 6), new(ItemType.Copper_plate, 4) },
                     new InvSlot[] { new(ItemType.Electric_drill, 1) },
                     3f
+                )
+            },
+            {
+                RecipeType.Make_iron_chest,
+                (
+                    new InvSlot[] { new(ItemType.Iron_plate, 6) },
+                    new InvSlot[] { new(ItemType.Iron_chest, 1) },
+                    1f
                 )
             }
         };

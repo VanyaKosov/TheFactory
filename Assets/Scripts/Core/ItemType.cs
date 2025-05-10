@@ -19,6 +19,7 @@
         Simple_circuit,
         Electric_drill,
         Inserter,
-        Iron_gear
+        Iron_gear,
+        Iron_chest
     }
 }

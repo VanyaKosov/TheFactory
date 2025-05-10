@@ -41,16 +41,14 @@ namespace Dev.Kosov.Factory.Graphics
             for (int i = 0; i < InputSlots.Length; i++)
             {
                 inputSlotRenderers[i] = InputSlots[i].GetComponent<SlotRenderer>();
-                Button button = InputSlots[i].GetComponent<Button>();
                 Vector2Int pos = new(i, 0);
-                button.onClick.AddListener(() => OnInputSlotClick(pos));
+                inputSlotRenderers[i].Init(Catalogs, () => OnInputSlotLeftClick(pos), null);
             }
             for (int i = 0; i < OutputSlots.Length; i++)
             {
                 outputSlotRenderers[i] = OutputSlots[i].GetComponent<SlotRenderer>();
-                Button button = OutputSlots[i].GetComponent<Button>();
                 Vector2Int pos = new(i, 0);
-                button.onClick.AddListener(() => OnOutputSlotClick(pos));
+                outputSlotRenderers[i].Init(Catalogs, () => OnOutputSlotLeftClick(pos), null);
             }
 
             world.EntityOpened += OpenEntity;
@@ -181,12 +179,12 @@ namespace Dev.Kosov.Factory.Graphics
             }
         }
 
-        private void OnInputSlotClick(Vector2Int pos)
+        private void OnInputSlotLeftClick(Vector2Int pos)
         {
             world.TryPutOrTakeFromCrafterInput(crafter, pos);
         }
 
-        private void OnOutputSlotClick(Vector2Int pos)
+        private void OnOutputSlotLeftClick(Vector2Int pos)
         {
             world.TryTakeFromCrafterOutput(crafter, pos);
         }

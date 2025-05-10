@@ -5,9 +5,10 @@
         None,
         Tree,
         Assembler1,
-        WoodChest,
-        StoneFurnace,
+        Wood_chest,
+        Stone_furnace,
         Electric_drill,
-        Inserter
+        Inserter,
+        Iron_chest
     }
 }

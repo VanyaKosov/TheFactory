@@ -179,6 +179,7 @@ MonoBehaviour:
   ElectricDrill: {fileID: 1066696897281387259, guid: 8c544e3f017b1774f9f0daeb033a3fc7, type: 3}
   Inserter: {fileID: -3389180282670715757, guid: 164bb14d4dd091c4b8f3f13a5b7839d2, type: 3}
   IronGear: {fileID: -954157439247242381, guid: 6acc22a2fb5837940926364e0e6792a9, type: 3}
+  IronChest: {fileID: -7941162245757568681, guid: 30b2c3d812cd1ea458217ce0d6d84b27, type: 3}
   Assembler1Ghost: {fileID: -3960403711501517520, guid: 1811cef6610451642b3d1a4965419f1e, type: 3}
   WoodChestGhost: {fileID: 21300000, guid: f8a817942ecbae346a0c15652d01786f, type: 3}
   StoneFurnaceGhost: {fileID: 21300000, guid: 47ee55e678be25942beaea04cf94a733, type: 3}
@@ -190,6 +191,7 @@ MonoBehaviour:
   InserterEGhost: {fileID: 21300000, guid: dd11d58153467fd4e9b2113d57843b12, type: 3}
   InserterSGhost: {fileID: 21300000, guid: 64cab40c38967174b9a191ccab1d4787, type: 3}
   InserterWGhost: {fileID: 21300000, guid: 28c7d735cf0485148b5691de661b16af, type: 3}
+  IronChestGhost: {fileID: 21300000, guid: 1f1e1ac90dbf56d41975024bc88a2f03, type: 3}
   TreePrefabs:
   - {fileID: 5358693995335720704, guid: 513f030923e1f08418d660ebbf613872, type: 3}
   - {fileID: 37130282111523190, guid: c3e0c890bd1272144a8615ade07d2044, type: 3}
@@ -210,6 +212,7 @@ MonoBehaviour:
   InserterEPrefab: {fileID: 2571336197939391678, guid: bc70d5de5f0a83841be394e34bb5123c, type: 3}
   InserterSPrefab: {fileID: 701369745400791352, guid: 7a8b7500d471c6242abe4d364888acd0, type: 3}
   InserterWPrefab: {fileID: 4469750343473238960, guid: c9f85330fab9c7e42960d6c811642d35, type: 3}
+  IronChestPrefab: {fileID: 4142425528764967813, guid: 223c070cf4e26264f90910157f56ead1, type: 3}
 --- !u!1 &31069430
 GameObject:
   m_ObjectHideFlags: 0

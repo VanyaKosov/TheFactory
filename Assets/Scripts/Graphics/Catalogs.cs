@@ -26,6 +26,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite ElectricDrill;
         public Sprite Inserter;
         public Sprite IronGear;
+        public Sprite IronChest;
 
         [Header("Entity Ghost Sprites")]
         public Sprite Assembler1Ghost;
@@ -39,6 +40,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite InserterEGhost;
         public Sprite InserterSGhost;
         public Sprite InserterWGhost;
+        public Sprite IronChestGhost;
 
         [Header("Entity Prefabs")]
         public GameObject[] TreePrefabs;
@@ -53,6 +55,7 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject InserterEPrefab;
         public GameObject InserterSPrefab;
         public GameObject InserterWPrefab;
+        public GameObject IronChestPrefab;
 
         private readonly Dictionary<ItemType, Sprite> itemTypeToSprite = new();
         private readonly Dictionary<BackType, Sprite[]> backTypeToSprite = new();
@@ -77,6 +80,7 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Electric_drill, ElectricDrill);
             itemTypeToSprite.Add(ItemType.Inserter, Inserter);
             itemTypeToSprite.Add(ItemType.Iron_gear, IronGear);
+            itemTypeToSprite.Add(ItemType.Iron_chest, IronChest);
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);
@@ -102,8 +106,8 @@ namespace Dev.Kosov.Factory.Graphics
             return type switch
             {
                 EntityType.Assembler1 => Assembler1Ghost,
-                EntityType.WoodChest => WoodChestGhost,
-                EntityType.StoneFurnace => StoneFurnaceGhost,
+                EntityType.Wood_chest => WoodChestGhost,
+                EntityType.Stone_furnace => StoneFurnaceGhost,
                 EntityType.Electric_drill => rotation switch
                 {
                     Rotation.Up => ElectricDrillNGhost,
@@ -120,6 +124,7 @@ namespace Dev.Kosov.Factory.Graphics
                     Rotation.Left => InserterWGhost,
                     _ => throw new Exception("Unknown rotation")
                 },
+                EntityType.Iron_chest => IronChestGhost,
                 _ => throw new Exception("Missing entity ghost")
             };
         }
@@ -159,8 +164,8 @@ namespace Dev.Kosov.Factory.Graphics
             {
                 EntityType.Tree => TreePrefabs[UnityEngine.Random.Range(0, TreePrefabs.Length)],
                 EntityType.Assembler1 => Assembler1Prefab,
-                EntityType.WoodChest => WoodChestPrefab,
-                EntityType.StoneFurnace => StoneFurnacePrefab,
+                EntityType.Wood_chest => WoodChestPrefab,
+                EntityType.Stone_furnace => StoneFurnacePrefab,
                 EntityType.Electric_drill => rotation switch
                 {
                     Rotation.Up => ElectricDrillNPrefab,
@@ -177,6 +182,7 @@ namespace Dev.Kosov.Factory.Graphics
                     Rotation.Left => InserterWPrefab,
                     _ => throw new Exception("Unknown rotation")
                 },
+                EntityType.Iron_chest => IronChestPrefab,
                 _ => throw new Exception("Missing entity prefab")
             };
         }
