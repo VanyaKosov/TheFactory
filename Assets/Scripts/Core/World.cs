@@ -23,7 +23,8 @@ namespace Dev.Kosov.Factory.Core
         public event EventHandler<EntityCreatedEventArgs> EntityCreated;
         public event EventHandler<EntityRemovedEventArgs> EntityRemoved;
         public event EventHandler<OreMinedEventArgs> OreMined;
-        public event EventHandler<EntityOpenedEventArgs> EntityOpened;
+        public event EventHandler<CrafterOpenedEventArgs> CrafterOpened;
+        public event EventHandler<ChestOpenedEventArgs> ChestOpened;
 
         public World()
         {
@@ -83,7 +84,12 @@ namespace Dev.Kosov.Factory.Core
 
             if (entity is ICrafter crafter)
             {
-                EntityOpened?.Invoke(this, new(crafter.GetCrafter()));
+                CrafterOpened?.Invoke(this, new(crafter.GetCrafter()));
+            }
+
+            if (entity is Chest chest)
+            {
+                ChestOpened?.Invoke(this, new(chest));
             }
         }
 
@@ -492,13 +498,23 @@ namespace Dev.Kosov.Factory.Core
             }
         }
 
-        public class EntityOpenedEventArgs : EventArgs
+        public class CrafterOpenedEventArgs : EventArgs
         {
             public readonly Crafter Crafter;
 
-            public EntityOpenedEventArgs(Crafter crafter)
+            public CrafterOpenedEventArgs(Crafter crafter)
             {
                 Crafter = crafter;
+            }
+        }
+
+        public class ChestOpenedEventArgs : EventArgs
+        {
+            public readonly Chest Chest;
+
+            public ChestOpenedEventArgs(Chest chest)
+            {
+                Chest = chest;
             }
         }
     }

@@ -7,7 +7,9 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class UIController : MonoBehaviour
     {
-        private const float invHorOffset = 0;
+        private const float chestHorOffset = -320f;
+        private const float chestVertOffset = 40f;
+        private const float invHorOffset = 0f;
         private const float spaceBetweenSlots = 8f;
         private const float slotSize = 45f;
         private const float invVertOffset = 40f;
@@ -15,9 +17,13 @@ namespace Dev.Kosov.Factory.Graphics
         private SlotRenderer[,] invSlotRenderers;
         private SlotRenderer[,] hotbarSlotRenderers;
         private CursorSlotRenderer cursorSlotRenderer;
+        private World world;
         private Inventory inventory;
         private RectTransform canvasRectTransform;
         private RectTransform cursorRectTransform;
+        private Chest openChest = null;
+        private GameObject chestInstance;
+        private SlotRenderer[,] chestSlotRenderers;
 
         public UserInput UserInput;
         public bool InvOpen = false;
@@ -26,6 +32,7 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject InventoryParent;
         public GameObject HotbarParent;
         public GameObject CursorParent;
+        public GameObject ChestParent;
         public Camera Camera;
         public Canvas Canvas;
         public GameObject InventoryBackPrefab;
@@ -34,7 +41,8 @@ namespace Dev.Kosov.Factory.Graphics
 
         void OnEnable()
         {
-            inventory = GameObject.Find("WorldController").GetComponent<WorldController>().World.Inventory;
+            world = GameObject.Find("WorldController").GetComponent<WorldController>().World;
+            inventory = world.Inventory;
             UserInput.OpenInventory += OnPrimaryInput;
         }
 
@@ -46,10 +54,12 @@ namespace Dev.Kosov.Factory.Graphics
 
             invSlotRenderers = GenerateSlotPanel(InventoryParent,
                 new(Canvas.transform.position.x + invHorOffset, Canvas.transform.position.y + invVertOffset),
-                inventory.Width, inventory.Height, OnInvSlotLeftClick, OnInvSlotRightClick);
+                inventory.Width, inventory.Height, OnInvSlotLeftClick, OnInvSlotRightClick).renderers;
             hotbarSlotRenderers = GenerateSlotPanel(HotbarParent,
                 new(Canvas.transform.position.x, Canvas.transform.position.y * hotbarBottomHalfOffsetPercent),
-                inventory.HotbarWidth, inventory.HotbarHeight, OnHotbarSlotLeftClick, OnHotbarSlotRightClick);
+                inventory.HotbarWidth, inventory.HotbarHeight, OnHotbarSlotLeftClick, OnHotbarSlotRightClick).renderers;
+
+            world.ChestOpened += OpenChest;
 
             inventory.SetInvItem += SetInvItem;
             inventory.SetHotbarItem += SetHotbarItem;
@@ -61,11 +71,35 @@ namespace Dev.Kosov.Factory.Graphics
         void Update()
         {
             UpdateCursorSlotPos();
+            UpdateChestState();
 
             InventoryParent.SetActive(InvOpen);
         }
 
-        private SlotRenderer[,] GenerateSlotPanel(GameObject parent, Vector2 position, int width, int height, Action<Vector2Int> leftCallback, Action<Vector2Int> rightCallback)
+        private void UpdateChestState()
+        {
+            if (openChest == null) return;
+
+            if (!InvOpen)
+            {
+                openChest = null;
+                Destroy(chestInstance);
+                chestSlotRenderers = null;
+
+                return;
+            }
+
+            for (int x = 0; x < openChest.InvWidth; x++)
+            {
+                for (int y = 0; y < openChest.InvHeight; y++)
+                {
+                    InvSlot item = openChest.Storage.GetItem(new(x, y));
+                    chestSlotRenderers[x, y].SetItem(item.Type, item.Amount, false);
+                }
+            }
+        }
+
+        private (SlotRenderer[,] renderers, GameObject instance) GenerateSlotPanel(GameObject parent, Vector2 position, int width, int height, Action<Vector2Int> leftCallback, Action<Vector2Int> rightCallback)
         {
             SlotRenderer[,] slotRenderers = new SlotRenderer[width, height];
 
@@ -101,7 +135,7 @@ namespace Dev.Kosov.Factory.Graphics
                 }
             }
 
-            return slotRenderers;
+            return (slotRenderers, back);
         }
 
         private void UpdateCursorSlotPos()
@@ -147,6 +181,16 @@ namespace Dev.Kosov.Factory.Graphics
             inventory.TryTakeHalfFromHotbar(pos);
         }
 
+        private void OnChestLeftClick(Vector2Int pos)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void OnChestRightClick(Vector2Int pos)
+        {
+            throw new NotImplementedException();
+        }
+
         private void OnPrimaryInput(object sender, EventArgs args)
         {
             InvOpen = !InvOpen;
@@ -165,6 +209,23 @@ namespace Dev.Kosov.Factory.Graphics
         private void SetCursorItem(object sender, Inventory.SetCursorEventArgs args)
         {
             cursorSlotRenderer.SetItem(args.Type, args.Amount);
+        }
+
+        private void OpenChest(object sender, World.ChestOpenedEventArgs args)
+        {
+            openChest = null;
+            Destroy(chestInstance);
+            chestSlotRenderers = null;
+
+            InvOpen = true;
+            openChest = args.Chest;
+
+            (SlotRenderer[,] renderers, GameObject instance) = GenerateSlotPanel(ChestParent,
+                new(Canvas.transform.position.x + chestHorOffset, Canvas.transform.position.y + chestVertOffset),
+                openChest.InvWidth, openChest.InvHeight, OnChestLeftClick, OnChestRightClick);
+
+            chestSlotRenderers = renderers;
+            chestInstance = instance;
         }
     }
 }

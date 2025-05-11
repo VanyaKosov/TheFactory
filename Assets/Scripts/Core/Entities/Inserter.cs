@@ -91,10 +91,17 @@ namespace Dev.Kosov.Factory.Core
 
             List<InvSlot> wantedItems = target.GetWantedItems();
             InvSlot taken = new(ItemType.None, 0);
-            foreach (InvSlot item in wantedItems)
+            if (wantedItems != null)
             {
-                taken = source.Take(item.Type);
-                if (taken.Type != ItemType.None) break;
+                foreach (InvSlot item in wantedItems)
+                {
+                    taken = source.Take(item.Type);
+                    if (taken.Type != ItemType.None) break;
+                }
+            }
+            else
+            {
+                taken = source.Take();
             }
 
             if (taken.Type == ItemType.None) return;

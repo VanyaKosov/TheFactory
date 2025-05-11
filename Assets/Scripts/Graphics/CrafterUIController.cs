@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Dev.Kosov.Factory.Graphics
 {
-    public class EntityUIController : MonoBehaviour
+    public class CrafterUIController : MonoBehaviour
     {
         private const int recipesPerRow = 6;
         private const float spaceBetweenSlots = 8f;
@@ -51,7 +51,7 @@ namespace Dev.Kosov.Factory.Graphics
                 outputSlotRenderers[i].Init(Catalogs, () => OnOutputSlotLeftClick(pos), null);
             }
 
-            world.EntityOpened += OpenEntity;
+            world.CrafterOpened += OpenEntity;
         }
 
         void Update()
@@ -189,7 +189,7 @@ namespace Dev.Kosov.Factory.Graphics
             world.TryTakeFromCrafterOutput(crafter, pos);
         }
 
-        private void OpenEntity(object sender, World.EntityOpenedEventArgs args)
+        private void OpenEntity(object sender, World.CrafterOpenedEventArgs args)
         {
             choicePanelOpen = false;
             Destroy(recipeChoicePanel);

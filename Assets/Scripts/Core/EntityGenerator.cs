@@ -12,11 +12,11 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
             {
                 EntityType.Tree => new Entity(rotation, pos, new() { new(ItemType.Wood, 4) }, EntityType.Tree),
                 EntityType.Assembler1 => new Assembler1(rotation, pos),
-                EntityType.Wood_chest => new WoodChest(rotation, pos),
+                EntityType.Wood_chest => new Chest(rotation, pos, 6, 2, EntityInfo.Get(type).ItemType),
                 EntityType.Stone_furnace => new StoneFurnace(rotation, pos),
                 EntityType.Electric_drill => new ElectricDrill(rotation, pos),
                 EntityType.Inserter => new Inserter(rotation, pos, getEntityAtPos),
-                EntityType.Iron_chest => new IronChest(rotation, pos),
+                EntityType.Iron_chest => new Chest(rotation, pos, 6, 4, EntityInfo.Get(type).ItemType),
                 _ => throw new Exception("Missing entity class")
             };
         }

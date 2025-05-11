@@ -919,6 +919,41 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5853213013112112345, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
   m_PrefabInstance: {fileID: 1978969068}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &694413071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694413072}
+  m_Layer: 5
+  m_Name: Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &694413072
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694413071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2042186222}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &751445551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5853213013112112345, guid: 64ed8e279b7b4f943b506ca87ddbb1df, type: 3}
@@ -2042,6 +2077,7 @@ MonoBehaviour:
   InventoryParent: {fileID: 1229636091}
   HotbarParent: {fileID: 499921460}
   CursorParent: {fileID: 31069430}
+  ChestParent: {fileID: 694413071}
   Camera: {fileID: 1371078440}
   Canvas: {fileID: 2042186225}
   InventoryBackPrefab: {fileID: 3648267955918465723, guid: 548cca2a4e9b21940a65403bb5251d43, type: 3}
@@ -2986,6 +3022,7 @@ RectTransform:
   - {fileID: 499921461}
   - {fileID: 1510928343}
   - {fileID: 31069431}
+  - {fileID: 694413072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
