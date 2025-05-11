@@ -37,33 +37,41 @@ namespace Dev.Kosov.Factory.Core
 
         public void TryTakeHalfFromInventory(Vector2Int pos)
         {
-            if (CursorSlot.Type != ItemType.None) return;
-            InvSlot item = inventory.GetItem(pos);
-            if (item.Type == ItemType.None) return;
-            int toTake = item.Amount / 2;
-            if (toTake == 0) return;
-
-            SetCursorSlot(item.Type, toTake);
-            inventory.SetItem(new(item.Type, item.Amount - toTake), pos);
+            TryTakeHalfFromStorage(pos, inventory);
         }
 
         public void TryTakeHalfFromHotbar(Vector2Int pos)
         {
+            TryTakeHalfFromStorage(pos, hotbar);
+        }
+
+        public void TryPutToInventory(Vector2Int pos)
+        {
+            TryPutToStorage(pos, inventory);
+        }
+
+        public void TryPutToHotbar(Vector2Int pos)
+        {
+            TryPutToStorage(pos, hotbar);
+        }
+
+        public void TryTakeHalfFromStorage(Vector2Int pos, Storage storage)
+        {
             if (CursorSlot.Type != ItemType.None) return;
-            InvSlot item = hotbar.GetItem(pos);
+            InvSlot item = storage.GetItem(pos);
             if (item.Type == ItemType.None) return;
             int toTake = item.Amount / 2;
             if (toTake == 0) return;
 
             SetCursorSlot(item.Type, toTake);
-            hotbar.SetItem(new(item.Type, item.Amount - toTake), pos);
+            storage.SetItem(new(item.Type, item.Amount - toTake), pos);
         }
 
-        public void TryPutToInventory(Vector2Int pos)
+        public void TryPutToStorage(Vector2Int pos, Storage storage)
         {
-            if (inventory.GetItem(pos).Type == CursorSlot.Type)
+            if (storage.GetItem(pos).Type == CursorSlot.Type)
             {
-                int remainder = inventory.TryStack(CursorSlot, pos);
+                int remainder = storage.TryStack(CursorSlot, pos);
                 if (remainder == 0)
                 {
                     SetCursorSlot(ItemType.None, 0);
@@ -74,25 +82,15 @@ namespace Dev.Kosov.Factory.Core
                 return;
             }
 
-            SwitchItemWithInventory(pos);
+            SwitchItemWithStorage(pos, storage);
         }
 
-        public void TryPutToHotbar(Vector2Int pos)
+        public void SwitchItemWithStorage(Vector2Int pos, Storage storage)
         {
-            if (hotbar.GetItem(pos).Type == CursorSlot.Type)
-            {
-                int remainder = hotbar.TryStack(CursorSlot, pos);
-                if (remainder == 0)
-                {
-                    SetCursorSlot(ItemType.None, 0);
-                    return;
-                }
-
-                SetCursorSlot(CursorSlot.Type, remainder);
-                return;
-            }
-
-            SwitchItemWithHotbar(pos);
+            InvSlot temp = CursorSlot;
+            CursorSlot = storage.GetItem(pos);
+            storage.SetItem(temp, pos);
+            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
         }
 
         internal int AddItemToInventory(ItemType type, int amount)
@@ -125,22 +123,6 @@ namespace Dev.Kosov.Factory.Core
 
             CursorSlot = new(type, amount);
             SetCursorItem?.Invoke(this, new(type, amount));
-        }
-
-        private void SwitchItemWithInventory(Vector2Int pos)
-        {
-            InvSlot temp = CursorSlot;
-            CursorSlot = inventory.GetItem(pos);
-            inventory.SetItem(temp, pos);
-            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
-        }
-
-        private void SwitchItemWithHotbar(Vector2Int pos)
-        {
-            InvSlot temp = CursorSlot;
-            CursorSlot = hotbar.GetItem(pos);
-            hotbar.SetItem(temp, pos);
-            SetCursorItem?.Invoke(this, new(CursorSlot.Type, CursorSlot.Amount));
         }
 
         private void DefaultInvInitialize()

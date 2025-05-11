@@ -183,12 +183,12 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OnChestLeftClick(Vector2Int pos)
         {
-            throw new NotImplementedException();
+            inventory.TryPutToStorage(pos, openChest.Storage);
         }
 
         private void OnChestRightClick(Vector2Int pos)
         {
-            throw new NotImplementedException();
+            inventory.TryTakeHalfFromStorage(pos, openChest.Storage);
         }
 
         private void OnPrimaryInput(object sender, EventArgs args)
@@ -213,7 +213,6 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OpenChest(object sender, World.ChestOpenedEventArgs args)
         {
-            openChest = null;
             Destroy(chestInstance);
             chestSlotRenderers = null;
 
