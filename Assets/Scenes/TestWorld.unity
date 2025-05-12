@@ -181,6 +181,7 @@ MonoBehaviour:
   IronGear: {fileID: -954157439247242381, guid: 6acc22a2fb5837940926364e0e6792a9, type: 3}
   IronChest: {fileID: -7941162245757568681, guid: 30b2c3d812cd1ea458217ce0d6d84b27, type: 3}
   SteelPlate: {fileID: -504038281363281715, guid: 5e351b09d30c73a40beaf2c2f4bf2979, type: 3}
+  Concrete: {fileID: 4515746300913256686, guid: 68b28f27361d4fe4db9aded56ff052b1, type: 3}
   Assembler1Ghost: {fileID: -3960403711501517520, guid: 1811cef6610451642b3d1a4965419f1e, type: 3}
   WoodChestGhost: {fileID: 21300000, guid: f8a817942ecbae346a0c15652d01786f, type: 3}
   StoneFurnaceGhost: {fileID: 21300000, guid: 47ee55e678be25942beaea04cf94a733, type: 3}

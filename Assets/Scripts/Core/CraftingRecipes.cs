@@ -133,6 +133,14 @@ namespace Dev.Kosov.Factory.Core
                     new InvSlot[] { new(ItemType.Iron_chest, 1) },
                     1f
                 )
+            },
+            {
+                RecipeType.Make_concrete,
+                (
+                    new InvSlot[] { new(ItemType.Iron_ore, 1), new(ItemType.Stone_brick, 5) },
+                    new InvSlot[] { new(ItemType.Concrete, 10) },
+                    6f
+                )
             }
         };
 

@@ -21,6 +21,7 @@
         Inserter,
         Iron_gear,
         Iron_chest,
-        Steel_plate
+        Steel_plate,
+        Concrete
     }
 }

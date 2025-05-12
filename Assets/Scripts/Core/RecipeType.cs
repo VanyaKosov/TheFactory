@@ -18,6 +18,7 @@
         Make_electric_drill,
         Make_wooden_chest,
         Make_iron_gear,
-        Make_iron_chest
+        Make_iron_chest,
+        Make_concrete
     }
 }
