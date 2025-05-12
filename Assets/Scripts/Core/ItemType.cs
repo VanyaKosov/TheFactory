@@ -20,6 +20,7 @@
         Electric_drill,
         Inserter,
         Iron_gear,
-        Iron_chest
+        Iron_chest,
+        Steel_plate
     }
 }

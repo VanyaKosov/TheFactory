@@ -31,6 +31,14 @@ namespace Dev.Kosov.Factory.Core
                 )
             },
             {
+                RecipeType.Smelt_iron_plate,
+                (
+                    new InvSlot[] { new(ItemType.Iron_plate, 4) },
+                    new InvSlot[] { new(ItemType.Steel_plate, 1) },
+                    4f
+                )
+            },
+            {
                 RecipeType.Mine_iron_ore,
                 (
                     new InvSlot[] { },

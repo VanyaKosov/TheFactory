@@ -14,8 +14,9 @@ namespace Dev.Kosov.Factory.Core
             {
                 RecipeType.Smelt_iron_ore,
                 RecipeType.Smelt_copper_ore,
-                RecipeType.Smelt_stone_ore }
-            );
+                RecipeType.Smelt_stone_ore,
+                RecipeType.Smelt_iron_plate
+            });
         }
 
         public Crafter GetCrafter()

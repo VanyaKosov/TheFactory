@@ -9,6 +9,7 @@
         Smelt_iron_ore,
         Smelt_copper_ore,
         Smelt_stone_ore,
+        Smelt_iron_plate,
         Make_copper_wire,
         Make_simple_circuit,
         Make_inserter,

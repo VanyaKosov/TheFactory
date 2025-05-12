@@ -27,6 +27,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite Inserter;
         public Sprite IronGear;
         public Sprite IronChest;
+        public Sprite SteelPlate;
 
         [Header("Entity Ghost Sprites")]
         public Sprite Assembler1Ghost;
@@ -81,6 +82,7 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Inserter, Inserter);
             itemTypeToSprite.Add(ItemType.Iron_gear, IronGear);
             itemTypeToSprite.Add(ItemType.Iron_chest, IronChest);
+            itemTypeToSprite.Add(ItemType.Steel_plate, SteelPlate);
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);

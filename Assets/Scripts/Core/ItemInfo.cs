@@ -24,6 +24,7 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Inserter, new(EntityType.Inserter, 50) },
             { ItemType.Iron_gear, new(EntityType.None, 100) },
             { ItemType.Iron_chest, new(EntityType.Iron_chest, 50) },
+            { ItemType.Steel_plate, new(EntityType.None, 200) }
         };
 
         public static Info Get(ItemType type)
