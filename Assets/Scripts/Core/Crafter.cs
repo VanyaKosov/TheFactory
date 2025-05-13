@@ -92,6 +92,26 @@ namespace Dev.Kosov.Factory.Core
             time = Time.time;
 
             CheckCraft();
+
+            UpdateInputStorageReserve();
+        }
+
+        private void UpdateInputStorageReserve()
+        {
+            if (currentRecipe == RecipeType.None) return;
+            var recipe = CraftingRecipes.Get(currentRecipe);
+
+            int idx = 0;
+            for (int x = 0; x < InputStorage.Width; x++)
+            {
+                for (int y = 0; y < InputStorage.Height; y++)
+                {
+                    InputStorage.SetReserve(recipe.inputs[idx].Type, new(x, y));
+
+                    idx++;
+                    if (idx >= recipe.inputs.Length) return;
+                }
+            }
         }
 
         private void UpdateWantedItems()
