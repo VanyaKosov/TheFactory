@@ -24,6 +24,7 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject RecipeUISlotPrefab;
         public UIController UIController;
         public WorldController WorldController;
+        public PlayerController PlayerController;
         public GameObject CrafterUI;
         public Slider ProgressBar;
         public GameObject[] InputSlots;
@@ -51,7 +52,8 @@ namespace Dev.Kosov.Factory.Graphics
                 outputSlotRenderers[i].Init(Catalogs, () => OnOutputSlotLeftClick(pos), null);
             }
 
-            world.CrafterOpened += OpenEntity;
+            world.CrafterOpened += OpenCrafter;
+            PlayerController.PlayerCrafterOpened += OpenCrafter;
         }
 
         void Update()
@@ -189,7 +191,7 @@ namespace Dev.Kosov.Factory.Graphics
             world.TryTakeFromCrafterOutput(crafter, pos);
         }
 
-        private void OpenEntity(object sender, World.CrafterOpenedEventArgs args)
+        private void OpenCrafter(object sender, World.CrafterOpenedEventArgs args)
         {
             choicePanelOpen = false;
             Destroy(recipeChoicePanel);

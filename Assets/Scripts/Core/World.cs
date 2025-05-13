@@ -18,6 +18,7 @@ namespace Dev.Kosov.Factory.Core
 
         public Inventory Inventory { get; private set; }
         public Vector2Int PlayerPos { get; private set; }
+        public Crafter PlayerCrafter { get; private set; }
         public event EventHandler<TileGeneratedEventArgs> TileGenerated;
         public event EventHandler<OreSpawnedEventArgs> OreSpawned;
         public event EventHandler<EntityCreatedEventArgs> EntityCreated;
@@ -30,10 +31,28 @@ namespace Dev.Kosov.Factory.Core
         {
             Inventory = new();
             PlayerPos = new(0, 0);
+            PlayerCrafter = new(new() 
+            {
+                RecipeType.Smelt_iron_ore,
+                RecipeType.Smelt_copper_ore,
+                RecipeType.Smelt_stone_ore,
+                RecipeType.Smelt_iron_plate,
+                RecipeType.Make_copper_wire,
+                RecipeType.Make_simple_circuit,
+                RecipeType.Make_iron_gear,
+                RecipeType.Make_inserter,
+                RecipeType.Make_assembler1,
+                RecipeType.Make_wooden_chest,
+                RecipeType.Make_iron_chest,
+                RecipeType.Make_furnace,
+                RecipeType.Make_electric_drill,
+                RecipeType.Make_concrete
+            });
         }
 
         public void UpdateState()
         {
+            PlayerCrafter.UpdateState();
             UpdateEntities();
         }
 

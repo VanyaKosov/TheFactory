@@ -17,8 +17,9 @@ namespace Dev.Kosov.Factory.Graphics
         private PointerEventData clickData;
         private Vector2 prevMoveVector = new(0, 1);
         private World world;
-        private Inventory inventory;
+        private Crafter playerCrafter;
 
+        public event EventHandler<World.CrafterOpenedEventArgs> PlayerCrafterOpened;
         public GraphicRaycaster Raycaster;
         public UserInput UserInput;
         public Camera Camera;
@@ -36,8 +37,9 @@ namespace Dev.Kosov.Factory.Graphics
         void OnEnable()
         {
             world = WorldController.World;
-            inventory = world.Inventory;
+            playerCrafter = world.PlayerCrafter;
             UserInput.PrimaryInput += OnPrimaryInput;
+            UserInput.OpenPlayerCrafter += OnOpenPlayerCrafter;
         }
 
         void Start()
@@ -134,6 +136,11 @@ namespace Dev.Kosov.Factory.Graphics
             UpdateRaycaster();
             if (UIObjectsUnderMouse.Count > 0) return;
             world.OpenEntity(WorldController.WorldToMapPos(mousePos));
+        }
+
+        private void OnOpenPlayerCrafter(object sender, EventArgs args)
+        {
+            PlayerCrafterOpened?.Invoke(this, new(playerCrafter));
         }
     }
 }

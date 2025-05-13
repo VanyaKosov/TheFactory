@@ -9,6 +9,7 @@ namespace Dev.Kosov.Factory.Graphics
         public EventHandler<EventArgs> SecondaryInput;
         public EventHandler<EventArgs> OpenInventory;
         public EventHandler<EventArgs> RotateEntity;
+        public EventHandler<EventArgs> OpenPlayerCrafter;
 
         void Update()
         {
@@ -30,6 +31,11 @@ namespace Dev.Kosov.Factory.Graphics
             if (Input.GetKeyDown(KeyCode.R))
             {
                 RotateEntity?.Invoke(this, new());
+            }
+
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                OpenPlayerCrafter?.Invoke(this, new());
             }
         }
     }

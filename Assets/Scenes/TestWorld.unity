@@ -2275,6 +2275,7 @@ MonoBehaviour:
   RecipeUISlotPrefab: {fileID: 5853213013112112345, guid: 9c39f07773726f046bdd6c76a8a604b3, type: 3}
   UIController: {fileID: 1437781438}
   WorldController: {fileID: 1762007038}
+  PlayerController: {fileID: 615863792}
   CrafterUI: {fileID: 3648267954618173596}
   ProgressBar: {fileID: 2049133125}
   InputSlots:
