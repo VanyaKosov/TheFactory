@@ -94,6 +94,11 @@ namespace Dev.Kosov.Factory.Core
             CheckCraft();
 
             UpdateInputStorageReserve();
+
+            if (currentRecipe != RecipeType.None)
+            {
+                UpdateWantedItems();
+            }
         }
 
         private void UpdateInputStorageReserve()
@@ -121,7 +126,13 @@ namespace Dev.Kosov.Factory.Core
             for (int i = 0; i < inputs.Length; i++)
             {
                 InvSlot storageSlot = InputStorage.GetItem(new(i, 0));
-                if (storageSlot.Type != ItemType.None && storageSlot.Type != inputs[i].Type) continue; // && storageSlot.Type != ItemType.Empty
+                // if (storageSlot.Type != ItemType.None && storageSlot.Type != inputs[i].Type) continue;
+                if (storageSlot.Type == ItemType.None)
+                {
+                    WantedItems.Add(new(inputs[i].Type, inputs[i].Amount * itemRequestMultiplier));
+                    continue;
+                }
+                if (storageSlot.Type != inputs[i].Type) continue;
                 if (storageSlot.Amount >= inputs[i].Amount * itemRequestMultiplier) continue;
 
                 WantedItems.Add(new(inputs[i].Type, inputs[i].Amount * itemRequestMultiplier - storageSlot.Amount));

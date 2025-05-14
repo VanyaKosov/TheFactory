@@ -93,8 +93,9 @@ namespace Dev.Kosov.Factory.Core
             InvSlot taken = new(ItemType.None, 0);
             if (wantedItems != null)
             {
-                foreach (InvSlot item in wantedItems)
+                for (int i = 0; i < wantedItems.Count; i++)
                 {
+                    InvSlot item = wantedItems[i];
                     taken = source.Take(item.Type);
                     if (taken.Type != ItemType.None) break;
                 }
