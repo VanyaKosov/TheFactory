@@ -3,7 +3,6 @@
     public enum ItemType
     {
         None,
-        //Empty,
         Wood,
         Coal,
         Stone,
@@ -22,6 +21,7 @@
         Iron_gear,
         Iron_chest,
         Steel_plate,
-        Concrete
+        Concrete,
+        Rocket_silo
     }
 }

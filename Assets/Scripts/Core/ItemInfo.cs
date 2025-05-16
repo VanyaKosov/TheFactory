@@ -25,7 +25,8 @@ namespace Dev.Kosov.Factory.Core
             { ItemType.Iron_gear, new(EntityType.None, 100) },
             { ItemType.Iron_chest, new(EntityType.Iron_chest, 50) },
             { ItemType.Steel_plate, new(EntityType.None, 200) },
-            { ItemType.Concrete, new(EntityType.None, 100) }
+            { ItemType.Concrete, new(EntityType.None, 100) },
+            { ItemType.Rocket_silo, new(EntityType.Rocket_silo, 1) }
         };
 
         public static Info Get(ItemType type)

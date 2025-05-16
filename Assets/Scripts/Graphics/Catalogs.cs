@@ -29,6 +29,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite IronChest;
         public Sprite SteelPlate;
         public Sprite Concrete;
+        public Sprite RocketSilo;
 
         [Header("Entity Ghost Sprites")]
         public Sprite Assembler1Ghost;
@@ -43,6 +44,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite InserterSGhost;
         public Sprite InserterWGhost;
         public Sprite IronChestGhost;
+        public Sprite RocketSiloGhost;
 
         [Header("Entity Prefabs")]
         public GameObject[] TreePrefabs;
@@ -58,6 +60,7 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject InserterSPrefab;
         public GameObject InserterWPrefab;
         public GameObject IronChestPrefab;
+        public GameObject RocketSiloPrefab;
 
         private readonly Dictionary<ItemType, Sprite> itemTypeToSprite = new();
         private readonly Dictionary<BackType, Sprite[]> backTypeToSprite = new();
@@ -85,6 +88,7 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Iron_chest, IronChest);
             itemTypeToSprite.Add(ItemType.Steel_plate, SteelPlate);
             itemTypeToSprite.Add(ItemType.Concrete, Concrete);
+            itemTypeToSprite.Add(ItemType.Rocket_silo, RocketSilo);
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);
@@ -129,6 +133,7 @@ namespace Dev.Kosov.Factory.Graphics
                     _ => throw new Exception("Unknown rotation")
                 },
                 EntityType.Iron_chest => IronChestGhost,
+                EntityType.Rocket_silo => RocketSiloGhost,
                 _ => throw new Exception("Missing entity ghost")
             };
         }
@@ -187,6 +192,7 @@ namespace Dev.Kosov.Factory.Graphics
                     _ => throw new Exception("Unknown rotation")
                 },
                 EntityType.Iron_chest => IronChestPrefab,
+                EntityType.Rocket_silo => RocketSiloPrefab,
                 _ => throw new Exception("Missing entity prefab")
             };
         }

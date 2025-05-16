@@ -9,6 +9,7 @@
         Stone_furnace,
         Electric_drill,
         Inserter,
-        Iron_chest
+        Iron_chest,
+        Rocket_silo
     }
 }
