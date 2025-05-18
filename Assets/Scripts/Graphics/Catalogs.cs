@@ -30,6 +30,7 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite SteelPlate;
         public Sprite Concrete;
         public Sprite RocketSilo;
+        public Sprite RocketPart;
 
         [Header("Entity Ghost Sprites")]
         public Sprite Assembler1Ghost;
@@ -89,6 +90,7 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Steel_plate, SteelPlate);
             itemTypeToSprite.Add(ItemType.Concrete, Concrete);
             itemTypeToSprite.Add(ItemType.Rocket_silo, RocketSilo);
+            itemTypeToSprite.Add(ItemType.Rocket_part, RocketPart);
 
             // Background tiles
             backTypeToSprite.Add(BackType.Empty, null);

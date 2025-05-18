@@ -15,13 +15,15 @@ namespace Dev.Kosov.Factory.Core
         internal readonly List<InvSlot> WantedItems;
 
         public readonly List<RecipeType> AvailableRecipes;
-        public readonly Storage InputStorage = new(6, 1);
-        public readonly Storage OutputStorage = new(6, 1);
+        public readonly Storage InputStorage;
+        public readonly Storage OutputStorage;
 
-        internal Crafter(List<RecipeType> availableRecipes)
+        internal Crafter(List<RecipeType> availableRecipes, bool canTakeFromInput = true, bool canTakeFromOutput = true)
         {
             AvailableRecipes = availableRecipes;
             WantedItems = new();
+            InputStorage = new(6, 1, canTakeFromInput);
+            OutputStorage = new(6, 1, canTakeFromOutput);
         }
 
         public float GetPercentComplete()

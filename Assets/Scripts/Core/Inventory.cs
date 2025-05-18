@@ -21,8 +21,8 @@ namespace Dev.Kosov.Factory.Core
 
         public Inventory()
         {
-            inventory = new(Width, Height);
-            hotbar = new(HotbarWidth, HotbarHeight);
+            inventory = new(Width, Height, true);
+            hotbar = new(HotbarWidth, HotbarHeight, true);
             CursorSlot = new(ItemType.None, 0);
 
             inventory.SlotChanged += OnInventorySlotChange;

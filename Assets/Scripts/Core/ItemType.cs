@@ -22,6 +22,7 @@
         Iron_chest,
         Steel_plate,
         Concrete,
-        Rocket_silo
+        Rocket_silo,
+        Rocket_part
     }
 }

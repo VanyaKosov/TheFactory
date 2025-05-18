@@ -14,7 +14,7 @@ namespace Dev.Kosov.Factory.Core
         {
             InvWidth = width;
             InvHeight = height;
-            Storage = new(width, height);
+            Storage = new(width, height, true);
         }
 
         internal override List<InvSlot> GetComponents()

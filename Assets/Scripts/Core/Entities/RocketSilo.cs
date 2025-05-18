@@ -12,8 +12,9 @@ namespace Dev.Kosov.Factory.Core
         {
             Crafter = new(new()
             {
-
-            });
+                RecipeType.Make_rocket_part
+            },
+            true, false);
         }
 
         public Crafter GetCrafter()

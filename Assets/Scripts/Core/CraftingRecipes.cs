@@ -141,6 +141,14 @@ namespace Dev.Kosov.Factory.Core
                     new InvSlot[] { new(ItemType.Concrete, 10) },
                     6f
                 )
+            },
+            {
+                RecipeType.Make_rocket_part, // PLACEHOLDER
+                (
+                    new InvSlot[] { new(ItemType.Steel_plate, 6), new(ItemType.Copper_plate, 6), new(ItemType.Simple_circuit, 6) },
+                    new InvSlot[] { new(ItemType.Rocket_part, 1) },
+                    3f
+                )
             }
         };
 
