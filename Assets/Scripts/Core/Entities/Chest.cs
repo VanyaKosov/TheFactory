@@ -17,7 +17,7 @@ namespace Dev.Kosov.Factory.Core
             Storage = new(width, height);
         }
 
-        override internal List<InvSlot> GetComponents()
+        internal override List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
             for (int x = 0; x < Storage.Width; x++)

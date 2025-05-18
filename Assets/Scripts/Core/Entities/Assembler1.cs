@@ -36,7 +36,7 @@ namespace Dev.Kosov.Factory.Core
             Crafter.UpdateState();
         }
 
-        override internal List<InvSlot> GetComponents()
+        internal override List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
             items.AddRange(Crafter.GetComponents()); // Also adds ItemType.None

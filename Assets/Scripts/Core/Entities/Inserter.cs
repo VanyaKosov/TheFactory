@@ -60,7 +60,7 @@ namespace Dev.Kosov.Factory.Core
             return takePosDegrees + armDegrees;
         }
 
-        override internal void UpdateState()
+        internal override void UpdateState()
         {
             base.UpdateState();
             float currTime = Time.time;
@@ -71,7 +71,7 @@ namespace Dev.Kosov.Factory.Core
             prevTime = currTime;
         }
 
-        override internal List<InvSlot> GetComponents()
+        internal override List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
             items.Add(item);

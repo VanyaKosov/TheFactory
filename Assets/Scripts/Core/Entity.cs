@@ -23,12 +23,12 @@ namespace Dev.Kosov.Factory.Core
             this.deconstructionComponents = deconstructionComponents;
         }
 
-        virtual internal void UpdateState()
+        internal virtual void UpdateState()
         {
             // Nothing to be here
         }
 
-        virtual internal List<InvSlot> GetComponents()
+        internal virtual List<InvSlot> GetComponents()
         {
             return deconstructionComponents;
         }
