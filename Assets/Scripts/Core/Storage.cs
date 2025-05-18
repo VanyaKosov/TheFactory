@@ -5,10 +5,10 @@ namespace Dev.Kosov.Factory.Core
 {
     public class Storage
     {
-        private readonly bool canTake;
         private readonly InvSlot[,] items;
         private readonly ItemType[,] reserved;
 
+        public readonly bool CanTake;
         public readonly int Width;
         public readonly int Height;
 
@@ -20,7 +20,7 @@ namespace Dev.Kosov.Factory.Core
             Height = height;
             items = new InvSlot[Width, Height];
             reserved = new ItemType[Width, Height]; // Hope the default is ItemType.None
-            this.canTake = canTake;
+            CanTake = canTake;
 
             DefaultInitialize();
         }
@@ -72,7 +72,7 @@ namespace Dev.Kosov.Factory.Core
         // Takes 1 at a time
         internal InvSlot AutoTake() // Returns taken type and count
         {
-            if (!canTake) return new(ItemType.None, 0);
+            if (!CanTake) return new(ItemType.None, 0);
 
             for (int y = Height - 1; y >= 0; y--)
             {
@@ -94,7 +94,7 @@ namespace Dev.Kosov.Factory.Core
 
         internal InvSlot AutoTake(ItemType request)
         {
-            if (!canTake) return new(ItemType.None, 0);
+            if (!CanTake) return new(ItemType.None, 0);
 
             for (int y = Height - 1; y >= 0; y--)
             {

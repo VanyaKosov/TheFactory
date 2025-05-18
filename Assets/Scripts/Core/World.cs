@@ -31,7 +31,7 @@ namespace Dev.Kosov.Factory.Core
         {
             Inventory = new();
             PlayerPos = new(0, 0);
-            PlayerCrafter = new(new() 
+            PlayerCrafter = new(new()
             {
                 RecipeType.Smelt_iron_ore,
                 RecipeType.Smelt_copper_ore,
@@ -87,6 +87,7 @@ namespace Dev.Kosov.Factory.Core
 
         public void TryTakeFromCrafterOutput(Crafter crafter, Vector2Int pos)
         {
+            if (!crafter.OutputStorage.CanTake) return;
             if (Inventory.CursorSlot.Type != ItemType.None) return;
             InvSlot item = crafter.OutputStorage.GetItem(pos);
             crafter.OutputStorage.SetItem(new(ItemType.None, 0), pos);

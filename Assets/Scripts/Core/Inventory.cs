@@ -57,6 +57,7 @@ namespace Dev.Kosov.Factory.Core
 
         public void TryTakeHalfFromStorage(Vector2Int pos, Storage storage)
         {
+            if (!storage.CanTake) return;
             if (CursorSlot.Type != ItemType.None) return;
             InvSlot item = storage.GetItem(pos);
             if (item.Type == ItemType.None) return;
@@ -87,6 +88,7 @@ namespace Dev.Kosov.Factory.Core
 
         public void SwitchItemWithStorage(Vector2Int pos, Storage storage)
         {
+            if (!storage.CanTake) return;
             InvSlot temp = CursorSlot;
             CursorSlot = storage.GetItem(pos);
             storage.SetItem(temp, pos);
