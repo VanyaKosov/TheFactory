@@ -182,7 +182,7 @@ MonoBehaviour:
   IronChest: {fileID: -7941162245757568681, guid: 30b2c3d812cd1ea458217ce0d6d84b27, type: 3}
   SteelPlate: {fileID: -504038281363281715, guid: 5e351b09d30c73a40beaf2c2f4bf2979, type: 3}
   Concrete: {fileID: 4515746300913256686, guid: 68b28f27361d4fe4db9aded56ff052b1, type: 3}
-  RocketSilo: {fileID: 0}
+  RocketSilo: {fileID: -6962980539151857039, guid: 4fcfd011bdd76c448afb33e99ac7863f, type: 3}
   Assembler1Ghost: {fileID: -3960403711501517520, guid: 1811cef6610451642b3d1a4965419f1e, type: 3}
   WoodChestGhost: {fileID: 21300000, guid: f8a817942ecbae346a0c15652d01786f, type: 3}
   StoneFurnaceGhost: {fileID: 21300000, guid: 47ee55e678be25942beaea04cf94a733, type: 3}
@@ -195,7 +195,7 @@ MonoBehaviour:
   InserterSGhost: {fileID: 21300000, guid: 64cab40c38967174b9a191ccab1d4787, type: 3}
   InserterWGhost: {fileID: 21300000, guid: 28c7d735cf0485148b5691de661b16af, type: 3}
   IronChestGhost: {fileID: 21300000, guid: 1f1e1ac90dbf56d41975024bc88a2f03, type: 3}
-  RocketSiloGhost: {fileID: 0}
+  RocketSiloGhost: {fileID: 21300000, guid: e1b0e1afa97958243a78a2a5a2972ea9, type: 3}
   TreePrefabs:
   - {fileID: 5358693995335720704, guid: 513f030923e1f08418d660ebbf613872, type: 3}
   - {fileID: 37130282111523190, guid: c3e0c890bd1272144a8615ade07d2044, type: 3}
@@ -217,7 +217,7 @@ MonoBehaviour:
   InserterSPrefab: {fileID: 701369745400791352, guid: 7a8b7500d471c6242abe4d364888acd0, type: 3}
   InserterWPrefab: {fileID: 4469750343473238960, guid: c9f85330fab9c7e42960d6c811642d35, type: 3}
   IronChestPrefab: {fileID: 4142425528764967813, guid: 223c070cf4e26264f90910157f56ead1, type: 3}
-  RocketSiloPrefab: {fileID: 2119370408}
+  RocketSiloPrefab: {fileID: 7172269512016206723, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
 --- !u!1 &31069430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,7 +1510,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 20
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.33657676, g: 0.6781525, b: 0.84276724, a: 0.92941177}
   m_FlipX: 0
@@ -3357,11 +3357,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2119370408 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7172269512016206723, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-  m_PrefabInstance: {fileID: 5588273662172040346}
-  m_PrefabAsset: {fileID: 0}
 --- !u!222 &1715198364177922436
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3388,63 +3383,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &5588273662172040346
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832446467069660913, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7172269512016206723, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
-      propertyPath: m_Name
-      value: 06-rocket-silo
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7ab705b403397e54eba850cf3d2b75c6, type: 3}
 --- !u!224 &6403419420761759278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3513,4 +3451,3 @@ SceneRoots:
   - {fileID: 2082821266}
   - {fileID: 2042186222}
   - {fileID: 615863791}
-  - {fileID: 5588273662172040346}

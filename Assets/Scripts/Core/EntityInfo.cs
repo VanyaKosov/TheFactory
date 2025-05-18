@@ -14,7 +14,7 @@ namespace Dev.Kosov.Factory.Core
             { EntityType.Electric_drill, new(ItemType.Electric_drill, new(3, 3)) },
             { EntityType.Inserter, new(ItemType.Inserter, new(1, 1)) },
             { EntityType.Iron_chest, new(ItemType.Iron_chest, new(1, 1)) },
-            { EntityType.Rocket_silo, new(ItemType.Rocket_silo, new(9, 9)) }
+            { EntityType.Rocket_silo, new(ItemType.Rocket_silo, new(9, 18)) }
         };
 
         public static Info Get(EntityType type)

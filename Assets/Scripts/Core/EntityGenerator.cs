@@ -17,6 +17,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
                 EntityType.Electric_drill => new ElectricDrill(rotation, pos),
                 EntityType.Inserter => new Inserter(rotation, pos, getEntityAtPos),
                 EntityType.Iron_chest => new Chest(rotation, pos, 6, 4, EntityInfo.Get(type).ItemType),
+                EntityType.Rocket_silo => new RocketSilo(rotation, pos),
                 _ => throw new Exception("Missing entity class")
             };
         }
