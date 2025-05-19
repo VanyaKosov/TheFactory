@@ -43,7 +43,6 @@ namespace Dev.Kosov.Factory.Graphics
         {
             world = GameObject.Find("WorldController").GetComponent<WorldController>().World;
             inventory = world.Inventory;
-            UserInput.OpenInventory += OnPrimaryInput;
         }
 
         void Start()
@@ -189,11 +188,6 @@ namespace Dev.Kosov.Factory.Graphics
         private void OnChestRightClick(Vector2Int pos)
         {
             inventory.TryTakeHalfFromStorage(pos, openChest.Storage);
-        }
-
-        private void OnPrimaryInput(object sender, EventArgs args)
-        {
-            InvOpen = !InvOpen;
         }
 
         private void SetInvItem(object sender, Inventory.SetItemEventArgs args)
