@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: a975fa6ff5c7cdd4baa95962d3faffbc
+guid: 9ad954dd58a9aed4aa847d767b97ed5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1561518679464199015
-    second: stone-brick_0
+      213: -1130535423698269102
+    second: solid-fuel_0
   - first:
-      213: -29013608093564844
-    second: stone-brick_1
+      213: -271297435332466864
+    second: solid-fuel_1
+  - first:
+      213: -457508657082787756
+    second: solid-fuel_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stone-brick_0
+      name: solid-fuel_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5
-        width: 56
-        height: 54
+        x: 2
+        y: 0
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99c3668c80f545ae0800000000000000
-      internalID: -1561518679464199015
+      spriteID: 25c0870a5088f40f0800000000000000
+      internalID: -1130535423698269102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stone-brick_1
+      name: solid-fuel_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 36
-        width: 28
-        height: 25
+        x: 64
+        y: 31
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,52 +143,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4504ee3f64ce89ff0800000000000000
-      internalID: -29013608093564844
+      spriteID: 057a8828b682c3cf0800000000000000
+      internalID: -271297435332466864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stone-brick_2
+      name: solid-fuel_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 50
-        width: 14
-        height: 12
+        x: 95
+        y: 47
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 30669e8f2f308754b8165efb2395a672
-      internalID: -488037984
+      spriteID: 4581ae4ec4a96a9f0800000000000000
+      internalID: -457508657082787756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stone-brick_3
+      name: solid-fuel_3
       rect:
         serializedVersion: 2
         x: 112
-        y: 57
+        y: 56
         width: 8
-        height: 6
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9af5633b56e09b846b0365a22ab535ce
-      internalID: 1383582444
+      spriteID: ef9573bd58cf23f44a3ed89b4038d149
+      internalID: -1158466237
       vertices: []
       indices: 
       edges: []
@@ -194,7 +197,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6c7587313f2db4a46b60edffc8e5786f
+    spriteID: 16e8a3b1a1c7d4248a1aa2fdf4bed4ab
     internalID: 0
     vertices: []
     indices: 
@@ -204,10 +207,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stone-brick_0: -1561518679464199015
-      stone-brick_1: -29013608093564844
-      stone-brick_2: -488037984
-      stone-brick_3: 1383582444
+      solid-fuel_0: -1130535423698269102
+      solid-fuel_1: -271297435332466864
+      solid-fuel_2: -457508657082787756
+      solid-fuel_3: -1158466237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -46,7 +46,7 @@ namespace Dev.Kosov.Factory.Core
                 RecipeType.Make_iron_chest,
                 RecipeType.Make_furnace,
                 RecipeType.Make_electric_drill,
-                RecipeType.Make_concrete
+                RecipeType.Make_rocket_silo
             });
         }
 

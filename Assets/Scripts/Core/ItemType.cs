@@ -23,6 +23,8 @@
         Steel_plate,
         Concrete,
         Rocket_silo,
-        Rocket_part
+        Rocket_part,
+        Compacted_coal,
+        Rocket_fuel
     }
 }

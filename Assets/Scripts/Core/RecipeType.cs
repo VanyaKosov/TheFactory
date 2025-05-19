@@ -20,6 +20,9 @@
         Make_iron_gear,
         Make_iron_chest,
         Make_concrete,
-        Make_rocket_part
+        Make_rocket_part,
+        Make_compacted_coal,
+        Make_rocket_fuel,
+        Make_rocket_silo
     }
 }

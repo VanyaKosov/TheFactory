@@ -143,11 +143,35 @@ namespace Dev.Kosov.Factory.Core
                 )
             },
             {
-                RecipeType.Make_rocket_part, // PLACEHOLDER
+                RecipeType.Make_compacted_coal,
                 (
-                    new InvSlot[] { new(ItemType.Steel_plate, 6), new(ItemType.Copper_plate, 6), new(ItemType.Simple_circuit, 6) },
+                    new InvSlot[] { new(ItemType.Coal, 6) },
+                    new InvSlot[] { new(ItemType.Compacted_coal, 1) },
+                    3f
+                )
+            },
+            {
+                RecipeType.Make_rocket_fuel,
+                (
+                    new InvSlot[] { new(ItemType.Coal, 6) },
+                    new InvSlot[] { new(ItemType.Rocket_fuel, 1) },
+                    3f
+                )
+            },
+            {
+                RecipeType.Make_rocket_part,
+                (
+                    new InvSlot[] { new(ItemType.Steel_plate, 6), new(ItemType.Rocket_fuel, 6), new(ItemType.Simple_circuit, 6) },
                     new InvSlot[] { new(ItemType.Rocket_part, 1) },
                     3f
+                )
+            },
+            {
+                RecipeType.Make_rocket_silo,
+                (
+                    new InvSlot[] { new(ItemType.Concrete, 200), new(ItemType.Concrete, 200), new(ItemType.Steel_plate, 200), new(ItemType.Simple_circuit, 200), new(ItemType.Copper_wire, 100) },
+                    new InvSlot[] { new(ItemType.Rocket_silo, 1) },
+                    20f
                 )
             }
         };

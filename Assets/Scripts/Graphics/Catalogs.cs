@@ -29,6 +29,8 @@ namespace Dev.Kosov.Factory.Graphics
         public Sprite IronChest;
         public Sprite SteelPlate;
         public Sprite Concrete;
+        public Sprite CompactedCoal;
+        public Sprite RocketFuel;
         public Sprite RocketSilo;
         public Sprite RocketPart;
 
@@ -90,6 +92,8 @@ namespace Dev.Kosov.Factory.Graphics
             itemTypeToSprite.Add(ItemType.Steel_plate, SteelPlate);
             itemTypeToSprite.Add(ItemType.Concrete, Concrete);
             itemTypeToSprite.Add(ItemType.Rocket_silo, RocketSilo);
+            itemTypeToSprite.Add(ItemType.Compacted_coal, CompactedCoal);
+            itemTypeToSprite.Add(ItemType.Rocket_fuel, RocketFuel);
             itemTypeToSprite.Add(ItemType.Rocket_part, RocketPart);
 
             // Background tiles
