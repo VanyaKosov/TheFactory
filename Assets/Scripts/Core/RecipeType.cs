@@ -6,6 +6,7 @@
         Mine_iron_ore,
         Mine_copper_ore,
         Mine_stone_ore,
+        Mine_coal_ore,
         Smelt_iron_ore,
         Smelt_copper_ore,
         Smelt_stone_ore,

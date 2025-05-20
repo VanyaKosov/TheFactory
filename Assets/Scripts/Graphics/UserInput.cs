@@ -23,7 +23,7 @@ namespace Dev.Kosov.Factory.Graphics
                 SecondaryInput?.Invoke(this, new());
             }
 
-            if (Input.GetKeyDown(KeyCode.Tab))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 OpenInventory?.Invoke(this, new());
             }

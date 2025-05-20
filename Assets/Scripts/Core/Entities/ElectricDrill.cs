@@ -14,8 +14,9 @@ namespace Dev.Kosov.Factory.Core
             {
                 RecipeType.Mine_iron_ore,
                 RecipeType.Mine_copper_ore,
-                RecipeType.Mine_stone_ore }
-            );
+                RecipeType.Mine_stone_ore,
+                RecipeType.Mine_coal_ore
+            });
         }
 
         public Crafter GetCrafter()

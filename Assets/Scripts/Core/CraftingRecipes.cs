@@ -63,6 +63,14 @@ namespace Dev.Kosov.Factory.Core
                 )
             },
             {
+                RecipeType.Mine_coal_ore,
+                (
+                    new InvSlot[] { },
+                    new InvSlot[] { new(ItemType.Coal, 1) },
+                    1f
+                )
+            },
+            {
                 RecipeType.Make_copper_wire,
                 (
                     new InvSlot[] { new(ItemType.Copper_plate, 2 ) },

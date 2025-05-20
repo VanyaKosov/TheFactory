@@ -52,8 +52,8 @@ namespace Dev.Kosov.Factory.Graphics
                 outputSlotRenderers[i].Init(Catalogs, () => OnOutputSlotLeftClick(pos), null);
             }
 
-            world.CrafterOpened += OpenCrafter;
-            PlayerController.PlayerCrafterOpened += OpenCrafter;
+            world.CrafterOpened += ToggleCrafter;
+            PlayerController.PlayerCrafterOpened += ToggleCrafter;
         }
 
         void Update()
@@ -191,24 +191,35 @@ namespace Dev.Kosov.Factory.Graphics
             world.TryTakeFromCrafterOutput(crafter, pos);
         }
 
-        private void OpenCrafter(object sender, World.CrafterOpenedEventArgs args)
+        private void ToggleCrafter(object sender, World.CrafterOpenedEventArgs args)
         {
+            // TODO: fix double closing inventory when opening through crafter
+
             choicePanelOpen = false;
             Destroy(recipeChoicePanel);
 
-            if (args.Crafter == null)
+            if (args.Crafter == crafter)
             {
-                gameObject.SetActive(false);
-                UIController.InvOpen = false;
-
-                return;
+                UIController.InvOpen = !UIController.InvOpen;
+            }
+            else
+            {
+                UIController.InvOpen = true;
             }
 
-            UIController.InvOpen = true;
 
-            crafter = args.Crafter;
-            UIController.InvOpen = true;
-            gameObject.SetActive(true);
+            if (UIController.InvOpen)
+            {
+                crafter = args.Crafter;
+                UIController.InvOpen = true;
+                gameObject.SetActive(true);
+            }
+            else
+            {
+                crafter = null;
+                UIController.InvOpen = false;
+                gameObject.SetActive(false);
+            }
         }
     }
 }

@@ -18,7 +18,6 @@ namespace Dev.Kosov.Factory.Graphics
         private Vector2 prevMoveVector = new(0, 1);
         private World world;
         private Crafter playerCrafter;
-        private bool isCrafterOpen = false;
 
         public event EventHandler<World.CrafterOpenedEventArgs> PlayerCrafterOpened;
         public GraphicRaycaster Raycaster;
@@ -142,8 +141,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OnOpenPlayerCrafter(object sender, EventArgs args)
         {
-            isCrafterOpen = !isCrafterOpen;
-            PlayerCrafterOpened?.Invoke(this, new(isCrafterOpen ? playerCrafter : null));
+            PlayerCrafterOpened?.Invoke(this, new(playerCrafter));
         }
     }
 }

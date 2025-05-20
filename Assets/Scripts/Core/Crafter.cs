@@ -108,6 +108,8 @@ namespace Dev.Kosov.Factory.Core
             if (currentRecipe == RecipeType.None) return;
             var recipe = CraftingRecipes.Get(currentRecipe);
 
+            if (recipe.inputs.Length == 0) return;
+
             int idx = 0;
             for (int x = 0; x < InputStorage.Width; x++)
             {
@@ -128,7 +130,6 @@ namespace Dev.Kosov.Factory.Core
             for (int i = 0; i < inputs.Length; i++)
             {
                 InvSlot storageSlot = InputStorage.GetItem(new(i, 0));
-                // if (storageSlot.Type != ItemType.None && storageSlot.Type != inputs[i].Type) continue;
                 if (storageSlot.Type == ItemType.None)
                 {
                     WantedItems.Add(new(inputs[i].Type, inputs[i].Amount * itemRequestMultiplier));
