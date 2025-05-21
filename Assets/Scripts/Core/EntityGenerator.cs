@@ -6,7 +6,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
 {
     internal class EntityGenerator
     {
-        internal static Entity GenEntityInstance(EntityType type, Vector2Int pos, Rotation rotation, Func<Vector2Int, Entity> getEntityAtPos)
+        internal static Entity GenEntityInstance(EntityType type, Vector2Int pos, Rotation rotation, Func<Vector2Int, Entity> getEntityAtPos, Func<Vector2Int, OreType> mineOre, Func<Vector2Int, OreType> getOreAtPos)
         {
             return type switch
             {
@@ -14,7 +14,7 @@ namespace Dev.Kosov.Factory.Core.Assets.Scripts.Core
                 EntityType.Assembler1 => new Assembler1(rotation, pos),
                 EntityType.Wood_chest => new Chest(rotation, pos, 6, 2, EntityInfo.Get(type).ItemType),
                 EntityType.Stone_furnace => new StoneFurnace(rotation, pos),
-                EntityType.Electric_drill => new ElectricDrill(rotation, pos),
+                EntityType.Electric_drill => new ElectricDrill(rotation, pos, mineOre, getOreAtPos),
                 EntityType.Inserter => new Inserter(rotation, pos, getEntityAtPos),
                 EntityType.Iron_chest => new Chest(rotation, pos, 6, 4, EntityInfo.Get(type).ItemType),
                 EntityType.Rocket_silo => new RocketSilo(rotation, pos),

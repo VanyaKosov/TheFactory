@@ -131,6 +131,29 @@ namespace Dev.Kosov.Factory.Core
             if (!ItemInfo.Get(cursorSlot.Type).Placable) return;
 
             EntityType type = ItemInfo.Get(cursorSlot.Type).EntityType;
+            if (type == EntityType.Electric_drill)
+            {
+                EntityInfo.Info info = EntityInfo.Get(type);
+                bool foundOre = false;
+                for (int x = bottomLeftPos.x; x < bottomLeftPos.x + info.Size.x; x++)
+                {
+                    for (int y = bottomLeftPos.y; y < bottomLeftPos.y + info.Size.y; y++)
+                    {
+                        if (foundOre) break;
+                        if (map[new(x, y)].OreType != OreType.None)
+                        {
+                            foundOre = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (!foundOre)
+                {
+                    return;
+                }
+            }
+
             if (CreateEntity(bottomLeftPos, type, rotation))
             {
                 Inventory.SetCursorSlot(cursorSlot.Type, cursorSlot.Amount - 1);
@@ -182,6 +205,29 @@ namespace Dev.Kosov.Factory.Core
             throw new Exception("Unknown action");
         }
 
+        internal OreType GetOreAtPos(Vector2Int pos)
+        {
+            return map[pos].OreType;
+        }
+
+        internal OreType MineOre(Vector2Int pos)
+        {
+            Tile tile = map[pos];
+            if (tile.OreType == OreType.None) return OreType.None;
+
+            OreType oreType = map[pos].OreType;
+            float prevRichnessPercent = ((float)tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
+            tile.OreAmount--;
+            if (tile.OreAmount <= 0)
+            {
+                tile.OreType = OreType.None;
+            }
+            float newRichnessPercent = ((float)tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
+
+            OreMined?.Invoke(this, new(pos, prevRichnessPercent, newRichnessPercent, tile.OreType));
+            return oreType;
+        }
+
         private void UpdateEntities()
         {
             foreach (Entity entity in entities.Values)
@@ -217,27 +263,9 @@ namespace Dev.Kosov.Factory.Core
             EntityRemoved?.Invoke(this, new(id));
         }
 
-        private OreType MineOre(Vector2Int pos)
-        {
-            Tile tile = map[pos];
-            if (tile.OreType == OreType.None) return OreType.None;
-
-            OreType oreType = map[pos].OreType;
-            float prevRichnessPercent = ((float)tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
-            tile.OreAmount--;
-            if (tile.OreAmount <= 0)
-            {
-                tile.OreType = OreType.None;
-            }
-            float newRichnessPercent = ((float)tile.OreAmount / OreInfo.Get(oreType).MaxRichness) * 100;
-
-            OreMined?.Invoke(this, new(pos, prevRichnessPercent, newRichnessPercent, tile.OreType));
-            return oreType;
-        }
-
         private bool CreateEntity(Vector2Int bottomLeftPos, EntityType type, Rotation rotation)
         {
-            Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos, rotation, GetEntityAtPos);
+            Entity entity = EntityGenerator.GenEntityInstance(type, bottomLeftPos, rotation, GetEntityAtPos, MineOre, GetOreAtPos);
             Vector2Int size = EntityInfo.Get(entity.Type).Size;
             if (!CheckAvailability(entity.BottomLeftPos, size)) return false;
             int entityID = Tile.GenEntityID();

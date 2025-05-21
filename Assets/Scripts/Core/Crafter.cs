@@ -10,16 +10,19 @@ namespace Dev.Kosov.Factory.Core
         private const int itemRequestMultiplier = 3;
         private float timeStarted;
         private float time;
-        private RecipeType currentRecipe = RecipeType.None;
 
+        internal RecipeType CurrentRecipe { private set; get; }
         internal readonly List<InvSlot> WantedItems;
 
         public readonly List<RecipeType> AvailableRecipes;
         public readonly Storage InputStorage;
         public readonly Storage OutputStorage;
 
+        public event EventHandler<EventArgs> CompletedCraft;
+
         internal Crafter(List<RecipeType> availableRecipes, bool canTakeFromInput = true, bool canTakeFromOutput = true)
         {
+            CurrentRecipe = RecipeType.None;
             AvailableRecipes = availableRecipes;
             WantedItems = new();
             InputStorage = new(6, 1, canTakeFromInput);
@@ -28,15 +31,15 @@ namespace Dev.Kosov.Factory.Core
 
         public float GetPercentComplete()
         {
-            if (currentRecipe == RecipeType.None) return 0f;
-            return (time - timeStarted) / CraftingRecipes.Get(currentRecipe).time * 100;
+            if (CurrentRecipe == RecipeType.None) return 0f;
+            return (time - timeStarted) / CraftingRecipes.Get(CurrentRecipe).time * 100;
         }
 
         public InvSlot GetExpectedInputItem(Vector2Int pos)
         {
-            if (currentRecipe == RecipeType.None) return new(ItemType.None, 0);
+            if (CurrentRecipe == RecipeType.None) return new(ItemType.None, 0);
 
-            var recipe = CraftingRecipes.Get(currentRecipe);
+            var recipe = CraftingRecipes.Get(CurrentRecipe);
             if (pos.x >= recipe.inputs.Length) return new(ItemType.None, 0);
 
             return recipe.inputs[pos.x];
@@ -44,9 +47,9 @@ namespace Dev.Kosov.Factory.Core
 
         public InvSlot GetExpectedOutputItem(Vector2Int pos)
         {
-            if (currentRecipe == RecipeType.None) return new(ItemType.None, 0);
+            if (CurrentRecipe == RecipeType.None) return new(ItemType.None, 0);
 
-            var recipe = CraftingRecipes.Get(currentRecipe);
+            var recipe = CraftingRecipes.Get(CurrentRecipe);
             if (pos.x >= recipe.outputs.Length) return new(ItemType.None, 0);
 
             return recipe.outputs[pos.x];
@@ -56,7 +59,7 @@ namespace Dev.Kosov.Factory.Core
         {
             if (!AvailableRecipes.Any(a => a == recipe)) throw new Exception("Tried changing to an unsupported recipe");
 
-            currentRecipe = recipe;
+            CurrentRecipe = recipe;
             timeStarted = time;
 
             UpdateWantedItems();
@@ -97,7 +100,7 @@ namespace Dev.Kosov.Factory.Core
 
             UpdateInputStorageReserve();
 
-            if (currentRecipe != RecipeType.None)
+            if (CurrentRecipe != RecipeType.None)
             {
                 UpdateWantedItems();
             }
@@ -105,8 +108,8 @@ namespace Dev.Kosov.Factory.Core
 
         private void UpdateInputStorageReserve()
         {
-            if (currentRecipe == RecipeType.None) return;
-            var recipe = CraftingRecipes.Get(currentRecipe);
+            if (CurrentRecipe == RecipeType.None) return;
+            var recipe = CraftingRecipes.Get(CurrentRecipe);
 
             if (recipe.inputs.Length == 0) return;
 
@@ -126,7 +129,7 @@ namespace Dev.Kosov.Factory.Core
         private void UpdateWantedItems()
         {
             WantedItems.Clear();
-            InvSlot[] inputs = CraftingRecipes.Get(currentRecipe).inputs;
+            InvSlot[] inputs = CraftingRecipes.Get(CurrentRecipe).inputs;
             for (int i = 0; i < inputs.Length; i++)
             {
                 InvSlot storageSlot = InputStorage.GetItem(new(i, 0));
@@ -144,13 +147,13 @@ namespace Dev.Kosov.Factory.Core
 
         private void CheckCraft()
         {
-            if (currentRecipe == RecipeType.None) return;
+            if (CurrentRecipe == RecipeType.None) return;
             if (!CheckInputs())
             {
                 timeStarted = time;
                 return;
             }
-            (InvSlot[] inputs, InvSlot[] outputs, float requiredTime) = CraftingRecipes.Get(currentRecipe);
+            (InvSlot[] inputs, InvSlot[] outputs, float requiredTime) = CraftingRecipes.Get(CurrentRecipe);
             if (time - timeStarted < requiredTime) return;
             if (!CheckOutputs()) return;
             timeStarted = time;
@@ -168,11 +171,13 @@ namespace Dev.Kosov.Factory.Core
                 Vector2Int pos = new(i, 0);
                 OutputStorage.SetItem(new(outputs[i].Type, OutputStorage.GetItem(pos).Amount + outputs[i].Amount), pos);
             }
+
+            CompletedCraft?.Invoke(this, new());
         }
 
         private bool CheckOutputs()
         {
-            (_, InvSlot[] outputs, _) = CraftingRecipes.Get(currentRecipe);
+            (_, InvSlot[] outputs, _) = CraftingRecipes.Get(CurrentRecipe);
             for (int i = 0; i < outputs.Length; i++)
             {
                 InvSlot storageSlot = OutputStorage.GetItem(new(i, 0));
@@ -186,7 +191,7 @@ namespace Dev.Kosov.Factory.Core
 
         private bool CheckInputs()
         {
-            (InvSlot[] inputs, _, _) = CraftingRecipes.Get(currentRecipe);
+            (InvSlot[] inputs, _, _) = CraftingRecipes.Get(CurrentRecipe);
             for (int i = 0; i < inputs.Length; i++)
             {
                 InvSlot storageSlot = InputStorage.GetItem(new(i, 0));
