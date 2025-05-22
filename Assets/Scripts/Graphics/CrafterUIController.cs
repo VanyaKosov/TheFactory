@@ -198,9 +198,14 @@ namespace Dev.Kosov.Factory.Graphics
             choicePanelOpen = false;
             Destroy(recipeChoicePanel);
 
+            if (crafter != null && args.isInInventory)
+            {
+                UIController.InvOpen = false;
+            }
+
             if (args.Crafter == crafter)
             {
-                UIController.InvOpen = !UIController.InvOpen;
+                UIController.InvOpen = false;
             }
             else
             {

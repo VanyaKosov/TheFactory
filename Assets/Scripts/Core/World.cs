@@ -550,10 +550,12 @@ namespace Dev.Kosov.Factory.Core
         public class CrafterOpenedEventArgs : EventArgs
         {
             public readonly Crafter Crafter;
+            public readonly bool isInInventory;
 
-            public CrafterOpenedEventArgs(Crafter crafter)
+            public CrafterOpenedEventArgs(Crafter crafter, bool isInInventory = false)
             {
                 Crafter = crafter;
+                this.isInInventory = isInInventory;
             }
         }
 

@@ -141,7 +141,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         private void OnOpenPlayerCrafter(object sender, EventArgs args)
         {
-            PlayerCrafterOpened?.Invoke(this, new(playerCrafter));
+            PlayerCrafterOpened?.Invoke(this, new(playerCrafter, true));
         }
     }
 }
