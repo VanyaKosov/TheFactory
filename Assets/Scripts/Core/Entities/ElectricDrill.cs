@@ -7,8 +7,9 @@ namespace Dev.Kosov.Factory.Core
     internal class ElectricDrill : Entity, ICrafter, ITakeable, IPuttable
     {
         private readonly Crafter crafter;
-        private Func<Vector2Int, OreType> mineOre;
-        private Func<Vector2Int, OreType> getOreAtPos;
+        private readonly Func<Vector2Int, OreType> mineOre;
+        private readonly Func<Vector2Int, OreType> getOreAtPos;
+        private Vector2Int miningPos;
 
         internal ElectricDrill(Rotation rotation, Vector2Int bottomLeftPos, Func<Vector2Int, OreType> mineOre, Func<Vector2Int, OreType> getOreAtPos)
             : base(rotation, bottomLeftPos, new() { new(ItemType.Electric_drill, 1) }, EntityType.Electric_drill)
@@ -23,6 +24,7 @@ namespace Dev.Kosov.Factory.Core
             crafter.CompletedCraft += MineOreIfCompleted;
 
             this.mineOre = mineOre;
+            this.getOreAtPos = getOreAtPos;
         }
 
         public Crafter GetCrafter()
@@ -68,8 +70,8 @@ namespace Dev.Kosov.Factory.Core
         {
             if (crafter.CurrentRecipe == RecipeType.None) return;
 
-            InvSlot[] inputs = CraftingRecipes.Get(crafter.CurrentRecipe).inputs;
-            OreType oreType = ItemInfo.Get(inputs[0].Type).OreType;
+            InvSlot[] outputs = CraftingRecipes.Get(crafter.CurrentRecipe).outputs;
+            OreType oreType = ItemInfo.Get(outputs[0].Type).OreType;
 
             bool found = false;
             for (int x = BottomLeftPos.x; x < BottomLeftPos.x + Size.x; x++)
@@ -79,6 +81,7 @@ namespace Dev.Kosov.Factory.Core
                 {
                     if (getOreAtPos(new(x, y)) == oreType) {
                         found = true;
+                        miningPos = new(x, y);
                         break;
                     }
                 }
@@ -91,7 +94,7 @@ namespace Dev.Kosov.Factory.Core
 
         private void MineOreIfCompleted(object sender, EventArgs args)
         {
-            //mineOre();
+            mineOre(miningPos);
         }
     }
 }

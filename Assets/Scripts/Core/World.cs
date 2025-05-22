@@ -207,6 +207,7 @@ namespace Dev.Kosov.Factory.Core
 
         internal OreType GetOreAtPos(Vector2Int pos)
         {
+            if (!map.ContainsKey(pos)) Debug.Log("No such pos");
             return map[pos].OreType;
         }
 
