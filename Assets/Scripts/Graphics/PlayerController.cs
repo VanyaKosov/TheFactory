@@ -20,6 +20,7 @@ namespace Dev.Kosov.Factory.Graphics
         private Crafter playerCrafter;
 
         public event EventHandler<World.CrafterOpenedEventArgs> PlayerCrafterOpened;
+        public UIController UIController;
         public GraphicRaycaster Raycaster;
         public UserInput UserInput;
         public Camera Camera;
@@ -39,8 +40,8 @@ namespace Dev.Kosov.Factory.Graphics
             world = WorldController.World;
             playerCrafter = world.PlayerCrafter;
             UserInput.PrimaryInput += OnPrimaryInput;
-            //UserInput.OpenPlayerCrafter += OnOpenPlayerCrafter;
             UserInput.OpenInventory += OnOpenPlayerCrafter;
+            UserInput.Escape += OnEscapePress;
         }
 
         void Start()
@@ -143,5 +144,13 @@ namespace Dev.Kosov.Factory.Graphics
         {
             PlayerCrafterOpened?.Invoke(this, new(playerCrafter, true));
         }
+
+        private void OnEscapePress(object sender, EventArgs args)
+        {
+            if (UIController.InvOpen)
+            {
+                UIController.InvOpen = false;
+            }
+        } 
     }
 }

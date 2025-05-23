@@ -7,13 +7,13 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class UIController : MonoBehaviour
     {
-        private const float chestHorOffset = -320f;
-        private const float chestVertOffset = 40f;
+        private const float chestHorOffsetPercent = 0.20f;
+        private const float chestVertOffsetPercent = 0.50f;
         private const float invHorOffset = 0f;
         private const float spaceBetweenSlots = 8f;
         private const float slotSize = 45f;
         private const float invVertOffset = 40f;
-        private const float hotbarBottomHalfOffsetPercent = 0.10f;
+        private const float hotbarBottomHalfOffsetPercent = 0.05f;
         private SlotRenderer[,] invSlotRenderers;
         private SlotRenderer[,] hotbarSlotRenderers;
         private CursorSlotRenderer cursorSlotRenderer;
@@ -55,7 +55,7 @@ namespace Dev.Kosov.Factory.Graphics
                 new(Canvas.transform.position.x + invHorOffset, Canvas.transform.position.y + invVertOffset),
                 inventory.Width, inventory.Height, OnInvSlotLeftClick, OnInvSlotRightClick).renderers;
             hotbarSlotRenderers = GenerateSlotPanel(HotbarParent,
-                new(Canvas.transform.position.x, Canvas.transform.position.y * hotbarBottomHalfOffsetPercent),
+                new(Canvas.transform.position.x, Canvas.transform.position.y * 2 * hotbarBottomHalfOffsetPercent),
                 inventory.HotbarWidth, inventory.HotbarHeight, OnHotbarSlotLeftClick, OnHotbarSlotRightClick).renderers;
 
             world.ChestOpened += OpenChest;
@@ -214,7 +214,7 @@ namespace Dev.Kosov.Factory.Graphics
             openChest = args.Chest;
 
             (SlotRenderer[,] renderers, GameObject instance) = GenerateSlotPanel(ChestParent,
-                new(Canvas.transform.position.x + chestHorOffset, Canvas.transform.position.y + chestVertOffset),
+                new(Canvas.transform.position.x * 2 * chestHorOffsetPercent, Canvas.transform.position.y * 2 * chestVertOffsetPercent),
                 openChest.InvWidth, openChest.InvHeight, OnChestLeftClick, OnChestRightClick);
 
             chestSlotRenderers = renderers;

@@ -60,6 +60,7 @@ namespace Dev.Kosov.Factory.Graphics
         {
             if (!UIController.InvOpen)
             {
+                crafter = null;
                 choicePanelOpen = false;
                 Destroy(recipeChoicePanel);
                 gameObject.SetActive(false);

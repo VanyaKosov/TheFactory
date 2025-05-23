@@ -10,6 +10,7 @@ namespace Dev.Kosov.Factory.Graphics
         public EventHandler<EventArgs> OpenInventory;
         public EventHandler<EventArgs> RotateEntity;
         public EventHandler<EventArgs> OpenPlayerCrafter;
+        public EventHandler<EventArgs> Escape;
 
         void Update()
         {
@@ -36,6 +37,11 @@ namespace Dev.Kosov.Factory.Graphics
             if (Input.GetKeyDown(KeyCode.C))
             {
                 OpenPlayerCrafter?.Invoke(this, new());
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Escape?.Invoke(this, new());
             }
         }
     }
