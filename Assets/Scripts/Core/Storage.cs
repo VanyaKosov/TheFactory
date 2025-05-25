@@ -19,7 +19,7 @@ namespace Dev.Kosov.Factory.Core
             Width = width;
             Height = height;
             items = new InvSlot[Width, Height];
-            reserved = new ItemType[Width, Height]; // Hope the default is ItemType.None
+            reserved = new ItemType[Width, Height];
             CanTake = canTake;
 
             DefaultInitialize();

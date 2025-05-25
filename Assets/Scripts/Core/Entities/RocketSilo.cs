@@ -1,16 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Dev.Kosov.Factory.Core
 {
-    internal class RocketSilo : Entity, ICrafter, IPuttable
+    public class RocketSilo : Entity, ICrafter, IPuttable
     {
-        private readonly Crafter Crafter;
+        private const int partsNeededForLaunch = 1; // PLACEHOLDER
+        private readonly Crafter crafter;
+
+        public event EventHandler<EventArgs> RocketLaunch;
 
         internal RocketSilo(Rotation rotation, Vector2Int bottomLeftPos)
             : base(rotation, bottomLeftPos, new() { new(ItemType.Rocket_silo, 1) }, EntityType.Rocket_silo)
         {
-            Crafter = new(new()
+            crafter = new(new()
             {
                 RecipeType.Make_rocket_part
             },
@@ -19,31 +23,41 @@ namespace Dev.Kosov.Factory.Core
 
         public Crafter GetCrafter()
         {
-            return Crafter;
+            return crafter;
         }
 
         internal override void UpdateState()
         {
             base.UpdateState();
-            Crafter.UpdateState();
+            crafter.UpdateState();
+            CheckRocketCompletion();
         }
 
         internal override List<InvSlot> GetComponents()
         {
             List<InvSlot> items = base.GetComponents();
-            items.AddRange(Crafter.GetComponents());
+            items.AddRange(crafter.GetComponents());
 
             return items;
         }
 
         int IPuttable.Put(InvSlot item)
         {
-            return Crafter.InputStorage.AutoPut(item.Type, item.Amount);
+            return crafter.InputStorage.AutoPut(item.Type, item.Amount);
         }
 
         List<InvSlot> IPuttable.GetWantedItems()
         {
-            return Crafter.WantedItems;
+            return crafter.WantedItems;
+        }
+
+        private void CheckRocketCompletion()
+        {
+            InvSlot slot = crafter.OutputStorage.GetItem(new(0, 0));
+            if (slot.Amount < partsNeededForLaunch) return;
+
+            crafter.OutputStorage.SetItem(new(slot.Type, slot.Amount - partsNeededForLaunch), new(0, 0));
+            RocketLaunch?.Invoke(this, new());
         }
     }
 }

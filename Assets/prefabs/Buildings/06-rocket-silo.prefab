@@ -398,7 +398,7 @@ Transform:
   m_GameObject: {fileID: 3008819634672558431}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -0.8, z: 0}
+  m_LocalPosition: {x: -0.1, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -754,6 +754,7 @@ GameObject:
   - component: {fileID: 5832446467069660913}
   - component: {fileID: 3071765280391944171}
   - component: {fileID: 8737813596186481999}
+  - component: {fileID: 6647683094995356637}
   m_Layer: 0
   m_Name: 06-rocket-silo
   m_TagString: Untagged
@@ -886,6 +887,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 10, y: 19}
   m_EdgeRadius: 0
+--- !u!114 &6647683094995356637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172269512016206723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317ca7d6491150741b32d8db17946839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rocket: {fileID: 4292907830737167784}
 --- !u!1 &8023349901733997925
 GameObject:
   m_ObjectHideFlags: 0

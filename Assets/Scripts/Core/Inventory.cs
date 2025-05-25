@@ -141,6 +141,9 @@ namespace Dev.Kosov.Factory.Core
             AddItemToInventory(ItemType.Copper_wire, 100);
             AddItemToInventory(ItemType.Simple_circuit, 50);
             AddItemToInventory(ItemType.Iron_chest, 60);
+            AddItemToInventory(ItemType.Rocket_silo, 1);
+            AddItemToInventory(ItemType.Rocket_fuel, 6);
+            AddItemToInventory(ItemType.Steel_plate, 6);
         }
 
         private void OnInventorySlotChange(object sender, Storage.SlotChangedEventArgs args)
