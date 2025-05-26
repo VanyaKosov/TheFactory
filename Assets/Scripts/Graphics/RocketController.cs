@@ -13,14 +13,14 @@ namespace Dev.Kosov.Factory.Graphics
         private float timeLaunched = 0f;
         private float height;
         private GameObject player;
-        private UIController UIController;
+        public FadeController FadeController;
 
         public GameObject Rocket;
 
         void Start()
         {
             player = FindFirstObjectByType<PlayerController>().gameObject;
-            UIController = FindFirstObjectByType<UIController>();
+            FadeController = FindFirstObjectByType<FadeController>();
 
             height = Rocket.transform.position.y;
             rocketSilo.RocketLaunch += LaunchRocket;
@@ -38,7 +38,7 @@ namespace Dev.Kosov.Factory.Graphics
 
             if (Time.time - timeLaunched >= rocketAccelerationTimeLimit)
             {
-                UIController.FadeIn();
+                FadeController.FadeIn();
             }
         }
 
