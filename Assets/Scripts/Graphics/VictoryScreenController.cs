@@ -17,6 +17,7 @@ namespace Dev.Kosov.Factory.Graphics
         {
             Player.transform.position = new(0, 0, Player.transform.position.z);
             FadeController.FadeOut();
+            VictoryScreen.SetActive(false);
         }
     }
 }

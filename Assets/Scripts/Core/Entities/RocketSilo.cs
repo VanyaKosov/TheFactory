@@ -8,6 +8,7 @@ namespace Dev.Kosov.Factory.Core
     {
         private const int partsNeededForLaunch = 1; // PLACEHOLDER
         private readonly Crafter crafter;
+        private bool rocketReady = true;
 
         public event EventHandler<EventArgs> RocketLaunch;
 
@@ -29,8 +30,11 @@ namespace Dev.Kosov.Factory.Core
         internal override void UpdateState()
         {
             base.UpdateState();
-            crafter.UpdateState();
-            CheckRocketCompletion();
+            if (rocketReady)
+            {
+                crafter.UpdateState();
+                CheckRocketCompletion();
+            }
         }
 
         internal override List<InvSlot> GetComponents()
@@ -58,6 +62,7 @@ namespace Dev.Kosov.Factory.Core
 
             crafter.OutputStorage.SetItem(new(slot.Type, slot.Amount - partsNeededForLaunch), new(0, 0));
             RocketLaunch?.Invoke(this, new());
+            rocketReady = false;
         }
     }
 }

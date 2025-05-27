@@ -13,32 +13,38 @@ namespace Dev.Kosov.Factory.Graphics
         private float timeLaunched = 0f;
         private float height;
         private GameObject player;
-        public FadeController FadeController;
+        private FadeController fadeController;
+        private bool faded = false;
+        private VictoryScreenController victoryScreen;
 
         public GameObject Rocket;
 
         void Start()
         {
             player = FindFirstObjectByType<PlayerController>().gameObject;
-            FadeController = FindFirstObjectByType<FadeController>();
+            fadeController = FindFirstObjectByType<FadeController>();
+            victoryScreen = FindFirstObjectByType<VictoryScreenController>();
 
             height = Rocket.transform.position.y;
             rocketSilo.RocketLaunch += LaunchRocket;
+            fadeController.Faded += OnFaded;
         }
 
         void Update()
         {
-            UpdateRocketPos();
             VictoryScreen();
+            UpdateRocketPos();
         }
 
         private void VictoryScreen()
         {
             if (!launched) return;
+            if (faded) return;
 
             if (Time.time - timeLaunched >= rocketAccelerationTimeLimit)
             {
-                FadeController.FadeIn();
+                faded = true;
+                fadeController.FadeIn();
             }
         }
 
@@ -47,11 +53,6 @@ namespace Dev.Kosov.Factory.Graphics
             if (!launched) return;
 
             float time = Time.time - timeLaunched;
-            if (time >= rocketAccelerationTimeLimit + UIController.fadeDuration)
-            {
-                launched = false;
-                return;
-            }
 
             Vector3 pos = Rocket.transform.position;
             float newHeight = -100f / (time - 15f) - 20f / 3f;
@@ -72,6 +73,13 @@ namespace Dev.Kosov.Factory.Graphics
         void IEntityInitializer.Init(Entity entity, Catalogs catalogs)
         {
             rocketSilo = (RocketSilo)entity;
+        }
+
+        private void OnFaded(object sender, EventArgs args)
+        {
+            launched = false;
+            victoryScreen.Display(true);
+            Rocket.SetActive(false);
         }
     }
 }

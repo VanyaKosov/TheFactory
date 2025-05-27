@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,9 @@ namespace Dev.Kosov.Factory.Graphics
 {
     public class FadeController : MonoBehaviour
     {
-        public const float fadeDuration = 2f;
+        public const float fadeDuration = 3f;
+
+        public event EventHandler<EventArgs> Faded;
 
         public Image FadePanel;
 
@@ -51,6 +54,7 @@ namespace Dev.Kosov.Factory.Graphics
             if (direction == 1)
             {
                 FadePanel.color = new(color.r, color.g, color.b, 1f);
+                Faded?.Invoke(this, new());
             }
             else
             {
