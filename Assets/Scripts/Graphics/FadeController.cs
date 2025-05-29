@@ -13,6 +13,12 @@ namespace Dev.Kosov.Factory.Graphics
 
         public Image FadePanel;
 
+        public void SetFadePercent(float percent)
+        {
+            Color color = FadePanel.color;
+            FadePanel.color = new(color.r, color.g, color.b, percent);
+        }
+
         public void FadeIn()
         {
             StartCoroutine(Fade(0, 1));

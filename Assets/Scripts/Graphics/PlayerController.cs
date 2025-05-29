@@ -20,6 +20,8 @@ namespace Dev.Kosov.Factory.Graphics
         private Crafter playerCrafter;
 
         public event EventHandler<World.CrafterOpenedEventArgs> PlayerCrafterOpened;
+        public event EventHandler<EventArgs> OpenEscapeMenu;
+
         public UIController UIController;
         public GraphicRaycaster Raycaster;
         public UserInput UserInput;
@@ -150,6 +152,10 @@ namespace Dev.Kosov.Factory.Graphics
             if (UIController.InvOpen)
             {
                 UIController.InvOpen = false;
+            } 
+            else
+            {
+                OpenEscapeMenu?.Invoke(this, new());
             }
         } 
     }
