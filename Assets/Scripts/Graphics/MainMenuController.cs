@@ -16,7 +16,7 @@ namespace Dev.Kosov.Factory.Graphics
 
         void Start()
         {
-        
+
         }
 
         void Update()
@@ -30,7 +30,8 @@ namespace Dev.Kosov.Factory.Graphics
             CheckForSceneLoad();
         }
 
-        private void CheckForSceneLoad() {
+        private void CheckForSceneLoad()
+        {
             if (!loadingScene.IsValid() || !loadingScene.isLoaded) return;
 
             SceneManager.UnloadSceneAsync("MainMenu");
@@ -47,6 +48,9 @@ namespace Dev.Kosov.Factory.Graphics
 
         public void Exit()
         {
+#if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+#endif
             Application.Quit();
         }
     }

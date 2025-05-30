@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEditor;
 
 namespace Dev.Kosov.Factory.Graphics
 {
@@ -23,7 +24,7 @@ namespace Dev.Kosov.Factory.Graphics
             if (open)
             {
                 CloseEscapeMenu();
-            } 
+            }
             else
             {
                 OpenEscapeMenu();
@@ -36,7 +37,7 @@ namespace Dev.Kosov.Factory.Graphics
             if (controlsOpen)
             {
                 Controls.SetActive(true);
-            } 
+            }
             else
             {
                 Controls.SetActive(false);
@@ -65,6 +66,9 @@ namespace Dev.Kosov.Factory.Graphics
 
         public void QuitGame()
         {
+#if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+#endif
             Application.Quit();
         }
     }
