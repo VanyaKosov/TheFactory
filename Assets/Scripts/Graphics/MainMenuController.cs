@@ -17,7 +17,10 @@ namespace Dev.Kosov.Factory.Graphics
             "How do I craft rocket fuel?",
             "Where have I seen this before?",
             "No bugs whatsoever...",
-            "Help, trees are fighting back!"
+            "Factory wars: Trees strike back",
+            "Here we go again",
+            "I forgot...",
+            "Also try Factorio"
         };
         private int splashDirection = 1;
         private Scene loadingScene;
