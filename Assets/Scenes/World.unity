@@ -954,7 +954,7 @@ MonoBehaviour:
     Right click - remove building;
     take half of stack of items
 
-    E - open inventory
+    E - toggle inventory
 
     C - toggle crafting
     menu'

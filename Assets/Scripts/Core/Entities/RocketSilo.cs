@@ -6,7 +6,7 @@ namespace Dev.Kosov.Factory.Core
 {
     public class RocketSilo : Entity, ICrafter, IPuttable
     {
-        private const int partsNeededForLaunch = 1; // PLACEHOLDER
+        private const int partsNeededForLaunch = 50;
         private readonly Crafter crafter;
         private bool rocketReady = true;
 

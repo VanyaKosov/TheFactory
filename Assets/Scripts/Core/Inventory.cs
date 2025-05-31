@@ -129,21 +129,21 @@ namespace Dev.Kosov.Factory.Core
 
         private void DefaultInvInitialize()
         {
-            AddItemToInventory(ItemType.Assembler_1, 50);
-            AddItemToInventory(ItemType.Wood_chest, 200);
-            AddItemToInventory(ItemType.Stone_furnace, 100);
-            AddItemToInventory(ItemType.Copper_ore, 405);
-            AddItemToInventory(ItemType.Iron_ore, 205);
-            AddItemToInventory(ItemType.Electric_drill, 50);
-            AddItemToInventory(ItemType.Inserter, 100);
+            //AddItemToInventory(ItemType.Assembler_1, 50);
+            AddItemToInventory(ItemType.Wood_chest, 20);
+            AddItemToInventory(ItemType.Stone_furnace, 20);
+            //AddItemToInventory(ItemType.Copper_ore, 405);
+            //AddItemToInventory(ItemType.Iron_ore, 205);
+            AddItemToInventory(ItemType.Electric_drill, 10);
+            AddItemToInventory(ItemType.Inserter, 10);
             AddItemToInventory(ItemType.Iron_plate, 100);
-            AddItemToInventory(ItemType.Iron_gear, 50);
-            AddItemToInventory(ItemType.Copper_wire, 100);
-            AddItemToInventory(ItemType.Simple_circuit, 50);
-            AddItemToInventory(ItemType.Iron_chest, 60);
-            AddItemToInventory(ItemType.Rocket_silo, 1);
-            AddItemToInventory(ItemType.Rocket_fuel, 6);
-            AddItemToInventory(ItemType.Steel_plate, 6);
+            //AddItemToInventory(ItemType.Iron_gear, 50);
+            //AddItemToInventory(ItemType.Copper_wire, 100);
+            //AddItemToInventory(ItemType.Simple_circuit, 50);
+            //AddItemToInventory(ItemType.Iron_chest, 60);
+            //AddItemToInventory(ItemType.Rocket_silo, 1);
+            //AddItemToInventory(ItemType.Rocket_fuel, 6);
+            //AddItemToInventory(ItemType.Steel_plate, 6);
         }
 
         private void OnInventorySlotChange(object sender, Storage.SlotChangedEventArgs args)
