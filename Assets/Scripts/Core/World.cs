@@ -310,6 +310,8 @@ namespace Dev.Kosov.Factory.Core
                         for (int y = centerY - intRadius; y <= centerY + intRadius; y++)
                         {
                             Vector2Int pos = new(x, y);
+                            GenTree(pos);
+
                             if (map.ContainsKey(pos) && map[pos].OreType != OreType.None)
                             {
                                 found = false;
@@ -362,6 +364,8 @@ namespace Dev.Kosov.Factory.Core
 
         private void GenTile(Vector2Int pos)
         {
+            if (map.ContainsKey(pos)) return;
+
             foreach ((OreType oreType, OreInfo.Info oreInfo) in OreInfo.GetAll())
             {
                 if (CheckSpawnChance(oreInfo.SpawnChance))
@@ -377,10 +381,7 @@ namespace Dev.Kosov.Factory.Core
 
         private void GenBackTile(Vector2Int pos)
         {
-            if (map.ContainsKey(pos))
-            {
-                return;
-            }
+            if (map.ContainsKey(pos)) return;
 
             Tile tile = new(BackType.Grass1, OreType.None, 0);
             map.Add(pos, tile);
