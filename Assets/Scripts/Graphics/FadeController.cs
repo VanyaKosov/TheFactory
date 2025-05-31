@@ -16,6 +16,9 @@ namespace Dev.Kosov.Factory.Graphics
         public void SetFadePercent(float percent)
         {
             Color color = FadePanel.color;
+
+            if (percent < color.a) return;
+
             FadePanel.color = new(color.r, color.g, color.b, percent);
         }
 

@@ -139,9 +139,9 @@ namespace Dev.Kosov.Factory.Core
             AddItemToInventory(ItemType.Iron_plate, 100);
             //AddItemToInventory(ItemType.Iron_gear, 50);
             //AddItemToInventory(ItemType.Copper_wire, 100);
-            //AddItemToInventory(ItemType.Simple_circuit, 50);
             //AddItemToInventory(ItemType.Iron_chest, 60);
             //AddItemToInventory(ItemType.Rocket_silo, 1);
+            //AddItemToInventory(ItemType.Simple_circuit, 6);
             //AddItemToInventory(ItemType.Rocket_fuel, 6);
             //AddItemToInventory(ItemType.Steel_plate, 6);
         }
