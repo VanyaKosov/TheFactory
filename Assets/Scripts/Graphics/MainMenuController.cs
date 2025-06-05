@@ -22,6 +22,8 @@ namespace Dev.Kosov.Factory.Graphics
             "I forgot...",
             "Also try Factorio"
         };
+        private bool controlsOpen = false;
+        private bool tutorialOpen = false;
         private int splashDirection = 1;
         private Scene loadingScene;
         private AsyncOperation loadingOperation = null;
@@ -30,6 +32,8 @@ namespace Dev.Kosov.Factory.Graphics
         public GameObject Loading;
         public Slider ProgressBar;
         public TMP_Text SplashText;
+        public GameObject Controls;
+        public GameObject Tutorial;
 
         void Start()
         {
@@ -46,6 +50,67 @@ namespace Dev.Kosov.Factory.Graphics
 
             CheckForSceneLoad();
             UpdateSplashSize();
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (controlsOpen)
+                {
+                    ToggleControls();
+                }
+
+                if (tutorialOpen)
+                {
+                    ToggleTutorial();
+                }
+            }
+        }
+
+        public void StartGame()
+        {
+            Destroy(EventSystem);
+
+            loadingOperation = SceneManager.LoadSceneAsync("World", LoadSceneMode.Additive);
+            loadingScene = SceneManager.GetSceneByName("World");
+        }
+
+        public void Exit()
+        {
+#if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+#endif
+            Application.Quit();
+        }
+
+        public void ToggleTutorial()
+        {
+            tutorialOpen = !tutorialOpen;
+            if (tutorialOpen)
+            {
+                controlsOpen = false;
+                Controls.SetActive(false);
+
+                Tutorial.SetActive(true);
+            }
+            else
+            {
+                Tutorial.SetActive(false);
+            }
+        }
+
+        public void ToggleControls()
+        {
+            controlsOpen = !controlsOpen;
+            if (controlsOpen)
+            {
+                tutorialOpen = false;
+                Tutorial.SetActive(false);
+
+                Controls.SetActive(true);
+            }
+            else
+            {
+                Controls.SetActive(false);
+            }
         }
 
         private void UpdateSplashSize()
@@ -69,22 +134,6 @@ namespace Dev.Kosov.Factory.Graphics
 
             SceneManager.UnloadSceneAsync("MainMenu");
             SceneManager.SetActiveScene(loadingScene);
-        }
-
-        public void StartGame()
-        {
-            Destroy(EventSystem);
-
-            loadingOperation = SceneManager.LoadSceneAsync("World", LoadSceneMode.Additive);
-            loadingScene = SceneManager.GetSceneByName("World");
-        }
-
-        public void Exit()
-        {
-#if UNITY_EDITOR
-            EditorApplication.isPlaying = false;
-#endif
-            Application.Quit();
         }
     }
 }

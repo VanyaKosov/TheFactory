@@ -8,26 +8,32 @@ namespace Dev.Kosov.Factory.Graphics
     {
         private bool open = false;
         private bool controlsOpen = false;
+        private bool tutorialOpen = false;
 
         public PlayerController PlayerController;
         public FadeController FadeController;
         public GameObject EscapeMenu;
         public GameObject Controls;
+        public GameObject Tutorial;
 
         void Start()
         {
             PlayerController.OpenEscapeMenu += ToggleEscapeMenu;
         }
 
-        public void ToggleEscapeMenu(object sender, EventArgs args)
+        public void ToggleTutorial()
         {
-            if (open)
+            tutorialOpen = !tutorialOpen;
+            if (tutorialOpen)
             {
-                CloseEscapeMenu();
+                controlsOpen = false;
+                Controls.SetActive(false);
+
+                Tutorial.SetActive(true);
             }
             else
             {
-                OpenEscapeMenu();
+                Tutorial.SetActive(false);
             }
         }
 
@@ -36,6 +42,9 @@ namespace Dev.Kosov.Factory.Graphics
             controlsOpen = !controlsOpen;
             if (controlsOpen)
             {
+                tutorialOpen = false;
+                Tutorial.SetActive(false);
+
                 Controls.SetActive(true);
             }
             else
@@ -53,13 +62,18 @@ namespace Dev.Kosov.Factory.Graphics
 
         public void CloseEscapeMenu()
         {
+            open = false;
+
             if (controlsOpen)
             {
                 ToggleControls();
-                return;
             }
 
-            open = false;
+            if (tutorialOpen)
+            {
+                ToggleTutorial();
+            }
+
             EscapeMenu.SetActive(false);
             FadeController.SetFadePercent(0f);
         }
@@ -70,6 +84,18 @@ namespace Dev.Kosov.Factory.Graphics
             EditorApplication.isPlaying = false;
 #endif
             Application.Quit();
+        }
+
+        public void ToggleEscapeMenu(object sender, EventArgs args)
+        {
+            if (open)
+            {
+                CloseEscapeMenu();
+            }
+            else
+            {
+                OpenEscapeMenu();
+            }
         }
     }
 }
